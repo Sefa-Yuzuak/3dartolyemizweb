@@ -4,3 +4,6 @@
 Dockerfile
 nginx.conf
 README.md
+scripts/
+content/
+assets/img/_raw/

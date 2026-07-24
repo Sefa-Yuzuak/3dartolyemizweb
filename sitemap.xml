@@ -1,8 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://artolyemiz.com/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/og.webp</image:loc><image:title>3D Atölyemiz</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-01.webp</image:loc><image:title>Doğum Günü Boyama Atölyesi</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-02.webp</image:loc><image:title>Kendin Boya Figür Atölyesi Anısı</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-03.webp</image:loc><image:title>Galatasaray Hagi Forma Çerçevesi</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-04.webp</image:loc><image:title>Ağaç Dallı Ayna Çerçevesi</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-05.webp</image:loc><image:title>Kişiye Özel Uluyan Kurt Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-06.webp</image:loc><image:title>Samuray Büstü Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-07.webp</image:loc><image:title>Mirabel Figürü (Encanto)</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-08.webp</image:loc><image:title>Etkinlik Alanında Figür Boyama</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-09.webp</image:loc><image:title>Sprinku Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-10.webp</image:loc><image:title>Messi Kendin Boya Seti</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-11.webp</image:loc><image:title>Anneler Günü Özel Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-12.webp</image:loc><image:title>Aksiyon Karakter Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-13.webp</image:loc><image:title>Maşa ile Koca Ayı Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-14.webp</image:loc><image:title>Kişiye Özel Karikatür Figür</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-15.webp</image:loc><image:title>Kişiye Özel Kalpli Çift Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-16.webp</image:loc><image:title>Kişiye Özel Chihuahua Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-17.webp</image:loc><image:title>Kişiye Özel Ofis Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-18.webp</image:loc><image:title>Ramazan Temalı Ay Lambası</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-19.webp</image:loc><image:title>Kişiye Özel Selfie Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-20.webp</image:loc><image:title>Zootropolis Yılan Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-21.webp</image:loc><image:title>Deniz Hayvanları Figür Seti</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-22.webp</image:loc><image:title>Kişiye Özel Mini Figür Seti</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-23.webp</image:loc><image:title>Kratos Chibi Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-24.webp</image:loc><image:title>Kişiye Özel İsimli Fantastik Figür</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-25.webp</image:loc><image:title>Detaylı Motosiklet Maketi</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-26.webp</image:loc><image:title>Kişiye Özel Şık Çift Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-27.webp</image:loc><image:title>Mercedes G63 Araba Maketi</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-28.webp</image:loc><image:title>Kişiye Özel Çift Figürü (Detay)</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-29.webp</image:loc><image:title>Zootropolis Temalı Pasta Süsü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-30.webp</image:loc><image:title>Kişiye Özel Anime Karakter Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-31.webp</image:loc><image:title>Kişiye Özel Pop Tarzı Mini Figür</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-32.webp</image:loc><image:title>Kişiye Özel ARTOPOP Aile Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-33.webp</image:loc><image:title>Küçük Prens Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-34.webp</image:loc><image:title>Honda Civic Araba Maketi</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-35.webp</image:loc><image:title>Boyanmamış Dinozor Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-36.webp</image:loc><image:title>Boyalı T-Rex Dinozor Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-37.webp</image:loc><image:title>Minecraft Warden Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-38.webp</image:loc><image:title>Kişiye Özel Kamp Ateşi Diorama Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-39.webp</image:loc><image:title>Kişiye Özel Araba Standı</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-40.webp</image:loc><image:title>Kişiye Özel Fransız Bulldog Figürü</image:title></image:image>
+    <image:image><image:loc>https://artolyemiz.com/assets/img/is-41.webp</image:loc><image:title>Kişiye Özel Terzi Temalı Pasta Süsü</image:title></image:image>
   </url>
 </urlset>
