@@ -2,7 +2,6 @@
 .gitignore
 .dockerignore
 Dockerfile
-nginx.conf
 README.md
 scripts/
 content/
