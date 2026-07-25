@@ -47,7 +47,8 @@ Yeniden görsel eklemek/değiştirmek istersen: dosyayı `assets/img/_raw/` içi
 /robots.txt
 /sitemap.xml
 /site.webmanifest
-/favicon.svg
+/favicon.ico
+/assets/img/logo.jpg, favicon-*.png, apple-touch-icon.png, icon-192.png, icon-512.png
 /assets/css/style.css
 /assets/js/main.js       header, mobil menü, scroll reveal, WhatsApp FAB
 /assets/js/gallery.js    galeri verisi + lightbox

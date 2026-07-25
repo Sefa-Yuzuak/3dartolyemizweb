@@ -81,7 +81,8 @@ h2{font-size:clamp(1.6rem,4vw,2.5rem);}
   padding-block:.6rem;
 }
 .site-header .container{display:flex;align-items:center;justify-content:space-between;gap:1rem;}
-.logo{font-family:'Fredoka',sans-serif;font-weight:600;font-size:1.3rem;letter-spacing:-.01em;}
+.logo{display:inline-flex;align-items:center;gap:.5rem;font-family:'Fredoka',sans-serif;font-weight:600;font-size:1.3rem;letter-spacing:-.01em;}
+.logo-mark{width:32px;height:32px;border-radius:8px;flex:none;object-fit:contain;}
 .logo .logo-3d{color:var(--brand);}
 .main-nav{display:none;}
 .main-nav ul{display:flex;gap:2rem;align-items:center;}
