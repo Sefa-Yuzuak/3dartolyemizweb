@@ -1,6 +1,6 @@
 {
-  "name": "3D Atölyemiz",
-  "short_name": "3D Atölyemiz",
+  "name": "3dartolyemiz",
+  "short_name": "3dartolyemiz",
   "description": "Kişiye özel 3D baskı ürünler ve doğum günü boyama etkinlikleri.",
   "start_url": "/",
   "display": "standalone",
