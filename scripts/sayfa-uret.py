@@ -284,7 +284,7 @@ def sema_uret(s: dict) -> str:
         "provider": {"@type": "LocalBusiness", "name": "3dartolyemiz", "url": ALAN + "/",
                      "telephone": "+905441885744",
                      "address": {"@type": "PostalAddress",
-                                 "streetAddress": "Mehmet Akif Ersoy Mahallesi, 266. Cadde No:4",
+                                 "streetAddress": "Mehmet Akif Ersoy Mahallesi 266.Cad No:4",
                                  "addressLocality": "Yenimahalle", "addressRegion": "Ankara",
                                  "postalCode": "06200", "addressCountry": "TR"}},
     }]
