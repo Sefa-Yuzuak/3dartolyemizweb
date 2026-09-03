@@ -16,6 +16,7 @@ from __future__ import annotations
 import io
 import json
 import re
+import unicodedata
 from pathlib import Path
 
 KOK = Path(__file__).resolve().parent.parent
@@ -368,6 +369,176 @@ def govde_uret(s: dict) -> str:
     return "\n".join(parcalar) + "\n"
 
 
+# --------------------------------------------------------------------- urun sayfalari
+# Google kurali: urun zengin sonucu YALNIZCA tek urune odakli sayfada gecerli.
+# Birden cok urunu listeleyen sayfada Product isaretlemesi "gecersiz oge" sayiliyor
+# (Search Console bunu bildirdi). Bu yuzden her katalog urunu kendi sayfasini alir,
+# ana sayfadaki ItemList ise ozet bicime duser: yalnizca @type, position ve url.
+
+TR_MAP = str.maketrans("çğıöşüÇĞİÖŞÜ", "cgiosuCGIOSU")
+
+
+def sluglastir(metin: str) -> str:
+    metin = metin.replace("&amp;", "ve").translate(TR_MAP)
+    metin = unicodedata.normalize("NFKD", metin).encode("ascii", "ignore").decode()
+    metin = re.sub(r"[^a-zA-Z0-9]+", "-", metin).strip("-").lower()
+    return re.sub(r"-{2,}", "-", metin)
+
+
+KART = re.compile(
+    r'<div class="product-card[^"]*">\s*<div class="product-media">\s*'
+    r'<img[^>]*src="([^"]+)"[^>]*alt="([^"]*)"[^>]*>\s*<span class="tag">([^<]*)</span>'
+    r'.*?<h3>([^<]+)</h3>\s*<p>([^<]*)</p>\s*<div class="price-badge">([^<]+)</div>\s*'
+    r'<span class="price-note">([^<]*)</span>\s*<a[^>]+href="([^"]+)"', re.S)
+
+
+def urunleri_oku(metin: str) -> list:
+    """Yalnizca katalog basligindan SONRAKI, tek sabit fiyatli kartlar."""
+    kesim = metin.find("Ürün Kataloğu")
+    cikti = []
+    for m in KART.finditer(metin[kesim:]):
+        fiyat_metni = m.group(6).strip()
+        sayilar = re.findall(r"(\d[\d.]*)\s*TL", fiyat_metni)
+        if len(sayilar) != 1 or "başlayan" in fiyat_metni:
+            continue  # kategori karti, tekil urun degil
+        ad = m.group(4).replace("&amp;", "&").strip()
+        cikti.append({
+            "ad": ad, "slug": sluglastir(ad),
+            "gorsel": "/" + m.group(1).lstrip("/"),
+            "alt": m.group(2).strip(),
+            "etiket": m.group(3).replace("&amp;", "&").strip(),
+            "aciklama": m.group(5).strip(),
+            "fiyat_metni": fiyat_metni,
+            "fiyat": int(sayilar[0].replace(".", "")),
+            "not": m.group(7).strip(),
+            "wa": m.group(8),
+        })
+    return cikti
+
+
+def urun_sayfasi(u: dict) -> str:
+    url = f"{ALAN}/urun/{u['slug']}/"
+    semalar = [
+        {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Ana sayfa", "item": ALAN + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Ürünler", "item": ALAN + "/#urunler"},
+            {"@type": "ListItem", "position": 3, "name": u["ad"], "item": url}]},
+        {"@context": "https://schema.org", "@type": "Product",
+         "name": u["ad"], "description": u["aciklama"], "url": url,
+         "image": ALAN + u["gorsel"], "category": u["etiket"],
+         "brand": {"@type": "Brand", "name": "3dartolyemiz"},
+         "offers": {"@type": "Offer", "price": u["fiyat"], "priceCurrency": "TRY",
+                    "availability": "https://schema.org/InStock", "url": url,
+                    "seller": {"@type": "Organization", "name": "3dartolyemiz"}}},
+    ]
+    sema = "".join('\n  <script type="application/ld+json">\n'
+                   + json.dumps(b, ensure_ascii=False, indent=2)
+                   + "\n  </script>" for b in semalar) + "\n"
+
+    baslik = f"{u['ad']} | {u['fiyat_metni']} | 3dartolyemiz"
+    aciklama = (f"{u['ad']}: {u['aciklama']} Fiyat {u['fiyat_metni']}. "
+                "Ankara'da üretim, Türkiye geneli kargo.")
+    h = head
+    h = re.sub(r"<title>.*?</title>", f"<title>{baslik}</title>", h, count=1, flags=re.S)
+    for alan in ['name="description"', 'property="og:description"', 'name="twitter:description"']:
+        h = re.sub(rf'({alan} content=")[^"]*(")', lambda m: m.group(1) + aciklama + m.group(2), h, count=1)
+    for alan in ['property="og:title"', 'name="twitter:title"']:
+        h = re.sub(rf'({alan} content=")[^"]*(")', lambda m: m.group(1) + u["ad"] + m.group(2), h, count=1)
+    h = re.sub(r'(<link rel="canonical" href=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), h, count=1)
+    h = re.sub(r'(<meta property="og:url" content=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), h, count=1)
+    h = re.sub(r'(<meta property="og:image" content=")[^"]*(")',
+               lambda m: m.group(1) + ALAN + u["gorsel"] + m.group(2), h, count=1)
+    h = h.replace('href="assets/', 'href="/assets/').replace('src="assets/', 'src="/assets/')
+    h = re.sub(r'\s*<script type="application/ld\+json">.*?</script>', "", h, flags=re.S)
+
+    govde = (
+        '<main id="main">\n'
+        '  <section class="hero hero--sayfa">\n    <div class="container">\n'
+        '      <nav class="kirinti" aria-label="Konum"><a href="/">Ana sayfa</a> <span>/</span> '
+        '<a href="/#urunler">Ürünler</a> <span>/</span> <span>' + u["ad"] + '</span></nav>\n'
+        '      <h1>' + u["ad"] + '</h1>\n'
+        '      <p class="lead">' + u["aciklama"] + '</p>\n'
+        '    </div>\n  </section>\n\n'
+        '  <section>\n    <div class="container">\n      <div class="urun-detay">\n'
+        '        <img class="urun-gorsel" src="' + u["gorsel"] + '" alt="' + u["alt"] + '" '
+        'width="900" height="1200" loading="eager" decoding="async">\n'
+        '        <div class="urun-bilgi">\n'
+        '          <span class="tag">' + u["etiket"] + '</span>\n'
+        '          <div class="price-badge">' + u["fiyat_metni"] + '</div>\n'
+        '          <span class="price-note">' + u["not"] + '</span>\n'
+        '          <p>Ankara\'daki atölyemizde üretiliyor. Ankara içi elden teslim, Türkiye geneli '
+        'kargo. Siparişler genellikle 3-7 iş günü içinde kargoya veriliyor.</p>\n'
+        '          <p>Aynı ürünü farklı ölçü, renk ya da kişiye özel detayla da yapabiliyoruz. '
+        'Ne istediğinizi yazın, birlikte netleştirelim.</p>\n'
+        '          <a class="btn btn-primary" href="' + u["wa"] + '" target="_blank" rel="noopener">'
+        'WhatsApp\'tan sipariş ver</a>\n'
+        '        </div>\n      </div>\n    </div>\n  </section>\n\n'
+        '  <section class="section--alt">\n    <div class="container">\n'
+        '      <div class="section-head reveal"><h2>Devamı</h2></div>\n'
+        '      <ul class="sayfa-liste reveal">\n'
+        '        <li><a href="/kisiye-ozel-3d-figur/">Kişiye özel 3D figür sayfası</a></li>\n'
+        '        <li><a href="/ankara-3d-baski/">Ankara\'da 3D baskı hizmeti</a></li>\n'
+        '        <li><a href="/#urunler">Tüm ürün kataloğu ve fiyatlar</a></li>\n'
+        '      </ul>\n    </div>\n  </section>\n')
+    return h + sema + bas + govde + son
+
+
+OK_SVG = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
+          'aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>')
+
+
+def kartlara_baglanti_ekle(urunler: list) -> bool:
+    """Katalog kartlarindan urun sayfasina gorunur baglanti. Idempotent."""
+    yol = KOK / "index.html"
+    metin = io.open(yol, encoding="utf-8").read()
+    degisti = False
+    for u in urunler:
+        if f'href="/urun/{u["slug"]}/"' in metin:
+            continue
+        i = metin.find("<h3>" + u["ad"].replace("&", "&amp;") + "</h3>")
+        if i < 0:
+            i = metin.find("<h3>" + u["ad"] + "</h3>")
+        if i < 0:
+            print(f"  UYARI: kart bulunamadi -> {u['ad']}")
+            continue
+        j = metin.find("</a>", metin.find('class="btn', i))
+        if j < 0:
+            continue
+        j += 4
+        bag = f'\n            <a class="card-link" href="/urun/{u["slug"]}/">Ürün detayı {OK_SVG}</a>'
+        metin = metin[:j] + bag + metin[j:]
+        degisti = True
+    if degisti:
+        io.open(yol, "w", encoding="utf-8").write(metin)
+    return degisti
+
+
+def anasayfa_listesini_ozetle(urunler: list) -> bool:
+    """Ana sayfadaki ItemList'i Google'in ozet-sayfa bicimine dusurur."""
+    yol = KOK / "index.html"
+    metin = io.open(yol, encoding="utf-8").read()
+    degisti = False
+    for b in reversed(list(re.finditer(r'(<script[^>]+ld\+json[^>]*>)(.*?)(</script>)', metin, re.S))):
+        veri = json.loads(b.group(2))
+        ogeler = veri if isinstance(veri, list) else [veri]
+        bu_blok = False
+        for x in ogeler:
+            if x.get("@type") != "ItemList":
+                continue
+            yeni_ogeler = [{"@type": "ListItem", "position": i, "url": f"{ALAN}/urun/{u['slug']}/"}
+                           for i, u in enumerate(urunler, 1)]
+            if x.get("itemListElement") != yeni_ogeler:
+                x["itemListElement"] = yeni_ogeler
+                x["numberOfItems"] = len(yeni_ogeler)
+                bu_blok = degisti = True
+        if bu_blok:
+            yeni = json.dumps(veri if isinstance(veri, list) else ogeler[0], ensure_ascii=False, indent=2)
+            metin = metin[:b.start(2)] + "\n" + yeni + "\n  " + metin[b.end(2):]
+    if degisti:
+        io.open(yol, "w", encoding="utf-8").write(metin)
+    return degisti
+
+
 # --------------------------------------------------------------------- yaz
 
 uretilen = []
@@ -379,13 +550,26 @@ for s in SAYFALAR:
     uretilen.append(s["slug"])
     print(f"  yazildi: /{s['slug']}/  ({len(icerik)} bayt)")
 
+URUNLER = urunleri_oku(kaynak)
+for u in URUNLER:
+    hedef = KOK / "urun" / u["slug"]
+    hedef.mkdir(parents=True, exist_ok=True)
+    io.open(hedef / "index.html", "w", encoding="utf-8").write(urun_sayfasi(u))
+print(f"  {len(URUNLER)} urun sayfasi uretildi")
+if kartlara_baglanti_ekle(URUNLER):
+    print("  katalog kartlarina urun sayfasi baglantisi eklendi")
+if anasayfa_listesini_ozetle(URUNLER):
+    print("  ana sayfadaki ItemList ozet bicime dusuruldu")
+
 # sitemap
 girdiler = [f"  <url>\n    <loc>{ALAN}/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>1.0</priority>\n  </url>"]
 girdiler += [f"  <url>\n    <loc>{ALAN}/{sl}/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>"
              for sl in uretilen]
+girdiler += [f"  <url>\n    <loc>{ALAN}/urun/{u['slug']}/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>"
+             for u in URUNLER]
 io.open(KOK / "sitemap.xml", "w", encoding="utf-8").write(
     '<?xml version="1.0" encoding="UTF-8"?>\n'
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     + "\n".join(girdiler) + "\n</urlset>\n")
-print(f"  sitemap.xml: {len(uretilen)+1} adres")
-print(f"{len(uretilen)} alt sayfa uretildi.")
+print(f"  sitemap.xml: {len(girdiler)} adres")
+print(f"{len(uretilen)} hizmet sayfasi + {len(URUNLER)} urun sayfasi uretildi.")

@@ -376,3 +376,10 @@ h2{font-size:clamp(1.6rem,4vw,2.5rem);}
 .fiyat-tablo td:last-child { font-variant-numeric: tabular-nums; white-space: nowrap; }
 .footer-saat { display: block; font-size: .85rem; opacity: .75; margin-top: .35rem; }
 .footer-adres { display: block; font-style: normal; font-size: .85rem; opacity: .8; margin-top: .5rem; max-width: 32ch; }
+
+/* urun detay sayfalari */
+.urun-detay { display: grid; gap: 1.75rem; align-items: start; }
+@media (min-width: 760px) { .urun-detay { grid-template-columns: minmax(0, 420px) minmax(0, 1fr); gap: 2.5rem; } }
+.urun-gorsel { width: 100%; height: auto; border-radius: 14px; display: block; }
+.urun-bilgi > * { margin-bottom: .9rem; }
+.urun-bilgi p { max-width: 60ch; }
