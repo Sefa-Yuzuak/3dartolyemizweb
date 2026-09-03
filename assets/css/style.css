@@ -360,3 +360,17 @@ h2{font-size:clamp(1.6rem,4vw,2.5rem);}
 /* ===== 404 ===== */
 .error-page{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;}
 .error-page .code{font-family:'Baloo 2','Segoe UI',system-ui,sans-serif;font-weight:600;font-size:clamp(4rem,18vw,8rem);color:var(--brand);line-height:1;margin-bottom:.2em;}
+
+/* --- alt sayfalar (scripts/sayfa-uret.py ile uretilir) --- */
+.hero--sayfa { padding-top: 3rem; padding-bottom: 2.5rem; }
+.kirinti { font-size: .85rem; opacity: .75; margin-bottom: .9rem; }
+.kirinti span { margin: 0 .35rem; }
+.sayfa-metin { max-width: 68ch; margin: 0 0 1rem; }
+.sayfa-liste { max-width: 68ch; margin: 0 0 1.5rem; padding-left: 1.15rem; }
+.sayfa-liste li { margin-bottom: .5rem; }
+.fiyat-tablo { overflow-x: auto; margin: 0 0 1.5rem; }
+.fiyat-tablo table { border-collapse: collapse; width: 100%; min-width: 320px; }
+.fiyat-tablo th,
+.fiyat-tablo td { text-align: left; padding: .7rem .9rem; border-bottom: 1px solid rgba(128,128,128,.25); }
+.fiyat-tablo th { font-size: .8rem; letter-spacing: .05em; text-transform: uppercase; opacity: .7; }
+.fiyat-tablo td:last-child { font-variant-numeric: tabular-nums; white-space: nowrap; }
