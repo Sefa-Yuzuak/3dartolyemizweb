@@ -404,7 +404,7 @@ def urunleri_oku(metin: str) -> list:
         ad = m.group(4).replace("&amp;", "&").strip()
         cikti.append({
             "ad": ad, "slug": sluglastir(ad),
-            "gorsel": "/" + m.group(1).lstrip("/"),
+            "gorsel": "/" + m.group(1).lstrip("/").replace("-sm.webp", ".webp"),
             "alt": m.group(2).strip(),
             "etiket": m.group(3).replace("&amp;", "&").strip(),
             "aciklama": m.group(5).strip(),

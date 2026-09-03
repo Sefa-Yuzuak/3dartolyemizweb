@@ -65,7 +65,7 @@
     fig.innerHTML =
       '<div class="thumb">' +
         '<button type="button" data-index="' + i + '" aria-label="' + item.title + ' - büyüt">' +
-          '<img src="' + item.src + '" alt="' + item.alt + '" width="' + item.w + '" height="' + item.h + '" loading="lazy" decoding="async">' +
+          '<img src="' + item.src.replace(".webp", "-sm.webp") + '" data-full="' + item.src + '" alt="' + item.alt + '" width="' + item.w + '" height="' + item.h + '" loading="lazy" decoding="async">' +
         '</button>' +
         '<span class="tag">' + item.tag + '</span>' +
       '</div>' +
@@ -90,7 +90,8 @@
   function show(index){
     current = (index + GALLERY.length) % GALLERY.length;
     var item = GALLERY[current];
-    lbImg.src = grid.querySelectorAll("img")[current].src;
+    var t = grid.querySelectorAll("img")[current];
+    lbImg.src = t.getAttribute("data-full") || t.src;
     lbImg.alt = item.alt;
     lbCaption.textContent = item.title;
   }
