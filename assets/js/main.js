@@ -153,3 +153,18 @@
   }
   kartlar.forEach(function(k){ k.addEventListener("click", function(){ yukle(k); }); });
 })();
+
+/* YouTube Shorts: iframe yalnizca istekle (yerel olcum: 5 gomu 4,5 MB / 84 istek). */
+(function(){
+  var kartlar = document.querySelectorAll(".yt-kart[data-yt]");
+  kartlar.forEach(function(k){
+    k.addEventListener("click", function(){
+      var f = document.createElement("iframe");
+      f.src = "https://www.youtube-nocookie.com/embed/" + k.dataset.yt + "?autoplay=1&playsinline=1";
+      f.title = "3dartolyemiz YouTube Shorts";
+      f.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+      f.setAttribute("allowfullscreen", "");
+      k.replaceWith(f);
+    });
+  });
+})();

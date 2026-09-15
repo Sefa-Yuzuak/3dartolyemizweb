@@ -405,3 +405,10 @@ h2{font-size:clamp(1.6rem,4vw,2.5rem);}
 .tt-profil img{width:64px;height:64px;border-radius:50%}
 .tt-profil strong{font-family:'Baloo 2','Segoe UI',system-ui,sans-serif;font-size:1.15rem}
 .tt-profil span{opacity:.85;font-size:.9rem}
+/* ---------- YouTube Shorts tikla-yukle karti (TikTok kartiyla ayni kalip) ---------- */
+.yt-kart{position:relative;display:block;width:100%;height:100%;padding:0;border:0;border-radius:inherit;overflow:hidden;background:#000;cursor:pointer;color:#fff}
+.yt-kart img{display:block;width:100%;height:100%;object-fit:cover}
+.yt-kart .tt-oynat{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(to top,rgba(0,0,0,.45),rgba(0,0,0,0) 50%)}
+.yt-kart .tt-oynat svg{width:52px;height:52px;filter:drop-shadow(0 4px 14px rgba(0,0,0,.55));transition:transform .2s ease}
+.yt-kart:hover .tt-oynat svg,.yt-kart:focus-visible .tt-oynat svg{transform:scale(1.08)}
+.yt-kart:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
