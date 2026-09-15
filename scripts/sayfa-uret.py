@@ -37,6 +37,16 @@ SAYFALAR = [
         "sema": "Service",
         "sema_ad": "3D baskı hizmeti",
         "bolumler": [
+            # Adimlarin her olgusu bu sayfada zaten yazili (lead, teslim bolumu, SSS);
+            # muadil olcumu (Craftcloud/Protolabs/T3 Dizayn, 13.09.2026): surec akisi
+            # her profesyonel atolye sayfasinda var, bizde yoktu.
+            {"h2": "Nasıl çalışır?",
+             "liste": [
+                 "WhatsApp'tan yazın: ne istediğinizi, varsa fotoğrafı ya da hazır 3D modeli gönderin.",
+                 "Fiyatı ve süreyi birlikte netleştirelim; elinizde model yoksa baskıya hazır modeli biz tasarlıyoruz.",
+                 "Üretim ve boyama: siparişler genellikle 3-7 iş günü içinde hazır olur; boyalı figürlerde süre üst sınıra yaklaşır.",
+                 "Teslim: Ankara içinde elden, Türkiye geneline güvenli kargo.",
+             ]},
             {"h2": "Hangi malzemeyle basıyoruz?",
              "p": ["Malzemeyi işin gereğine göre seçiyoruz. Aynı ürünü her malzemeden basmak mümkün ama "
                    "sonuç aynı olmuyor, o yüzden baştan konuşuyoruz."],
@@ -52,7 +62,16 @@ SAYFALAR = [
                  ("TPU",
                   "Esnek olması gereken parçalar için. Bükülüp eski hâline dönmesi gereken yerlerde "
                   "bu malzemeye geçiyoruz."),
-             ]},
+             ],
+             # Kartlardaki ayni bilgi karar tablosu olarak: "benim isim icin hangisi?"
+             "tablo": {
+                 "basliklar": ["İhtiyaç", "Önerdiğimiz malzeme"],
+                 "satirlar": [
+                     ["İnce detay: yüz hatları, küçük parçalar, büst", "SLA reçine"],
+                     ["Dekor, hediyelik, maket; boyanacak yüzey", "PLA"],
+                     ["Darbeye ve sıcağa dayanım", "PETG"],
+                     ["Bükülüp eski hâline dönmesi gereken parça", "TPU"],
+                 ]}},
             {"h2": "Ankara içi teslim, Türkiye geneli kargo",
              "p": ["Ankara içindeyseniz ürünü elden teslim edebiliyoruz. Türkiye'nin her yerine de "
                    "güvenli kargo ile gönderim yapıyoruz.",

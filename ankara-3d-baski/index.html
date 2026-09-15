@@ -27,9 +27,8 @@
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600&family=Manrope:wght@400;600&display=swap">
+<link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/baloo2-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
@@ -204,6 +203,13 @@
 
   <section>
     <div class="container">
+    <div class="section-head reveal"><h2>Nasıl çalışır?</h2></div>
+    <ul class="sayfa-liste reveal">
+      <li>WhatsApp'tan yazın: ne istediğinizi, varsa fotoğrafı ya da hazır 3D modeli gönderin.</li>
+      <li>Fiyatı ve süreyi birlikte netleştirelim; elinizde model yoksa baskıya hazır modeli biz tasarlıyoruz.</li>
+      <li>Üretim ve boyama: siparişler genellikle 3-7 iş günü içinde hazır olur; boyalı figürlerde süre üst sınıra yaklaşır.</li>
+      <li>Teslim: Ankara içinde elden, Türkiye geneline güvenli kargo.</li>
+    </ul>
     <div class="section-head reveal"><h2>Hangi malzemeyle basıyoruz?</h2></div>
     <p class="sayfa-metin reveal">Malzemeyi işin gereğine göre seçiyoruz. Aynı ürünü her malzemeden basmak mümkün ama sonuç aynı olmuyor, o yüzden baştan konuşuyoruz.</p>
     <div class="card-grid">
@@ -212,6 +218,14 @@
       <div class="card reveal"><h3>PETG</h3><p>Dayanım isteyen parçalarda kullanıyoruz. Darbeye ve sıcağa PLA'dan daha dirençli.</p></div>
       <div class="card reveal"><h3>TPU</h3><p>Esnek olması gereken parçalar için. Bükülüp eski hâline dönmesi gereken yerlerde bu malzemeye geçiyoruz.</p></div>
     </div>
+    <div class="fiyat-tablo reveal"><table>
+      <thead><tr><th>İhtiyaç</th><th>Önerdiğimiz malzeme</th></tr></thead>
+      <tbody>
+        <tr><td>İnce detay: yüz hatları, küçük parçalar, büst</td><td>SLA reçine</td></tr>
+        <tr><td>Dekor, hediyelik, maket; boyanacak yüzey</td><td>PLA</td></tr>
+        <tr><td>Darbeye ve sıcağa dayanım</td><td>PETG</td></tr>
+        <tr><td>Bükülüp eski hâline dönmesi gereken parça</td><td>TPU</td></tr>
+      </tbody></table></div>
     <div class="section-head reveal"><h2>Ankara içi teslim, Türkiye geneli kargo</h2></div>
     <p class="sayfa-metin reveal">Ankara içindeyseniz ürünü elden teslim edebiliyoruz. Türkiye'nin her yerine de güvenli kargo ile gönderim yapıyoruz.</p>
     <p class="sayfa-metin reveal">Siparişler, ürünün karmaşıklığına göre değişmekle birlikte genellikle 3 ila 7 iş günü içinde kargoya teslim ediliyor. Boyama ve elle rötuş gerektiren figürlerde bu süre üst sınıra yaklaşıyor.</p>

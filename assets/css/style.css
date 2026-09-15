@@ -1,3 +1,9 @@
+/* Yazi tipleri yerelden: Google Fonts CSS'i 752 ms render-blocking olculdu (PSI 13.09.2026).
+   Iki aile de degisken font (wght ekseni), tek dosya butun agirliklari tasir. */
+@font-face{font-family:'Baloo 2';font-style:normal;font-weight:400 800;font-display:swap;src:url(/assets/fonts/baloo2-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Baloo 2';font-style:normal;font-weight:400 800;font-display:swap;src:url(/assets/fonts/baloo2-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:200 800;font-display:swap;src:url(/assets/fonts/manrope-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:200 800;font-display:swap;src:url(/assets/fonts/manrope-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 /* ===== 3D Atölyemiz — style.css ===== */
 
 :root{
@@ -60,8 +66,9 @@ h2{font-size:clamp(1.6rem,4vw,2.5rem);}
   white-space:nowrap;
 }
 .btn svg{width:1.15em;height:1.15em;flex:none;}
-.btn-primary{background:var(--brand);color:#fff;box-shadow:var(--shadow-brand);}
-.btn-primary:hover{background:var(--brand-dk);transform:translateY(-2px);box-shadow:0 14px 34px -12px rgba(255,107,74,.4);}
+/* Metin koyu: #FF6B4A uzerinde beyaz 2,8:1 (AA disi), koyu 5,4:1 — olculdu (WCAG formulu). */
+.btn-primary{background:var(--brand);color:var(--ink);box-shadow:var(--shadow-brand);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 34px -12px rgba(255,107,74,.5);}
 .btn-secondary{background:var(--surface);color:var(--ink);border:2px solid var(--line);}
 .btn-secondary:hover{border-color:var(--brand);color:var(--brand-dk);transform:translateY(-2px);}
 .btn-ghost{background:rgba(255,255,255,.15);color:#fff;border:2px solid rgba(255,255,255,.6);}
@@ -383,3 +390,18 @@ h2{font-size:clamp(1.6rem,4vw,2.5rem);}
 .urun-gorsel { width: 100%; height: auto; border-radius: 14px; display: block; }
 .urun-bilgi > * { margin-bottom: .9rem; }
 .urun-bilgi p { max-width: 60ch; }
+
+/* ---------- TikTok tikla-yukle karti ---------- */
+/* Gomu sayfayla birlikte yuklenince ana sayfa 207 istek / 28 MB oluyordu (PSI 13.09.2026).
+   Kart yalnizca yerel kapak; iframe ve embed.js dugmeye basilinca gelir (main.js). */
+.tt-kart{position:relative;display:block;width:100%;max-width:325px;margin-inline:auto;padding:0;border:0;border-radius:16px;overflow:hidden;background:#000;cursor:pointer;box-shadow:var(--shadow-soft);font:inherit;color:#fff}
+.tt-kart img{display:block;width:100%;height:auto}
+.tt-kart .tt-oynat{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(to top,rgba(0,0,0,.6),rgba(0,0,0,0) 45%)}
+.tt-kart .tt-oynat svg{width:68px;height:68px;filter:drop-shadow(0 4px 14px rgba(0,0,0,.55));transition:transform .2s ease}
+.tt-kart:hover .tt-oynat svg,.tt-kart:focus-visible .tt-oynat svg{transform:scale(1.08)}
+.tt-kart .tt-alt{position:absolute;left:0;right:0;bottom:0;padding:.9rem 1rem;font-size:.9rem;line-height:1.35;text-align:left}
+.tt-kart:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+.tt-profil{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;width:100%;max-width:325px;min-height:240px;margin-inline:auto;padding:1.5rem;border-radius:16px;background:var(--ink);color:#fff;text-decoration:none;text-align:center;box-shadow:var(--shadow-soft)}
+.tt-profil img{width:64px;height:64px;border-radius:50%}
+.tt-profil strong{font-family:'Baloo 2','Segoe UI',system-ui,sans-serif;font-size:1.15rem}
+.tt-profil span{opacity:.85;font-size:.9rem}

@@ -27,9 +27,8 @@
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600&family=Manrope:wght@400;600&display=swap">
+<link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/baloo2-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/style.css">
 
 <script type="application/ld+json">
@@ -415,7 +414,7 @@
           <img src="assets/img/is-01-sm.webp" alt="Doğum günü boyama atölyesinde figür boyayan çocuklar" width="828" height="987" loading="eager" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src=ph('Boyama Etkinliği','#2EC4B6')">
         </div>
         <div class="collage-item c2">
-          <img src="assets/img/is-02-sm.webp" alt="Boyanmış 3D baskı figürlerle poz veren çocuk" width="1200" height="1200" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=ph('Boyama Etkinliği','#2EC4B6')">
+          <img src="assets/img/is-02-sm.webp" srcset="assets/img/is-02-xs.webp 480w, assets/img/is-02-sm.webp 640w" sizes="(max-width:600px) 92vw, 513px" alt="Boyanmış 3D baskı figürlerle poz veren çocuk" width="640" height="640" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=ph('Boyama Etkinliği','#2EC4B6')">
         </div>
         <div class="collage-item c3">
           <img src="assets/img/is-03-sm.webp" alt="Galatasaray Hagi forma temalı 3D baskı çerçeve" width="675" height="1200" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=ph('Hediyelik','#FF6B4A')">
@@ -984,14 +983,18 @@
       </div>
       <div class="video-grid">
         <div class="video-embed reveal">
-          <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@3dartolyemiz/video/7511359621169302802" data-video-id="7511359621169302802" style="max-width:325px;min-width:220px;margin-inline:auto;">
-            <section><a target="_blank" title="@3dartolyemiz" href="https://www.tiktok.com/@3dartolyemiz?refer=creator_embed" rel="noopener">@3dartolyemiz</a></section>
-          </blockquote>
+          <button type="button" class="tt-kart" data-tiktok="https://www.tiktok.com/@3dartolyemiz/video/7511359621169302802" data-video-id="7511359621169302802" aria-label="TikTok videosunu yükle ve oynat">
+            <img src="assets/img/tiktok-7511359621169302802.webp" alt="" width="520" height="749" loading="lazy" decoding="async">
+            <span class="tt-oynat" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11" fill="rgba(0,0,0,.35)"/><path d="M9.5 7.5v9l7-4.5z"/></svg></span>
+            <span class="tt-alt">Oynatmak için dokunun · video TikTok'tan yüklenir</span>
+          </button>
         </div>
         <div class="video-embed video-embed-profile reveal">
-          <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@3dartolyemiz" data-unique-id="3dartolyemiz" data-embed-type="creator" style="max-width:325px;min-width:220px;margin-inline:auto;">
-            <section><a target="_blank" title="@3dartolyemiz" href="https://www.tiktok.com/@3dartolyemiz?refer=creator_embed" rel="noopener">@3dartolyemiz</a></section>
-          </blockquote>
+          <a class="tt-profil" href="https://www.tiktok.com/@3dartolyemiz" target="_blank" rel="noopener">
+            <img src="assets/img/logo-mark.webp" alt="" width="96" height="96" loading="lazy" decoding="async">
+            <strong>@3dartolyemiz</strong>
+            <span>Tüm videolarımız TikTok'ta</span>
+          </a>
         </div>
       </div>
 
@@ -1022,7 +1025,6 @@
       </div>
     </div>
   </section>
-  <script async src="https://www.tiktok.com/embed.js"></script>
 
   <section class="section--alt">
     <div class="container">

@@ -128,3 +128,28 @@
     setTimeout(function(){ fab.classList.add("is-visible"); }, 3000);
   }
 })();
+
+/* TikTok gomusu yalnizca istekle. Olculdu (PSI 13.09.2026): otomatik gomu ana sayfayi
+   207 istek / 28 MB, TBT 1.060 ms yapiyordu. Kart yerel kapak; dugmeye basilinca
+   blockquote + embed.js eklenir, TikTok kendi iframe'ini kurar. */
+(function(){
+  var kartlar = document.querySelectorAll(".tt-kart[data-tiktok]");
+  if(!kartlar.length) return;
+  function yukle(k){
+    var kap = document.createElement("div");
+    kap.className = "video-embed-ic";
+    var bq = document.createElement("blockquote");
+    bq.className = "tiktok-embed";
+    bq.setAttribute("cite", k.dataset.tiktok);
+    bq.setAttribute("data-video-id", k.dataset.videoId);
+    bq.style.cssText = "max-width:325px;min-width:220px;margin-inline:auto;";
+    bq.innerHTML = '<section><a target="_blank" href="https://www.tiktok.com/@3dartolyemiz?refer=creator_embed" rel="noopener">@3dartolyemiz</a></section>';
+    kap.appendChild(bq);
+    k.replaceWith(kap);
+    var s = document.createElement("script");
+    s.src = "https://www.tiktok.com/embed.js";
+    s.async = true;
+    document.body.appendChild(s);
+  }
+  kartlar.forEach(function(k){ k.addEventListener("click", function(){ yukle(k); }); });
+})();
