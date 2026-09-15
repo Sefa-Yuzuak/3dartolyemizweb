@@ -286,7 +286,9 @@ def head_uret(s: dict) -> str:
     h = h.replace('href="assets/', 'href="/assets/').replace('src="assets/', 'src="/assets/')
     # ana sayfanin semalari alt sayfaya tasinmasin
     h = re.sub(r'\s*<script type="application/ld\+json">.*?</script>', "", h, flags=re.S)
-    return h + sema_uret(s)
+    # Sema </head> ICINE girer: eskiden head kapandiktan sonra yaziliyordu ve
+    # arkasindan basibos bir <body> geliyordu (26 sayfada gecersiz isaretleme).
+    return h.replace("</head>", sema_uret(s) + "\n</head>", 1)
 
 
 def sema_uret(s: dict) -> str:
@@ -440,14 +442,16 @@ def urun_sayfasi(u: dict) -> str:
     semalar = [
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Ana sayfa", "item": ALAN + "/"},
-            {"@type": "ListItem", "position": 2, "name": "Ürünler", "item": ALAN + "/#urunler"},
+            {"@type": "ListItem", "position": 2, "name": "Ürünler", "item": ALAN + "/urun/"},
             {"@type": "ListItem", "position": 3, "name": u["ad"], "item": url}]},
         {"@context": "https://schema.org", "@type": "Product",
          "name": u["ad"], "description": u["aciklama"], "url": url,
          "image": ALAN + u["gorsel"], "category": u["etiket"],
          "brand": {"@type": "Brand", "name": "3dartolyemiz"},
          "offers": {"@type": "Offer", "price": u["fiyat"], "priceCurrency": "TRY",
-                    "availability": "https://schema.org/InStock", "url": url,
+                    # Sayfalar "ayni urunu farkli olcu/renk ile de yapabiliyoruz"
+                    # diyor: urun stokta degil, siparise gore uretiliyor.
+                    "availability": "https://schema.org/MadeToOrder", "url": url,
                     "seller": {"@type": "Organization", "name": "3dartolyemiz"}}},
     ]
     sema = "".join('\n  <script type="application/ld+json">\n'
@@ -474,7 +478,7 @@ def urun_sayfasi(u: dict) -> str:
         '<main id="main">\n'
         '  <section class="hero hero--sayfa">\n    <div class="container">\n'
         '      <nav class="kirinti" aria-label="Konum"><a href="/">Ana sayfa</a> <span>/</span> '
-        '<a href="/#urunler">Ürünler</a> <span>/</span> <span>' + u["ad"] + '</span></nav>\n'
+        '<a href="/urun/">Ürünler</a> <span>/</span> <span>' + u["ad"] + '</span></nav>\n'
         '      <h1>' + u["ad"] + '</h1>\n'
         '      <p class="lead">' + u["aciklama"] + '</p>\n'
         '    </div>\n  </section>\n\n'
@@ -497,9 +501,99 @@ def urun_sayfasi(u: dict) -> str:
         '      <ul class="sayfa-liste reveal">\n'
         '        <li><a href="/kisiye-ozel-3d-figur/">Kişiye özel 3D figür sayfası</a></li>\n'
         '        <li><a href="/ankara-3d-baski/">Ankara\'da 3D baskı hizmeti</a></li>\n'
-        '        <li><a href="/#urunler">Tüm ürün kataloğu ve fiyatlar</a></li>\n'
+        '        <li><a href="/urun/">Tüm ürün kataloğu ve fiyatlar</a></li>\n'
         '      </ul>\n    </div>\n  </section>\n')
-    return h + sema + bas + govde + son
+    return h.replace("</head>", sema + "\n</head>", 1) + bas + govde + son
+
+
+
+def urun_dizini(urunler: list) -> str:
+    """/urun/ liste sayfasi: 21 urun tek sayfada, her biri kendi sayfasina baglı.
+
+    Eskiden /urun/ 403 donuyordu; urunlere yalnizca ana sayfadaki katalog
+    izgarasindan tek baglanti gidiyordu ve urun kirintisinin "Ürünler" basamagi
+    bir capaya (/#urunler) isaret ediyordu.
+    """
+    url = f"{ALAN}/urun/"
+    semalar = [
+        {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Ana sayfa", "item": ALAN + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Ürünler", "item": url}]},
+        {"@context": "https://schema.org", "@type": "ItemList",
+         "name": "3dartolyemiz ürün kataloğu", "url": url,
+         "numberOfItems": len(urunler),
+         "itemListElement": [
+             {"@type": "ListItem", "position": i, "name": u["ad"],
+              "url": f"{ALAN}/urun/{u['slug']}/"}
+             for i, u in enumerate(urunler, 1)]},
+    ]
+    sema = "".join('\n  <script type="application/ld+json">\n'
+                   + json.dumps(b, ensure_ascii=False, indent=2)
+                   + "\n  </script>" for b in semalar) + "\n"
+
+    baslik = f"3D Baskı Ürünleri ve Fiyatları | {len(urunler)} Çalışma | 3dartolyemiz"
+    aciklama = (f"Ankara'da ürettiğimiz {len(urunler)} 3D baskı çalışması: figür, dekor, "
+                "hediyelik ve çerçeve. Her ürünün fiyatı ve ölçüsü sayfasında yazılı.")
+    h = head
+    h = re.sub(r"<title>.*?</title>", f"<title>{baslik}</title>", h, count=1, flags=re.S)
+    for alan in ['name="description"', 'property="og:description"', 'name="twitter:description"']:
+        h = re.sub(rf'({alan} content=")[^"]*(")', lambda m: m.group(1) + aciklama + m.group(2), h, count=1)
+    for alan in ['property="og:title"', 'name="twitter:title"']:
+        h = re.sub(rf'({alan} content=")[^"]*(")',
+                   lambda m: m.group(1) + f"3D baskı ürünleri ({len(urunler)} çalışma)" + m.group(2),
+                   h, count=1)
+    h = re.sub(r'(<link rel="canonical" href=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), h, count=1)
+    h = re.sub(r'(<meta property="og:url" content=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), h, count=1)
+    h = h.replace('href="assets/', 'href="/assets/').replace('src="assets/', 'src="/assets/')
+    h = re.sub(r'\s*<script type="application/ld\+json">.*?</script>', "", h, flags=re.S)
+
+    etiketler = []
+    for u in urunler:
+        if u["etiket"] not in etiketler:
+            etiketler.append(u["etiket"])
+
+    kartlar = []
+    for u in urunler:
+        kartlar.append(
+            '        <div class="product-card reveal">\n'
+            '          <div class="product-media">\n'
+            '            <img src="' + u["gorsel"] + '" alt="' + u["alt"] + '" width="900" '
+            'height="1200" loading="lazy" decoding="async">\n'
+            '            <span class="tag">' + u["etiket"] + '</span>\n'
+            '          </div>\n'
+            '          <div class="product-body">\n'
+            '            <h3><a href="/urun/' + u["slug"] + '/">' + u["ad"] + '</a></h3>\n'
+            '            <p>' + u["aciklama"] + '</p>\n'
+            '            <div class="price-badge">' + u["fiyat_metni"] + '</div>\n'
+            '            <span class="price-note">' + u["not"] + '</span>\n'
+            '            <a class="card-link" href="/urun/' + u["slug"] + '/">Ürün sayfası '
+            + OK_SVG + '</a>\n'
+            '          </div>\n'
+            '        </div>')
+
+    govde = (
+        '<main id="main">\n'
+        '  <section class="hero hero--sayfa">\n    <div class="container">\n'
+        '      <nav class="kirinti" aria-label="Konum"><a href="/">Ana sayfa</a> <span>/</span> '
+        '<span>Ürünler</span></nav>\n'
+        '      <h1>3D baskı ürünleri ve fiyatları</h1>\n'
+        '      <p class="lead">Ankara Yenimahalle\'deki atölyemizde ürettiğimiz '
+        + str(len(urunler)) + ' çalışma. Hepsi siparişe göre üretiliyor; ölçü, renk ve '
+        'kişiselleştirme isteğe göre değişebilir. Fiyatlar ürünün kendi sayfasında yazılı.</p>\n'
+        '      <p class="lead">Kategoriler: ' + ", ".join(etiketler) + '.</p>\n'
+        '    </div>\n  </section>\n\n'
+        '  <section>\n    <div class="container">\n'
+        '      <div class="product-grid">\n' + "\n".join(kartlar) + '\n      </div>\n'
+        '    </div>\n  </section>\n\n'
+        '  <section class="section--alt">\n    <div class="container">\n'
+        '      <div class="section-head reveal"><h2>Hizmetler</h2></div>\n'
+        '      <ul class="sayfa-liste reveal">\n'
+        '        <li><a href="/ankara-3d-baski/">Ankara\'da 3D baskı hizmeti</a></li>\n'
+        '        <li><a href="/kisiye-ozel-3d-figur/">Kişiye özel 3D figür</a></li>\n'
+        '        <li><a href="/3d-modelleme/">3D modelleme</a></li>\n'
+        '        <li><a href="/dogum-gunu-boyama-atolyesi/">Doğum günü boyama atölyesi</a></li>\n'
+        '      </ul>\n    </div>\n  </section>\n')
+    return h.replace("</head>", sema + "\n</head>", 1) + bas + govde + son
 
 
 OK_SVG = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
@@ -574,7 +668,9 @@ for u in URUNLER:
     hedef = KOK / "urun" / u["slug"]
     hedef.mkdir(parents=True, exist_ok=True)
     io.open(hedef / "index.html", "w", encoding="utf-8").write(urun_sayfasi(u))
-print(f"  {len(URUNLER)} urun sayfasi uretildi")
+(KOK / "urun").mkdir(exist_ok=True)
+io.open(KOK / "urun" / "index.html", "w", encoding="utf-8").write(urun_dizini(URUNLER))
+print(f"  {len(URUNLER)} urun sayfasi + /urun/ liste sayfasi uretildi")
 if kartlara_baglanti_ekle(URUNLER):
     print("  katalog kartlarina urun sayfasi baglantisi eklendi")
 if anasayfa_listesini_ozetle(URUNLER):
@@ -584,6 +680,7 @@ if anasayfa_listesini_ozetle(URUNLER):
 girdiler = [f"  <url>\n    <loc>{ALAN}/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>1.0</priority>\n  </url>"]
 girdiler += [f"  <url>\n    <loc>{ALAN}/{sl}/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>"
              for sl in uretilen]
+girdiler.append(f"  <url>\n    <loc>{ALAN}/urun/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>")
 girdiler += [f"  <url>\n    <loc>{ALAN}/urun/{u['slug']}/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>"
              for u in URUNLER]
 io.open(KOK / "sitemap.xml", "w", encoding="utf-8").write(

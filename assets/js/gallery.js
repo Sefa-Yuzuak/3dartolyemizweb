@@ -59,7 +59,19 @@
   var grid = document.getElementById("gallery-grid");
   if(!grid) return;
 
-  GALLERY.forEach(function(item, i){
+  /* Izgara 15.09.2026'dan beri HTML'de hazir basili (41 gorsel JS'siz de
+     okunabilsin diye). Hazirsa yalniz hata yedegini bagla, yeniden uretme. */
+  var hazir = grid.querySelectorAll(".gallery-item").length === GALLERY.length;
+  if(hazir){
+    Array.prototype.forEach.call(grid.querySelectorAll("img"), function(img, i){
+      img.addEventListener("error", function(){
+        img.onerror = null;
+        img.src = placeholder(GALLERY[i].tag, COLORS[i % COLORS.length]);
+      });
+    });
+  }
+
+  if(!hazir) GALLERY.forEach(function(item, i){
     var fig = document.createElement("div");
     fig.className = "gallery-item reveal";
     fig.innerHTML =
