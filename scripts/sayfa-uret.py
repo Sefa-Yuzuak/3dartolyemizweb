@@ -585,6 +585,21 @@ def urun_dizini(urunler: list) -> str:
         '  <section>\n    <div class="container">\n'
         '      <div class="product-grid">\n' + "\n".join(kartlar) + '\n      </div>\n'
         '    </div>\n  </section>\n\n'
+        # Eski magazanin 61 adresi buraya 301'leniyor ve o aramalarin hepsi
+        # TEKIL urun aramasi ("ronaldo funko pop" 168 gosterim, konum 6-9;
+        # "garfield figur"; "sanji figure"). Listede o urun yok; arayan kisi
+        # bos donmesin diye siparise gore uretim burada soyleniyor. Yeni bir
+        # iddia degil: urun sayfalari ve /kisiye-ozel-3d-figur/ zaten boyle diyor.
+        '  <section>\n    <div class="container">\n'
+        '      <div class="section-head reveal"><h2>Aradığınız ürün listede yok mu?</h2></div>\n'
+        '      <p class="lead reveal">Listedeki çalışmalar atölyede ürettiklerimizden bir '
+        'seçki; üretebildiklerimizin tamamı değil. İstediğiniz figürü, maketi ya da '
+        'hediyeliği de yapıyoruz: elinizde hazır bir model varsa basıyoruz, yoksa '
+        'fotoğraftan veya tarifinizden sıfırdan tasarlıyoruz. Ölçü, renk ve fiyatı '
+        'yazışırken netleştiriyoruz.</p>\n'
+        '      <div class="hero-ctas reveal"><a class="btn btn-primary" href="' + TEL + '" '
+        'target="_blank" rel="noopener">Ne istediğinizi WhatsApp\'tan yazın</a></div>\n'
+        '    </div>\n  </section>\n\n'
         '  <section class="section--alt">\n    <div class="container">\n'
         '      <div class="section-head reveal"><h2>Hizmetler</h2></div>\n'
         '      <ul class="sayfa-liste reveal">\n'
