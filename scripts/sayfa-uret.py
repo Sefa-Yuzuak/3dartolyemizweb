@@ -18,6 +18,7 @@ import json
 import re
 import unicodedata
 from pathlib import Path
+from urun_icerik import urun_icerik
 
 KOK = Path(__file__).resolve().parent.parent
 ALAN = "https://artolyemiz.com"
@@ -505,8 +506,12 @@ def urun_sayfasi(u: dict) -> str:
         'Ne istediğinizi yazın, birlikte netleştirelim.</p>\n'
         '          <a class="btn btn-primary" href="' + u["wa"] + '" target="_blank" rel="noopener">'
         'WhatsApp\'tan sipariş ver</a>\n'
-        '        </div>\n      </div>\n    </div>\n  </section>\n\n'
-        '  <section class="section--alt">\n    <div class="container">\n'
+        '        </div>\n      </div>\n    </div>\n  </section>\n'
+        # 21.09.2026: urun sayfalarinin ~230 kelimesi 21 urunde AYNIYDI
+        # ve Google hicbirini dizine almadi. Ture ozgu uretim anlatimi +
+        # SSS burada eklenir; olgular sitenin kendi sayfalarindan gelir.
+        + urun_icerik(u) +
+        '\n  <section class="section--alt">\n    <div class="container">\n'
         '      <div class="section-head reveal"><h2>Devamı</h2></div>\n'
         '      <ul class="sayfa-liste reveal">\n'
         '        <li><a href="/kisiye-ozel-3d-figur/">Kişiye özel 3D figür sayfası</a></li>\n'
