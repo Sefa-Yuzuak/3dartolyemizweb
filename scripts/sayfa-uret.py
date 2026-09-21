@@ -448,10 +448,20 @@ def urun_sayfasi(u: dict) -> str:
          "name": u["ad"], "description": u["aciklama"], "url": url,
          "image": ALAN + u["gorsel"], "category": u["etiket"],
          "brand": {"@type": "Brand", "name": "3dartolyemiz"},
+         # 04.09 bildirimi "genel tanimlayici verilmemis" diyordu; marka vardi,
+         # eksik olan urun tanimlayicisiydi. Slug urunun kendi kimligi.
+         "sku": u["slug"],
          "offers": {"@type": "Offer", "price": u["fiyat"], "priceCurrency": "TRY",
-                    # Sayfalar "ayni urunu farkli olcu/renk ile de yapabiliyoruz"
-                    # diyor: urun stokta degil, siparise gore uretiliyor.
-                    "availability": "https://schema.org/MadeToOrder", "url": url,
+                    # 21.09.2026: Search Console iki raporda birden
+                    # "availability alaninda gecersiz enum degeri" bildirdi.
+                    # Onceki deger schema.org/MadeToOrder idi: schema.org'da
+                    # gecerli ama Google'in DESTEKLEDIGI listede yok
+                    # (InStock, BackOrder, PreOrder, OutOfStock, SoldOut...).
+                    # InStock secildi: urun siparis edilebilir ve sayfa
+                    # "3-7 is gunu icinde kargoya veriliyor" diyor. BackOrder
+                    # ("stok bitti") durumu oldugundan kotu gosterirdi.
+                    # Siparise gore uretim bilgisi sayfada GORUNUR kaliyor.
+                    "availability": "https://schema.org/InStock", "url": url,
                     "seller": {"@type": "Organization", "name": "3dartolyemiz"}}},
     ]
     sema = "".join('\n  <script type="application/ld+json">\n'
