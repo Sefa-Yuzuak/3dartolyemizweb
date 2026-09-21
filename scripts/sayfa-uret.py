@@ -682,6 +682,91 @@ def anasayfa_listesini_ozetle(urunler: list) -> bool:
     return degisti
 
 
+def gizlilik_sayfasi() -> str:
+    """KVKK aydinlatma ve gizlilik metni.
+
+    Icerik OLCUME dayali (21.09.2026): sitede form yok, cerez kullanilmiyor,
+    ucuncu taraf betik yok. Metin yalnizca bunu soyluyor; saklama suresi gibi
+    bilinmeyen hicbir sey yazilmiyor. Iletisim WhatsApp uzerinden yurudugu
+    icin o kanaldaki veri ayrica anlatiliyor.
+    """
+    url = f"{ALAN}/gizlilik/"
+    baslik = "Gizlilik ve KVKK Aydınlatma Metni | 3dartolyemiz"
+    aciklama = ("3dartolyemiz sitesi hangi verileri işler: sitede form ve çerez "
+                "yok; iletişim WhatsApp üzerinden yürür.")
+    h = head
+    h = re.sub(r"<title>.*?</title>", f"<title>{baslik}</title>", h, count=1, flags=re.S)
+    for alan in ['name="description"', 'property="og:description"',
+                 'name="twitter:description"']:
+        h = re.sub(rf'({alan} content=")[^"]*(")',
+                   lambda m: m.group(1) + aciklama + m.group(2), h, count=1)
+    for alan in ['property="og:title"', 'name="twitter:title"']:
+        h = re.sub(rf'({alan} content=")[^"]*(")',
+                   lambda m: m.group(1) + "Gizlilik ve KVKK" + m.group(2), h, count=1)
+    h = re.sub(r'(<link rel="canonical" href=")[^"]*(")',
+               lambda m: m.group(1) + url + m.group(2), h, count=1)
+    h = re.sub(r'(<meta property="og:url" content=")[^"]*(")',
+               lambda m: m.group(1) + url + m.group(2), h, count=1)
+    h = h.replace('href="assets/', 'href="/assets/').replace('src="assets/', 'src="/assets/')
+    h = re.sub(r'\s*<script type="application/ld\+json">.*?</script>', "", h, flags=re.S)
+
+    govde = """<main id="main">
+  <section class="hero hero--sayfa">
+    <div class="container">
+      <nav class="kirinti" aria-label="Konum"><a href="/">Ana sayfa</a> <span>/</span> <span>Gizlilik ve KVKK</span></nav>
+      <h1>Gizlilik ve KVKK aydınlatma metni</h1>
+      <p class="lead">Bu sitede hangi verilerin işlendiği aşağıda açıkça yazılıdır.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="sayfa-metin">
+        <h2>Sitede veri toplanmıyor</h2>
+        <p>artolyemiz.com statik bir tanıtım sitesidir. Sitede <strong>form yoktur</strong>,
+           üyelik alınmaz ve ziyaretiniz sırasında <strong>çerez kullanılmaz</strong>.
+           Sayfalarda üçüncü taraf ölçümleme veya reklam betiği çalışmaz; yüklenen
+           bütün dosyalar sitenin kendi alan adından gelir.</p>
+
+        <h2>Sunucu kayıtları</h2>
+        <p>Her web sitesinde olduğu gibi, sayfayı açtığınızda sunucu tarafında teknik
+           kayıt (IP adresi, tarih, istenen adres, tarayıcı bilgisi) oluşur. Bu kayıtlar
+           sitenin çalışmasını sürdürmek ve kötüye kullanımı engellemek için tutulur;
+           pazarlama amacıyla kullanılmaz ve üçüncü kişilerle paylaşılmaz.</p>
+
+        <h2>WhatsApp üzerinden iletişim</h2>
+        <p>Sipariş ve fiyat görüşmeleri WhatsApp üzerinden yürür. Bize yazdığınızda
+           ilettiğiniz bilgiler (adınız, telefon numaranız, gönderdiğiniz görseller ve
+           sipariş ayrıntıları) yalnızca talebinizi karşılamak için kullanılır. Bu
+           yazışma WhatsApp'ın kendi altyapısında gerçekleşir ve WhatsApp'ın kendi
+           gizlilik koşullarına tabidir.</p>
+
+        <h2>Haklarınız</h2>
+        <p>6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında; işlenen
+           verileriniz hakkında bilgi talep etme, düzeltilmesini veya silinmesini
+           isteme haklarınız vardır. Bu talepleriniz için sayfanın altındaki
+           iletişim kanalından bize ulaşabilirsiniz.</p>
+
+        <h2>Değişiklikler</h2>
+        <p>Sitede çerez kullanımı, form ya da reklam gibi bir değişiklik olursa bu
+           metin güncellenir.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--alt">
+    <div class="container">
+      <div class="section-head reveal"><h2>Devamı</h2></div>
+      <ul class="sayfa-liste reveal">
+        <li><a href="/urun/">Tüm ürün kataloğu ve fiyatlar</a></li>
+        <li><a href="/ankara-3d-baski/">Ankara'da 3D baskı hizmeti</a></li>
+      </ul>
+    </div>
+  </section>
+"""
+    return h.replace("</head>", "\n</head>", 1) + bas + govde + son
+
+
 # --------------------------------------------------------------------- yaz
 
 uretilen = []
@@ -692,6 +777,10 @@ for s in SAYFALAR:
     io.open(hedef / "index.html", "w", encoding="utf-8").write(icerik)
     uretilen.append(s["slug"])
     print(f"  yazildi: /{s['slug']}/  ({len(icerik)} bayt)")
+
+(KOK / "gizlilik").mkdir(exist_ok=True)
+io.open(KOK / "gizlilik" / "index.html", "w", encoding="utf-8").write(gizlilik_sayfasi())
+print("  yazildi: /gizlilik/")
 
 URUNLER = urunleri_oku(kaynak)
 for u in URUNLER:
@@ -710,6 +799,7 @@ if anasayfa_listesini_ozetle(URUNLER):
 girdiler = [f"  <url>\n    <loc>{ALAN}/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>1.0</priority>\n  </url>"]
 girdiler += [f"  <url>\n    <loc>{ALAN}/{sl}/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>"
              for sl in uretilen]
+girdiler.append(f"  <url>\n    <loc>{ALAN}/gizlilik/</loc>\n    <changefreq>yearly</changefreq>\n    <priority>0.2</priority>\n  </url>")
 girdiler.append(f"  <url>\n    <loc>{ALAN}/urun/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>")
 girdiler += [f"  <url>\n    <loc>{ALAN}/urun/{u['slug']}/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>"
              for u in URUNLER]
