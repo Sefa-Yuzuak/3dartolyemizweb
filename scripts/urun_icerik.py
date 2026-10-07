@@ -212,8 +212,9 @@ SSS_BOYA = (
     "boyanmamış hâliyle de hazırlayabiliyoruz.")
 SSS_FIYAT = (
     "Fiyat neye göre değişiyor?",
-    "Boyuta, detay yoğunluğuna ve boya işçiliğine göre değişiyor. Farklı bir ölçü "
-    "ya da detay isterseniz fiyatı birlikte netleştiriyoruz.")
+    "Boyuta, detay yoğunluğuna ve boya işçiliğine göre değişiyor; sayfadaki fiyat "
+    "yaklaşıktır. Farklı bir ölçü ya da detay isterseniz fiyatı birlikte "
+    "netleştiriyoruz.")
 SSS_SURE = (
     "Ne kadar sürede hazır olur?",
     "Ürünün karmaşıklığına göre değişmekle birlikte siparişler genellikle 3-7 iş "
@@ -266,7 +267,7 @@ def urun_icerik(u: dict) -> str:
         <p>{u["ad"]}, atölyede {giris}. {ayirt}</p>
         <p><strong>Malzeme.</strong> {malzeme}</p>
         <p><strong>Model.</strong> {model}</p>
-        <p><strong>Fiyat.</strong> Katalogdaki {u["fiyat_metni"]} bu çalışmanın kendi
+        <p><strong>Fiyat.</strong> Katalogdaki {u["fiyat_kucuk"]} fiyat bu çalışmanın kendi
            ölçüsü ve detayı için. Boy, detay yoğunluğu ve boya işçiliği değiştiğinde
            fiyat da değişiyor; farklı bir ölçü isterseniz WhatsApp'tan birlikte
            netleştiriyoruz.</p>

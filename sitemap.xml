@@ -16,6 +16,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://artolyemiz.com/3d-baski-maket/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://artolyemiz.com/3d-modelleme/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

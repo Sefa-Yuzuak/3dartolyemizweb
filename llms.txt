@@ -1,49 +1,69 @@
-# artolyemiz — Ankara'da 3D baskı atölyesi
+# 3dartolyemiz — Ankara'da 3D baskı atölyesi (artolyemiz.com)
 
-Ankara Yenimahalle'de kendi atölyesinde 3D baskı, kişiye özel figür, 3D modelleme
-ve çocuklara boyama atölyesi hizmeti veren küçük işletme. Aşağıdaki bilgilerin
-tamamı sitenin kendi sayfalarında görünür biçimde yayımlanıyor; burada özetlenmiştir.
+Ankara Yenimahalle'de kendi atölyesinde 3D baskı yapan küçük işletme: fotoğraftan kişiye özel figür, araba ve motosiklet maketi, diorama, hediyelik ve ev dekoru, 3D modelleme ve çocuklar için doğum günü boyama atölyesi. Ürünler siparişe göre üretilir; Ankara içi elden teslim, Türkiye geneli kargo, genellikle 3-7 iş günü.
 
 ## İletişim ve konum
 - Adres: Mehmet Akif Ersoy Mahallesi 266. Cad No:4, Yenimahalle, Ankara
 - Telefon / WhatsApp: 0544 188 57 44
 - Instagram: https://www.instagram.com/3dartolyemiz/
 
-## Hizmet sayfaları
-- https://artolyemiz.com/ankara-3d-baski/
-- https://artolyemiz.com/kisiye-ozel-3d-figur/
-- https://artolyemiz.com/3d-modelleme/
-- https://artolyemiz.com/dogum-gunu-boyama-atolyesi/
+## Hizmetler
+- [Ankara'da 3D baskı hizmeti](https://artolyemiz.com/ankara-3d-baski/): Ankara'da 3D baskı hizmeti. SLA reçine, PLA, PETG ve TPU baskı, 3D modelleme. Ankara içi elden teslim, Türkiye geneli kargo.
+- [Kişiye özel 3D figür yaptırma](https://artolyemiz.com/kisiye-ozel-3d-figur/): Fotoğraftan kişiye özel 3D figür yaptırma: kişi, aile, evcil hayvan, anime ve oyun karakteri. Elle boyama, yaklaşık 750 – 2.750 TL. Ankara'da üretim, Türkiye geneli kargo.
+- [3D baskı maket: araba, motosiklet ve diorama](https://artolyemiz.com/3d-baski-maket/): Fotoğraftan araba ve motosiklet maketi, diorama ve isimli araç standı. 3D baskı ve elle boyama, yaklaşık 2.500 TL'den. Ankara'da üretim, Türkiye geneli kargo.
+- [3D modelleme hizmeti](https://artolyemiz.com/3d-modelleme/): Elinizde model yoksa sıfırdan tasarlıyoruz. Fikir, fotoğraf ya da ölçüden baskıya hazır 3D model. Ankara'da 3D modelleme hizmeti.
+- [Doğum günü boyama atölyesi](https://artolyemiz.com/dogum-gunu-boyama-atolyesi/): Çocuk doğum günlerine gelen 3D figür boyama atölyesi. Tüm boya ve figürler dahil, 8-10 kişilik gruplara uygun, ortalama 45 dakika. Ankara.
+
+## Yaklaşık fiyatlar
+Sitedeki tüm fiyatlar yaklaşıktır; ölçü, detay ve boyaya göre değişir. Kesin fiyat WhatsApp'tan görsel gönderilerek netleşir.
+- Kişiye özel 3D figür: yaklaşık 1.750 TL'den başlayan fiyatlarla
+- Araba ve motosiklet maketi: yaklaşık 2.500 TL'den başlayan fiyatlarla
+- Anahtarlık: adet başına yaklaşık 150 – 350 TL
 
 ## Ürün kataloğu (21 çalışma)
-- https://artolyemiz.com/urun/
-- https://artolyemiz.com/urun/agac-dalli-ayna-cercevesi/
-- https://artolyemiz.com/urun/detayli-anahtarlik-figur/
-- https://artolyemiz.com/urun/detayli-motosiklet-maketi/
-- https://artolyemiz.com/urun/galatasaray-hagi-forma-cercevesi/
-- https://artolyemiz.com/urun/honda-civic-araba-maketi/
-- https://artolyemiz.com/urun/kisiye-ozel-anime-karakter-figuru/
-- https://artolyemiz.com/urun/kisiye-ozel-araba-standi/
-- https://artolyemiz.com/urun/kisiye-ozel-artopop-aile-figuru/
-- https://artolyemiz.com/urun/kisiye-ozel-chihuahua-figuru/
-- https://artolyemiz.com/urun/kisiye-ozel-fransiz-bulldog-figuru/
-- https://artolyemiz.com/urun/kisiye-ozel-kamp-atesi-diorama-figuru/
-- https://artolyemiz.com/urun/kisiye-ozel-mini-figur-seti/
-- https://artolyemiz.com/urun/kisiye-ozel-uluyan-kurt-figuru/
-- https://artolyemiz.com/urun/kratos-chibi-figuru/
-- https://artolyemiz.com/urun/masa-ile-koca-ayi-figuru/
-- https://artolyemiz.com/urun/minecraft-warden-figuru/
-- https://artolyemiz.com/urun/mini-anahtarlik-figur/
-- https://artolyemiz.com/urun/mirabel-figuru-encanto/
-- https://artolyemiz.com/urun/samuray-bustu-figuru/
-- https://artolyemiz.com/urun/sprinku-figuru/
-- https://artolyemiz.com/urun/terzi-temali-pasta-susu-seti/
+- Liste: https://artolyemiz.com/urun/
+- [Samuray Büstü Figürü](https://artolyemiz.com/urun/samuray-bustu-figuru/): Altın detaylı, elle boyanmış koleksiyon büstü. Yaklaşık 1.950 TL.
+- [Mirabel Figürü (Encanto)](https://artolyemiz.com/urun/mirabel-figuru-encanto/): Elle boyanmış, canlı renkli karakter figürü. Yaklaşık 1.750 TL.
+- [Sprinku Figürü](https://artolyemiz.com/urun/sprinku-figuru/): Renkli detaylarla üretilmiş koleksiyon figürü. Yaklaşık 1.750 TL.
+- [Maşa ile Koca Ayı Figürü](https://artolyemiz.com/urun/masa-ile-koca-ayi-figuru/): İki karakterli, elle boyanmış çizgi film figürü. Yaklaşık 2.400 TL.
+- [Kratos Chibi Figürü](https://artolyemiz.com/urun/kratos-chibi-figuru/): God of War temalı, chibi tarzı koleksiyon figürü. Yaklaşık 1.750 TL.
+- [Kişiye Özel Anime Karakter Figürü](https://artolyemiz.com/urun/kisiye-ozel-anime-karakter-figuru/): İsim plaketli, kişiye özel anime tarzı figür. Yaklaşık 1.950 TL.
+- [Minecraft Warden Figürü](https://artolyemiz.com/urun/minecraft-warden-figuru/): Eklemli, hareketli parçalı özel baskı figür. Yaklaşık 2.750 TL.
+- [Detaylı Motosiklet Maketi](https://artolyemiz.com/urun/detayli-motosiklet-maketi/): El boyaması, gerçekçi detaylı motosiklet maketi. Yaklaşık 2.500 TL.
+- [Honda Civic Araba Maketi](https://artolyemiz.com/urun/honda-civic-araba-maketi/): Gri renkli, detaylı boyanmış araba maketi. Yaklaşık 2.700 TL.
+- [Galatasaray Hagi Forma Çerçevesi](https://artolyemiz.com/urun/galatasaray-hagi-forma-cercevesi/): Forma temalı, duvara asılabilir 3D baskı çerçeve. Yaklaşık 850 TL.
+- [Ağaç Dallı Ayna Çerçevesi](https://artolyemiz.com/urun/agac-dalli-ayna-cercevesi/): Ağaç dalı motifli, ev dekoruna uygun ayna çerçevesi. Yaklaşık 950 TL.
+- [Kişiye Özel Uluyan Kurt Figürü](https://artolyemiz.com/urun/kisiye-ozel-uluyan-kurt-figuru/): İsim harfli, babalar günü ve doğum günü hediyesi. Yaklaşık 750 TL.
+- [Kişiye Özel Chihuahua Figürü](https://artolyemiz.com/urun/kisiye-ozel-chihuahua-figuru/): Gerçekçi boyanmış, kişiye özel evcil hayvan figürü. Yaklaşık 950 TL.
+- [Kişiye Özel Fransız Bulldog Figürü](https://artolyemiz.com/urun/kisiye-ozel-fransiz-bulldog-figuru/): Gerçekçi boyanmış, kişiye özel evcil hayvan figürü. Yaklaşık 950 TL.
+- [Kişiye Özel Mini Figür Seti](https://artolyemiz.com/urun/kisiye-ozel-mini-figur-seti/): Şövalye temalı, çok parçalı özel figür seti. Yaklaşık 1.400 TL.
+- [Kişiye Özel ARTOPOP Aile Figürü](https://artolyemiz.com/urun/kisiye-ozel-artopop-aile-figuru/): Aile fotoğrafından üretilen, çok kişili Pop tarzı set. Yaklaşık 1.900 TL.
+- [Kişiye Özel Kamp Ateşi Diorama Figürü](https://artolyemiz.com/urun/kisiye-ozel-kamp-atesi-diorama-figuru/): Sahne kurgulu, çok parçalı fantastik diorama. Yaklaşık 1.500 TL.
+- [Kişiye Özel Araba Standı](https://artolyemiz.com/urun/kisiye-ozel-araba-standi/): İsim yazılı, masaüstü araba figürü standı. Yaklaşık 850 TL.
+- [Terzi Temalı Pasta Süsü Seti](https://artolyemiz.com/urun/terzi-temali-pasta-susu-seti/): Dikiş makinesi ve makas figürlü özel pasta süsü. Yaklaşık 700 TL.
+- [Mini Anahtarlık Figür](https://artolyemiz.com/urun/mini-anahtarlik-figur/): Küçük boy, tekli kişiye özel anahtarlık figürü. Yaklaşık 150 TL.
+- [Detaylı Anahtarlık Figür](https://artolyemiz.com/urun/detayli-anahtarlik-figur/): Daha büyük boy, detaylı boyalı anahtarlık figürü. Yaklaşık 350 TL.
+
+## Sık sorulanlar
+- Ankara'da elden teslim alabilir miyim? Evet. Ankara içindeyseniz ürünü elden teslim edebiliyoruz, ayrıntıyı WhatsApp'tan konuşuyoruz.
+- Teslimat ne kadar sürer? Ürünün karmaşıklığına göre değişmekle birlikte siparişler genellikle 3-7 iş günü içinde kargoya teslim edilir.
+- Şehir dışına gönderim yapıyor musunuz? Evet, Türkiye'nin her yerine güvenli kargo ile gönderim yapıyoruz.
+- Elimde 3D model yok, yine de bastırabilir miyim? Bastırabilirsiniz. Fikri, fotoğrafı ya da ölçüyü alıp baskıya hazır modeli biz tasarlıyoruz.
+- Fotoğraftan figür yapmak için nasıl bir fotoğraf gerekiyor? Yüzün ya da vücudun net göründüğü bir fotoğraf yeterli. Birden fazla açı varsa benzerlik daha yüksek çıkıyor.
+- Figürler boyalı mı geliyor? Evet, figürleri elle boyayıp gönderiyoruz. Kendiniz boyamak isterseniz boyanmamış hâliyle de hazırlayabiliyoruz.
+- Figür yaptırmak ne kadar tutar? Katalogdaki figürler yaklaşık 750 TL ile 2.750 TL arasında; kişiye özel figür yaklaşık 1.750 TL'den başlıyor. Fiyat boyuta, detay yoğunluğuna ve boya işçiliğine göre değişiyor; kesin tutarı görseli gönderdiğinizde netleştiriyoruz.
+- Anime ya da oyun karakteri figürü yapıyor musunuz? Evet. Katalogda anime tarzı, chibi tarzı ve oyun karakteri figürleri var. İnce detay gerektiği için bu figürleri genelde reçineyle basıyoruz.
+- Kendi arabamın maketini yaptırabilir miyim? Evet. Aracınızın fotoğrafından modeli hazırlıyor, basıyor ve detaylı boyuyoruz. Önizlemeyi onayladıktan sonra üretime geçiyoruz.
+- Araba maketi ne kadar? Araba ve motosiklet maketi yaklaşık 2.500 TL'den başlıyor; katalogdaki maketlerin yaklaşık fiyatları bu sayfadaki tabloda. Fiyat model karmaşıklığına göre değişiyor.
+- Maket ne kadar sürede hazır olur? Siparişler genellikle 3-7 iş günü içinde hazır olur; elle boyanan işlerde süre üst sınıra yaklaşır.
+- Elimde 3D model var, sadece baskı yaptırabilir miyim? Evet. Hazır modeliniz varsa doğrudan basıyoruz; yoksa modeli biz tasarlıyoruz.
+- Sadece modelleme yaptırıp baskıyı başka yerde aldırabilir miyim? Bunu WhatsApp'tan konuşalım, işin kapsamına göre değerlendiriyoruz.
+- Modelleme fiyatı nasıl belirleniyor? İşin karmaşıklığına göre değişiyor. Fikri anlattığınızda net bir teklif veriyoruz.
+- Doğum günü etkinliği hangi yaş grubuna uygun? Boyama atölyemiz genellikle 5-12 yaş arası çocuklar için idealdir, farklı yaş gruplarına göre de uyarlayabiliyoruz.
+- Etkinlik ne kadar sürüyor? Ortalama 45 dakika sürüyor. Grup kalabalıksa biraz uzayabiliyor.
+- Boya ve figürleri biz mi temin ediyoruz? Hayır, tüm boya ve figürler bize ait. Siz sadece yeri ayarlıyorsunuz.
+- Etkinlik için nasıl yer ayırtabilirim? WhatsApp üzerinden tarih ve kişi sayısını yazmanız yeterli, uygunluğu birlikte netleştiriyoruz.
 
 ## Notlar
-- Ürünler siparişe göre üretilir; katalogdaki her çalışma farklı ölçü, renk ve
-  kişiselleştirmeyle yeniden yapılabilir.
-- Malzeme işin gereğine göre seçilir: dekor ve hediyelikte PLA, dayanım gereken
-  parçalarda PETG, esnek olması gereken yerlerde TPU.
-- Fiyatlar ürün sayfalarında yazılıdır; ölçü ve kişiselleştirmeye göre değişir.
-- Puan, yorum sayısı ve teslim edilen iş sayısı gibi doğrulanamayan veriler
-  sitede YAYIMLANMAZ.
+- Malzeme işin gereğine göre seçilir: ince detayda SLA reçine, dekor/hediyelik/maketin çoğunda PLA, dayanımda PETG, esnek parçada TPU.
+- Puan, yorum sayısı ve teslim edilen iş sayısı gibi doğrulanamayan veriler sitede yayımlanmaz.

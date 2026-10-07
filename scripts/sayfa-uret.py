@@ -18,7 +18,7 @@ import json
 import re
 import unicodedata
 from pathlib import Path
-from urun_icerik import urun_icerik
+from urun_icerik import URUN_TURU, urun_icerik
 
 KOK = Path(__file__).resolve().parent.parent
 ALAN = "https://artolyemiz.com"
@@ -81,21 +81,21 @@ SAYFALAR = [
                    "üst sınıra yaklaşıyor."]},
             {"h2": "Ankara'da ne bastırabilirsiniz?",
              "liste": [
-                 "Kişi, evcil hayvan veya karakter fotoğrafından üretilen kişiye özel figür",
-                 "Fotoğraftan modellenen araba ve motosiklet maketi",
+                 '<a href="/kisiye-ozel-3d-figur/">Kişi, evcil hayvan veya karakter fotoğrafından üretilen kişiye özel figür</a>',
+                 '<a href="/3d-baski-maket/">Fotoğraftan modellenen araba ve motosiklet maketi, diorama</a>',
                  "Çerçeve, plaket, lamba ve stand gibi kişiye özel ev dekoru",
                  "Etkinlik ve firma hediyeliği olarak toplu anahtarlık üretimi",
                  "Pasta süsü setleri ve doğum günü figürleri",
              ]},
-            {"h2": "Başlangıç fiyatları",
-             "p": ["Aşağıdaki tutarlar ölçü, detay ve boyaya göre değişen başlangıç aralıklarıdır. "
+            {"h2": "Yaklaşık başlangıç fiyatları",
+             "p": ["Aşağıdaki tutarlar yaklaşıktır; ölçü, detay ve boyaya göre değişir. "
                    "Kesin fiyat için ürün görselini WhatsApp'tan gönderin, birlikte netleştirelim."],
              "tablo": {
-                 "basliklar": ["Ürün", "Başlangıç fiyatı"],
+                 "basliklar": ["Ürün", "Yaklaşık başlangıç fiyatı"],
                  "satirlar": [
-                     ["Kişiye özel 3D figür", "1.750 TL"],
-                     ["Araç ve motosiklet maketi", "2.500 TL"],
-                     ["Anahtarlık, adet başına", "150 TL – 350 TL"],
+                     ["Kişiye özel 3D figür", "1.750 TL'den"],
+                     ["Araç ve motosiklet maketi", "2.500 TL'den"],
+                     ["Anahtarlık, adet başına", "150 – 350 TL"],
                      ["Hediyelik ve ev dekoru", "Modele göre değişken"],
                  ]}},
         ],
@@ -113,10 +113,10 @@ SAYFALAR = [
     },
     {
         "slug": "kisiye-ozel-3d-figur",
-        "title": "Kişiye Özel 3D Figür | Fiyat ve Süreç | 3dartolyemiz",
-        "desc": "Fotoğraftan kişiye özel 3D figür. Evcil hayvan, aile ve karakter figürleri, "
-                "elle boyama. Ankara'da üretim, Türkiye geneli kargo.",
-        "h1": "Kişiye özel 3D figür",
+        "title": "Figür Yaptırma | Fotoğraftan Kişiye Özel 3D Figür | Ankara | 3dartolyemiz",
+        "desc": "Fotoğraftan kişiye özel 3D figür yaptırma: kişi, aile, evcil hayvan, anime ve oyun "
+                "karakteri. Elle boyama, yaklaşık 750 – 2.750 TL. Ankara'da üretim, Türkiye geneli kargo.",
+        "h1": "Kişiye özel 3D figür yaptırma",
         "lead": "Bir fotoğraf yeterli. Kişiyi, evcil hayvanı ya da sevdiğiniz karakteri modelleyip "
                 "basıyor, elle boyayıp gönderiyoruz.",
         "sema": "Service",
@@ -137,21 +137,20 @@ SAYFALAR = [
                   "Kamp ateşi dioraması ya da mini figür setleri gibi, birden çok parçanın "
                   "bir arada durduğu çalışmalar."),
              ]},
-            {"h2": "Katalogdan fiyat örnekleri",
-             "p": ["Bunlar daha önce ürettiğimiz işlerin fiyatları. Ölçü, detay ve boya miktarı "
-                   "değiştikçe tutar da değişiyor."],
-             "tablo": {
-                 "basliklar": ["Çalışma", "Fiyat"],
-                 "satirlar": [
-                     ["Kişiye özel uluyan kurt figürü", "750 TL"],
-                     ["Kişiye özel chihuahua figürü", "950 TL"],
-                     ["Kişiye özel mini figür seti", "1.400 TL"],
-                     ["Sprinku figürü", "1.750 TL"],
-                     ["Kişiye özel ARTOPOP aile figürü", "1.900 TL"],
-                     ["Samuray büstü figürü", "1.950 TL"],
-                     ["Maşa ile Koca Ayı figürü", "2.400 TL"],
-                     ["Minecraft Warden figürü", "2.750 TL"],
-                 ]}},
+            {"h2": "Figür örneklerimiz",
+             "p": ["Atölyede ürettiğimiz figürlerden bir seçki. Her birini farklı ölçü, renk ya da "
+                   "kişiye özel detayla yeniden yapabiliyoruz."],
+             "urun_kartlari": ["kisiye-ozel-artopop-aile-figuru", "kisiye-ozel-chihuahua-figuru",
+                               "kisiye-ozel-fransiz-bulldog-figuru", "kisiye-ozel-anime-karakter-figuru",
+                               "samuray-bustu-figuru", "kratos-chibi-figuru",
+                               "minecraft-warden-figuru", "kisiye-ozel-mini-figur-seti"]},
+            {"h2": "Katalogdan yaklaşık fiyat örnekleri",
+             "p": ["Bunlar daha önce ürettiğimiz işlerin yaklaşık fiyatları. Ölçü, detay ve boya "
+                   "miktarı değiştikçe tutar da değişiyor."],
+             "fiyat_urunleri": ["kisiye-ozel-uluyan-kurt-figuru", "kisiye-ozel-chihuahua-figuru",
+                                "kisiye-ozel-mini-figur-seti", "sprinku-figuru",
+                                "kisiye-ozel-artopop-aile-figuru", "samuray-bustu-figuru",
+                                "masa-ile-koca-ayi-figuru", "minecraft-warden-figuru"]},
             {"h2": "Nasıl ilerliyoruz?",
              "liste": [
                  "Fikrinizi ve fotoğrafı WhatsApp'tan gönderiyorsunuz.",
@@ -166,9 +165,77 @@ SAYFALAR = [
             ("Figürler boyalı mı geliyor?",
              "Evet, figürleri elle boyayıp gönderiyoruz. Kendiniz boyamak isterseniz boyanmamış "
              "hâliyle de hazırlayabiliyoruz."),
-            ("Fiyat neye göre değişiyor?",
-             "Boyuta, detay yoğunluğuna ve boya işçiliğine göre değişiyor. Kesin fiyat için "
-             "görseli gönderdiğinizde netleştiriyoruz."),
+            ("Figür yaptırmak ne kadar tutar?",
+             "Katalogdaki figürler yaklaşık 750 TL ile 2.750 TL arasında; kişiye özel figür "
+             "yaklaşık 1.750 TL'den başlıyor. Fiyat boyuta, detay yoğunluğuna ve boya işçiliğine "
+             "göre değişiyor; kesin tutarı görseli gönderdiğinizde netleştiriyoruz."),
+            ("Anime ya da oyun karakteri figürü yapıyor musunuz?",
+             "Evet. Katalogda anime tarzı, chibi tarzı ve oyun karakteri figürleri var. İnce detay "
+             "gerektiği için bu figürleri genelde reçineyle basıyoruz."),
+        ],
+    },
+    {
+        "slug": "3d-baski-maket",
+        "title": "3D Baskı Maket | Araba, Motosiklet ve Diorama | Ankara | 3dartolyemiz",
+        "desc": "Fotoğraftan araba ve motosiklet maketi, diorama ve isimli araç standı. 3D baskı ve "
+                "elle boyama, yaklaşık 2.500 TL'den. Ankara'da üretim, Türkiye geneli kargo.",
+        "h1": "3D baskı maket: araba, motosiklet ve diorama",
+        "lead": "Arabanızın ya da motosikletinizin fotoğrafından maketini modelliyor, basıyor ve "
+                "elle boyuyoruz. Sahne kurgulu dioramalar ve isimli masaüstü araç standları da yapıyoruz.",
+        "sema": "Service",
+        "sema_ad": "3D baskı maket üretimi",
+        "bolumler": [
+            # Olgular: ana sayfa kategori karti ("Fotografindan modellenen, detayli
+            # boyanmis araba veya motosiklet maketi", 2.500 TL'den) ve dort katalog
+            # karti. Mimari / olcekli proje maketi KANITSIZ, yazilmadi.
+            {"h2": "Ne tür maketler yapıyoruz?",
+             "kartlar": [
+                 ("Araba maketi",
+                  "Aracın fotoğrafından modellenen, detaylı boyanmış araba maketi. Katalogdaki "
+                  "Honda Civic maketi bunun bir örneği."),
+                 ("Motosiklet maketi",
+                  "El boyaması, gerçekçi detaylı motosiklet maketi."),
+                 ("Diorama",
+                  "Sahne kurgulu, çok parçalı çalışmalar: kamp ateşi dioraması gibi birden çok "
+                  "figürün bir sahnede durduğu işler."),
+                 ("İsimli araç standı",
+                  "İsim yazılı, masaüstünde duran araba figürü standı. Hediye olarak da isteniyor."),
+             ]},
+            {"h2": "Maket örneklerimiz",
+             "urun_kartlari": ["detayli-motosiklet-maketi", "honda-civic-araba-maketi",
+                               "kisiye-ozel-kamp-atesi-diorama-figuru", "kisiye-ozel-araba-standi"]},
+            {"h2": "Nasıl ilerliyoruz?",
+             "liste": [
+                 "Aracın ya da sahnenin fotoğrafını WhatsApp'tan gönderiyorsunuz. Elinizde hazır "
+                 "3D model varsa doğrudan baskıya geçiyoruz.",
+                 "Model yoksa fotoğraftan baskıya hazır modeli biz tasarlıyoruz; önizlemeyi "
+                 "birlikte gözden geçiriyor, değişiklikleri o aşamada yapıyoruz.",
+                 "Baskı ve elle boyama: siparişler genellikle 3-7 iş günü içinde hazır olur, "
+                 "boyalı işlerde süre üst sınıra yaklaşır.",
+                 "Teslim: Ankara içinde elden, Türkiye geneline güvenli kargo.",
+             ]},
+            {"h2": "Hangi malzemeyle basıyoruz?",
+             "p": ['Maketlerin çoğunda PLA kullanıyoruz: boyayı iyi tutuyor, renk seçeneği geniş. '
+                   'Malzemeyi yine de işin gereğine göre seçiyoruz; seçenekler '
+                   '<a href="/ankara-3d-baski/">Ankara 3D baskı sayfasında</a> yazılı.']},
+            {"h2": "Yaklaşık fiyatlar",
+             "p": ["Araba ve motosiklet maketi yaklaşık 2.500 TL'den başlıyor. Aşağıdakiler "
+                   "katalogdaki çalışmaların yaklaşık fiyatları; ölçü ve detaya göre değişir."],
+             "fiyat_urunleri": ["detayli-motosiklet-maketi", "honda-civic-araba-maketi",
+                                "kisiye-ozel-kamp-atesi-diorama-figuru", "kisiye-ozel-araba-standi"]},
+        ],
+        "sss": [
+            ("Kendi arabamın maketini yaptırabilir miyim?",
+             "Evet. Aracınızın fotoğrafından modeli hazırlıyor, basıyor ve detaylı boyuyoruz. "
+             "Önizlemeyi onayladıktan sonra üretime geçiyoruz."),
+            ("Araba maketi ne kadar?",
+             "Araba ve motosiklet maketi yaklaşık 2.500 TL'den başlıyor; katalogdaki maketlerin "
+             "yaklaşık fiyatları bu sayfadaki tabloda. Fiyat model karmaşıklığına göre değişiyor."),
+            ("Maket ne kadar sürede hazır olur?",
+             "Siparişler genellikle 3-7 iş günü içinde hazır olur; elle boyanan işlerde süre üst "
+             "sınıra yaklaşır."),
+            ("Elimde 3D model var, sadece baskı yaptırabilir miyim?",
+             "Evet. Hazır modeliniz varsa doğrudan basıyoruz; yoksa modeli biz tasarlıyoruz."),
         ],
     },
     {
@@ -334,6 +401,15 @@ def bolum_uret(b: dict) -> str:
         for ad, metin in b["kartlar"]:
             p.append(f'      <div class="card reveal"><h3>{ad}</h3><p>{metin}</p></div>')
         p.append("    </div>")
+    if b.get("urun_kartlari"):
+        p.append('    <div class="product-grid">')
+        p += [urun_karti(URUN[sl]) for sl in b["urun_kartlari"]]
+        p.append("    </div>")
+    if b.get("fiyat_urunleri"):
+        # Fiyat TEK kaynaktan (index.html katalog kartlari); burada elle yazilmaz.
+        b = dict(b, tablo={"basliklar": ["Çalışma", "Yaklaşık fiyat"], "satirlar": [
+            [f'<a href="/urun/{sl}/">{URUN[sl]["ad"]}</a>', URUN[sl]["fiyat_metni"].replace("Yaklaşık ", "")]
+            for sl in b["fiyat_urunleri"]]})
     if b.get("tablo"):
         t = b["tablo"]
         p.append('    <div class="fiyat-tablo reveal"><table>')
@@ -384,7 +460,7 @@ def govde_uret(s: dict) -> str:
       <div class="section-head reveal"><h2>Diğer hizmetlerimiz</h2></div>
       <ul class="sayfa-liste reveal">
 {digerleri}
-        <li><a href="/#urunler">Ürün kataloğu ve fiyatlar</a></li>
+        <li><a href="/urun/">Ürün kataloğu ve yaklaşık fiyatlar</a></li>
       </ul>
     </div>
   </section>''')
@@ -431,6 +507,8 @@ def urunleri_oku(metin: str) -> list:
             "etiket": m.group(3).replace("&amp;", "&").strip(),
             "aciklama": m.group(5).strip(),
             "fiyat_metni": fiyat_metni,
+            # cumle icinde: "yaklaşık 1.950 TL"
+            "fiyat_kucuk": fiyat_metni[:1].lower() + fiyat_metni[1:],
             "fiyat": int(sayilar[0].replace(".", "")),
             "not": m.group(7).strip(),
             "wa": m.group(8),
@@ -470,7 +548,7 @@ def urun_sayfasi(u: dict) -> str:
                    + "\n  </script>" for b in semalar) + "\n"
 
     baslik = f"{u['ad']} | {u['fiyat_metni']} | 3dartolyemiz"
-    aciklama = (f"{u['ad']}: {u['aciklama']} Fiyat {u['fiyat_metni']}. "
+    aciklama = (f"{u['ad']}: {u['aciklama']} Fiyatı {u['fiyat_kucuk']}. "
                 "Ankara'da üretim, Türkiye geneli kargo.")
     h = head
     h = re.sub(r"<title>.*?</title>", f"<title>{baslik}</title>", h, count=1, flags=re.S)
@@ -514,11 +592,32 @@ def urun_sayfasi(u: dict) -> str:
         '\n  <section class="section--alt">\n    <div class="container">\n'
         '      <div class="section-head reveal"><h2>Devamı</h2></div>\n'
         '      <ul class="sayfa-liste reveal">\n'
-        '        <li><a href="/kisiye-ozel-3d-figur/">Kişiye özel 3D figür sayfası</a></li>\n'
+        + ('        <li><a href="/3d-baski-maket/">3D baskı maket: araba, motosiklet ve diorama</a></li>\n'
+           if URUN_TURU.get(u["slug"]) in ("maket", "set") or u["slug"] == "kisiye-ozel-araba-standi" else
+           '        <li><a href="/kisiye-ozel-3d-figur/">Kişiye özel 3D figür yaptırma</a></li>\n') +
         '        <li><a href="/ankara-3d-baski/">Ankara\'da 3D baskı hizmeti</a></li>\n'
-        '        <li><a href="/urun/">Tüm ürün kataloğu ve fiyatlar</a></li>\n'
+        '        <li><a href="/urun/">Tüm ürün kataloğu ve yaklaşık fiyatlar</a></li>\n'
         '      </ul>\n    </div>\n  </section>\n')
     return h.replace("</head>", sema + "\n</head>", 1) + bas + govde + son
+
+
+def urun_karti(u: dict) -> str:
+    return (
+        '        <div class="product-card reveal">\n'
+        '          <div class="product-media">\n'
+        '            <img src="' + u["gorsel"] + '" alt="' + u["alt"] + '" width="900" '
+        'height="1200" loading="lazy" decoding="async">\n'
+        '            <span class="tag">' + u["etiket"] + '</span>\n'
+        '          </div>\n'
+        '          <div class="product-body">\n'
+        '            <h3><a href="/urun/' + u["slug"] + '/">' + u["ad"] + '</a></h3>\n'
+        '            <p>' + u["aciklama"] + '</p>\n'
+        '            <div class="price-badge">' + u["fiyat_metni"] + '</div>\n'
+        '            <span class="price-note">' + u["not"] + '</span>\n'
+        '            <a class="card-link" href="/urun/' + u["slug"] + '/">Ürün sayfası '
+        + OK_SVG + '</a>\n'
+        '          </div>\n'
+        '        </div>')
 
 
 
@@ -567,24 +666,7 @@ def urun_dizini(urunler: list) -> str:
         if u["etiket"] not in etiketler:
             etiketler.append(u["etiket"])
 
-    kartlar = []
-    for u in urunler:
-        kartlar.append(
-            '        <div class="product-card reveal">\n'
-            '          <div class="product-media">\n'
-            '            <img src="' + u["gorsel"] + '" alt="' + u["alt"] + '" width="900" '
-            'height="1200" loading="lazy" decoding="async">\n'
-            '            <span class="tag">' + u["etiket"] + '</span>\n'
-            '          </div>\n'
-            '          <div class="product-body">\n'
-            '            <h3><a href="/urun/' + u["slug"] + '/">' + u["ad"] + '</a></h3>\n'
-            '            <p>' + u["aciklama"] + '</p>\n'
-            '            <div class="price-badge">' + u["fiyat_metni"] + '</div>\n'
-            '            <span class="price-note">' + u["not"] + '</span>\n'
-            '            <a class="card-link" href="/urun/' + u["slug"] + '/">Ürün sayfası '
-            + OK_SVG + '</a>\n'
-            '          </div>\n'
-            '        </div>')
+    kartlar = [urun_karti(u) for u in urunler]
 
     govde = (
         '<main id="main">\n'
@@ -594,7 +676,8 @@ def urun_dizini(urunler: list) -> str:
         '      <h1>3D baskı ürünleri ve fiyatları</h1>\n'
         '      <p class="lead">Ankara Yenimahalle\'deki atölyemizde ürettiğimiz '
         + str(len(urunler)) + ' çalışma. Hepsi siparişe göre üretiliyor; ölçü, renk ve '
-        'kişiselleştirme isteğe göre değişebilir. Fiyatlar ürünün kendi sayfasında yazılı.</p>\n'
+        'kişiselleştirme isteğe göre değişebilir. Fiyatlar yaklaşıktır ve ürünün kendi '
+        'sayfasında yazılı; kesin tutar ölçü ve detaya göre netleşir.</p>\n'
         '      <p class="lead">Kategoriler: ' + ", ".join(etiketler) + '.</p>\n'
         '    </div>\n  </section>\n\n'
         '  <section>\n    <div class="container">\n'
@@ -620,6 +703,7 @@ def urun_dizini(urunler: list) -> str:
         '      <ul class="sayfa-liste reveal">\n'
         '        <li><a href="/ankara-3d-baski/">Ankara\'da 3D baskı hizmeti</a></li>\n'
         '        <li><a href="/kisiye-ozel-3d-figur/">Kişiye özel 3D figür</a></li>\n'
+        '        <li><a href="/3d-baski-maket/">3D baskı maket</a></li>\n'
         '        <li><a href="/3d-modelleme/">3D modelleme</a></li>\n'
         '        <li><a href="/dogum-gunu-boyama-atolyesi/">Doğum günü boyama atölyesi</a></li>\n'
         '      </ul>\n    </div>\n  </section>\n')
@@ -769,6 +853,22 @@ def gizlilik_sayfasi() -> str:
 
 # --------------------------------------------------------------------- yaz
 
+URUNLER = urunleri_oku(kaynak)
+URUN = {u["slug"]: u for u in URUNLER}
+
+
+def fiyat_araligi_denetle():
+    """Figur sayfasinin desc/SSS'sindeki "yaklasik 750 - 2.750 TL" araligi elle
+    yazili; katalog fiyati degisirse sessizce yanlis kalmasin."""
+    s = next(x for x in SAYFALAR if x["slug"] == "kisiye-ozel-3d-figur")
+    figur = [URUN[sl]["fiyat"] for b in s["bolumler"] for sl in b.get("fiyat_urunleri", [])]
+    alt, ust = (f"{min(figur):,}".replace(",", "."), f"{max(figur):,}".replace(",", "."))
+    if alt not in s["desc"] or ust not in s["desc"]:
+        raise SystemExit(f"Figur fiyat araligi degisti ({alt} - {ust}): desc ve SSS'yi guncelle.")
+
+
+fiyat_araligi_denetle()
+
 uretilen = []
 for s in SAYFALAR:
     hedef = KOK / s["slug"]
@@ -782,7 +882,6 @@ for s in SAYFALAR:
 io.open(KOK / "gizlilik" / "index.html", "w", encoding="utf-8").write(gizlilik_sayfasi())
 print("  yazildi: /gizlilik/")
 
-URUNLER = urunleri_oku(kaynak)
 for u in URUNLER:
     hedef = KOK / "urun" / u["slug"]
     hedef.mkdir(parents=True, exist_ok=True)
@@ -808,4 +907,53 @@ io.open(KOK / "sitemap.xml", "w", encoding="utf-8").write(
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     + "\n".join(girdiler) + "\n</urlset>\n")
 print(f"  sitemap.xml: {len(girdiler)} adres")
+
+
+def llms_uret() -> str:
+    """llms.txt: yapay zeka asistanlarinin (GEO) okudugu ozet. Elle yazilmaz;
+    fiyat ve sayfa listesi sitenin kendi kaynagindan uretilir ki sayfalarla
+    celismesin. Burada yazan her olgu sitede gorunur."""
+    s = {x["slug"]: x for x in SAYFALAR}
+    satir = [
+        "# 3dartolyemiz — Ankara'da 3D baskı atölyesi (artolyemiz.com)",
+        "",
+        "Ankara Yenimahalle'de kendi atölyesinde 3D baskı yapan küçük işletme: fotoğraftan "
+        "kişiye özel figür, araba ve motosiklet maketi, diorama, hediyelik ve ev dekoru, "
+        "3D modelleme ve çocuklar için doğum günü boyama atölyesi. Ürünler siparişe göre "
+        "üretilir; Ankara içi elden teslim, Türkiye geneli kargo, genellikle 3-7 iş günü.",
+        "",
+        "## İletişim ve konum",
+        "- Adres: Mehmet Akif Ersoy Mahallesi 266. Cad No:4, Yenimahalle, Ankara",
+        "- Telefon / WhatsApp: 0544 188 57 44",
+        "- Instagram: https://www.instagram.com/3dartolyemiz/",
+        "",
+        "## Hizmetler",
+    ]
+    for sl, x in s.items():
+        satir.append(f"- [{x['h1']}]({ALAN}/{sl}/): {x['desc']}")
+    satir += ["", "## Yaklaşık fiyatlar",
+              "Sitedeki tüm fiyatlar yaklaşıktır; ölçü, detay ve boyaya göre değişir. Kesin fiyat "
+              "WhatsApp'tan görsel gönderilerek netleşir.",
+              "- Kişiye özel 3D figür: yaklaşık 1.750 TL'den başlayan fiyatlarla",
+              "- Araba ve motosiklet maketi: yaklaşık 2.500 TL'den başlayan fiyatlarla",
+              "- Anahtarlık: adet başına yaklaşık 150 – 350 TL",
+              "",
+              f"## Ürün kataloğu ({len(URUNLER)} çalışma)",
+              f"- Liste: {ALAN}/urun/"]
+    satir += [f"- [{u['ad']}]({ALAN}/urun/{u['slug']}/): {u['aciklama']} {u['fiyat_metni']}."
+              for u in URUNLER]
+    satir += ["", "## Sık sorulanlar"]
+    for x in SAYFALAR:
+        for q, c in x.get("sss", []):
+            satir.append(f"- {q} {c}")
+    satir += ["", "## Notlar",
+              "- Malzeme işin gereğine göre seçilir: ince detayda SLA reçine, dekor/hediyelik/maketin "
+              "çoğunda PLA, dayanımda PETG, esnek parçada TPU.",
+              "- Puan, yorum sayısı ve teslim edilen iş sayısı gibi doğrulanamayan veriler sitede "
+              "yayımlanmaz.", ""]
+    return "\n".join(satir)
+
+
+io.open(KOK / "llms.txt", "w", encoding="utf-8").write(llms_uret())
+print("  llms.txt yazildi")
 print(f"{len(uretilen)} hizmet sayfasi + {len(URUNLER)} urun sayfasi uretildi.")
