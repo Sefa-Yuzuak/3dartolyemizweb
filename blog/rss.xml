@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>3dartolyemiz blog</title>
+  <link>https://artolyemiz.com/blog/</link>
+  <description>Ankara'daki 3D baskı atölyemizden rehberler ve notlar.</description>
+  <language>tr</language>
+  <lastBuildDate>Thu, 08 Oct 2026 09:00:00 +0000</lastBuildDate>
+  <item>
+    <title>3D baskı nedir, nasıl çalışır?</title>
+    <link>https://artolyemiz.com/blog/3d-baski-nedir/</link>
+    <guid>https://artolyemiz.com/blog/3d-baski-nedir/</guid>
+    <pubDate>Thu, 08 Oct 2026 09:00:00 +0000</pubDate>
+    <description>3D baskının mantığı, filamentli (FDM) ve reçineli (SLA) yöntemin farkı, dilimleme, destek ve baskı süresi. Atölyemizden videolarla sade anlatım.</description>
+  </item>
+  <item>
+    <title>3D baskı fiyatları neye göre belirlenir?</title>
+    <link>https://artolyemiz.com/blog/3d-baski-fiyatlari/</link>
+    <guid>https://artolyemiz.com/blog/3d-baski-fiyatlari/</guid>
+    <pubDate>Thu, 08 Oct 2026 09:00:00 +0000</pubDate>
+    <description>Modelleme, malzeme, makine süresi, boyama ve adet: 3D baskı fiyatını belirleyen şeyler ve figür, maket, anahtarlık için yaklaşık fiyat aralıkları.</description>
+  </item>
+  <item>
+    <title>Fotoğraftan kişiye özel figür nasıl yapılır?</title>
+    <link>https://artolyemiz.com/blog/fotograftan-figur-nasil-yapilir/</link>
+    <guid>https://artolyemiz.com/blog/fotograftan-figur-nasil-yapilir/</guid>
+    <pubDate>Thu, 08 Oct 2026 09:00:00 +0000</pubDate>
+    <description>Hangi fotoğraflar gerekir, modelleme ve video onayı, baskı, elle boyama ve teslim: fotoğraftan kişiye özel 3D figürün adım adım üretim süreci.</description>
+  </item>
+  <item>
+    <title>PLA, PETG, TPU ve reçine: hangi iş için hangi malzeme?</title>
+    <link>https://artolyemiz.com/blog/pla-petg-tpu-recine-farki/</link>
+    <guid>https://artolyemiz.com/blog/pla-petg-tpu-recine-farki/</guid>
+    <pubDate>Thu, 08 Oct 2026 09:00:00 +0000</pubDate>
+    <description>3D baskıda en çok kullanılan dört malzemenin güçlü ve zayıf yanları, ısı dayanımı ve hangi ürün için hangisinin seçildiği. Karşılaştırma tablosuyla.</description>
+  </item>
+  <item>
+    <title>STL dosyası nedir, nereden bulunur?</title>
+    <link>https://artolyemiz.com/blog/stl-dosyasi-nedir/</link>
+    <guid>https://artolyemiz.com/blog/stl-dosyasi-nedir/</guid>
+    <pubDate>Thu, 08 Oct 2026 09:00:00 +0000</pubDate>
+    <description>STL, 3MF ve OBJ farkı, ücretsiz ve ücretli 3D model siteleri, lisans konusu ve dosyayı baskıya göndermeden önce kontrol edilmesi gereken beş şey.</description>
+  </item>
+  <item>
+    <title>3D yazıcı alırken nelere dikkat edilmeli?</title>
+    <link>https://artolyemiz.com/blog/3d-yazici-alirken-dikkat/</link>
+    <guid>https://artolyemiz.com/blog/3d-yazici-alirken-dikkat/</guid>
+    <pubDate>Thu, 08 Oct 2026 09:00:00 +0000</pubDate>
+    <description>Filament mi reçine mi, otomatik kalibrasyon, kapalı kasa, baskı alanı, çok renkli baskı ve servis: ilk 3D yazıcısını alacaklar için kontrol listesi.</description>
+  </item>
+  <item>
+    <title>3D baskıda en sık 10 hata ve çözümü</title>
+    <link>https://artolyemiz.com/blog/3d-baski-hatalari-ve-cozumleri/</link>
+    <guid>https://artolyemiz.com/blog/3d-baski-hatalari-ve-cozumleri/</guid>
+    <pubDate>Thu, 08 Oct 2026 09:00:00 +0000</pubDate>
+    <description>Tablaya yapışmama, köşelerin kalkması, ince teller, spagetti, katman kayması, nozul tıkanması: filamentli yazıcılarda sık görülen hatalar ve çözümleri.</description>
+  </item>
+  <item>
+    <title>3D baskı figür nasıl boyanır?</title>
+    <link>https://artolyemiz.com/blog/3d-baski-figur-boyama/</link>
+    <guid>https://artolyemiz.com/blog/3d-baski-figur-boyama/</guid>
+    <pubDate>Thu, 08 Oct 2026 09:00:00 +0000</pubDate>
+    <description>3D yazıcıdan çıkan figürü boyamak için gereken malzemeler; zımpara, astar, ana renkler, gölge ve ışık, detaylar ve vernik aşamaları adım adım.</description>
+  </item>
+  <item>
+    <title>Kendi arabanızın maketini yaptırmak</title>
+    <link>https://artolyemiz.com/blog/araba-maketi-yaptirma-rehberi/</link>
+    <guid>https://artolyemiz.com/blog/araba-maketi-yaptirma-rehberi/</guid>
+    <pubDate>Thu, 08 Oct 2026 09:00:00 +0000</pubDate>
+    <description>Kendi arabanızın ya da motosikletinizin maketi için hangi fotoğraflar gerekir, plaka ve platform, üretim süreci, yaklaşık fiyat ve maketin bakımı.</description>
+  </item>
+  <item>
+    <title>Doğum gününe figür boyama atölyesi: nasıl planlanır?</title>
+    <link>https://artolyemiz.com/blog/dogum-gunu-boyama-atolyesi-rehberi/</link>
+    <guid>https://artolyemiz.com/blog/dogum-gunu-boyama-atolyesi-rehberi/</guid>
+    <pubDate>Thu, 08 Oct 2026 09:00:00 +0000</pubDate>
+    <description>Yaş grubu, kişi sayısı, süre, yer hazırlığı ve figür seçimi: çocuk doğum gününde figür boyama atölyesi düzenlemek isteyenler için pratik rehber.</description>
+  </item>
+  <item>
+    <title>3D baskı hediye fikirleri</title>
+    <link>https://artolyemiz.com/blog/3d-baski-hediye-fikirleri/</link>
+    <guid>https://artolyemiz.com/blog/3d-baski-hediye-fikirleri/</guid>
+    <pubDate>Thu, 08 Oct 2026 09:00:00 +0000</pubDate>
+    <description>Sevgiliye çift figürü, araba tutkununa maket, hayvanseverlere evcil hayvan figürü, oyunculara stand ve çocuklara boyama seti: bütçeye göre hediye fikirleri.</description>
+  </item>
+</channel>
+</rss>

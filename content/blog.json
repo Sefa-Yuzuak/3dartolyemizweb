@@ -1,0 +1,123 @@
+[
+ {"slug": "3d-baski-nedir",
+  "baslik": "3D Baskı Nedir, Nasıl Çalışır? FDM ve Reçine Farkı",
+  "h1": "3D baskı nedir, nasıl çalışır?",
+  "aciklama": "3D baskının mantığı, filamentli (FDM) ve reçineli (SLA) yöntemin farkı, dilimleme, destek ve baskı süresi. Atölyemizden videolarla sade anlatım.",
+  "gorsel": "/assets/img/atolye/yazicida-cerceve-baskisi.webp",
+  "tarih": "2026-10-08",
+  "sss": [
+   ["3D baskı ile hangi malzemeler basılabilir?", "Filamentli yazıcılarda PLA, PETG, TPU gibi plastikler; reçineli yazıcılarda ışıkla sertleşen sıvı reçine kullanılır. Hangisinin seçileceği parçanın nerede ve nasıl kullanılacağına bağlıdır."],
+   ["Bir 3D baskı ne kadar sürer?", "Boyut ve detaya göre birkaç dakikadan birkaç güne kadar. Küçük bir anahtarlık yarım saatte çıkabilir, tabla dolusu toplu sipariş bir günü geçebilir."],
+   ["FDM mi daha iyi, reçine mi?", "İkisi farklı işler için. Büyük, dayanıklı ve ekonomik parçalarda FDM; çok küçük ve ince detaylı figürlerde reçine daha iyi sonuç verir."]
+  ]},
+ {"slug": "3d-baski-fiyatlari",
+  "baslik": "3D Baskı Fiyatları Neye Göre Belirlenir? Yaklaşık Fiyatlar",
+  "h1": "3D baskı fiyatları neye göre belirlenir?",
+  "aciklama": "Modelleme, malzeme, makine süresi, boyama ve adet: 3D baskı fiyatını belirleyen şeyler ve figür, maket, anahtarlık için yaklaşık fiyat aralıkları.",
+  "gorsel": "/assets/img/atolye/toplu-civciv-baskisi.webp",
+  "tarih": "2026-10-08",
+  "sss": [
+   ["3D baskı fiyatı gram başına ne kadar?", "Hazır dosyadan baskıda gram başına yaklaşık 2,5 – 5 TL. Boyama ve reçine baskı ayrıca fiyatlanır."],
+   ["Kişiye özel figür neden pahalı?", "Fiyatın önemli kısmı fotoğraftan yapılan modelleme ve elle boyama emeği. Hazır dosyadan basılan boyasız bir figür çok daha ucuza gelir."],
+   ["Toplu siparişte fiyat düşer mi?", "Evet. Modelleme ve hazırlık maliyeti adetlere bölündüğü için yüksek adetlerde birim fiyat belirgin şekilde düşer."]
+  ]},
+ {"slug": "fotograftan-figur-nasil-yapilir",
+  "baslik": "Fotoğraftan Kişiye Özel Figür Nasıl Yapılır? Adım Adım",
+  "h1": "Fotoğraftan kişiye özel figür nasıl yapılır?",
+  "aciklama": "Hangi fotoğraflar gerekir, modelleme ve video onayı, baskı, elle boyama ve teslim: fotoğraftan kişiye özel 3D figürün adım adım üretim süreci.",
+  "gorsel": "/assets/img/is-32.webp",
+  "tarih": "2026-10-08",
+  "sss": [
+   ["Figür için kaç fotoğraf göndermeliyim?", "En az bir net önden fotoğraf; önden, yandan ve arkadan birer fotoğraf ile boydan bir fotoğraf benzerliği belirgin şekilde artırır."],
+   ["Modeli beğenmezsem ne olur?", "Baskıdan önce modelin videosunu gönderiyoruz. Değişiklikleri bu aşamada yapıyoruz; onayınız olmadan baskıya geçmiyoruz."],
+   ["Figür kaç cm oluyor?", "En sık yaptığımız kişi figürleri 20 cm civarında. Farklı boy isterseniz fiyat ve süre ona göre değişir."]
+  ]},
+ {"slug": "pla-petg-tpu-recine-farki",
+  "baslik": "PLA, PETG, TPU ve Reçine Farkı: Hangi İş İçin Hangisi?",
+  "h1": "PLA, PETG, TPU ve reçine: hangi iş için hangi malzeme?",
+  "aciklama": "3D baskıda en çok kullanılan dört malzemenin güçlü ve zayıf yanları, ısı dayanımı ve hangi ürün için hangisinin seçildiği. Karşılaştırma tablosuyla.",
+  "gorsel": "/assets/img/atolye/filament-makaralari.webp",
+  "tarih": "2026-10-08",
+  "sss": [
+   ["PLA arabada erir mi?", "PLA 55-60 °C civarında yumuşamaya başlar. Yazın güneş altında kalan bir arabanın içi bu sıcaklığı geçebildiği için araç içi parçalarda PLA önermiyoruz."],
+   ["Figürler hangi malzemeyle basılıyor?", "Boyanacak figürlerin çoğu PLA ile basılıyor; çok küçük ve ince detaylı figürlerde reçine kullanıyoruz."],
+   ["Esnek parça basılabilir mi?", "Evet, TPU lastik gibi esnek bir malzeme. Tampon, conta, koruyucu gibi esnemesi gereken parçalarda kullanılır."]
+  ]},
+ {"slug": "stl-dosyasi-nedir",
+  "baslik": "STL Dosyası Nedir, Nereden Bulunur? Baskıya Hazırlama",
+  "h1": "STL dosyası nedir, nereden bulunur?",
+  "aciklama": "STL, 3MF ve OBJ farkı, ücretsiz ve ücretli 3D model siteleri, lisans konusu ve dosyayı baskıya göndermeden önce kontrol edilmesi gereken beş şey.",
+  "gorsel": "/assets/img/atolye/dilimleme-programi.webp",
+  "tarih": "2026-10-08",
+  "sss": [
+   ["STL dosyasını nereden bulabilirim?", "Printables, Thingiverse, MakerWorld ve Cults3D en bilinen 3D model kütüphaneleri. İndirmeden önce lisansın kullanım amacınıza uygun olduğunu kontrol edin."],
+   ["STL dosyam yok, yine de baskı yaptırabilir miyim?", "Evet. Fotoğraftan ya da çizimden modeli biz çıkarıyor, videosunu onayınıza sunuyoruz."],
+   ["Hangi dosya biçimlerini basıyorsunuz?", "STL, 3MF ve OBJ dosyalarını doğrudan basıyoruz."]
+  ]},
+ {"slug": "3d-yazici-alirken-dikkat",
+  "baslik": "3D Yazıcı Alırken Nelere Dikkat Edilmeli? Başlangıç Rehberi",
+  "h1": "3D yazıcı alırken nelere dikkat edilmeli?",
+  "aciklama": "Filament mi reçine mi, otomatik kalibrasyon, kapalı kasa, baskı alanı, çok renkli baskı ve servis: ilk 3D yazıcısını alacaklar için kontrol listesi.",
+  "gorsel": "/assets/img/atolye/bambu-lab-yazici-ams.webp",
+  "tarih": "2026-10-08",
+  "sss": [
+   ["Yeni başlayan için hangi tür yazıcı uygun?", "Çoğu kişi için otomatik tabla seviyelemesi olan filamentli (FDM) bir yazıcı. Reçineli yazıcı ise minyatür ve çok detaylı figür basmak isteyenler için."],
+   ["Kapalı kasa yazıcı şart mı?", "PLA için şart değil. Çarpılmaya meyilli malzemelerde ve evde çocuk ya da evcil hayvan varsa kapalı kasa avantajlı."],
+   ["3D yazıcı kullanmayı nasıl öğrenebilirim?", "Online ya da Ankara'da yüz yüze birebir 3D yazıcı eğitimi veriyoruz: kurulum, dilimleme ayarları, ilk baskılar ve sık görülen hatalar."]
+  ]},
+ {"slug": "3d-baski-hatalari-ve-cozumleri",
+  "baslik": "3D Baskı Hataları ve Çözümleri: En Sık 10 Sorun",
+  "h1": "3D baskıda en sık 10 hata ve çözümü",
+  "aciklama": "Tablaya yapışmama, köşelerin kalkması, ince teller, spagetti, katman kayması, nozul tıkanması: filamentli yazıcılarda sık görülen hatalar ve çözümleri.",
+  "gorsel": "/assets/img/atolye/baski-tablasi-34-saat.webp",
+  "tarih": "2026-10-08",
+  "sss": [
+   ["İlk katman neden tablaya yapışmıyor?", "En sık sebep tabladaki yağ ve yanlış nozul yüksekliği. Tablayı sabunlu suyla ya da izopropil alkolle temizleyip Z ofseti kontrol edin."],
+   ["Baskıda ince teller neden oluşuyor?", "Çoğunlukla nem çekmiş filamentten. Filamenti kurutup kapalı kapta saklamak ve geri çekme ayarını düzeltmek genelde çözer."],
+   ["Ankara'da 3D yazıcı tamiri yapıyor musunuz?", "Evet, Ankara içinde 3D yazıcı tamiri ve bakımı yapıyoruz. Yazıcının modelini ve sorunu WhatsApp'tan yazmanız yeterli."]
+  ]},
+ {"slug": "3d-baski-figur-boyama",
+  "baslik": "3D Baskı Figür Nasıl Boyanır? Astar, Boya ve Vernik",
+  "h1": "3D baskı figür nasıl boyanır?",
+  "aciklama": "3D yazıcıdan çıkan figürü boyamak için gereken malzemeler; zımpara, astar, ana renkler, gölge ve ışık, detaylar ve vernik aşamaları adım adım.",
+  "gorsel": "/assets/img/is-07.webp",
+  "tarih": "2026-10-08",
+  "sss": [
+   ["3D baskı figür hangi boyayla boyanır?", "Su bazlı akrilik boyalar, özellikle plastik ve maket boyaları en iyi sonucu verir. Önce astar sürmek boyanın tutunmasını sağlar."],
+   ["Astar şart mı?", "Şart değil ama boyanın plastiğe tutunmasını kolaylaştırır ve yüzeydeki küçük kusurları gösterir; sonuç belirgin şekilde daha düzgün olur."],
+   ["Boyalı figür nasıl korunur?", "Boya tamamen kuruduktan sonra mat ya da parlak vernik sürülür; figürü tozdan, nemden ve elle tutulmaktan korur."]
+  ]},
+ {"slug": "araba-maketi-yaptirma-rehberi",
+  "baslik": "Araba Maketi Yaptırma Rehberi: Fotoğraf, Plaka, Fiyat",
+  "h1": "Kendi arabanızın maketini yaptırmak",
+  "aciklama": "Kendi arabanızın ya da motosikletinizin maketi için hangi fotoğraflar gerekir, plaka ve platform, üretim süreci, yaklaşık fiyat ve maketin bakımı.",
+  "gorsel": "/assets/img/urun/renault-megane-araba-maketi.webp",
+  "tarih": "2026-10-08",
+  "sss": [
+   ["Araba maketi için hangi fotoğraflar gerekli?", "Önden, arkadan ve iki yandan birer fotoğraf, çapraz açılardan iki fotoğraf ve jant gibi detayların yakın çekimleri."],
+   ["Maketler hangi ölçekte?", "Maketlerimiz ölçekli değil; genelde toplam boy 20 cm civarında. Mimari ve ölçekli teknik maket yapmıyoruz."],
+   ["Maketin plakası gerçek plakam olabilir mi?", "Evet. İsterseniz plakanın yerine isim, tarih ya da kısa bir yazı da yazabiliyoruz."]
+  ]},
+ {"slug": "dogum-gunu-boyama-atolyesi-rehberi",
+  "baslik": "Çocuk Doğum Günü İçin Figür Boyama Atölyesi Rehberi",
+  "h1": "Doğum gününe figür boyama atölyesi: nasıl planlanır?",
+  "aciklama": "Yaş grubu, kişi sayısı, süre, yer hazırlığı ve figür seçimi: çocuk doğum gününde figür boyama atölyesi düzenlemek isteyenler için pratik rehber.",
+  "gorsel": "/assets/img/urun/toplu-boyama-figuru.webp",
+  "tarih": "2026-10-08",
+  "sss": [
+   ["Figür boyama atölyesi hangi yaşa uygun?", "En çok 5-12 yaş arası çocuklarda keyifli geçiyor; farklı yaş gruplarına göre figür seçimini uyarlıyoruz."],
+   ["Atölye ne kadar sürüyor?", "Ortalama 45 dakika. 8-10 çocukluk gruplar en rahat olanı; grup kalabalıksa biraz uzayabiliyor."],
+   ["Atölyeye gelemezseniz alternatif var mı?", "Evet, boyanmamış figür, beş renkli mini boya ve iki fırçanın olduğu kutulu kendin boya setlerini gönderebiliyoruz."]
+  ]},
+ {"slug": "3d-baski-hediye-fikirleri",
+  "baslik": "3D Baskı Hediye Fikirleri: Kime Ne Alınır?",
+  "h1": "3D baskı hediye fikirleri",
+  "aciklama": "Sevgiliye çift figürü, araba tutkununa maket, hayvanseverlere evcil hayvan figürü, oyunculara stand ve çocuklara boyama seti: bütçeye göre hediye fikirleri.",
+  "gorsel": "/assets/img/urun/kisiye-ozel-kopek-figuru.webp",
+  "tarih": "2026-10-08",
+  "sss": [
+   ["Kişiye özel hediyeyi ne zaman sipariş etmeliyim?", "Modelleme, baskı ve boyama gerektirdiği için özel günden birkaç hafta önce. Yoğun dönemlerde süre 10-14 güne çıkabiliyor."],
+   ["En uygun fiyatlı kişiye özel hediye hangisi?", "İsimli ya da logolu anahtarlıklar en düşük bütçeli kişiye özel hediyeler arasında."],
+   ["Ankara dışına gönderiyor musunuz?", "Evet, Türkiye'nin her yerine kargoluyoruz; kargo 2-3 gün sürüyor. Ankara içinde elden teslim de yapıyoruz."]
+  ]}
+]

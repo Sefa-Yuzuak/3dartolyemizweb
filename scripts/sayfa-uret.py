@@ -25,6 +25,7 @@ import re
 from pathlib import Path
 from urllib.parse import quote
 
+import blog
 from urun_icerik import urun_icerik
 
 KOK = Path(__file__).resolve().parent.parent
@@ -174,10 +175,9 @@ SAYFALAR = [
     },
     {
         "slug": "kisiye-ozel-3d-figur",
-        "title": "Figür Yaptırma | Fotoğraftan Kişiye Özel 3D Figür | Ankara | 3dartolyemiz",
-        "desc": "Fotoğraftan kişiye özel 3D figür yaptırma: kişi, aile, evcil hayvan, anime ve oyun "
-                f"karakteri. Elle boyama, yaklaşık {aralik('kisiye-ozel-figur')}. Ankara'da üretim, "
-                "Türkiye geneli kargo.",
+        "title": "Figür Yaptırma | Fotoğraftan Kişiye Özel 3D Figür | Ankara",
+        "desc": "Fotoğraftan kişiye özel 3D figür: kişi, aile, evcil hayvan ve karakter. Elle boyama, "
+                f"yaklaşık {aralik('kisiye-ozel-figur')}. Ankara'da üretim, Türkiye geneli kargo.",
         "h1": "Kişiye özel 3D figür yaptırma",
         "lead": "Bir fotoğraf yeterli. Kişiyi, evcil hayvanı ya da sevdiğiniz karakteri modelleyip "
                 "basıyor, elle boyayıp gönderiyoruz.",
@@ -240,10 +240,9 @@ SAYFALAR = [
     },
     {
         "slug": "3d-baski-maket",
-        "title": "3D Baskı Maket | Araba, Motosiklet ve Diorama | Ankara | 3dartolyemiz",
-        "desc": "Fotoğraftan araba ve motosiklet maketi, plakası ve platformuyla; diorama ve isimli "
-                f"araç standı. Elle boyama, yaklaşık {aralik('araba-maketi')}. Ankara'da üretim, "
-                "Türkiye geneli kargo.",
+        "title": "3D Baskı Maket | Araba, Motosiklet ve Diorama | Ankara",
+        "desc": "Fotoğraftan araba ve motosiklet maketi, plakası ve platformuyla; diorama ve araç "
+                f"standı. Elle boyama, yaklaşık {aralik('araba-maketi')}. Türkiye geneli kargo.",
         "h1": "3D baskı maket: araba, motosiklet ve diorama",
         "lead": "Arabanızın ya da motosikletinizin fotoğrafından maketini modelliyor, basıyor ve "
                 "elle boyuyoruz. Sahne kurgulu dioramalar ve isimli masaüstü araç standları da yapıyoruz.",
@@ -507,9 +506,23 @@ SAYFALAR += [
              "p": ["Baskının tablaya tutmaması, tıkanan nozül, filament beslemesinin takılması, "
                    "kalibrasyon ve baskı kalitesi sorunları gibi. Parça değişimi gerekiyorsa bunu "
                    "baştan söylüyoruz."]},
+            {"h2": "Bize yazmadan önce deneyebilecekleriniz",
+             "p": ["Sorunların bir kısmı ayarla çözülüyor. Tablayı sabunlu suyla ya da izopropil "
+                   "alkolle temizlemek, filamenti kurutmak ve ilk katman yüksekliğini (Z ofset) "
+                   "kontrol etmek tablaya tutmama ve ince tel sorunlarının çoğunu gideriyor. Sık "
+                   "görülen on sorunu ve çözümlerini <a href=\"/blog/3d-baski-hatalari-ve-cozumleri/\">"
+                   "baskı hataları rehberimizde</a> topladık.",
+                   "Ayarlarla düzelmeyen, sürekli tekrarlayan ya da yazıcının hiç çalışmadığı "
+                   "durumlarda sorun çoğu zaman donanımdadır: aşınmış nozul, arızalı fan, gevşemiş "
+                   "kayış, bozuk sensör. Bu noktada yazıcıya bakmamız gerekiyor."]},
             {"h2": "Ücret",
              "p": ["Arızaya göre değişiyor; yazıcıyı ve sorunu görmeden kesin fiyat veremiyoruz. "
                    "Sorunu yazdığınızda yaklaşık bir tutar söylüyoruz."]},
+            {"h2": "Tamirden sonra",
+             "p": ["Yazıcınızı kendiniz daha verimli kullanmak isterseniz <a href=\"/3d-yazici-egitimi/\">"
+                   "3D yazıcı eğitimi</a> de veriyoruz: dilimleme ayarları, bakım ve sık görülen "
+                   "hatalar. Yeni bir yazıcı almayı düşünüyorsanız <a href=\"/blog/3d-yazici-alirken-dikkat/\">"
+                   "3D yazıcı alırken dikkat edilmesi gerekenler</a> yazımız yol gösterir."]},
         ],
         "sss": [
             ("Ankara dışına tamir hizmeti veriyor musunuz?",
@@ -546,25 +559,64 @@ bas = koke_cevir(bas)
 son = koke_cevir(son)
 
 
-def head_uret(s: dict) -> str:
-    url = f"{ALAN}/{s['slug']}/"
+# Bing Site Scan ve Google sonuc sayfasi siniri: baslik 70, aciklama 160
+# karakteri asarsa kesiliyor (08.10.2026 denetiminde 33 baslik, 65 aciklama
+# asiyordu). Sinir burada DENETLENIR; asan sayfa derlemeyi durdurur.
+BASLIK_SINIR = 70
+ACIKLAMA_SINIR = (70, 160)
+
+
+def ilk_sigan(adaylar: list, sinir: int) -> str:
+    """Uzundan kisaya dizilmis adaylardan sinira ilk sigani."""
+    for a in adaylar:
+        if len(a) <= sinir:
+            return a
+    raise SystemExit(f"Hicbir aday {sinir} karaktere sigmiyor: {adaylar[-1]}")
+
+
+def ld(bloklar) -> str:
+    return "".join('\n  <script type="application/ld+json">\n'
+                   + json.dumps(b, ensure_ascii=False, indent=2) + "\n  </script>" for b in bloklar) + "\n"
+
+
+def head_yap(baslik: str, aciklama: str, url: str, bloklar=(),
+             og_baslik: str | None = None, og_gorsel: str | None = None, og_tur: str = "website") -> str:
+    """Ana sayfanin head'inden alt sayfa head'i: baslik, aciklama, canonical, OG ve sema."""
+    if len(baslik) > BASLIK_SINIR:
+        raise SystemExit(f"Baslik {len(baslik)} karakter (> {BASLIK_SINIR}): {baslik}")
+    if not ACIKLAMA_SINIR[0] <= len(aciklama) <= ACIKLAMA_SINIR[1]:
+        raise SystemExit(f"Aciklama {len(aciklama)} karakter {ACIKLAMA_SINIR}: {url}")
+    og_baslik = og_baslik or baslik
+    # Nitelik degerine cift tirnak girerse meta etiketi kirilir (babalar gunu
+    # anahtarliginda aciklama 25 karaktere dusmustu).
+    for deger in (baslik, aciklama, og_baslik):
+        if '"' in deger or "<" in deger:
+            raise SystemExit(f"Baslik/aciklamada cift tirnak ya da < var: {deger}")
     h = head
-    h = re.sub(r"<title>.*?</title>", f"<title>{s['title']}</title>", h, count=1, flags=re.S)
+    h = re.sub(r"<title>.*?</title>", f"<title>{baslik}</title>", h, count=1, flags=re.S)
     for alan in ['name="description"', 'property="og:description"', 'name="twitter:description"']:
-        h = re.sub(rf'({alan} content=")[^"]*(")', lambda m: m.group(1) + s["desc"] + m.group(2), h, count=1)
+        h = re.sub(rf'({alan} content=")[^"]*(")', lambda m: m.group(1) + aciklama + m.group(2), h, count=1)
     for alan in ['property="og:title"', 'name="twitter:title"']:
-        h = re.sub(rf'({alan} content=")[^"]*(")', lambda m: m.group(1) + s["title"] + m.group(2), h, count=1)
+        h = re.sub(rf'({alan} content=")[^"]*(")', lambda m: m.group(1) + og_baslik + m.group(2), h, count=1)
     h = re.sub(r'(<link rel="canonical" href=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), h, count=1)
     h = re.sub(r'(<meta property="og:url" content=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), h, count=1)
+    h = re.sub(r'(<meta property="og:type" content=")[^"]*(")', lambda m: m.group(1) + og_tur + m.group(2), h, count=1)
+    if og_gorsel:
+        h = re.sub(r'(<meta property="og:image" content=")[^"]*(")',
+                   lambda m: m.group(1) + ALAN + og_gorsel + m.group(2), h, count=1)
     h = h.replace('href="assets/', 'href="/assets/').replace('src="assets/', 'src="/assets/')
     # ana sayfanin semalari alt sayfaya tasinmasin
     h = re.sub(r'\s*<script type="application/ld\+json">.*?</script>', "", h, flags=re.S)
     # Sema </head> ICINE girer: eskiden head kapandiktan sonra yaziliyordu ve
     # arkasindan basibos bir <body> geliyordu (26 sayfada gecersiz isaretleme).
-    return h.replace("</head>", sema_uret(s) + "\n</head>", 1)
+    return h.replace("</head>", ld(bloklar) + "\n</head>", 1)
 
 
-def sema_uret(s: dict) -> str:
+def head_uret(s: dict) -> str:
+    return head_yap(s["title"], s["desc"], f"{ALAN}/{s['slug']}/", sema_bloklari(s))
+
+
+def sema_bloklari(s: dict) -> list:
     url = f"{ALAN}/{s['slug']}/"
     bloklar = [{
         "@context": "https://schema.org", "@type": "BreadcrumbList",
@@ -588,9 +640,7 @@ def sema_uret(s: dict) -> str:
             "@context": "https://schema.org", "@type": "FAQPage",
             "mainEntity": [{"@type": "Question", "name": q,
                             "acceptedAnswer": {"@type": "Answer", "text": c}} for q, c in s["sss"]]})
-    return "".join(
-        '\n  <script type="application/ld+json">\n'
-        + json.dumps(b, ensure_ascii=False, indent=2) + "\n  </script>" for b in bloklar) + "\n"
+    return bloklar
 
 
 def bolum_uret(b: dict) -> str:
@@ -711,25 +761,15 @@ def urun_sayfasi(u: dict) -> str:
                     "availability": "https://schema.org/InStock",
                     "seller": {"@type": "Organization", "name": "3dartolyemiz"}}},
     ]
-    sema = "".join('\n  <script type="application/ld+json">\n'
-                   + json.dumps(b, ensure_ascii=False, indent=2)
-                   + "\n  </script>" for b in semalar) + "\n"
-
-    baslik = f"{u['ad']} | {u['fiyat_metni']} | 3dartolyemiz"
-    aciklama = (f"{u['ad']}: {u['aciklama']} Fiyatı {u['fiyat_kucuk']}. "
-                "Ankara'da üretim, Türkiye geneli kargo.")
-    h = head
-    h = re.sub(r"<title>.*?</title>", f"<title>{baslik}</title>", h, count=1, flags=re.S)
-    for alan in ['name="description"', 'property="og:description"', 'name="twitter:description"']:
-        h = re.sub(rf'({alan} content=")[^"]*(")', lambda m: m.group(1) + aciklama + m.group(2), h, count=1)
-    for alan in ['property="og:title"', 'name="twitter:title"']:
-        h = re.sub(rf'({alan} content=")[^"]*(")', lambda m: m.group(1) + u["ad"] + m.group(2), h, count=1)
-    h = re.sub(r'(<link rel="canonical" href=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), h, count=1)
-    h = re.sub(r'(<meta property="og:url" content=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), h, count=1)
-    h = re.sub(r'(<meta property="og:image" content=")[^"]*(")',
-               lambda m: m.group(1) + ALAN + u["gorsel"] + m.group(2), h, count=1)
-    h = h.replace('href="assets/', 'href="/assets/').replace('src="assets/', 'src="/assets/')
-    h = re.sub(r'\s*<script type="application/ld\+json">.*?</script>', "", h, flags=re.S)
+    fk = u["fiyat_metni"].replace("Yaklaşık ", "")
+    baslik = ilk_sigan([f"{u['ad']} | Yaklaşık {fk} | 3dartolyemiz", f"{u['ad']} | Yaklaşık {fk}",
+                        f"{u['ad']} | 3dartolyemiz", u["ad"]], BASLIK_SINIR)
+    aciklama = ilk_sigan([
+        f"{u['ad']}: {u['aciklama']} Fiyatı {u['fiyat_kucuk']}. Ankara'da üretim, Türkiye geneli kargo.",
+        f"{u['ad']}: {u['aciklama']} Fiyatı {u['fiyat_kucuk']}.",
+        f"{u['aciklama']} Fiyatı {u['fiyat_kucuk']}.",
+        f"{u['ad']}, fiyatı {u['fiyat_kucuk']}. Ankara'da üretim, Türkiye geneli kargo."], ACIKLAMA_SINIR[1])
+    h = head_yap(baslik, aciklama, url, semalar, og_baslik=u["ad"], og_gorsel=u["gorsel"])
 
     govde = (
         '<main id="main">\n'
@@ -769,7 +809,7 @@ def urun_sayfasi(u: dict) -> str:
         '        <li><a href="/ankara-3d-baski/">Ankara\'da 3D baskı hizmeti</a></li>\n'
         '        <li><a href="/urun/">Tüm ürün kataloğu ve yaklaşık fiyatlar</a></li>\n'
         '      </ul>\n    </div>\n  </section>\n')
-    return h.replace("</head>", sema + "\n</head>", 1) + bas + govde + son
+    return h + bas + govde + son
 
 
 def urun_karti(u: dict) -> str:
@@ -785,8 +825,6 @@ def urun_karti(u: dict) -> str:
         '            <p>' + u["aciklama"] + '</p>\n'
         '            <div class="price-badge">' + u["fiyat_metni"] + '</div>\n'
         '            <span class="price-note">' + u["not"] + '</span>\n'
-        '            <a class="card-link" href="/urun/' + u["slug"] + '/">Ürün sayfası '
-        + OK_SVG + '</a>\n'
         '          </div>\n'
         '        </div>')
 
@@ -808,33 +846,34 @@ def urun_dizini(urunler: list) -> str:
          "name": "3dartolyemiz ürün kataloğu", "url": url,
          "numberOfItems": len(urunler),
          "itemListElement": [
-             {"@type": "ListItem", "position": i, "name": u["ad"],
-              "url": f"{ALAN}/urun/{u['slug']}/"}
+             {"@type": "ListItem", "position": i, "url": f"{ALAN}/urun/{u['slug']}/"}
              for i, u in enumerate(urunler, 1)]},
     ]
-    sema = "".join('\n  <script type="application/ld+json">\n'
-                   + json.dumps(b, ensure_ascii=False, indent=2)
-                   + "\n  </script>" for b in semalar) + "\n"
-
     baslik = f"3D Baskı Ürünleri ve Fiyatları | {len(urunler)} Çalışma | 3dartolyemiz"
-    aciklama = (f"Ankara'da ürettiğimiz {len(urunler)} 3D baskı çalışması: kişiye özel figür, "
-                "araba ve motosiklet maketi, anahtarlık, pasta süsü, boyama seti ve ev dekoru. "
-                "Her ürünün yaklaşık fiyat aralığı sayfasında yazılı.")
-    h = head
-    h = re.sub(r"<title>.*?</title>", f"<title>{baslik}</title>", h, count=1, flags=re.S)
-    for alan in ['name="description"', 'property="og:description"', 'name="twitter:description"']:
-        h = re.sub(rf'({alan} content=")[^"]*(")', lambda m: m.group(1) + aciklama + m.group(2), h, count=1)
-    for alan in ['property="og:title"', 'name="twitter:title"']:
-        h = re.sub(rf'({alan} content=")[^"]*(")',
-                   lambda m: m.group(1) + f"3D baskı ürünleri ({len(urunler)} çalışma)" + m.group(2),
-                   h, count=1)
-    h = re.sub(r'(<link rel="canonical" href=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), h, count=1)
-    h = re.sub(r'(<meta property="og:url" content=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), h, count=1)
-    h = h.replace('href="assets/', 'href="/assets/').replace('src="assets/', 'src="/assets/')
-    h = re.sub(r'\s*<script type="application/ld\+json">.*?</script>', "", h, flags=re.S)
+    aciklama = (f"Ankara'da ürettiğimiz {len(urunler)} 3D baskı çalışması: figür, maket, anahtarlık, "
+                "pasta süsü, boyama seti ve ev dekoru, yaklaşık fiyatlarıyla.")
+    h = head_yap(baslik, aciklama, url, semalar, og_baslik=f"3D baskı ürünleri ({len(urunler)} çalışma)")
 
 
-    kartlar = [urun_karti(u) for u in urunler]
+    # 08.10.2026: 149 urunun hepsi tek izgarada sayfayi 155 KB / 207 baglantiya
+    # cikariyordu (Bing Site Scan siniri 125 KB). Liste etiket bazinda onizlemeye
+    # dondu: her etiketten en fazla 4 kart + "tumu" baglantisi. Her urun en az
+    # bir etiket sayfasinda tam listeleniyor (asagida denetlenir).
+    eksik = [u["slug"] for u in urunler if not any(e in ETIKET for e in u["etiketler"])]
+    if eksik:
+        raise SystemExit(f"Etiketsiz urun /urun/ sayfasindan erisilemez: {eksik}")
+    gosterilen, gruplar = set(), []
+    for e in ETIKETLER:
+        us = etiket_urunleri(e["slug"])
+        sec = [u for u in us if u["slug"] not in gosterilen][:4]
+        gosterilen |= {u["slug"] for u in sec}
+        adet = " / adet" if e["slug"] == "anahtarlik" else ""
+        gruplar.append(
+            f'      <div class="section-head reveal katalog-grup"><h2>{e["ad"]}</h2>'
+            f'<p>{len(us)} çalışma · yaklaşık {aralik(e["slug"])}{adet}</p></div>\n'
+            '      <div class="product-grid">\n' + "\n".join(urun_karti(u) for u in sec) + '\n      </div>\n'
+            f'      <p class="katalog-tumu"><a class="btn btn-secondary" href="/etiket/{e["slug"]}/">'
+            f'Tümünü gör: {e["ad"]} ({len(us)})</a></p>')
 
     govde = (
         '<main id="main">\n'
@@ -850,7 +889,7 @@ def urun_dizini(urunler: list) -> str:
         '  <section>\n    <div class="container">\n'
         '      <div class="section-head reveal"><h2>En çok sorulanlar</h2></div>\n'
         + etiket_dugmeleri() + '\n'
-        '      <div class="product-grid">\n' + "\n".join(kartlar) + '\n      </div>\n'
+        + "\n".join(gruplar) + '\n'
         '    </div>\n  </section>\n\n'
         # Eski magazanin 61 adresi buraya 301'leniyor ve o aramalarin hepsi
         # TEKIL urun aramasi ("ronaldo funko pop" 168 gosterim, konum 6-9;
@@ -879,7 +918,7 @@ def urun_dizini(urunler: list) -> str:
         '        <li><a href="/3d-yazici-egitimi/">3D yazıcı eğitimi</a></li>\n'
         '        <li><a href="/3d-yazici-tamiri-ankara/">Ankara\'da 3D yazıcı tamiri</a></li>\n'
         '      </ul>\n    </div>\n  </section>\n')
-    return h.replace("</head>", sema + "\n</head>", 1) + bas + govde + son
+    return h + bas + govde + son
 
 
 OK_SVG = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
@@ -909,23 +948,16 @@ def etiket_sayfasi(e: dict) -> str:
          "itemListElement": [{"@type": "ListItem", "position": i, "url": f"{ALAN}/urun/{u['slug']}/"}
                              for i, u in enumerate(us, 1)]},
     ]
-    sema = "".join('\n  <script type="application/ld+json">\n'
-                   + json.dumps(b, ensure_ascii=False, indent=2) + "\n  </script>" for b in semalar) + "\n"
     fiyat = aralik(e["slug"]) + (" / adet" if e["slug"] == "anahtarlik" else "")
-    baslik = f"{e['ad']} | {len(us)} Model, Yaklaşık {fiyat} | Ankara | 3dartolyemiz"
-    aciklama = f"{e['giris']} Yaklaşık {fiyat}."
-    h = head
-    h = re.sub(r"<title>.*?</title>", f"<title>{baslik}</title>", h, count=1, flags=re.S)
-    for alan in ['name="description"', 'property="og:description"', 'name="twitter:description"']:
-        h = re.sub(rf'({alan} content=")[^"]*(")', lambda m: m.group(1) + aciklama + m.group(2), h, count=1)
-    for alan in ['property="og:title"', 'name="twitter:title"']:
-        h = re.sub(rf'({alan} content=")[^"]*(")', lambda m: m.group(1) + e["h1"] + m.group(2), h, count=1)
-    h = re.sub(r'(<link rel="canonical" href=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), h, count=1)
-    h = re.sub(r'(<meta property="og:url" content=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), h, count=1)
-    h = re.sub(r'(<meta property="og:image" content=")[^"]*(")',
-               lambda m: m.group(1) + ALAN + us[0]["gorsel"] + m.group(2), h, count=1)
-    h = h.replace('href="assets/', 'href="/assets/').replace('src="assets/', 'src="/assets/')
-    h = re.sub(r'\s*<script type="application/ld\+json">.*?</script>', "", h, flags=re.S)
+    baslik = ilk_sigan([f"{e['ad']} | {len(us)} Model, Yaklaşık {fiyat} | 3dartolyemiz",
+                        f"{e['ad']} | {len(us)} Model, Yaklaşık {fiyat}",
+                        f"{e['ad']} | {len(us)} Model ve Fiyatları | Ankara",
+                        f"{e['ad']} Modelleri ve Fiyatları"], BASLIK_SINIR)
+    ilk_cumle = e["giris"].split(". ")[0].rstrip(".") + "."
+    aciklama = ilk_sigan([f"{e['giris']} Yaklaşık {fiyat}.", f"{ilk_cumle} {len(us)} model, yaklaşık {fiyat}.",
+                          f"{e['ad']}: {len(us)} model, yaklaşık {fiyat}. Ankara'da üretim, Türkiye geneli kargo."],
+                         ACIKLAMA_SINIR[1])
+    h = head_yap(baslik, aciklama, url, semalar, og_baslik=e["h1"], og_gorsel=us[0]["gorsel"])
     hizmet = DIGER_AD.get(e["hizmet"].strip("/"), "Ankara'da 3D baskı hizmeti")
     govde = (
         '<main id="main">\n'
@@ -951,7 +983,7 @@ def etiket_sayfasi(e: dict) -> str:
         f'        <li><a href="{e["hizmet"]}">{hizmet}</a></li>\n'
         '        <li><a href="/urun/">Tüm ürün kataloğu ve yaklaşık fiyatlar</a></li>\n'
         '      </ul>\n    </div>\n  </section>\n')
-    return h.replace("</head>", sema + "\n</head>", 1) + bas + govde + son
+    return h + bas + govde + son
 
 
 # Ana sayfa SSS: gorunur metin ve FAQPage semasi AYNI listeden uretilir.
@@ -1083,21 +1115,7 @@ def gizlilik_sayfasi() -> str:
     baslik = "Gizlilik ve KVKK Aydınlatma Metni | 3dartolyemiz"
     aciklama = ("3dartolyemiz sitesi hangi verileri işler: sitede form ve çerez "
                 "yok; iletişim WhatsApp üzerinden yürür.")
-    h = head
-    h = re.sub(r"<title>.*?</title>", f"<title>{baslik}</title>", h, count=1, flags=re.S)
-    for alan in ['name="description"', 'property="og:description"',
-                 'name="twitter:description"']:
-        h = re.sub(rf'({alan} content=")[^"]*(")',
-                   lambda m: m.group(1) + aciklama + m.group(2), h, count=1)
-    for alan in ['property="og:title"', 'name="twitter:title"']:
-        h = re.sub(rf'({alan} content=")[^"]*(")',
-                   lambda m: m.group(1) + "Gizlilik ve KVKK" + m.group(2), h, count=1)
-    h = re.sub(r'(<link rel="canonical" href=")[^"]*(")',
-               lambda m: m.group(1) + url + m.group(2), h, count=1)
-    h = re.sub(r'(<meta property="og:url" content=")[^"]*(")',
-               lambda m: m.group(1) + url + m.group(2), h, count=1)
-    h = h.replace('href="assets/', 'href="/assets/').replace('src="assets/', 'src="/assets/')
-    h = re.sub(r'\s*<script type="application/ld\+json">.*?</script>', "", h, flags=re.S)
+    h = head_yap(baslik, aciklama, url, og_baslik="Gizlilik ve KVKK")
 
     govde = """<main id="main">
   <section class="hero hero--sayfa">
@@ -1153,7 +1171,7 @@ def gizlilik_sayfasi() -> str:
     </div>
   </section>
 """
-    return h.replace("</head>", "\n</head>", 1) + bas + govde + son
+    return h + bas + govde + son
 
 
 # --------------------------------------------------------------------- yaz
@@ -1189,11 +1207,33 @@ anasayfa_guncelle()
 print("  ana sayfa: one cikanlar, etiketler, SSS, fiyat araliklari, JSON-LD guncellendi")
 print(f"  nginx.conf: {nginx_yonlendirmeleri()} eski magaza adresi urun sayfasina yonlendirildi")
 
+# blog ve atolye (scripts/blog.py)
+BAGLAM = {"ALAN": ALAN, "TEL": TEL, "URUN": URUN, "aralik": aralik, "SURE": SURE, "SUREC": SUREC,
+          "head_yap": head_yap, "bas": bas, "son": son}
+blog.hazirla(BAGLAM)
+for y in blog.YAZILAR:
+    hedef = KOK / "blog" / y["slug"]
+    hedef.mkdir(parents=True, exist_ok=True)
+    io.open(hedef / "index.html", "w", encoding="utf-8").write(blog.yazi_sayfasi(y, BAGLAM))
+io.open(KOK / "blog" / "index.html", "w", encoding="utf-8").write(blog.blog_dizini(BAGLAM))
+io.open(KOK / "blog" / "rss.xml", "w", encoding="utf-8").write(blog.rss(BAGLAM))
+(KOK / "atolyemiz").mkdir(exist_ok=True)
+io.open(KOK / "atolyemiz" / "index.html", "w", encoding="utf-8").write(blog.atolye_sayfasi(BAGLAM))
+ana = io.open(KOK / "index.html", encoding="utf-8").read()
+ana = isaret_doldur(ana, "BLOG", '      <div class="blog-grid">\n'
+                    + "\n".join(blog.yazi_karti(y) for y in blog.YAZILAR[:3]) + "\n      </div>")
+io.open(KOK / "index.html", "w", encoding="utf-8").write(ana)
+print(f"  {len(blog.YAZILAR)} blog yazisi + /blog/ + /atolyemiz/ uretildi")
+
 # sitemap
 girdiler = [f"  <url>\n    <loc>{ALAN}/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>1.0</priority>\n  </url>"]
 girdiler += [f"  <url>\n    <loc>{ALAN}/{sl}/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>"
              for sl in uretilen]
 girdiler.append(f"  <url>\n    <loc>{ALAN}/gizlilik/</loc>\n    <changefreq>yearly</changefreq>\n    <priority>0.2</priority>\n  </url>")
+girdiler.append(f"  <url>\n    <loc>{ALAN}/atolyemiz/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>")
+girdiler.append(f"  <url>\n    <loc>{ALAN}/blog/</loc>\n    <changefreq>weekly</changefreq>\n    <priority>0.7</priority>\n  </url>")
+girdiler += [f"  <url>\n    <loc>{ALAN}/blog/{y['slug']}/</loc>\n    <lastmod>{y.get('guncelleme', y['tarih'])}</lastmod>\n    <priority>0.7</priority>\n  </url>"
+             for y in blog.YAZILAR]
 girdiler.append(f"  <url>\n    <loc>{ALAN}/urun/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>")
 girdiler += [f"  <url>\n    <loc>{ALAN}/etiket/{e['slug']}/</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>"
              for e in ETIKETLER]
@@ -1247,6 +1287,10 @@ def llms_uret() -> str:
               f"- Liste: {ALAN}/urun/"]
     satir += [f"- [{u['ad']}]({ALAN}/urun/{u['slug']}/): {u['aciklama']} {u['fiyat_metni']}."
               for u in URUNLER]
+    satir += ["", "## Atölye ve blog",
+              f"- [Atölyemiz: yazıcılarımız ve üretimden videolar]({ALAN}/atolyemiz/)",
+              f"- [Blog: 3D baskı rehberleri]({ALAN}/blog/)"]
+    satir += [f"- [{y['h1']}]({ALAN}/blog/{y['slug']}/): {y['aciklama']}" for y in blog.YAZILAR]
     satir += ["", "## Sık sorulanlar"]
     for x in SAYFALAR:
         for q, c in x.get("sss", []):

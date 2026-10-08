@@ -1940,5 +1940,1337 @@
   "alt": "Yazıcı tablasında altın renkli sihirli lamba",
   "one_cikan": false,
   "eski": []
+ },
+ {
+  "slug": "stitch-lamba",
+  "ad": "Stitch Lamba",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Stitch figürlü, yumuşak ışık veren gece lambası.",
+  "ayirt": "İçine yerleştirilen ışık figürün içinden yayılıyor; çocuk odası ve çalışma masası için gece lambası olarak kullanılıyor.",
+  "fiyat": [
+   600,
+   2000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/stitch-lamba.webp",
+  "alt": "Stitch Lamba — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "ayicikli-gece-lambasi",
+  "ad": "Ayıcıklı Gece Lambası",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Abajurun altında oturan ayıcıklı, sıcak ışıklı gece lambası.",
+  "ayirt": "Hem dekor hem gece lambası; abajur ve ayıcık rengi isteğe göre değişebiliyor.",
+  "fiyat": [
+   500,
+   1500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/ayicikli-gece-lambasi.webp",
+  "alt": "Ayıcıklı Gece Lambası — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "ay-gorunumlu-lamba",
+  "ad": "Ay Görünümlü Lamba",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Ay yüzeyi dokulu küre lamba, ahşap görünümlü standıyla.",
+  "ayirt": "Gerçek ay yüzeyinden ilham alan krater dokusu ışık yanınca belirginleşiyor; yazıcıdan çıkışının videosu atölye sayfamızda.",
+  "fiyat": [
+   600,
+   2000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/ay-gorunumlu-lamba.webp",
+  "alt": "Ay Görünümlü Lamba — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "platform-9-3-4-masa-lambasi",
+  "ad": "Platform 9¾ Masa Lambası",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Harry Potter'daki Platform 9¾ tabelası biçiminde, sıcak sarı ışıklı masa lambası.",
+  "ayirt": "İçindeki sıcak sarı ışık tabelayı arkadan aydınlatıyor; kitaplık ve çalışma masası için.",
+  "fiyat": [
+   750,
+   2000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/platform-9-3-4-masa-lambasi.webp",
+  "alt": "Platform 9¾ Masa Lambası — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "platform-9-3-4-duvar-saati",
+  "ad": "Platform 9¾ Duvar Saati",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Duvara asılan istasyon tabelası biçiminde Platform 9¾ saat.",
+  "ayirt": "Duvar askılı istasyon tabelası formunda; saat mekanizması içine yerleşiyor.",
+  "fiyat": [
+   600,
+   1750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/platform-9-3-4-duvar-saati.webp",
+  "alt": "Platform 9¾ Duvar Saati — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "kedi-taki-kutusu",
+  "ad": "Kedi Takı Kutusu",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Çekmeceli, kedi biçiminde takı kutusu; ten, pembe, mor ve siyah renkleri var.",
+  "ayirt": "Elle boyanmıyor: çok renkli baskıyla makineden doğrudan renkli çıkıyor. Çekmeceleri yüzük ve küpe için.",
+  "fiyat": [
+   500,
+   1500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/kedi-taki-kutusu.webp",
+  "alt": "Kedi Takı Kutusu — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "gece-gunduz-taki-kutusu",
+  "ad": "Gece ve Gündüz Takı Kutusu",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Bir yanı güneş, bir yanı ay desenli, raflı takı kutusu.",
+  "ayirt": "Güneş ve ay yarımları ayrı renklerde basılıyor; rafları farklı boydaki takılar için.",
+  "fiyat": [
+   500,
+   1500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/gece-gunduz-taki-kutusu.webp",
+  "alt": "Gece ve Gündüz Takı Kutusu — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "unicorn-taki-standi",
+  "ad": "Unicorn Takı Standı",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "9 raflı, unicorn başlı takı standı.",
+  "ayirt": "Dokuz rafıyla bilezik, yüzük ve tokaları ayrı ayrı tutuyor; çok renkli baskıyla boyasız renkli çıkıyor.",
+  "fiyat": [
+   600,
+   1750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/unicorn-taki-standi.webp",
+  "alt": "Unicorn Takı Standı — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "baykus-taki-kutusu",
+  "ad": "Baykuş Takı Kutusu",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Beyaz baykuş biçiminde, gizli çekmeceli takı kutusu.",
+  "ayirt": "Dışarıdan bir baykuş biblosu gibi duruyor; önündeki çekmecelere küçük takılar giriyor.",
+  "fiyat": [
+   400,
+   1250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/baykus-taki-kutusu.webp",
+  "alt": "Baykuş Takı Kutusu — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "gemi-taki-kutusu",
+  "ad": "Yelkenli Gemi Takı Kutusu",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Farklı boyda çekmeceleri olan, yelkenli gemi biçiminde takı kutusu.",
+  "ayirt": "Yelken kısmı da çekmeceli; küçük ve büyük takılar ayrı bölmelere giriyor.",
+  "fiyat": [
+   600,
+   1750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/gemi-taki-kutusu.webp",
+  "alt": "Yelkenli Gemi Takı Kutusu — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "baykus-cekmeceli-takilik",
+  "ad": "Baykuş Çekmeceli Takılık",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "5 çekmeceli, ahşap tonlarında baykuş biçiminde takılık.",
+  "ayirt": "Beş rafı üst üste dizili; ahşap görünümlü renkleriyle masa ve komodin üzerinde duruyor.",
+  "fiyat": [
+   600,
+   1750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/baykus-cekmeceli-takilik.webp",
+  "alt": "Baykuş Çekmeceli Takılık — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "agac-taki-standi",
+  "ad": "Ağaç Takı Standı",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Beyaz ağaç formunda, kolye ve bilezik asılan takı standı.",
+  "ayirt": "Dallarına kolye ve bilezik asılıyor, tabanındaki kaba yüzükler giriyor.",
+  "fiyat": [
+   400,
+   1250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/agac-taki-standi.webp",
+  "alt": "Ağaç Takı Standı — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "kaktus-taki-kutusu",
+  "ad": "Kaktüs Takı Kutusu",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Çiçekli kaktüs görünümünde, katları açılan takı kutusu.",
+  "ayirt": "İlk bakışta saksıda çiçekli bir kaktüs gibi duruyor; içi takı bölmeli.",
+  "fiyat": [
+   400,
+   1250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/kaktus-taki-kutusu.webp",
+  "alt": "Kaktüs Takı Kutusu — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "bulut-anahtar-askisi",
+  "ad": "Bulut Anahtar Askısı",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "anahtarlik",
+   "hediye"
+  ],
+  "aciklama": "Duvara takılan bulut biçimli askı ve karakterli anahtarlık.",
+  "ayirt": "Anahtarlık buluta asılıyor; Kuromi, Hello Kitty gibi karakterli anahtarlıklarla birlikte hazırlanıyor.",
+  "fiyat": [
+   250,
+   750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/bulut-anahtar-askisi.webp",
+  "alt": "Bulut Anahtar Askısı — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "dis-fircalik",
+  "ad": "Diş Biçimli Diş Fırçalık",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor"
+  ],
+  "aciklama": "Üç diş fırçası ve macun için, diş biçiminde banyo düzenleyicisi.",
+  "ayirt": "Üç fırça yuvası ve macun bölmesi var; banyoda tezgâh üzerinde duruyor.",
+  "fiyat": [
+   250,
+   750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/dis-fircalik.webp",
+  "alt": "Diş Biçimli Diş Fırçalık — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "dis-macunu-sikacagi",
+  "ad": "Diş Macunu Sıkacağı",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "toplu-siparis"
+  ],
+  "aciklama": "Tüpün son damlasına kadar sıkan, farklı tasarımlarda diş macunu sıkacağı.",
+  "ayirt": "Tüp aradan geçirilip sarılıyor; birkaç farklı tasarımı ve renk seçeneği var.",
+  "fiyat": [
+   75,
+   250
+  ],
+  "adet": true,
+  "gorsel": "/assets/img/urun/dis-macunu-sikacagi.webp",
+  "alt": "Diş Macunu Sıkacağı — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "dekoratif-vazo",
+  "ad": "Dekoratif Vazo",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Spiral dokulu, beyaz dekoratif vazo.",
+  "ayirt": "Yapay ve kuru çiçek için; renk ve boy isteğe göre değişiyor.",
+  "fiyat": [
+   250,
+   900
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/dekoratif-vazo.webp",
+  "alt": "Dekoratif Vazo — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "labubu-kalemlik",
+  "ad": "Labubu Kalemlik",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Yanında Labubu figürü olan, örgü dokulu kalemlik.",
+  "ayirt": "Hem kalemlik hem figür; çalışma masası için dekoratif ve işlevli.",
+  "fiyat": [
+   400,
+   1250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/labubu-kalemlik.webp",
+  "alt": "Labubu Kalemlik — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "isimli-ogretmen-kalemligi",
+  "ad": "İsimli Öğretmen Kalemliği",
+  "kategori": "Hediyelik",
+  "tur": "isimli",
+  "etiketler": [
+   "hediye",
+   "ev-dekor",
+   "toplu-siparis"
+  ],
+  "aciklama": "Kurşun kalem biçiminde, öğretmenin adı yazılı kalemlik.",
+  "ayirt": "Öğretmenler Günü ve karne dönemi için; üzerindeki isim her sipariş için ayrı yazılıyor, sınıfça toplu sipariş de veriliyor.",
+  "fiyat": [
+   300,
+   900
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/isimli-ogretmen-kalemligi.webp",
+  "alt": "İsimli Öğretmen Kalemliği — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "hayalet-sekerlik",
+  "ad": "Hayalet Şekerlik",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Ağzı açık hayalet biçiminde şekerlik ve kase.",
+  "ayirt": "Cadılar Bayramı sofrası için ya da yıl boyu şekerlik olarak; kabın içi geniş.",
+  "fiyat": [
+   400,
+   1250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/hayalet-sekerlik.webp",
+  "alt": "Hayalet Şekerlik — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "kurabiye-canavari-sekerlik",
+  "ad": "Kurabiye Canavarı Şekerlik",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "COOKIES yazılı kabı kucaklayan Kurabiye Canavarı temalı şekerlik.",
+  "ayirt": "Kabın içine şeker ya da kurabiye konuyor; mavi tüy dokusu baskıda veriliyor.",
+  "fiyat": [
+   500,
+   1500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/kurabiye-canavari-sekerlik.webp",
+  "alt": "Kurabiye Canavarı Şekerlik — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "groot-saksi",
+  "ad": "Groot Saksı",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Ağaç kütüğü dokulu, Groot yüzlü saksı.",
+  "ayirt": "Sukulent ve küçük bitkiler için; kabuk dokusu baskıda veriliyor.",
+  "fiyat": [
+   400,
+   1250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/groot-saksi.webp",
+  "alt": "Groot Saksı — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "bulbasaur-saksi",
+  "ad": "Bulbasaur Saksı",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Sırtındaki soğanın yerine bitki dikilen Bulbasaur saksı.",
+  "ayirt": "Pokémon sevenler için; sırtındaki bölmeye küçük bir bitki ya da sukulent dikiliyor.",
+  "fiyat": [
+   400,
+   1250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/bulbasaur-saksi.webp",
+  "alt": "Bulbasaur Saksı — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "mario-tuvalet-kagidi-tutucu",
+  "ad": "Mario Tuvalet Kâğıdı Tutucu",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "oyuncu-hediyesi",
+   "hediye"
+  ],
+  "aciklama": "Duvara takılan, tuvalet kâğıdını tutan Süper Mario.",
+  "ayirt": "Kâğıt rulosu Mario'nun kollarının arasına takılıyor; banyoya oyun havası katıyor.",
+  "fiyat": [
+   600,
+   1750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/mario-tuvalet-kagidi-tutucu.webp",
+  "alt": "Mario Tuvalet Kâğıdı Tutucu — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "3d-katmanli-duvar-tablosu",
+  "ad": "3D Katmanlı Duvar Tablosu",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Siyah zeminden dışarı çıkan katmanlı karakter başı: Daredevil, Darth Vader ve diğerleri.",
+  "ayirt": "Kafa ince katmanlardan oluşuyor ve zeminden dışarı taşıyor; karakter ve renk isteğe göre değişiyor.",
+  "fiyat": [
+   750,
+   2250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/3d-katmanli-duvar-tablosu.webp",
+  "alt": "3D Katmanlı Duvar Tablosu — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "yilbasi-kurabiye-kaliplari",
+  "ad": "Yılbaşı Kurabiye Kalıpları",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "toplu-siparis"
+  ],
+  "aciklama": "Çam ağacı, kar tanesi ve hediye kutusu desenli kurabiye kalıbı seti.",
+  "ayirt": "Hem keser hem desen basar; isim ya da logo yazılı kalıp da yapıyoruz.",
+  "fiyat": [
+   150,
+   600
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/yilbasi-kurabiye-kaliplari.webp",
+  "alt": "Yılbaşı Kurabiye Kalıpları — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "karakterli-kurabiye-kalibi",
+  "ad": "Karakterli Kurabiye Kalıbı",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "pasta-susu"
+  ],
+  "aciklama": "Bluey gibi karakterlerin ve adının basıldığı kurabiye kalıbı.",
+  "ayirt": "Doğum günü temasına göre karakter ve isimle hazırlanıyor; butik pastacılar için de yapıyoruz.",
+  "fiyat": [
+   100,
+   400
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/karakterli-kurabiye-kalibi.webp",
+  "alt": "Karakterli Kurabiye Kalıbı — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "monstera-bitki-dekoru",
+  "ad": "Monstera Bitki Dekoru",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Saksısıyla birlikte, hiç solmayan 3D baskı monstera bitkisi.",
+  "ayirt": "Yaprak formu monstera'dan alındı; sulama istemeyen bir bitki hediyesi.",
+  "fiyat": [
+   400,
+   1250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/monstera-bitki-dekoru.webp",
+  "alt": "Monstera Bitki Dekoru — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "yukari-bak-evi-maketi",
+  "ad": "Yukarı Bak Evi Maketi",
+  "kategori": "Maket",
+  "tur": "maket",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Pixar'ın Yukarı Bak filmindeki balonlu evin renkli maketi.",
+  "ayirt": "Evin renkli cephesi, verandası ve çatıdaki balon demetiyle; raf ve kitaplık dekoru.",
+  "fiyat": [
+   1250,
+   3500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/yukari-bak-evi-maketi.webp",
+  "alt": "Yukarı Bak Evi Maketi — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "venusaur-figuru",
+  "ad": "Venusaur Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Sırtında çiçeğiyle Pokémon Venusaur figürü.",
+  "ayirt": "Sırtındaki büyük çiçek ve yaprakların her biri ayrı detay; koleksiyon rafı için.",
+  "fiyat": [
+   750,
+   2500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/venusaur-figuru.webp",
+  "alt": "Venusaur Figürü — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "charmander-figuru",
+  "ad": "Charmander Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Kuyruğu alevli Pokémon Charmander figürü.",
+  "ayirt": "Turuncu gövde ve krem karın ayrı renklerde; kuyruk ucundaki alev detayıyla.",
+  "fiyat": [
+   500,
+   1750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/charmander-figuru.webp",
+  "alt": "Charmander Figürü — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "flareon-chibi-figuru",
+  "ad": "Flareon Chibi Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Pokémon Flareon'un büyük başlı, sevimli chibi hâli.",
+  "ayirt": "Chibi oranlarında: büyük baş, kısa gövde; Eevee ailesinin diğer üyeleri de yapılabiliyor.",
+  "fiyat": [
+   400,
+   1250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/flareon-chibi-figuru.webp",
+  "alt": "Flareon Chibi Figürü — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "snoopy-figuru",
+  "ad": "Snoopy Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Mavi şapkalı, oturan Snoopy figürü.",
+  "ayirt": "Nostaljik bir koleksiyon parçası; şapka ve kıyafet rengi isteğe göre değişiyor.",
+  "fiyat": [
+   400,
+   1250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/snoopy-figuru.webp",
+  "alt": "Snoopy Figürü — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "stitch-figuru",
+  "ad": "Stitch Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Oturan Stitch figürü; renkli ya da tek renk.",
+  "ayirt": "Renkli detaylı ya da düz tek renk basılabiliyor; tek renk hâli boyamaya da uygun.",
+  "fiyat": [
+   500,
+   1750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/stitch-figuru.webp",
+  "alt": "Stitch Figürü — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "tails-figuru",
+  "ad": "Tails Figürü (Sonic)",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "oyuncu-hediyesi",
+   "hediye"
+  ],
+  "aciklama": "Sonic'in iki kuyruklu yardımcısı Tails, koşu pozunda.",
+  "ayirt": "İki kuyruğu ve eldiven detaylarıyla; oyun köşesi için nostaljik bir parça.",
+  "fiyat": [
+   750,
+   2250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/tails-figuru.webp",
+  "alt": "Tails Figürü (Sonic) — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "donald-duck-figuru",
+  "ad": "Donald Duck Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Kollarını açmış, denizci kıyafetli Donald Duck figürü.",
+  "ayirt": "Mavi denizci üstü ve turuncu ayaklarıyla klasik Disney görünümü.",
+  "fiyat": [
+   750,
+   2250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/donald-duck-figuru.webp",
+  "alt": "Donald Duck Figürü — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "hollow-knight-figuru",
+  "ad": "Hollow Knight Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "oyuncu-hediyesi",
+   "hediye"
+  ],
+  "aciklama": "Hollow Knight oyununun sessiz kahramanı, kaidesiyle.",
+  "ayirt": "Pelerin, iğne kılıç ve beyaz maske detaylarıyla; oyuncular için koleksiyon parçası.",
+  "fiyat": [
+   750,
+   2250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/hollow-knight-figuru.webp",
+  "alt": "Hollow Knight Figürü — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "sasuke-figuru",
+  "ad": "Sasuke Uchiha Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Naruto serisinden kılıçlı Sasuke Uchiha, chibi oranlarında.",
+  "ayirt": "PLA ile basılıp boyanıyor; diğer Naruto karakterleri de yapılabiliyor.",
+  "fiyat": [
+   750,
+   2250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/sasuke-figuru.webp",
+  "alt": "Sasuke Uchiha Figürü — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "gargamel-figuru",
+  "ad": "Gargamel Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Şirinler'in kötü karakteri Gargamel, siyah cübbesiyle.",
+  "ayirt": "Yüz ifadesi ve cübbe kıvrımları elle boyanıyor; nostalji sevenler için.",
+  "fiyat": [
+   750,
+   2250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/gargamel-figuru.webp",
+  "alt": "Gargamel Figürü — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "donkey-kong-figuru",
+  "ad": "Donkey Kong Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "oyuncu-hediyesi",
+   "hediye"
+  ],
+  "aciklama": "Kırmızı kravatlı Donkey Kong, çimenli kaidesiyle.",
+  "ayirt": "Kas detayları ve kaidedeki çimen dokusuyla; oyun koleksiyonu için.",
+  "fiyat": [
+   750,
+   2250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/donkey-kong-figuru.webp",
+  "alt": "Donkey Kong Figürü — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "labubu-figuru",
+  "ad": "Labubu Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Tüylü kostümlü Labubu figürü; şeftali, pembe ve farklı renklerde.",
+  "ayirt": "Kostüm rengi ve kulak detayları isteğe göre değişiyor; anahtarlık boyu da yapılıyor.",
+  "fiyat": [
+   500,
+   1500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/labubu-figuru.webp",
+  "alt": "Labubu Figürü — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "tweety-figuru",
+  "ad": "Tweety Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Looney Tunes'un minik sarı kuşu Tweety.",
+  "ayirt": "Küçük ama detaylı; masa ve raf süsü olarak.",
+  "fiyat": [
+   400,
+   1250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/tweety-figuru.webp",
+  "alt": "Tweety Figürü — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "sirin-gozluk-tutucu",
+  "ad": "Şirin Gözlük Tutucu",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Şirin kafası biçiminde gözlük tutucu.",
+  "ayirt": "Gözlük Şirin'in yüzüne takılıyor; komodin ve masa üstünde gözlüğün yeri belli oluyor.",
+  "fiyat": [
+   300,
+   900
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/sirin-gozluk-tutucu.webp",
+  "alt": "Şirin Gözlük Tutucu — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "eklemli-ejderha",
+  "ad": "Eklemli Ejderha",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye",
+   "toplu-siparis"
+  ],
+  "aciklama": "Her eklemi hareket eden, pullu ejderha figürü.",
+  "ayirt": "Eklemleri baskıdan hareketli çıkıyor; ipek parlaklığında, renk geçişli filamentlerle de basılıyor.",
+  "fiyat": [
+   250,
+   1250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/eklemli-ejderha.webp",
+  "alt": "Eklemli Ejderha — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "eklemli-spiderman-figuru",
+  "ad": "Eklemli Spider-Man Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Kolları ve bacakları oynayan, poz verilebilen Spider-Man.",
+  "ayirt": "Eklemleri sayesinde istenen poza getiriliyor; Deadpool gibi başka kahramanlarla da yapılıyor.",
+  "fiyat": [
+   400,
+   1250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/eklemli-spiderman-figuru.webp",
+  "alt": "Eklemli Spider-Man Figürü — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "chibi-film-karakterleri",
+  "ad": "Chibi Film Karakterleri",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Sinema karakterlerinin büyük başlı, sevimli chibi figürleri.",
+  "ayirt": "Alien gibi ikonik karakterlerin küçük boy chibi hâlleri; boyut ve renk isteğe göre değişiyor.",
+  "fiyat": [
+   300,
+   900
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/chibi-film-karakterleri.webp",
+  "alt": "Chibi Film Karakterleri — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "babalar-gunu-anahtarligi",
+  "ad": "Babalar Günü Anahtarlığı",
+  "kategori": "Anahtarlık",
+  "tur": "anahtarlik",
+  "etiketler": [
+   "anahtarlik",
+   "hediye"
+  ],
+  "aciklama": "“The Best Father in the Galaxy” yazılı, Star Wars temalı anahtarlık.",
+  "ayirt": "Babalar Günü için; yazı Türkçe ya da isimle de yapılabiliyor.",
+  "fiyat": [
+   100,
+   350
+  ],
+  "adet": true,
+  "gorsel": "/assets/img/urun/babalar-gunu-anahtarligi.webp",
+  "alt": "Babalar Günü Anahtarlığı — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "hello-kitty-anahtarlik",
+  "ad": "Hello Kitty Anahtarlık",
+  "kategori": "Anahtarlık",
+  "tur": "anahtarlik",
+  "etiketler": [
+   "anahtarlik",
+   "toplu-siparis"
+  ],
+  "aciklama": "Renkli Hello Kitty anahtarlıkları.",
+  "ayirt": "Çok renkli baskıyla boyasız çıkıyor; toplu siparişte farklı renkler karışık hazırlanabiliyor.",
+  "fiyat": [
+   75,
+   300
+  ],
+  "adet": true,
+  "gorsel": "/assets/img/urun/hello-kitty-anahtarlik.webp",
+  "alt": "Hello Kitty Anahtarlık — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "mario-soru-blogu-anahtarlik",
+  "ad": "Mario Soru Bloğu Anahtarlık",
+  "kategori": "Anahtarlık",
+  "tur": "anahtarlik",
+  "etiketler": [
+   "anahtarlik",
+   "oyuncu-hediyesi"
+  ],
+  "aciklama": "Süper Mario'daki sarı soru bloğu biçiminde anahtarlık.",
+  "ayirt": "Küp biçimli, soru işareti kabartmalı; oyuncular için küçük bir hediye.",
+  "fiyat": [
+   75,
+   300
+  ],
+  "adet": true,
+  "gorsel": "/assets/img/urun/mario-soru-blogu-anahtarlik.webp",
+  "alt": "Mario Soru Bloğu Anahtarlık — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "minecraft-creeper-anahtarlik",
+  "ad": "Minecraft Creeper Anahtarlık",
+  "kategori": "Anahtarlık",
+  "tur": "anahtarlik",
+  "etiketler": [
+   "anahtarlik",
+   "oyuncu-hediyesi",
+   "toplu-siparis"
+  ],
+  "aciklama": "Minecraft yazılı, Creeper yüzlü anahtarlık.",
+  "ayirt": "İki renkli baskı; Minecraft temalı doğum günlerinde hediye olarak toplu da hazırlanıyor.",
+  "fiyat": [
+   75,
+   250
+  ],
+  "adet": true,
+  "gorsel": "/assets/img/urun/minecraft-creeper-anahtarlik.webp",
+  "alt": "Minecraft Creeper Anahtarlık — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "eklemli-iskelet-anahtarlik",
+  "ad": "Eklemli Renkli Anahtarlık",
+  "kategori": "Anahtarlık",
+  "tur": "anahtarlik",
+  "etiketler": [
+   "anahtarlik",
+   "toplu-siparis"
+  ],
+  "aciklama": "Kolları ve bacakları oynayan, rengârenk eklemli anahtarlıklar.",
+  "ayirt": "Beyaz, sarı, turuncu, yeşil gibi renklerde; eklemleri baskıdan hareketli çıkıyor.",
+  "fiyat": [
+   75,
+   250
+  ],
+  "adet": true,
+  "gorsel": "/assets/img/urun/eklemli-iskelet-anahtarlik.webp",
+  "alt": "Eklemli Renkli Anahtarlık — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "panda-anahtarlik",
+  "ad": "Panda Anahtarlık",
+  "kategori": "Anahtarlık",
+  "tur": "anahtarlik",
+  "etiketler": [
+   "anahtarlik",
+   "hediye"
+  ],
+  "aciklama": "Eklemli, sevimli panda anahtarlık.",
+  "ayirt": "Gövdesi eklemli; aynı modelin domuz versiyonu da var.",
+  "fiyat": [
+   100,
+   350
+  ],
+  "adet": true,
+  "gorsel": "/assets/img/urun/panda-anahtarlik.webp",
+  "alt": "Panda Anahtarlık — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "squid-game-bes-tas-oyunu",
+  "ad": "Squid Game Beş Taş Oyunu",
+  "kategori": "Oyuncu",
+  "tur": "dekor",
+  "etiketler": [
+   "oyuncu-hediyesi",
+   "hediye"
+  ],
+  "aciklama": "Squid Game temalı, kutulu beş taş (gonggi) oyunu.",
+  "ayirt": "Renkli taşlar ve dizideki sembollerle süslü kutusuyla birlikte geliyor.",
+  "fiyat": [
+   300,
+   900
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/squid-game-bes-tas-oyunu.webp",
+  "alt": "Squid Game Beş Taş Oyunu — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "minecraft-piksel-kilic",
+  "ad": "Minecraft Piksel Kılıç",
+  "kategori": "Oyuncu",
+  "tur": "dekor",
+  "etiketler": [
+   "oyuncu-hediyesi",
+   "hediye"
+  ],
+  "aciklama": "Blok blok piksel tasarımlı Minecraft kılıcı.",
+  "ayirt": "Oyundaki kılıcın birebir piksel görünümü; duvar süsü ya da oyuncak olarak.",
+  "fiyat": [
+   300,
+   900
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/minecraft-piksel-kilic.webp",
+  "alt": "Minecraft Piksel Kılıç — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "mercedes-g63-maketi",
+  "ad": "Mercedes G63 AMG Maketi",
+  "kategori": "Maket",
+  "tur": "maket",
+  "etiketler": [
+   "araba-maketi",
+   "hediye"
+  ],
+  "aciklama": "Arazinin ikonu Mercedes G63 AMG'nin maketi.",
+  "ayirt": "Kutu gövdesi, yedek lastiği ve jant detaylarıyla; renk aracınıza göre seçiliyor.",
+  "fiyat": [
+   3000,
+   6500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/mercedes-g63-maketi.webp",
+  "alt": "Mercedes G63 AMG Maketi — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "klasik-muscle-car-maketi",
+  "ad": "Klasik Muscle Car Maketi",
+  "kategori": "Maket",
+  "tur": "maket",
+  "etiketler": [
+   "araba-maketi",
+   "hediye"
+  ],
+  "aciklama": "Çift şeritli boyasıyla klasik Amerikan muscle car maketi.",
+  "ayirt": "Gövdedeki yarış şeritleri ve krom detaylar elle boyanıyor; dilediğiniz marka ve modelde yapılabiliyor.",
+  "fiyat": [
+   2500,
+   6000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/klasik-muscle-car-maketi.webp",
+  "alt": "Klasik Muscle Car Maketi — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "porsche-911-maketi",
+  "ad": "Porsche 911 Maketi",
+  "kategori": "Maket",
+  "tur": "maket",
+  "etiketler": [
+   "araba-maketi",
+   "hediye"
+  ],
+  "aciklama": "Metalik yeşil Porsche 911 maketi.",
+  "ayirt": "Metalik boya ve jant detaylarıyla; renk ve kasa tipi isteğe göre değişiyor.",
+  "fiyat": [
+   2500,
+   6000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/porsche-911-maketi.webp",
+  "alt": "Porsche 911 Maketi — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "walking-dead-figur-seti",
+  "ad": "The Walking Dead Figür Seti",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Dizinin dört karakteri, yazılı kaide üzerinde, elle boyanmış.",
+  "ayirt": "Dört figür ve dizinin logosu tek kaidede; boyaması tamamen el işi.",
+  "fiyat": [
+   2000,
+   5000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/walking-dead-figur-seti.webp",
+  "alt": "The Walking Dead Figür Seti — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "halloween-tabela-dekoru",
+  "ad": "Halloween Tabela Dekoru",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Kabak ve kafatasıyla süslü, elle boyanmış Halloween yazısı.",
+  "ayirt": "Kabak ve kafatası kontrastı elle boyanıyor; Cadılar Bayramı masa dekoru.",
+  "fiyat": [
+   600,
+   1750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/halloween-tabela-dekoru.webp",
+  "alt": "Halloween Tabela Dekoru — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "hayaletli-atlikarinca",
+  "ad": "Hayaletli Atlıkarınca Dekoru",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Kabak çatılı, minik hayaletlerin bindiği Cadılar Bayramı atlıkarıncası.",
+  "ayirt": "Atlıkarıncanın katları ve hayaletleri ayrı renklerde basılıyor; Cadılar Bayramı masa dekoru.",
+  "fiyat": [
+   750,
+   2250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/hayaletli-atlikarinca.webp",
+  "alt": "Hayaletli Atlıkarınca Dekoru — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "kedili-sevgililer-gunu-hediyesi",
+  "ad": "Kedili Sevgililer Günü Hediyesi",
+  "kategori": "Hediyelik",
+  "tur": "dekor",
+  "etiketler": [
+   "hediye",
+   "ev-dekor"
+  ],
+  "aciklama": "Kırmızı kalp balona uzanan siyah kedi biblosu.",
+  "ayirt": "Kediseverler için Sevgililer Günü hediyesi; kaideye isim ya da tarih eklenebiliyor.",
+  "fiyat": [
+   300,
+   900
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/kedili-sevgililer-gunu-hediyesi.webp",
+  "alt": "Kedili Sevgililer Günü Hediyesi — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "kartal-figuru",
+  "ad": "Kartal Figürü",
+  "kategori": "Figür",
+  "tur": "dekor",
+  "etiketler": [
+   "hediye",
+   "ev-dekor"
+  ],
+  "aciklama": "Kaya üzerinde duran, elle boyanmış kel kartal figürü.",
+  "ayirt": "Beyaz baş ve koyu kanat tüyleri elle boyanıyor; masa dekoru ve hediye için.",
+  "fiyat": [
+   600,
+   1750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/kartal-figuru.webp",
+  "alt": "Kartal Figürü — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "love-kaktus-biblo",
+  "ad": "LOVE Kaktüs Biblo",
+  "kategori": "Hediyelik",
+  "tur": "dekor",
+  "etiketler": [
+   "hediye",
+   "ev-dekor"
+  ],
+  "aciklama": "Örgü saksılarda dört kaktüs; L-O-V-E harfleriyle.",
+  "ayirt": "Dört kaktüsün her biri bir harf taşıyor; sulama istemeyen bir sevgi hediyesi.",
+  "fiyat": [
+   300,
+   900
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/love-kaktus-biblo.webp",
+  "alt": "LOVE Kaktüs Biblo — 3dartolyemiz atölyesinde 3D baskı",
+  "one_cikan": false,
+  "eski": []
  }
 ]

@@ -419,3 +419,43 @@ h2{font-size:clamp(1.6rem,4vw,2.5rem);}
 .yt-kart .tt-oynat svg{width:52px;height:52px;filter:drop-shadow(0 4px 14px rgba(0,0,0,.55));transition:transform .2s ease}
 .yt-kart:hover .tt-oynat svg,.yt-kart:focus-visible .tt-oynat svg{transform:scale(1.08)}
 .yt-kart:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+
+/* ---------- blog ve atolye (scripts/blog.py) ---------- */
+.blog-grid{display:grid;gap:var(--gap);grid-template-columns:1fr;}
+@media (min-width:640px){.blog-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media (min-width:1024px){.blog-grid{grid-template-columns:repeat(3,minmax(0,1fr));}}
+.blog-kart{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;box-shadow:var(--shadow-soft);display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease;}
+.blog-kart:hover{transform:translateY(-4px);box-shadow:var(--shadow-brand);}
+.blog-kart-gorsel{display:block;aspect-ratio:4/3;overflow:hidden;background:var(--bg);}
+.blog-kart-gorsel img{width:100%;height:100%;object-fit:cover;display:block;}
+.blog-kart-govde{padding:1.15rem 1.25rem 1.4rem;}
+.blog-kart-govde time{font-size:.8rem;color:var(--ink-soft);}
+.blog-kart-govde h3{font-size:1.1rem;margin:.3em 0 .45em;}
+.blog-kart-govde h3 a{color:var(--ink);text-decoration:none;}
+.blog-kart-govde h3 a:hover{color:var(--brand-dk);}
+.blog-kart-govde p{font-size:.9rem;margin:0;color:var(--ink-soft);}
+.yazi-ust{font-size:.9rem;color:var(--ink-soft);margin:0;}
+.yazi-govde{max-width:72ch;}
+.yazi-govde h2{margin-top:2rem;}
+.yazi-govde p,.yazi-govde li{line-height:1.7;}
+.yazi-govde ul,.yazi-govde ol{padding-left:1.2rem;margin:0 0 1.2rem;}
+.yazi-govde li{margin-bottom:.45rem;}
+.yazi-govde a{color:var(--brand-dk);}
+.yazi-kapak{width:100%;max-height:460px;object-fit:cover;border-radius:16px;display:block;margin:0 0 1.75rem;height:auto;}
+.yazi-gorsel,.yazi-video{margin:1.5rem 0;max-width:360px;}
+.yazi-gorsel img,.yazi-video video{width:100%;height:auto;display:block;border-radius:14px;background:#000;}
+.yazi-gorsel figcaption,.yazi-video figcaption{font-size:.85rem;color:var(--ink-soft);margin-top:.5rem;}
+.yazi-cta{margin:2.5rem 0 0;padding:1.5rem;border-radius:var(--radius-card);background:var(--surface);border:1px solid var(--line);}
+.yazi-cta p{margin:0 0 1rem;}
+.atolye-grid{display:grid;gap:1rem;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:1.5rem;}
+@media (min-width:760px){.atolye-grid{grid-template-columns:repeat(4,minmax(0,1fr));}}
+.atolye-grid .yazi-gorsel,.atolye-grid .yazi-video{margin:0;max-width:none;}
+/* Alt sayfa basligi tek sutun: .hero .container ana sayfanin iki sutunlu izgarasi;
+   alt sayfada kirinti solda, h1 sagda kaliyordu (08.10.2026 ekran olcumu). */
+.hero--sayfa .container{display:block;}
+.yazi .container{max-width:calc(72ch + 2.5rem);}
+.yazi-govde{max-width:none;}
+.katalog-grup{margin-top:2.5rem;}
+.katalog-grup h2{margin-bottom:.2em;}
+.katalog-grup p{margin:0;color:var(--ink-soft);font-size:.95rem;}
+.katalog-tumu .btn{white-space:normal;max-width:100%;text-align:center;}

@@ -1,0 +1,44 @@
+<p>3D baskı, bir nesneyi kalıpla ya da talaşlı işlemeyle değil, ince katmanları üst üste ekleyerek üretme yöntemi. Bilgisayarda hazırlanan bir 3D model, yazıcının anlayacağı katmanlara bölünüyor ve makine bu katmanları sırayla basıyor. Sonuçta elinizde, ekrandaki modelin fiziksel bir kopyası oluyor.</p>
+<p>Bu yazıda atölyemizde her gün kullandığımız iki yöntemi, yani filamentli (FDM) ve reçineli (SLA) baskıyı sade bir dille anlatıyoruz. Bir figür ya da maket yaptırmadan önce ne beklemeniz gerektiğini anlamanıza yardımcı olur.</p>
+
+<h2>Baskıdan önce: model ve dilimleme</h2>
+<p>Her baskı bir 3D modelle başlıyor. Model ya hazır bir dosya (STL, 3MF, OBJ) oluyor ya da fotoğraftan sıfırdan çiziliyor. Ardından model <strong>dilimleme programına</strong> (slicer) açılıyor. Program modeli yüzlerce ince katmana bölüyor, her katmanda nozulun ya da ışığın nereden geçeceğini hesaplıyor ve yazıcıya giden komut dosyasını üretiyor.</p>
+<p>Dilimlemede verilen kararlar sonucu doğrudan etkiliyor:</p>
+<ul>
+  <li><strong>Katman yüksekliği:</strong> İnce katman daha pürüzsüz yüzey verir ama baskıyı uzatır.</li>
+  <li><strong>Doluluk (infill):</strong> Parçanın içi tamamen dolu basılmaz; ızgara ya da petek biçiminde boşluklu basılır. Doluluk arttıkça parça ağırlaşır ve dayanımı artar.</li>
+  <li><strong>Destekler:</strong> Havada kalan kısımlar (uzanmış bir kol, motosikletin aynası) altına geçici destek ister. Baskı bitince bu destekler elle sökülür.</li>
+  <li><strong>Yönlendirme:</strong> Parçanın tablaya hangi yüzüyle yatırıldığı hem desteği hem de dayanımı belirler.</li>
+</ul>
+{{foto:dilimleme-programi}}
+
+<h2>Filamentli baskı (FDM)</h2>
+<p>En yaygın yöntem bu. Makaraya sarılı plastik bir tel (filament) ısıtılmış nozuldan eritilerek geçiriliyor; nozul tablanın üzerinde gezerek her katmanın çizgilerini çiziyor. Bir katman bitince tabla biraz iniyor (ya da kafa biraz yükseliyor) ve bir sonraki katman basılıyor.</p>
+<p>FDM'in güçlü yanları:</p>
+<ul>
+  <li>Büyük parçalar ve toplu üretim için ekonomik.</li>
+  <li>PLA, PETG, TPU gibi farklı özellikte malzemeler kullanılabiliyor.</li>
+  <li>Çok renkli baskı üniteleriyle aynı parçada birden fazla renk basılabiliyor.</li>
+</ul>
+<p>Zayıf yanı, katman çizgilerinin gözle görülebilmesi. Boyanacak figürlerde bu çizgileri zımpara ve astarla yumuşatıyoruz.</p>
+{{video:cerceve-baskisi}}
+
+<h2>Reçineli baskı (SLA / MSLA)</h2>
+<p>Reçineli yazıcıda bir hazne sıvı reçineyle dolu. Altından gelen ışık, her katmanın şeklini reçinenin üzerine yansıtıyor ve ışık değen yer sertleşiyor. Katmanlar FDM'e göre çok daha ince olabildiği için yüz hatları, parmaklar, saç telleri gibi küçük detaylar çok daha net çıkıyor.</p>
+<p>Karşılığında daha fazla iş gerekiyor: baskı bittikten sonra parça yıkanıyor, destekleri alınıyor ve ışık altında son kez sertleştiriliyor. Reçine parçalar da FDM parçalara göre daha kırılgan. Bu yüzden reçineyi küçük ve çok detaylı işlerde, filamenti geri kalan her şeyde kullanıyoruz.</p>
+
+<h2>Bir baskı ne kadar sürer?</h2>
+<p>Birkaç dakikadan birkaç güne kadar. Süreyi belirleyen şey boyut, katman yüksekliği ve tablada kaç parça olduğu. Küçük bir anahtarlık yarım saatte çıkabiliyor; tabla dolusu toplu sipariş ise bir günü geçebiliyor. Aşağıdaki tabla tek seferde 34 saat sürdü.</p>
+{{video:baski-tablasindan-cikarma}}
+<p>Baskı süresine boyama, kuruma ve paketleme ekleniyor. Siparişlerde toplam süre için şunu söyleyebiliriz: {{sure}}</p>
+
+<h2>3D baskı neler için kullanılır?</h2>
+<p>Sanayide prototip ve yedek parça üretiminden diş hekimliğine kadar çok geniş bir alanda kullanılıyor. Bizim atölyede ağırlıklı olarak şunları üretiyoruz:</p>
+<ul>
+  <li><a href="/kisiye-ozel-3d-figur/">Fotoğraftan kişiye özel figürler</a> ve evcil hayvan figürleri</li>
+  <li><a href="/3d-baski-maket/">Araba ve motosiklet maketleri</a></li>
+  <li><a href="/etiket/anahtarlik/">Anahtarlıklar</a> ve <a href="/etiket/toplu-siparis/">toplu kurumsal siparişler</a></li>
+  <li><a href="/etiket/ev-dekor/">Ev ve masa ürünleri</a>, <a href="/etiket/pasta-susu/">pasta süsleri</a></li>
+  <li>Elinizdeki <a href="/stl-dosyasi-bastirma/">STL dosyasının baskısı</a></li>
+</ul>
+<p>Hangi işte hangi malzemenin seçildiğini <a href="/blog/pla-petg-tpu-recine-farki/">PLA, PETG, TPU ve reçine karşılaştırmasında</a> ayrıntılı anlattık.</p>

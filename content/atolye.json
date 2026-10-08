@@ -1,0 +1,115 @@
+{
+ "_kaynak": "Kareler ve klipler @3dartolyemiz'in kendi Instagram reels videolarindan (08.10.2026 disa aktarimi). Kliplerde ses yok (muzikler telifli). Tarih = reels'in yayin tarihi. 'sayfada': false olan fotograf atolye sayfasinda gosterilmez (ayni sahnenin videosu var); blogda kullanilabilir.",
+ "fotograflar": [
+  {
+   "dosya": "bambu-lab-yazici-ams",
+   "baslik": "Çok renkli baskı ünitesi (AMS) takılı yazıcı",
+   "alt": "Atölyedeki Bambu Lab 3D yazıcı ve üstündeki çok renkli filament ünitesi"
+  },
+  {
+   "dosya": "ams-filament-rafi",
+   "baslik": "Filament rafı ve çok renkli besleme ünitesi",
+   "alt": "Bambu Lab AMS ünitesindeki filament makaraları ve önde 3D baskı ejderha figürü"
+  },
+  {
+   "dosya": "yazicida-toplu-figur-baskisi",
+   "baslik": "Aynı tablada birden çok figür",
+   "alt": "3D yazıcının tablasında yan yana basılmış turuncu figürler",
+   "sayfada": false
+  },
+  {
+   "dosya": "toplu-civciv-baskisi",
+   "baslik": "Toplu sipariş: tek seferde onlarca parça",
+   "alt": "3D yazıcı tablasında sıra sıra dizilmiş sarı civciv figürleri",
+   "sayfada": false
+  },
+  {
+   "dosya": "yazicida-cerceve-baskisi",
+   "baslik": "Baskı anı",
+   "alt": "3D yazıcı nozulunun sarı çerçeveyi katman katman bastığı an",
+   "sayfada": false
+  },
+  {
+   "dosya": "kurabiye-adam-toplu-baski",
+   "baslik": "Anahtarlık için toplu baskı",
+   "alt": "Yazıcı tablasında toplu basılmış kurabiye adam anahtarlık figürleri",
+   "sayfada": false
+  },
+  {
+   "dosya": "baski-tablasi-34-saat",
+   "baslik": "34 saat süren bir baskının tablası",
+   "alt": "Esnek baskı tablasından çıkarılan yeşil küp parçalar",
+   "sayfada": false
+  },
+  {
+   "dosya": "ay-lamba-yazicida",
+   "baslik": "Ay görünümlü lamba, yazıcıdan çıkarken",
+   "alt": "3D yazıcının içinde yeni basılmış ay yüzeyi dokulu lamba gövdesi"
+  },
+  {
+   "dosya": "ay-lamba-isikli",
+   "baslik": "Aynı lamba, ışığı yanarken",
+   "alt": "3D baskı ay lambasının ahşap masada ışık saçtığı görüntü",
+   "sayfada": false
+  },
+  {
+   "dosya": "filament-makaralari",
+   "baslik": "Filament makaraları",
+   "alt": "Üst üste dizilmiş sarı, gri, yeşil ve mavi filament makaraları"
+  },
+  {
+   "dosya": "dilimleme-programi",
+   "baslik": "Baskıdan önce: dilimleme",
+   "alt": "Dizüstü bilgisayarda dilimleme programında açık figür modeli"
+  },
+  {
+   "dosya": "3d-modelleme-egitimi",
+   "baslik": "Modelleme eğitiminden",
+   "alt": "Sınıfta projeksiyonla gösterilen 3D modelleme programı ekranı"
+  }
+ ],
+ "videolar": [
+  {
+   "dosya": "toplu-civciv-baskisi",
+   "ad": "Toplu civciv baskısı",
+   "tarih": "2026-04-01",
+   "aciklama": "Tek tablada onlarca civciv figürü: toplu siparişlerde yazıcıdan çıkan iş böyle görünüyor."
+  },
+  {
+   "dosya": "figur-baskisi-tabla",
+   "ad": "Yazıcıda figür baskısı",
+   "tarih": "2025-09-09",
+   "aciklama": "Kapalı kasa 3D yazıcının tablasında aynı anda basılmış figürler."
+  },
+  {
+   "dosya": "cerceve-baskisi",
+   "ad": "Katman katman baskı",
+   "tarih": "2025-12-29",
+   "aciklama": "Nozulun bir çerçeveyi katman katman bastığı an."
+  },
+  {
+   "dosya": "kurabiye-adam-tabla",
+   "ad": "Kurabiye adam anahtarlık baskısı",
+   "tarih": "2025-11-27",
+   "aciklama": "Anahtarlık siparişi için tabla dolusu kurabiye adam figürü basılıyor."
+  },
+  {
+   "dosya": "ay-lamba",
+   "ad": "Ay görünümlü lamba",
+   "tarih": "2025-12-16",
+   "aciklama": "Ay yüzeyi dokulu lamba önce yazıcıda, sonra ışığı yanarken."
+  },
+  {
+   "dosya": "baski-tablasindan-cikarma",
+   "ad": "34 saatlik baskının tabladan çıkarılması",
+   "tarih": "2026-01-27",
+   "aciklama": "Esnek tabla bükülünce parçalar kendiliğinden ayrılıyor; bu tabla 34 saat sürdü."
+  },
+  {
+   "dosya": "anahtarlik-montaji",
+   "ad": "Anahtarlık montajı",
+   "tarih": "2026-01-11",
+   "aciklama": "Basılan parçalar elle birleştirilip halkası takılıyor; tıklama mekanizmalı anahtarlık."
+  }
+ ]
+}

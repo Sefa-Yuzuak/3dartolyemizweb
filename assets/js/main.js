@@ -168,3 +168,20 @@
     });
   });
 })();
+
+/* Atolye klipleri: sessiz, dongulu; yalniz ekrandayken oynar (preload=none). */
+(function(){
+  var klipler = document.querySelectorAll("video.klip");
+  if(!klipler.length || !("IntersectionObserver" in window)) return;
+  if(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+    klipler.forEach(function(v){ v.setAttribute("controls", ""); });
+    return;
+  }
+  var io = new IntersectionObserver(function(girdiler){
+    girdiler.forEach(function(g){
+      if(g.isIntersecting){ var p = g.target.play(); if(p && p.catch){ p.catch(function(){}); } }
+      else { g.target.pause(); }
+    });
+  }, {threshold: 0.35});
+  klipler.forEach(function(v){ io.observe(v); });
+})();
