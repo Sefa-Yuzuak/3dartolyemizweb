@@ -1314,7 +1314,7 @@ def llms_uret() -> str:
               "- Malzeme işin gereğine göre seçilir: ince detayda SLA reçine, dekor/hediyelik/maketin "
               "çoğunda PLA, dayanımda PETG, esnek parçada TPU.",
               "- Mimari proje maketi yapılmaz, ölçekli çalışılmaz; araç maketleri genelde 20 cm.",
-              "- Ana sayfadaki sayılar (3.800+ basılan parça, 270+ müşteri, 190+ modelleme, 140+ figür) "
+              "- Ana sayfadaki sayılar (9.000+ basılan parça, 790+ müşteri, 410+ modelleme, 340+ figür) "
               "yaklaşıktır: Instagram mesajlarından ölçülen siparişlerin, telefonla alınan işler için "
               "işletme sahibinin beyanıyla iki katı. Puan ve yorum sayısı yayımlanmaz.", ""]
     return "\n".join(satir)
