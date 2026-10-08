@@ -1046,6 +1046,8 @@ def anasayfa_guncelle() -> None:
             veri["itemListElement"] = [{"@type": "ListItem", "position": i, "url": f"{ALAN}/urun/{u['slug']}/"}
                                        for i, u in enumerate(one, 1)]
             veri["numberOfItems"] = len(one)
+        elif tur == "VideoObject":
+            veri = blog.video_sema("siparis-adimlari", ALAN)
         elif tur == "FAQPage":
             veri["mainEntity"] = [{"@type": "Question", "name": q,
                                    "acceptedAnswer": {"@type": "Answer", "text": c}} for q, c in ANASAYFA_SSS]
@@ -1236,6 +1238,7 @@ def vitrin_seridi(us: list, ters: bool) -> str:
 
 # en yeni 32 urun (urunler.json'a sona eklenir) iki serit hâlinde
 yeniler = URUNLER[-32:][::-1]
+ana = isaret_doldur(ana, "SIPARIS_VIDEO", "        " + blog.video_html("siparis-adimlari"))
 ana = isaret_doldur(ana, "VITRIN", vitrin_seridi(yeniler[:16], False) + "\n" + vitrin_seridi(yeniler[16:], True))
 io.open(KOK / "index.html", "w", encoding="utf-8").write(ana)
 print(f"  {len(blog.YAZILAR)} blog yazisi + /blog/ + /atolyemiz/ uretildi")
