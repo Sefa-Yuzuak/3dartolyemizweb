@@ -1,0 +1,1944 @@
+[
+ {
+  "slug": "kisiye-ozel-artopop-aile-figuru",
+  "ad": "Kişiye Özel ARTOPOP Aile Figürü",
+  "kategori": "Figür",
+  "tur": "aile",
+  "etiketler": [
+   "kisiye-ozel-figur",
+   "hediye"
+  ],
+  "aciklama": "Aile fotoğrafından üretilen, çok kişili Pop tarzı set.",
+  "ayirt": "Aile fotoğrafından çok kişili bir set çıkıyor. Kişi sayısı, hem modelleme hem boyama işçiliğini artıran ana etken.",
+  "fiyat": [
+   1250,
+   4500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-32.webp",
+  "alt": "Fotoğraftan üretilen kişiye özel ARTOPOP aile figürleri",
+  "one_cikan": true,
+  "eski": []
+ },
+ {
+  "slug": "pop-tarzi-futbolcu-figuru",
+  "ad": "Pop Tarzı Futbolcu Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "kisiye-ozel-figur",
+   "hediye"
+  ],
+  "aciklama": "Büyük başlı pop tarzında, forması ve kramponuyla elle boyanmış futbolcu figürü.",
+  "ayirt": "Ronaldo ve Messi en çok istenenler; istediğiniz oyuncuyu ve formayı yapıyoruz. Boyalı gönderebiliyoruz ya da boyasız hâlini boya setiyle birlikte kendiniz boyuyorsunuz.",
+  "fiyat": [
+   1250,
+   3500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/pop-tarzi-futbolcu-figuru.webp",
+  "alt": "Elle boyanmış pop tarzı futbolcu figürü ve boyasız hâli",
+  "one_cikan": true,
+  "eski": [
+   "/magaza/figur/funko-pop/ronaldo-funko-pop/",
+   "/magaza/figur/funko-pop/messi-funko-pop/",
+   "/magaza/figur/funko-pop/elsa-funko-pop/"
+  ]
+ },
+ {
+  "slug": "kisiye-ozel-kopek-figuru",
+  "ad": "Kişiye Özel Köpek Figürü",
+  "kategori": "Figür",
+  "tur": "evcil",
+  "etiketler": [
+   "evcil-hayvan-figuru",
+   "kisiye-ozel-figur",
+   "hediye"
+  ],
+  "aciklama": "Köpeğinizin fotoğrafından modellenen, tüy rengine kadar elle boyanmış figür.",
+  "ayirt": "Fotoğraftaki duruş ve tüy desenine göre çalışıyoruz; figürü gerçek köpeğin yanında çektiğimiz videoyu Instagram'da paylaştık.",
+  "fiyat": [
+   1750,
+   4750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/kisiye-ozel-kopek-figuru.webp",
+  "alt": "Kişiye özel boyanmış köpek figürü, arkada gerçek köpek",
+  "one_cikan": true,
+  "eski": []
+ },
+ {
+  "slug": "kisiye-ozel-anime-karakter-figuru",
+  "ad": "Kişiye Özel Anime Karakter Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "kisiye-ozel-figur",
+   "karakter-figuru"
+  ],
+  "aciklama": "İsim plaketli, kişiye özel anime tarzı figür.",
+  "ayirt": "İsim plaketi figürle birlikte üretiliyor; plakete yazılacak metni sipariş sırasında netleştiriyoruz.",
+  "fiyat": [
+   2000,
+   4750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-30.webp",
+  "alt": "İsim plaketli kişiye özel anime tarzı karakter figürü",
+  "one_cikan": true,
+  "eski": [
+   "/magaza/figur/league-of-legends/league-of-legends-jinx-figuru-2/"
+  ]
+ },
+ {
+  "slug": "cub-motosiklet-maketi",
+  "ad": "Cub Tipi Motosiklet Maketi (Plakalı)",
+  "kategori": "Maket",
+  "tur": "maket",
+  "etiketler": [
+   "motosiklet-maketi",
+   "hediye"
+  ],
+  "aciklama": "Kırmızı-beyaz Cub tipi motosikletin plakalı, elle boyanmış maketi.",
+  "ayirt": "Müşterimize teslim ettiğimiz bir çalışma; plaka ve platform maketle birlikte hazırlanıyor.",
+  "fiyat": [
+   3000,
+   6500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/cub-motosiklet-maketi.webp",
+  "alt": "Kırmızı Cub tipi motosiklet maketi",
+  "one_cikan": true,
+  "eski": []
+ },
+ {
+  "slug": "renault-megane-araba-maketi",
+  "ad": "Renault Megane Araba Maketi",
+  "kategori": "Maket",
+  "tur": "maket",
+  "etiketler": [
+   "araba-maketi",
+   "hediye"
+  ],
+  "aciklama": "Beyaz Renault Megane sedanın plakalı, elle boyanmış maketi.",
+  "ayirt": "Sahibine teslim ettiğimiz bir çalışma; plaka gerçek araçtakiyle aynı yazılıyor.",
+  "fiyat": [
+   3000,
+   6500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/renault-megane-araba-maketi.webp",
+  "alt": "Beyaz Renault Megane araba maketi",
+  "one_cikan": true,
+  "eski": []
+ },
+ {
+  "slug": "araba-logolu-isimli-anahtarlik",
+  "ad": "Araba Logolu İsimli Anahtarlık",
+  "kategori": "Anahtarlık",
+  "tur": "anahtarlik",
+  "etiketler": [
+   "anahtarlik",
+   "hediye"
+  ],
+  "aciklama": "Araba markasının logosu ve isminizle kişiye özel anahtarlık: Ford, BMW, Mercedes, VW…",
+  "ayirt": "Logo ve isim aynı parçada basılıyor; renkleri siz seçiyorsunuz.",
+  "fiyat": [
+   100,
+   350
+  ],
+  "adet": true,
+  "gorsel": "/assets/img/urun/araba-logolu-isimli-anahtarlik.webp",
+  "alt": "Kişiye özel isimli araba logolu anahtarlıklar",
+  "one_cikan": true,
+  "eski": [
+   "/magaza/oyun-oyuncu/anahtarlik/ford-anahtarlik-logosu/",
+   "/magaza/oyun-oyuncu/anahtarlik/kisiye-ozel-isimli-araba-logolu-anahtarlik/"
+  ]
+ },
+ {
+  "slug": "f1-pilot-isimli-anahtarlik",
+  "ad": "F1 Pilot İsimli Anahtarlık",
+  "kategori": "Anahtarlık",
+  "tur": "anahtarlik",
+  "etiketler": [
+   "anahtarlik",
+   "hediye"
+  ],
+  "aciklama": "Formula 1 pilotlarının kısaltma ve numaralı anahtarlıkları: LEC, VER, SAI, ALO, HAM…",
+  "ayirt": "Pilotun kısaltması ve numarası takım renkleriyle basılıyor; listede olmayan pilotu da yapıyoruz.",
+  "fiyat": [
+   100,
+   350
+  ],
+  "adet": true,
+  "gorsel": "/assets/img/urun/f1-pilot-isimli-anahtarlik.webp",
+  "alt": "Kırmızı LEC 16 Formula 1 pilot anahtarlığı",
+  "one_cikan": true,
+  "eski": [
+   "/magaza/oyun-oyuncu/anahtarlik/f1-anahtarlik-charles-leclerc-16/",
+   "/magaza/oyun-oyuncu/anahtarlik/f1-anahtarlik-lewis-hamilton-44/",
+   "/magaza/oyun-oyuncu/anahtarlik/f1-anahtarlik-max-verstappen-1/",
+   "/magaza/oyun-oyuncu/anahtarlik/f1-anahtarlik-carlos-sainz-55/",
+   "/magaza/oyun-oyuncu/anahtarlik/f1-anahtarlik-fernando-alonso-14/",
+   "/magaza/oyun-oyuncu/anahtarlik/f1-anahtarlik-oscar-piastri-81/"
+  ]
+ },
+ {
+  "slug": "f1-lastik-detayli-anahtarlik-askisi",
+  "ad": "F1 Lastik Detaylı Anahtarlık Askısı",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Formula 1 logolu, dört lastik detaylı duvar tipi anahtarlık askısı.",
+  "ayirt": "Lastikler askı görevi görüyor; anahtarlar doğrudan lastiklere asılıyor.",
+  "fiyat": [
+   400,
+   1200
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/f1-lastik-detayli-anahtarlik-askisi.webp",
+  "alt": "Duvarda Formula 1 lastik detaylı anahtarlık askısı",
+  "one_cikan": true,
+  "eski": [
+   "/magaza/ev-yasam/dekorasyon/formula-1-anahtarlik-askisi/"
+  ]
+ },
+ {
+  "slug": "toplu-anahtarlik-siparisi",
+  "ad": "Toplu Anahtarlık Siparişi",
+  "kategori": "Anahtarlık",
+  "tur": "anahtarlik",
+  "etiketler": [
+   "toplu-siparis"
+  ],
+  "aciklama": "Firma, okul, etkinlik ve satış için toplu anahtarlık üretimi; logolu ya da karakterli.",
+  "ayirt": "Tek seferde 8 çeşit, 139 anahtarlıklık toplu siparişi tamamladık; adet arttıkça birim fiyat düşüyor.",
+  "fiyat": [
+   15,
+   150
+  ],
+  "adet": true,
+  "gorsel": "/assets/img/urun/toplu-anahtarlik-siparisi.webp",
+  "alt": "Toplu anahtarlık siparişinden karakterli anahtarlıklar",
+  "one_cikan": true,
+  "eski": [
+   "/magaza/oyun-oyuncu/anahtarlik/dog-mom-anahtarlik/",
+   "/magaza/oyun-oyuncu/anahtarlik/pokemon-pikachu-ve-charmander-anahtarlik/"
+  ]
+ },
+ {
+  "slug": "charizard-pasta-figuru",
+  "ad": "Charizard Pasta Figürü",
+  "kategori": "Pasta Süsü",
+  "tur": "pasta",
+  "etiketler": [
+   "pasta-susu",
+   "karakter-figuru"
+  ],
+  "aciklama": "Doğum günü pastasının üstüne kanatlarını açmış, elle boyanmış Charizard figürü.",
+  "ayirt": "Modelleme aşamasından pastanın üstüne kadar olan süreci videoda paylaştık.",
+  "fiyat": [
+   750,
+   3000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/charizard-pasta-figuru.webp",
+  "alt": "Ateş temalı pastanın üstünde Charizard figürü",
+  "one_cikan": true,
+  "eski": []
+ },
+ {
+  "slug": "artopop-kendin-boya-kutusu",
+  "ad": "ArtoPop Kendin Boya Kutusu",
+  "kategori": "Boyama Seti",
+  "tur": "boyama",
+  "etiketler": [
+   "kendin-boya-seti",
+   "kisiye-ozel-figur",
+   "hediye"
+  ],
+  "aciklama": "Fotoğrafınızdan ArtoPop figürü, boyalar ve fırçayla birlikte kutuda: kendiniz boyuyorsunuz.",
+  "ayirt": "Figür boyasız gönderiliyor; boyalar minik tüplerde, fırça ve karıştırma paleti kutunun içinde.",
+  "fiyat": [
+   550,
+   2500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/artopop-kendin-boya-kutusu.webp",
+  "alt": "ArtoPop kutusu: boyasız figürler, boyalar ve fırça",
+  "one_cikan": true,
+  "eski": []
+ },
+ {
+  "slug": "samuray-bustu-figuru",
+  "ad": "Samuray Büstü Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru"
+  ],
+  "aciklama": "Altın detaylı, elle boyanmış koleksiyon büstü.",
+  "ayirt": "Bu çalışma bir büst: gövde değil baş ve omuz kısmı üretiliyor. Katalogdaki altın detaylar elle boyanıyor.",
+  "fiyat": [
+   1500,
+   4000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-06.webp",
+  "alt": "Altın detaylı boyalı samuray büst figürü",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "mirabel-figuru-encanto",
+  "ad": "Mirabel Figürü (Encanto)",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru"
+  ],
+  "aciklama": "Elle boyanmış, canlı renkli karakter figürü.",
+  "ayirt": "Canlı renkli bir çalışma. Renk geçişleri elle boyandığı için aynı figürün iki baskısı birebir aynı olmuyor.",
+  "fiyat": [
+   1250,
+   3500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-07.webp",
+  "alt": "Encanto filminden elle boyanmış Mirabel figürü",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "sprinku-figuru",
+  "ad": "Sprinku Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru"
+  ],
+  "aciklama": "Renkli detaylarla üretilmiş koleksiyon figürü.",
+  "ayirt": "Koleksiyon rafında durmak üzere üretilen bir figür; renkli detayları elle boyanıyor.",
+  "fiyat": [
+   1250,
+   3500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-09.webp",
+  "alt": "Renkli detaylarla üretilmiş Sprinku koleksiyon figürü",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "masa-ile-koca-ayi-figuru",
+  "ad": "Maşa ile Koca Ayı Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru"
+  ],
+  "aciklama": "İki karakterli, elle boyanmış çizgi film figürü.",
+  "ayirt": "Tek gövde değil iki karakter birlikte çıkıyor. İki figürün boyaması ayrı ayrı yapıldığı için bu tür çalışmalar tek figürlülerden uzun sürüyor.",
+  "fiyat": [
+   1750,
+   4500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-13.webp",
+  "alt": "Maşa ile Koca Ayı karakterlerinin 3D baskı figürü",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "kratos-chibi-figuru",
+  "ad": "Kratos Chibi Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "oyuncu-hediyesi"
+  ],
+  "aciklama": "God of War temalı, chibi tarzı koleksiyon figürü.",
+  "ayirt": "Chibi tarz, yani gövdenin küçültülüp başın büyütüldüğü oran. Yüz büyüdüğü için boyamada en çok işçiliği yüz alıyor.",
+  "fiyat": [
+   1250,
+   3500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-23.webp",
+  "alt": "God of War Kratos karakterinin chibi tarzı 3D baskı figürü",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/figur/god-of-war/god-of-war-kratos-spartanin-hayaleti/",
+   "/magaza/figur/god-of-war/god-of-war-kratos-figuru-2/"
+  ]
+ },
+ {
+  "slug": "minecraft-warden-figuru",
+  "ad": "Minecraft Warden Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "oyuncu-hediyesi"
+  ],
+  "aciklama": "Eklemli, hareketli parçalı özel baskı figür.",
+  "ayirt": "Eklemli bir çalışma: parçalar hareket edecek şekilde ayrı ayrı basılıp birleştiriliyor, yani tek parça bir figürden daha fazla adım var.",
+  "fiyat": [
+   2000,
+   5000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-37.webp",
+  "alt": "Eklemli Minecraft Warden karakteri 3D baskı figürü",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "detayli-motosiklet-maketi",
+  "ad": "Detaylı Motosiklet Maketi",
+  "kategori": "Maket",
+  "tur": "maket",
+  "etiketler": [
+   "motosiklet-maketi"
+  ],
+  "aciklama": "El boyaması, gerçekçi detaylı motosiklet maketi.",
+  "ayirt": "Maketin ince parçaları ayrı basılıp birleştirildiği için bu tür çalışmalarda montaj da işçiliğin bir parçası.",
+  "fiyat": [
+   3000,
+   6500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-25.webp",
+  "alt": "El boyaması detaylı 3D baskı motosiklet maketi",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "honda-civic-araba-maketi",
+  "ad": "Honda Civic Araba Maketi",
+  "kategori": "Maket",
+  "tur": "maket",
+  "etiketler": [
+   "araba-maketi"
+  ],
+  "aciklama": "Gri renkli, detaylı boyanmış araba maketi.",
+  "ayirt": "Gövde tek parça çıkıyor, gri boyamanın üzerine detaylar elle işleniyor.",
+  "fiyat": [
+   3000,
+   6500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-34.webp",
+  "alt": "Gri renkli Honda Civic 3D baskı araba maketi",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "galatasaray-hagi-forma-cercevesi",
+  "ad": "Galatasaray Hagi Forma Çerçevesi",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Forma temalı, duvara asılabilir 3D baskı çerçeve.",
+  "ayirt": "Duvara asılacak bir parça. Asılacağı yere göre ölçü önemliyse ölçüyü baştan alıp modeli ona göre kuruyoruz.",
+  "fiyat": [
+   600,
+   1500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-03.webp",
+  "alt": "Galatasaray Hagi 10 forma temalı 3D baskı çerçeve",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "agac-dalli-ayna-cercevesi",
+  "ad": "Ağaç Dallı Ayna Çerçevesi",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor"
+  ],
+  "aciklama": "Ağaç dalı motifli, ev dekoruna uygun ayna çerçevesi.",
+  "ayirt": "Çerçevenin içine gelecek ayna ölçüsüne göre modelleniyor. Elinizde ayna varsa ölçüsünü baştan alıyoruz.",
+  "fiyat": [
+   700,
+   1750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-04.webp",
+  "alt": "Ağaç dalı motifli 3D baskı ayna çerçevesi",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "kisiye-ozel-uluyan-kurt-figuru",
+  "ad": "Kişiye Özel Uluyan Kurt Figürü",
+  "kategori": "Hediyelik",
+  "tur": "isimli",
+  "etiketler": [
+   "hediye"
+  ],
+  "aciklama": "İsim harfli, babalar günü ve doğum günü hediyesi.",
+  "ayirt": "Üzerine isim harfi işleniyor; hangi harf ya da isim geleceğini sipariş sırasında netleştiriyoruz.",
+  "fiyat": [
+   600,
+   1750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-05.webp",
+  "alt": "İsim harfli uluyan kurt figürü, babalar günü hediyesi",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "kisiye-ozel-chihuahua-figuru",
+  "ad": "Kişiye Özel Chihuahua Figürü",
+  "kategori": "Figür",
+  "tur": "evcil",
+  "etiketler": [
+   "evcil-hayvan-figuru",
+   "kisiye-ozel-figur"
+  ],
+  "aciklama": "Gerçekçi boyanmış, kişiye özel evcil hayvan figürü.",
+  "ayirt": "Chihuahua çalışmalarımız galeride duruyor; fotoğraftaki tüy rengine göre boyuyoruz.",
+  "fiyat": [
+   1000,
+   4750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-16.webp",
+  "alt": "Gerçekçi boyanmış Chihuahua evcil hayvan figürü",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "kisiye-ozel-fransiz-bulldog-figuru",
+  "ad": "Kişiye Özel Fransız Bulldog Figürü",
+  "kategori": "Figür",
+  "tur": "evcil",
+  "etiketler": [
+   "evcil-hayvan-figuru",
+   "kisiye-ozel-figur"
+  ],
+  "aciklama": "Gerçekçi boyanmış, kişiye özel evcil hayvan figürü.",
+  "ayirt": "Fransız bulldog çalışmalarımız galeride duruyor; fotoğraftaki tüy rengine göre boyuyoruz.",
+  "fiyat": [
+   1000,
+   4750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-40.webp",
+  "alt": "Gerçekçi boyanmış Fransız bulldog evcil hayvan figürü",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "kisiye-ozel-mini-figur-seti",
+  "ad": "Kişiye Özel Mini Figür Seti",
+  "kategori": "Figür",
+  "tur": "set",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Şövalye temalı, çok parçalı özel figür seti.",
+  "ayirt": "Şövalye temalı, çok parçalı bir set. Parça sayısı arttıkça baskı ve boyama süresi de artıyor.",
+  "fiyat": [
+   1000,
+   3000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-22.webp",
+  "alt": "Şövalye temalı ve günlük kıyafetli kişiye özel mini figür seti",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "kisiye-ozel-kamp-atesi-diorama-figuru",
+  "ad": "Kişiye Özel Kamp Ateşi Diorama Figürü",
+  "kategori": "Figür",
+  "tur": "set",
+  "etiketler": [
+   "kisiye-ozel-figur",
+   "hediye"
+  ],
+  "aciklama": "Sahne kurgulu, çok parçalı fantastik diorama.",
+  "ayirt": "Diorama tek figür değil bir sahne: zemin, figürler ve sahne parçaları birlikte kurgulanıyor.",
+  "fiyat": [
+   1250,
+   3500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-38.webp",
+  "alt": "Kamp ateşi sahneli kişiye özel fantastik diorama figürü",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "kisiye-ozel-araba-standi",
+  "ad": "Kişiye Özel Araba Standı",
+  "kategori": "Maket",
+  "tur": "isimli",
+  "etiketler": [
+   "araba-maketi",
+   "hediye"
+  ],
+  "aciklama": "İsim yazılı, masaüstü araba figürü standı.",
+  "ayirt": "Masaüstü bir stand ve üzerine isim yazılıyor. Belirli bir araca oturması gerekiyorsa ölçüyü baştan alıyoruz.",
+  "fiyat": [
+   750,
+   2000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-39.webp",
+  "alt": "İsimli kişiye özel araba modeli standı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "terzi-temali-pasta-susu-seti",
+  "ad": "Terzi Temalı Pasta Süsü Seti",
+  "kategori": "Pasta Süsü",
+  "tur": "pasta",
+  "etiketler": [
+   "pasta-susu"
+  ],
+  "aciklama": "Dikiş makinesi ve makas figürlü özel pasta süsü.",
+  "ayirt": "Dikiş makinesi ve makas figürlerinden oluşan temalı bir set; pastanın üstünde durmak üzere, süs amaçlı üretiliyor.",
+  "fiyat": [
+   400,
+   1500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/is-41.webp",
+  "alt": "Dikiş makinesi ve makas figürlü kişiye özel pasta süsü seti",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "mini-anahtarlik-figur",
+  "ad": "Mini Anahtarlık Figür",
+  "kategori": "Anahtarlık",
+  "tur": "anahtarlik",
+  "etiketler": [
+   "anahtarlik"
+  ],
+  "aciklama": "Küçük boy, tekli kişiye özel anahtarlık figürü.",
+  "ayirt": "Katalogdaki iki anahtarlık boyundan küçük olanı. Daha büyük ve daha detaylı boyalı olanı <a href=\"/urun/detayli-anahtarlik-figur/\">detaylı anahtarlık figür</a> sayfasında.",
+  "fiyat": [
+   50,
+   250
+  ],
+  "adet": true,
+  "gorsel": "/assets/img/is-31.webp",
+  "alt": "Pop tarzı boyanmış kişiye özel mini anahtarlık figürü",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "detayli-anahtarlik-figur",
+  "ad": "Detaylı Anahtarlık Figür",
+  "kategori": "Anahtarlık",
+  "tur": "anahtarlik",
+  "etiketler": [
+   "anahtarlik"
+  ],
+  "aciklama": "Daha büyük boy, detaylı boyalı anahtarlık figürü.",
+  "ayirt": "Katalogdaki iki anahtarlık boyundan büyük olanı; boyaması da daha detaylı. Küçük boy <a href=\"/urun/mini-anahtarlik-figur/\">mini anahtarlık figür</a> sayfasında.",
+  "fiyat": [
+   150,
+   750
+  ],
+  "adet": true,
+  "gorsel": "/assets/img/is-19.webp",
+  "alt": "Telefonla selfie çeken kişiye özel mini anahtarlık figürü",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "ters-yuz-karakter-figurleri",
+  "ad": "Ters Yüz Karakter Figürleri",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Ters Yüz filminin duygu karakterleri: Öfke, Korku, Üzüntü, Utanç ve diğerleri, elle boyanmış.",
+  "ayirt": "Karakterleri tek tek basıp boyuyoruz; tek bir karakter de olur, rafta yan yana duran bütün bir set de.",
+  "fiyat": [
+   750,
+   2500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/ters-yuz-karakter-figurleri.webp",
+  "alt": "Elle boyanmış Ters Yüz Öfke karakter figürü",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/figur/ters-yuz-sinirli-figuru/",
+   "/magaza/figur/ters-yuz-utangac-figuru/",
+   "/magaza/figur/ters-yuz-korku-figuru/",
+   "/magaza/figur/ters-yuz-uzuntu-figuru/"
+  ]
+ },
+ {
+  "slug": "hei-hei-tavuk-figuru",
+  "ad": "Hei Hei Tavuk Figürü (Moana)",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Moana filminin şaşkın horozu Hei Hei, renkli tüyleriyle elle boyanmış figür.",
+  "ayirt": "İnce bacakları üzerinde duran bir figür; dengesi için tabanıyla birlikte basılıyor.",
+  "fiyat": [
+   750,
+   2250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/hei-hei-tavuk-figuru.webp",
+  "alt": "Elle boyanmış Hei Hei tavuk figürü",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/figur/hei-hei-moana-tavuk-figuru/"
+  ]
+ },
+ {
+  "slug": "fred-cakmaktas-figuru",
+  "ad": "Fred Çakmaktaş Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru"
+  ],
+  "aciklama": "Taş Devri'nin Fred Çakmaktaş'ı, turuncu kıyafeti ve mavi kravatıyla elle boyanmış.",
+  "ayirt": "Çizgi film karakterlerinde düz ve canlı renkler önemli; boyamayı karakterin orijinal renklerine göre yapıyoruz.",
+  "fiyat": [
+   1000,
+   3000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/fred-cakmaktas-figuru.webp",
+  "alt": "Elle boyanmış Fred Çakmaktaş figürü",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/figur/looney-tunes/fred-cakmaktas-figuru/",
+   "/magaza/figur/looney-tunes/yosemite-sam-figur/",
+   "/magaza/figur/looney-tunes/tweety-figuru/",
+   "/magaza/figur/looney-tunes/porky-pig-figur/",
+   "/magaza/figur/looney-tunes/underdog-figur/",
+   "/magaza/figur/looney-tunes/pinokyo-jiminy-cricket-figur/"
+  ]
+ },
+ {
+  "slug": "jetgiller-figurleri",
+  "ad": "Jetgiller Figürleri",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru"
+  ],
+  "aciklama": "Jetgiller ailesi: George, Jane, Judy, Elroy, robot Rosie ve köpek Astro, ayrı ayrı figür.",
+  "ayirt": "Ailenin her üyesini ayrı figür olarak basıyoruz; tek karakter de alınabiliyor, bütün aile de.",
+  "fiyat": [
+   1000,
+   3000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/jetgiller-figurleri.webp",
+  "alt": "Elle boyanmış Jetgiller Judy figürü",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/figur/looney-tunes/jetgiller-astro-kopek-figur/",
+   "/magaza/figur/looney-tunes/jetgiller-hizmetci-rosie-figur/",
+   "/magaza/figur/looney-tunes/jetgiller-george-jetgil-figur/",
+   "/magaza/figur/looney-tunes/jetgiller-jane-jetgil-figur/",
+   "/magaza/figur/looney-tunes/jetgiller-judy-jetgil-figur/",
+   "/magaza/figur/looney-tunes/jetgiller-elroy-jetgil-figur/"
+  ]
+ },
+ {
+  "slug": "asterix-oburix-figuru",
+  "ad": "Asterix ve Oburix Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru"
+  ],
+  "aciklama": "Galyalı kahramanlar Asterix ve Oburix, elle boyanmış ayrı figürler.",
+  "ayirt": "Oburix'in çizgili pantolonu ve örgülü saçları gibi detaylar elle boyanıyor.",
+  "fiyat": [
+   1000,
+   3000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/asterix-oburix-figuru.webp",
+  "alt": "Elle boyanmış Oburix figürü",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/figur/looney-tunes/oburix-figur/"
+  ]
+ },
+ {
+  "slug": "garfield-figuru",
+  "ad": "Garfield Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Tembel kedi Garfield, çizgili turuncu tüyleriyle elle boyanmış figür.",
+  "ayirt": "Sırtındaki siyah çizgilerin her biri elle boyanıyor; boyama işçiliği bu figürün asıl işi.",
+  "fiyat": [
+   750,
+   2250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/garfield-figuru.webp",
+  "alt": "Elle boyanmış Garfield figürü",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/figur/garfield-figur/"
+  ]
+ },
+ {
+  "slug": "pokemon-turtok-figuru",
+  "ad": "Pokémon Turtok Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "oyuncu-hediyesi"
+  ],
+  "aciklama": "Pokémon Turtok (Blastoise), sırtındaki toplarıyla elle boyanmış figür.",
+  "ayirt": "Diğer Pokémon karakterlerini de yapıyoruz; istediğiniz Pokémon'u yazmanız yeterli.",
+  "fiyat": [
+   750,
+   2500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/pokemon-turtok-figuru.webp",
+  "alt": "Elle boyanmış Pokémon Turtok figürü",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/figur/pokemon/pokemon-ash-ketchum-figur/",
+   "/magaza/figur/pokemon/pokemon-misty-figur/",
+   "/magaza/figur/pokemon/pokemon-topu-jigglypuff-figur/"
+  ]
+ },
+ {
+  "slug": "minecraft-figurleri",
+  "ad": "Minecraft Figürleri",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "oyuncu-hediyesi"
+  ],
+  "aciklama": "Minecraft karakterleri: tavuk, Steve, kurbağa, aksolotl; köşeli piksel tarzında.",
+  "ayirt": "Piksel tarzı karakterlerde renkler parça parça ayrıldığı için çok renkli baskıyla çıkıyor.",
+  "fiyat": [
+   400,
+   1500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/minecraft-figurleri.webp",
+  "alt": "Minecraft tavuk figürleri",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/figur/minecraft/minecraft-axolotl-figuru/",
+   "/magaza/figur/minecraft/minecraft-steve-figur/",
+   "/magaza/oyun-oyuncu/joystick-standi/minecraft-tavuk-figuru/",
+   "/magaza/figur/minecraft/minecraft-kurbaga-figuru/"
+  ]
+ },
+ {
+  "slug": "one-piece-zoro-figuru",
+  "ad": "One Piece Zoro Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru"
+  ],
+  "aciklama": "One Piece'in kılıç ustası Zoro, kılıçları ve yara izleriyle elle boyanmış koleksiyon figürü.",
+  "ayirt": "Kas ve yara izi detayı çok olduğu için zahmetli bir baskı; Luffy ve Sanji gibi diğer One Piece karakterlerini de yapıyoruz.",
+  "fiyat": [
+   1500,
+   4500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/one-piece-zoro-figuru.webp",
+  "alt": "Elle boyanmış One Piece Zoro figürü",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/figur/one-piece/one-piece-sanji-figuru/",
+   "/magaza/figur/one-piece/one-piece-zoro-figuru/",
+   "/magaza/figur/one-piece/one-piece-luffy-figuru/"
+  ]
+ },
+ {
+  "slug": "breaking-bad-3lu-figur",
+  "ad": "Breaking Bad Üçlü Figür",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Breaking Bad'in üç karakteri sarı tulumlarıyla, elle boyanmış üçlü figür seti.",
+  "ayirt": "Üç ayrı figür bir set olarak hazırlanıyor; her biri ayrı boyandığı için tek figürden uzun sürüyor.",
+  "fiyat": [
+   2000,
+   5000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/breaking-bad-3lu-figur.webp",
+  "alt": "Breaking Bad üçlü figür seti",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/figur/breaking-bad-3lu-figur/"
+  ]
+ },
+ {
+  "slug": "squid-game-figuru",
+  "ad": "Squid Game Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru"
+  ],
+  "aciklama": "Squid Game'in maskeli kırmızı tulumlu muhafızı, eklemli figür.",
+  "ayirt": "Eklemli bir çalışma: kolları ve bacakları hareket ediyor, oturtup poz verdirebiliyorsunuz.",
+  "fiyat": [
+   750,
+   2000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/squid-game-figuru.webp",
+  "alt": "Eklemli Squid Game muhafız figürü",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/figur/squid-game-figur/"
+  ]
+ },
+ {
+  "slug": "venom-bust-figuru",
+  "ad": "Venom Büst Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru"
+  ],
+  "aciklama": "Venom'un dili dışarıda büstü; baş ve omuz kısmı, kaidesiyle.",
+  "ayirt": "Büst olduğu için gövde değil baş ve omuz üretiliyor; Moon Knight ve Doom gibi diğer büstleri de yapıyoruz.",
+  "fiyat": [
+   1250,
+   3500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/venom-bust-figuru.webp",
+  "alt": "Venom büst figürü",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/figur/marvel/doom-bust-figur/",
+   "/magaza/figur/marvel/moon-knight-bust-figur/",
+   "/magaza/figur/marvel/venom-bust-figur/",
+   "/magaza/figur/one-piece/one-piece-luffy-bust-figur/",
+   "/magaza/figur/marvel/deadpool-figuru/",
+   "/magaza/figur/marvel/iron-man-figuru/"
+  ]
+ },
+ {
+  "slug": "dusunen-uzayli-figuru",
+  "ad": "Düşünen Uzaylı Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Avuç içine sığan, oturup düşünen pembe uzaylı figürü.",
+  "ayirt": "Küçük boy bir masa figürü; rafa, monitör kenarına ya da çalışma masasına konuyor.",
+  "fiyat": [
+   250,
+   750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/dusunen-uzayli-figuru.webp",
+  "alt": "Elde tutulan pembe uzaylı figürü",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/ev-yasam/dekorasyon/uzayli-figuru/"
+  ]
+ },
+ {
+  "slug": "eklemli-kertenkele-figuru",
+  "ad": "Eklemli Kertenkele Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Pul pul dokulu, eklemli gövdesi kıvrılan kertenkele figürü.",
+  "ayirt": "Tek parça basılan eklemli bir model: montaj yok, baskıdan hareketli çıkıyor.",
+  "fiyat": [
+   250,
+   900
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/eklemli-kertenkele-figuru.webp",
+  "alt": "Avuç içinde eklemli kertenkele figürü",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "eklemli-aksolotl-figuru",
+  "ad": "Eklemli Aksolotl Figürü",
+  "kategori": "Figür",
+  "tur": "karakter",
+  "etiketler": [
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Esnek, eklemli gövdeli sevimli aksolotl figürleri; farklı renklerde.",
+  "ayirt": "Eklemleri sayesinde kıvrılıp oynatılabiliyor; renk seçeneğini siparişte konuşuyoruz.",
+  "fiyat": [
+   250,
+   900
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/eklemli-aksolotl-figuru.webp",
+  "alt": "Mavi ve mor eklemli aksolotl figürleri",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "kisiye-ozel-kedi-figuru",
+  "ad": "Kişiye Özel Kedi Figürü",
+  "kategori": "Figür",
+  "tur": "evcil",
+  "etiketler": [
+   "evcil-hayvan-figuru",
+   "kisiye-ozel-figur",
+   "hediye"
+  ],
+  "aciklama": "Kedinizin fotoğrafından, tüy desenine göre elle boyanmış oturan kedi figürü.",
+  "ayirt": "Kedinin üç renkli tüy deseni fotoğraftan alınıp elle boyanıyor.",
+  "fiyat": [
+   1750,
+   4750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/kisiye-ozel-kedi-figuru.webp",
+  "alt": "Kişiye özel boyanmış kedi figürü",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/figur/siyah-kedi-figuru/"
+  ]
+ },
+ {
+  "slug": "naked-motosiklet-maketi",
+  "ad": "Naked Motosiklet Maketi",
+  "kategori": "Maket",
+  "tur": "maket",
+  "etiketler": [
+   "motosiklet-maketi"
+  ],
+  "aciklama": "Yeşil jantlı siyah naked motosiklet maketi, plakası ve standıyla.",
+  "ayirt": "Jant, fren diski ve egzoz gibi parçalar ayrı renklerle boyanıyor.",
+  "fiyat": [
+   3000,
+   6500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/naked-motosiklet-maketi.webp",
+  "alt": "Siyah yeşil jantlı naked motosiklet maketi",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "chopper-motosiklet-maketi",
+  "ad": "Chopper Motosiklet Maketi",
+  "kategori": "Maket",
+  "tur": "maket",
+  "etiketler": [
+   "motosiklet-maketi"
+  ],
+  "aciklama": "Yan çantalı, siyah chopper motosiklet maketi; plakası ve standıyla.",
+  "ayirt": "Yan çanta ve far gibi aksesuarlar motosikletin kendisine göre modelleniyor.",
+  "fiyat": [
+   3000,
+   6500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/chopper-motosiklet-maketi.webp",
+  "alt": "Siyah chopper motosiklet maketi",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "volkswagen-polo-araba-maketi",
+  "ad": "Volkswagen Polo Araba Maketi",
+  "kategori": "Maket",
+  "tur": "maket",
+  "etiketler": [
+   "araba-maketi"
+  ],
+  "aciklama": "Beyaz Volkswagen Polo'nun far ve ızgara detaylı, plakalı maketi.",
+  "ayirt": "Far, ızgara ve jant detayları elle boyanıyor; baskı sonrası temizlik ve boyama sürenin çoğunu alıyor.",
+  "fiyat": [
+   3000,
+   6500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/volkswagen-polo-araba-maketi.webp",
+  "alt": "Beyaz Volkswagen Polo araba maketi",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "off-road-arazi-araci-maketi",
+  "ad": "Off-Road Arazi Aracı Maketi",
+  "kategori": "Maket",
+  "tur": "maket",
+  "etiketler": [
+   "araba-maketi"
+  ],
+  "aciklama": "Beyaz 4x4 arazi aracının çıkartmalı, detaylı maketi.",
+  "ayirt": "Off-road araçlarda çıkartma ve aksesuarlar aracın kendisine göre modelleniyor.",
+  "fiyat": [
+   3000,
+   6500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/off-road-arazi-araci-maketi.webp",
+  "alt": "Elde tutulan beyaz off-road araç maketi",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "cupra-araba-maketi-dioramali",
+  "ad": "Cupra Araba Maketi (Dioramalı)",
+  "kategori": "Maket",
+  "tur": "maket",
+  "etiketler": [
+   "araba-maketi",
+   "hediye"
+  ],
+  "aciklama": "Cupra'nın sahneli diorama üzerinde duran, boyalı araba maketi.",
+  "ayirt": "Gri ham baskıdan başlayıp boyanmış hâline kadar olan süreci videoda gösterdik.",
+  "fiyat": [
+   3500,
+   7500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/cupra-araba-maketi-dioramali.webp",
+  "alt": "Diorama üzerinde Cupra araba maketi",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "nostaljik-klasik-araba-maketi",
+  "ad": "Nostaljik Klasik Araba Maketi",
+  "kategori": "Maket",
+  "tur": "maket",
+  "etiketler": [
+   "araba-maketi",
+   "hediye"
+  ],
+  "aciklama": "1950'ler tarzı klasik otomobilin maketi; boyasız ya da boyalı.",
+  "ayirt": "Anı değeri olan eski arabalar için: fotoğraftan modelleyip basıyoruz.",
+  "fiyat": [
+   2500,
+   6000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/nostaljik-klasik-araba-maketi.webp",
+  "alt": "Beyaz nostaljik klasik araba maketi",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "doc-hudson-araba-maketi",
+  "ad": "Doc Hudson Araba Maketi (Arabalar)",
+  "kategori": "Maket",
+  "tur": "maket",
+  "etiketler": [
+   "araba-maketi",
+   "karakter-figuru"
+  ],
+  "aciklama": "Arabalar filminin Doc Hudson'ı, gözleri ve krom detaylarıyla boyanmış maket.",
+  "ayirt": "Film karakteri bir araba: gözler ön camda, krom detaylar elle boyanıyor. Müşterimize teslim ettik.",
+  "fiyat": [
+   2500,
+   6000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/doc-hudson-araba-maketi.webp",
+  "alt": "Elde tutulan Doc Hudson araba maketi",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "gta-bullet-oyun-arabasi-maketi",
+  "ad": "GTA Bullet Oyun Arabası Maketi",
+  "kategori": "Maket",
+  "tur": "maket",
+  "etiketler": [
+   "araba-maketi",
+   "oyuncu-hediyesi"
+  ],
+  "aciklama": "GTA San Andreas'taki Bullet aracının siyah-sarı şeritli maketi.",
+  "ayirt": "Oyun ve film araçlarını da yapıyoruz; aracın görselini göndermeniz yeterli.",
+  "fiyat": [
+   3000,
+   6500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/gta-bullet-oyun-arabasi-maketi.webp",
+  "alt": "Siyah sarı şeritli GTA Bullet maketi",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "evcil-hayvan-anahtarlik",
+  "ad": "Evcil Hayvan Anahtarlığı",
+  "kategori": "Anahtarlık",
+  "tur": "evcil",
+  "etiketler": [
+   "anahtarlik",
+   "evcil-hayvan-figuru",
+   "kisiye-ozel-figur"
+  ],
+  "aciklama": "Evcil dostlarınızın fotoğrafından boyalı anahtarlık; iki hayvan bir arada da olur.",
+  "ayirt": "Müşterimizin köpeği ve kedisini tek anahtarlıkta sarılır hâlde yaptık; ölçü küçük olduğu için yüz detayına ayrıca özen gerekiyor.",
+  "fiyat": [
+   750,
+   2750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/evcil-hayvan-anahtarlik.webp",
+  "alt": "Köpek ve kedi sarılmış evcil hayvan anahtarlığı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "harry-potter-anahtarlik",
+  "ad": "Harry Potter Anahtarlık",
+  "kategori": "Anahtarlık",
+  "tur": "anahtarlik",
+  "etiketler": [
+   "anahtarlik",
+   "toplu-siparis"
+  ],
+  "aciklama": "Gözlüklü, cübbeli sevimli Harry Potter anahtarlığı.",
+  "ayirt": "Tek seferde tabla dolusu basılabilen bir model; toplu siparişe de uygun.",
+  "fiyat": [
+   100,
+   350
+  ],
+  "adet": true,
+  "gorsel": "/assets/img/urun/harry-potter-anahtarlik.webp",
+  "alt": "Elde Harry Potter anahtarlığı, arkada toplu baskı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "squid-game-klikli-anahtarlik",
+  "ad": "Squid Game Klikli Anahtarlık",
+  "kategori": "Anahtarlık",
+  "tur": "anahtarlik",
+  "etiketler": [
+   "anahtarlik",
+   "toplu-siparis"
+  ],
+  "aciklama": "Basınca tık sesi çıkaran, Squid Game sembollü klikli anahtarlık.",
+  "ayirt": "İçinde tıklama mekanizması var; parçaları baskıdan sonra elle birleştiriyoruz.",
+  "fiyat": [
+   100,
+   300
+  ],
+  "adet": true,
+  "gorsel": "/assets/img/urun/squid-game-klikli-anahtarlik.webp",
+  "alt": "Squid Game klikli anahtarlık",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "kurabiye-adam-anahtarlik",
+  "ad": "Kurabiye Adam Anahtarlık",
+  "kategori": "Anahtarlık",
+  "tur": "anahtarlik",
+  "etiketler": [
+   "anahtarlik",
+   "toplu-siparis",
+   "hediye"
+  ],
+  "aciklama": "Zencefilli kurabiye adam anahtarlığı; her biri ayrı yüz ifadesiyle.",
+  "ayirt": "Yılbaşı hediyesi ve toplu sipariş olarak çok istenen bir model.",
+  "fiyat": [
+   75,
+   250
+  ],
+  "adet": true,
+  "gorsel": "/assets/img/urun/kurabiye-adam-anahtarlik.webp",
+  "alt": "Avuç içinde kurabiye adam anahtarlığı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "eklemli-ahtapot-anahtarlik",
+  "ad": "Eklemli Ahtapot Anahtarlık",
+  "kategori": "Anahtarlık",
+  "tur": "anahtarlik",
+  "etiketler": [
+   "anahtarlik"
+  ],
+  "aciklama": "Kolları oynayan minik ahtapot anahtarlığı.",
+  "ayirt": "Eklemli tek parça bir model; kollar baskıdan hareketli çıkıyor.",
+  "fiyat": [
+   75,
+   250
+  ],
+  "adet": true,
+  "gorsel": "/assets/img/urun/eklemli-ahtapot-anahtarlik.webp",
+  "alt": "Elde eklemli ahtapot anahtarlık",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/ev-yasam/dekorasyon/ahtapot-figur/"
+  ]
+ },
+ {
+  "slug": "at-figurlu-pasta-susu",
+  "ad": "At Figürlü Pasta Süsü",
+  "kategori": "Pasta Süsü",
+  "tur": "pasta",
+  "etiketler": [
+   "pasta-susu"
+  ],
+  "aciklama": "Anne ve tay atlardan oluşan, elle boyanmış pasta süsü figürleri.",
+  "ayirt": "Butik pastacılar için ürettik; temaya göre farklı hayvan ve karakterler de yapıyoruz.",
+  "fiyat": [
+   750,
+   2500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/at-figurlu-pasta-susu.webp",
+  "alt": "Boyalı at ve tay pasta süsü figürleri",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "kisiye-ozel-pasta-ustu-yazi",
+  "ad": "Kişiye Özel Pasta Üstü Yazı",
+  "kategori": "Pasta Süsü",
+  "tur": "pasta",
+  "etiketler": [
+   "pasta-susu"
+  ],
+  "aciklama": "İstediğiniz cümle, isim ve renkte pasta üstü yazı (cake topper).",
+  "ayirt": "Yazı, yazı tipi ve renk seçeneği tamamen size göre; doğum günü ve kutlamalar için.",
+  "fiyat": [
+   250,
+   750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/kisiye-ozel-pasta-ustu-yazi.webp",
+  "alt": "Pembe kişiye özel pasta üstü yazı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "pasta-yas-rakamlari",
+  "ad": "Pasta Yaş Rakamları",
+  "kategori": "Pasta Süsü",
+  "tur": "pasta",
+  "etiketler": [
+   "pasta-susu"
+  ],
+  "aciklama": "Temalı doğum günü pastaları için yaş rakamları; farklı renk ve boyutlarda.",
+  "ayirt": "Minecraft temalı pasta için piksel tarzı yaptık; temaya göre yazı tipi değişiyor.",
+  "fiyat": [
+   150,
+   500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/pasta-yas-rakamlari.webp",
+  "alt": "Yeşil piksel tarzı pasta yaş rakamları",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "dis-temali-pasta-susu",
+  "ad": "Diş Temalı Pasta Süsü",
+  "kategori": "Pasta Süsü",
+  "tur": "pasta",
+  "etiketler": [
+   "pasta-susu"
+  ],
+  "aciklama": "Gülümseyen diş figürü ve yıl yazısından oluşan meslek temalı pasta süsü.",
+  "ayirt": "Meslek ve yıldönümü temalı süslerde figür ve yazıyı birlikte tasarlıyoruz.",
+  "fiyat": [
+   500,
+   1500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/dis-temali-pasta-susu.webp",
+  "alt": "Pasta üstünde diş figürü ve 25 yıl yazısı",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "kendin-boya-unicorn-seti",
+  "ad": "Kendin Boya Unicorn Seti",
+  "kategori": "Boyama Seti",
+  "tur": "boyama",
+  "etiketler": [
+   "kendin-boya-seti",
+   "hediye"
+  ],
+  "aciklama": "Boyanmamış unicorn figürü, renkli mini boyalar ve fırçayla kutulu boyama seti.",
+  "ayirt": "Çocuklar için doğum günü hediyesi; kutunun içinde örnek boyanmış hâli de görünüyor.",
+  "fiyat": [
+   300,
+   900
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/kendin-boya-unicorn-seti.webp",
+  "alt": "Kendin boya unicorn seti kutusu",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "toplu-boyama-figuru",
+  "ad": "Toplu Boyama Figürü (Atölye ve Etkinlik)",
+  "kategori": "Boyama Seti",
+  "tur": "boyama",
+  "etiketler": [
+   "kendin-boya-seti",
+   "toplu-siparis"
+  ],
+  "aciklama": "Okul, kafe, kurum ve doğum günü etkinlikleri için boyanmamış figürler, toplu adetle.",
+  "ayirt": "Hello Kitty, Stitch, unicorn gibi karakterler boyasız basılıyor; boya ve fırçayla birlikte kutuluyoruz.",
+  "fiyat": [
+   150,
+   400
+  ],
+  "adet": true,
+  "gorsel": "/assets/img/urun/toplu-boyama-figuru.webp",
+  "alt": "Boyanmamış toplu boyama figürleri",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "lego-tuvalet-kagidi-tutucu",
+  "ad": "Lego Tuvalet Kâğıdı Tutucu",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Lego adam tarzında, kollarıyla tuvalet kâğıdı tutan duvar tipi tutucu.",
+  "ayirt": "Dinozor ve Stormtrooper gibi başka karakterli tuvalet kâğıdı tutucuları da yapıyoruz.",
+  "fiyat": [
+   600,
+   1750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/lego-tuvalet-kagidi-tutucu.webp",
+  "alt": "Duvarda Lego tarzı tuvalet kâğıdı tutucu",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/ev-yasam/banyo/lego-tuvalet-kagidi-tutucu/",
+   "/magaza/ev-yasam/banyo/lego-tuvalet-kagidi-tutucusu/",
+   "/magaza/ev-yasam/banyo/dinozor-sekilli-tuvalet-kagidi-tutucu/",
+   "/magaza/ev-yasam/banyo/stormtrooper-tuvalet-kagidi-tutucu/",
+   "/magaza/ev-yasam/banyo/geyikli-tuvalet-kagidi-tutucu/"
+  ]
+ },
+ {
+  "slug": "harry-potter-tuvalet-tabelasi",
+  "ad": "Muggle & Wizard Tuvalet Tabelası",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Harry Potter esprili “Muggle / Wizard” banyo kapısı tabelası.",
+  "ayirt": "Kapıya yapıştırılan düz bir tabela; yazıyı farklı bir espriyle de değiştirebiliyoruz.",
+  "fiyat": [
+   250,
+   750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/harry-potter-tuvalet-tabelasi.webp",
+  "alt": "Muggle ve Wizard yazılı tuvalet tabelası",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/ev-yasam/banyo/harry-potter-tuvalet-tabelasi/",
+   "/magaza/ev-yasam/banyo/komik-banyo-tuvalet-tabelasi/"
+  ]
+ },
+ {
+  "slug": "super-mario-pecetelik",
+  "ad": "Super Mario Peçetelik",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "oyuncu-hediyesi"
+  ],
+  "aciklama": "Arkasında kâğıt peçetelik bulunan, Super Mario tarzı masa peçeteliği.",
+  "ayirt": "Peçete Mario'nun arkasına yerleşiyor, öndeki karakter sofraya renk katıyor.",
+  "fiyat": [
+   300,
+   900
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/super-mario-pecetelik.webp",
+  "alt": "Super Mario tarzı peçetelik",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/ev-yasam/mutfak/pecetelik-3d-baski-ergonomik/",
+   "/magaza/ev-yasam/mutfak/mario-pecetelik/"
+  ]
+ },
+ {
+  "slug": "kinder-yumurta-kutusu",
+  "ad": "Kinder Yumurta Kutusu (Tavşanlı)",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "hediye",
+   "ev-dekor"
+  ],
+  "aciklama": "Kinder sürpriz yumurtasını içine koyduğunuz, tavşan kulaklı ve sarkık bacaklı kutu.",
+  "ayirt": "Yumurta kutunun içine yerleşiyor; hediye paketi gibi kullanılıyor.",
+  "fiyat": [
+   150,
+   450
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/kinder-yumurta-kutusu.webp",
+  "alt": "Tavşan kulaklı Kinder yumurta kutuları",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/ev-yasam/mutfak/kinder-surpriz-yumurta-kutusu/"
+  ]
+ },
+ {
+  "slug": "baykus-gozluk-tutucu",
+  "ad": "Baykuş Gözlük Tutucu",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Gözlüğünüzü burnunun üstüne taktığınız baykuş biçimli gözlük tutucu.",
+  "ayirt": "Gözlük baykuşun gözlerinin önüne oturuyor; Şirin ve Stitch biçimli gözlük tutucuları da yapıyoruz.",
+  "fiyat": [
+   300,
+   900
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/baykus-gozluk-tutucu.webp",
+  "alt": "Gözlük takılı mavi baykuş gözlük tutucu",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/ev-yasam/dekorasyon/gozluk-duzenleyici-gunes-gozlugu-organizeri/",
+   "/magaza/ev-yasam/dekorasyon/sirinler-gozluk-tutucu/"
+  ]
+ },
+ {
+  "slug": "montessori-egitici-oyuncak",
+  "ad": "Montessori Eğitici Oyuncak",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "hediye"
+  ],
+  "aciklama": "Renk ve şekil eşleştirmeli, tutamaklı Montessori yapboz oyuncağı.",
+  "ayirt": "Parçalar küçük ellerin tutabileceği tutamaklarla basılıyor; şekil ve renk setini değiştirebiliyoruz.",
+  "fiyat": [
+   250,
+   900
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/montessori-egitici-oyuncak.webp",
+  "alt": "Renkli şekilli Montessori yapboz oyuncağı",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/bebek-cocuk/egitici-oyuncak/montessori-gokkusagi/",
+   "/magaza/bebek-cocuk/egitici-oyuncak/hamburger-montessori-oyuncak/"
+  ]
+ },
+ {
+  "slug": "karakterli-joystick-standi",
+  "ad": "Karakterli Joystick Standı",
+  "kategori": "Oyuncu",
+  "tur": "dekor",
+  "etiketler": [
+   "oyuncu-hediyesi",
+   "hediye"
+  ],
+  "aciklama": "Oyun kolunu elinde tutan karakter standı: Spider-Man, Psyduck, Groot, Mario ve dahası.",
+  "ayirt": "PlayStation ve Xbox kolları için; karakteri siz seçiyorsunuz, kol standın kollarına oturuyor.",
+  "fiyat": [
+   600,
+   1750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/karakterli-joystick-standi.webp",
+  "alt": "Oyun kolu tutan Spider-Man joystick standı",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/oyun-oyuncu/joystick-standi/spiderman-temali-kol-tutucu-joystick-standi/",
+   "/magaza/oyun-oyuncu/joystick-standi/spiderman-kol-tutucu-joystick-standi/",
+   "/magaza/oyun-oyuncu/joystick-standi/minecraft-kol-tutucu-joystick-standi/",
+   "/magaza/oyun-oyuncu/joystick-standi/one-piece-jinbe-kol-tutucu-joystick-standi/",
+   "/magaza/oyun-oyuncu/joystick-standi/fortnite-marshmello-kol-tutucu-joystick-standi/",
+   "/magaza/oyun-oyuncu/joystick-standi/fc25-kol-tutucu-joystick-standi/",
+   "/magaza/oyun-oyuncu/joystick-standi/master-chief-kol-tutucu-joystick-stand/",
+   "/magaza/oyun-oyuncu/joystick-standi/halatli-joystick-kol-tutacagi/",
+   "/magaza/oyun-oyuncu/joystick-standi/muz-adam-kol-tutucu-joystick-standi/",
+   "/magaza/oyun-oyuncu/joystick-standi/ejderha-kol-standi-joystick-tutucu/",
+   "/magaza/oyun-oyuncu/joystick-standi/super-mario-yoshi-kol-tutucu/",
+   "/magaza/oyun-oyuncu/joystick-standi/psyduck-kol-tutucu/",
+   "/magaza/oyun-oyuncu/joystick-standi/groot-kol-tutucu-joystick-standi/",
+   "/magaza/oyun-oyuncu/joystick-standi/modern-tasarim-kol-tutucu-joystick-standi/",
+   "/magaza/oyun-oyuncu/joystick-standi/super-mario-kol-tutucu-standi/",
+   "/magaza/oyun-oyuncu/joystick-standi/wolverine-kol-tutucu-joystick-stand/",
+   "/magaza/oyun-oyuncu/joystick-standi/pokemon-gengar-kol-tutucu-joystick-standi/",
+   "/magaza/oyun-oyuncu/joystick-standi/charmander-kol-tutucu/",
+   "/magaza/oyun-oyuncu/joystick-standi/zelda-joystick-tutucu/",
+   "/magaza/oyun-oyuncu/joystick-standi/arcanine-kol-tutucu/",
+   "/magaza/oyun-oyuncu/joystick-standi/nezuko-kamado-kol-tutucu-joystick-standi/",
+   "/magaza/oyun-oyuncu/joystick-standi/el-kol-tutucu-joystick-standi/"
+  ]
+ },
+ {
+  "slug": "karakterli-kulaklik-standi",
+  "ad": "Karakterli Kulaklık Standı",
+  "kategori": "Oyuncu",
+  "tur": "dekor",
+  "etiketler": [
+   "oyuncu-hediyesi",
+   "ev-dekor"
+  ],
+  "aciklama": "Kulaklığı başına takılan karakter kafası standı: Deadpool, Groot, Fortnite.",
+  "ayirt": "Kulaklık karakterin başına oturuyor; masa düzeni ve oyun köşesi için.",
+  "fiyat": [
+   600,
+   1750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/karakterli-kulaklik-standi.webp",
+  "alt": "Kulaklık takılı Deadpool kulaklık standı",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/oyun-oyuncu/kulaklik-standi/deadpool-kulaklik-tutucu/",
+   "/magaza/oyun-oyuncu/kulaklik-standi/groot-kulaklik-tutucu/",
+   "/magaza/oyun-oyuncu/kulaklik-standi/fortnite-kulaklik-tutucu/"
+  ]
+ },
+ {
+  "slug": "squirtle-bardak-altligi",
+  "ad": "Squirtle Bardak Altlığı",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "oyuncu-hediyesi"
+  ],
+  "aciklama": "Kabuğu bardak altlığı olan, Pokémon Squirtle biçimli altlık seti.",
+  "ayirt": "Altlıklar Squirtle'ın kabuğunun içinde duruyor; kabuğa basınca açılıyor.",
+  "fiyat": [
+   300,
+   900
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/squirtle-bardak-altligi.webp",
+  "alt": "Squirtle biçimli bardak altlığı seti",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/ev-yasam/mutfak/squirtle-bardak-atligi/"
+  ]
+ },
+ {
+  "slug": "kaktuslu-bardak-altligi",
+  "ad": "Kaktüslü Bardak Altlığı",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Saksıda kaktüs gibi duran, yaprakları çıkarılıp bardak altlığı olan set.",
+  "ayirt": "Kullanmadığınızda masada kaktüs dekoru olarak duruyor.",
+  "fiyat": [
+   250,
+   750
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/kaktuslu-bardak-altligi.webp",
+  "alt": "Saksıda kaktüs biçimli bardak altlıkları",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/ev-yasam/mutfak/kaktuslu-bardak-altligi/"
+  ]
+ },
+ {
+  "slug": "kahve-temali-dekor-figurleri",
+  "ad": "Kahve Temalı Dekor Figürleri",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Kahve bardağı figürleri: kahve dükkânları ve kahve severler için dekor.",
+  "ayirt": "Kahve dükkânlarına özel ürettik; latte, dökülen kahve ve kahve çekirdeği figürleri de var.",
+  "fiyat": [
+   300,
+   1000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/kahve-temali-dekor-figurleri.webp",
+  "alt": "Kahve bardağı dekor figürleri",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/ev-yasam/dekorasyon/kahve-cekirdegi-figuru/",
+   "/magaza/ev-yasam/dekorasyon/kahve-bardagi-tutan-kahve-figuru/",
+   "/magaza/ev-yasam/dekorasyon/latte-kahve-figur/",
+   "/magaza/ev-yasam/dekorasyon/kahve-bardagi-figuru/",
+   "/magaza/ev-yasam/dekorasyon/dokulen-kahve-dekoratif-obje/",
+   "/magaza/ev-yasam/dekorasyon/cikolata-figuru/"
+  ]
+ },
+ {
+  "slug": "mickey-mouse-saksi",
+  "ad": "Mickey Mouse Saksı",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Mickey'nin elleriyle tuttuğu, kırmızı gövdeli saksı.",
+  "ayirt": "Çiçek ya da sukulent için; altı drenaj için açık ya da kapalı basılabiliyor.",
+  "fiyat": [
+   400,
+   1250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/mickey-mouse-saksi.webp",
+  "alt": "İçinde bitki olan Mickey Mouse saksı",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/ev-yasam/saksi/mickey-mouse-saksi/",
+   "/magaza/ev-yasam/saksi/su-hazneli-delikli-saksi/",
+   "/magaza/ev-yasam/dekorasyon/kalpli-cicek-biblo-saksi/"
+  ]
+ },
+ {
+  "slug": "super-mario-saksi-seti",
+  "ad": "Super Mario Saksı Seti",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "oyuncu-hediyesi"
+  ],
+  "aciklama": "Mario'nun tuğlası, yeşil tüneli ve soru işaretli küpü: üçlü saksı seti.",
+  "ayirt": "Tek tek de alınabiliyor, üçü bir arada set olarak da.",
+  "fiyat": [
+   400,
+   1500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/super-mario-saksi-seti.webp",
+  "alt": "Super Mario tuğla, tünel ve soru küpü saksıları",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/ev-yasam/saksi/mario-tugla-saksi/",
+   "/magaza/ev-yasam/saksi/mario-yesil-tunel-saksi/",
+   "/magaza/ev-yasam/saksi/mario-soru-isareti-saksi/",
+   "/magaza/ev-yasam/saksi/mario-saksi-3lu/"
+  ]
+ },
+ {
+  "slug": "kopekbaligi-kalemlik",
+  "ad": "Köpekbalığı Kalemlik",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Ağzı açık köpekbalığı biçimli kalemlik.",
+  "ayirt": "Kalemler köpekbalığının ağzına yerleşiyor; Spider-Man ve Mickey kalemlikleri de yapıyoruz.",
+  "fiyat": [
+   300,
+   1000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/kopekbaligi-kalemlik.webp",
+  "alt": "Ağzında kalemler olan köpekbalığı kalemlik",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/ev-yasam/kalemlik/spiderman-kalemlik/",
+   "/magaza/ev-yasam/kalemlik/omurga-kalemlik/",
+   "/magaza/ev-yasam/kalemlik/kopekbaligi-seklinde-kalemlik/",
+   "/magaza/oyun-oyuncu/mickey-mouse-kalemlik/",
+   "/magaza/ev-yasam/saksi/groot-kalemlik/"
+  ]
+ },
+ {
+  "slug": "sid-figurlu-kalemlik",
+  "ad": "Sid Figürlü Kalemlik (Buz Devri)",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "karakter-figuru",
+   "hediye"
+  ],
+  "aciklama": "Buz Devri'nin Sid'i karlı ağaç kütüğünden kalemlikle, elle boyanmış.",
+  "ayirt": "Kütük gövdesi kalemlik, önündeki Sid ise elle boyanmış figür; ikisi bir arada üretiliyor.",
+  "fiyat": [
+   750,
+   2000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/sid-figurlu-kalemlik.webp",
+  "alt": "Ağaç kütüğü kalemlik ve Sid figürü",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "balonlu-ayicik-biblo",
+  "ad": "Balonlu Ayıcık Biblo",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Üç balona tutunup uçan beyaz ayıcık biblo.",
+  "ayirt": "Şemsiyeli ve tabak tutan ayıcık biblolarımız da var; renkleri istediğiniz gibi.",
+  "fiyat": [
+   400,
+   1250
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/balonlu-ayicik-biblo.webp",
+  "alt": "Mavi balonlu beyaz ayıcık biblo",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/ev-yasam/dekorasyon/ucan-balonlu-ayicik-biblo-figur/",
+   "/magaza/ev-yasam/dekorasyon/semsiyeli-ayicik-biblo-figur/",
+   "/magaza/ev-yasam/dekorasyon/tabak-tutan-ayicik-biblo/"
+  ]
+ },
+ {
+  "slug": "yumurta-tutucu",
+  "ad": "Ayaklı Yumurta Tutucu",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor"
+  ],
+  "aciklama": "Kırık yumurta kabuğu biçimli, ördek ayaklı kahvaltı yumurtalığı.",
+  "ayirt": "Haşlanmış yumurta kabuğun içine oturuyor; ikili set olarak hazırlıyoruz.",
+  "fiyat": [
+   150,
+   450
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/yumurta-tutucu.webp",
+  "alt": "Ördek ayaklı yumurta tutucular",
+  "one_cikan": false,
+  "eski": [
+   "/magaza/ev-yasam/mutfak/yumurta-tutucu/",
+   "/magaza/ev-yasam/mutfak/otomatik-2-katli-buzdolabi-yumurta-organizeri/"
+  ]
+ },
+ {
+  "slug": "pokeball-orgu-kasesi",
+  "ad": "Pokéball Örgü Kasesi",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "oyuncu-hediyesi"
+  ],
+  "aciklama": "Pokéball biçimli kase: tığ, şiş ve örgü malzemelerini düzenli tutuyor.",
+  "ayirt": "Örgü yapanlar için ürettik; şeker kasesi ya da masa düzenleyici olarak da kullanılıyor.",
+  "fiyat": [
+   400,
+   1000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/pokeball-orgu-kasesi.webp",
+  "alt": "İçinde tığlar olan Pokéball kase",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "ramazan-hilal-isikli-dekor",
+  "ad": "Ramazan Hilal Işıklı Dekor",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor",
+   "hediye"
+  ],
+  "aciklama": "Hilal ve hat yazılı, içi ışıklı Ramazan dekoru.",
+  "ayirt": "İçindeki ışık hat yazısını ve hilali aydınlatıyor; Ramazan ve bayram dekoru olarak.",
+  "fiyat": [
+   750,
+   2000
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/ramazan-hilal-isikli-dekor.webp",
+  "alt": "Işıklı hilal ve hat yazılı Ramazan dekoru",
+  "one_cikan": false,
+  "eski": []
+ },
+ {
+  "slug": "sihirli-lamba-sahne-dekoru",
+  "ad": "Sihirli Lamba Sahne Dekoru",
+  "kategori": "Ev & Dekor",
+  "tur": "dekor",
+  "etiketler": [
+   "ev-dekor"
+  ],
+  "aciklama": "Alaaddin'in sihirli lambası: tiyatro oyununda kullanılmak üzere ürettiğimiz sahne aksesuarı.",
+  "ayirt": "Tiyatro, okul gösterisi ve etkinlikler için ölçüsüne göre sahne aksesuarı basıyoruz.",
+  "fiyat": [
+   1000,
+   3500
+  ],
+  "adet": false,
+  "gorsel": "/assets/img/urun/sihirli-lamba-sahne-dekoru.webp",
+  "alt": "Yazıcı tablasında altın renkli sihirli lamba",
+  "one_cikan": false,
+  "eski": []
+ }
+]

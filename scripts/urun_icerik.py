@@ -22,111 +22,15 @@ metinden gelir:
   da mini figür setleri gibi" ve sayfanın SSS cevapları.
 * `/3d-modelleme/`: "Ölçüden — belirli bir yere oturması gereken parçalarda
   ölçüyü alıp modeli ona göre kuruyoruz."
-* Ürünün kendi katalog kartı: adı, etiketi, açıklaması, fiyatı.
+* Ürünün kendi kaydı (content/urunler.json): adı, türü, açıklaması, ayırt edici
+  cümlesi ve fiyat aralığı. Fiyatlar ve süreç 08.10.2026'da @3dartolyemiz
+  Instagram mesajlarından ölçüldü (sahibin müşteriye verdiği fiyatlar).
 
 Ölçü, ağırlık, katman kalınlığı, malzeme garantisi gibi BİLİNMEYEN hiçbir şey
 yazılmadı. Malzeme, spesifikasyon olarak değil atölyenin kendi ifadesiyle
 ("bu tür işlerde genellikle şunu kullanıyoruz") ve kaynak sayfaya bağlanarak
 veriliyor.
 """
-
-# Ürünün hangi tür iş olduğu. Katalogdaki ad, etiket ve açıklamadan okunur;
-# eşleştirme elle yapıldı çünkü tür metnin kendisinde her zaman yazılı değil
-# (ör. "Sprinku Figürü" koleksiyon figürü, "Kişiye Özel Araba Standı" isimli
-# hediyelik). Tanınmayan slug derlemeyi durdurur.
-URUN_TURU = {
-    "samuray-bustu-figuru": "karakter",
-    "mirabel-figuru-encanto": "karakter",
-    "sprinku-figuru": "karakter",
-    "masa-ile-koca-ayi-figuru": "karakter",
-    "kratos-chibi-figuru": "karakter",
-    "kisiye-ozel-anime-karakter-figuru": "karakter",
-    "minecraft-warden-figuru": "karakter",
-    "detayli-motosiklet-maketi": "maket",
-    "honda-civic-araba-maketi": "maket",
-    "galatasaray-hagi-forma-cercevesi": "dekor",
-    "agac-dalli-ayna-cercevesi": "dekor",
-    "kisiye-ozel-chihuahua-figuru": "evcil",
-    "kisiye-ozel-fransiz-bulldog-figuru": "evcil",
-    "kisiye-ozel-artopop-aile-figuru": "aile",
-    "kisiye-ozel-mini-figur-seti": "set",
-    "kisiye-ozel-kamp-atesi-diorama-figuru": "set",
-    "kisiye-ozel-uluyan-kurt-figuru": "isimli",
-    "kisiye-ozel-araba-standi": "isimli",
-    "terzi-temali-pasta-susu-seti": "pasta",
-    "mini-anahtarlik-figur": "anahtarlik",
-    "detayli-anahtarlik-figur": "anahtarlik",
-}
-
-# Aynı türdeki ürünler aynı üretim anlatımını paylaşıyor; sayfaları ayıran şey
-# bu cümle. Her biri ürünün KENDİ katalog açıklamasındaki olgudan türetildi
-# (büst, iki karakterli, chibi, eklemli, isim plaketli, çok parçalı…).
-URUN_AYIRT = {
-    "samuray-bustu-figuru":
-        "Bu çalışma bir büst: gövde değil baş ve omuz kısmı üretiliyor. "
-        "Katalogdaki altın detaylar elle boyanıyor.",
-    "mirabel-figuru-encanto":
-        "Canlı renkli bir çalışma. Renk geçişleri elle boyandığı için aynı "
-        "figürün iki baskısı birebir aynı olmuyor.",
-    "sprinku-figuru":
-        "Koleksiyon rafında durmak üzere üretilen bir figür; renkli detayları "
-        "elle boyanıyor.",
-    "masa-ile-koca-ayi-figuru":
-        "Tek gövde değil iki karakter birlikte çıkıyor. İki figürün boyaması "
-        "ayrı ayrı yapıldığı için bu tür çalışmalar tek figürlülerden uzun sürüyor.",
-    "kratos-chibi-figuru":
-        "Chibi tarz, yani gövdenin küçültülüp başın büyütüldüğü oran. Yüz "
-        "büyüdüğü için boyamada en çok işçiliği yüz alıyor.",
-    "kisiye-ozel-anime-karakter-figuru":
-        "İsim plaketi figürle birlikte üretiliyor; plakete yazılacak metni "
-        "sipariş sırasında netleştiriyoruz.",
-    "minecraft-warden-figuru":
-        "Eklemli bir çalışma: parçalar hareket edecek şekilde ayrı ayrı basılıp "
-        "birleştiriliyor, yani tek parça bir figürden daha fazla adım var.",
-    "detayli-motosiklet-maketi":
-        "Maketin ince parçaları ayrı basılıp birleştirildiği için bu tür "
-        "çalışmalarda montaj da işçiliğin bir parçası.",
-    "honda-civic-araba-maketi":
-        "Gövde tek parça çıkıyor, gri boyamanın üzerine detaylar elle işleniyor.",
-    "galatasaray-hagi-forma-cercevesi":
-        "Duvara asılacak bir parça. Asılacağı yere göre ölçü önemliyse ölçüyü "
-        "baştan alıp modeli ona göre kuruyoruz.",
-    "agac-dalli-ayna-cercevesi":
-        "Çerçevenin içine gelecek ayna ölçüsüne göre modelleniyor. Elinizde "
-        "ayna varsa ölçüsünü baştan alıyoruz.",
-    "kisiye-ozel-chihuahua-figuru":
-        "Chihuahua çalışmalarımız galeride duruyor; fotoğraftaki tüy rengine "
-        "göre boyuyoruz.",
-    "kisiye-ozel-fransiz-bulldog-figuru":
-        "Fransız bulldog çalışmalarımız galeride duruyor; fotoğraftaki tüy "
-        "rengine göre boyuyoruz.",
-    "kisiye-ozel-artopop-aile-figuru":
-        "Aile fotoğrafından çok kişili bir set çıkıyor. Kişi sayısı, hem "
-        "modelleme hem boyama işçiliğini artıran ana etken.",
-    "kisiye-ozel-mini-figur-seti":
-        "Şövalye temalı, çok parçalı bir set. Parça sayısı arttıkça baskı ve "
-        "boyama süresi de artıyor.",
-    "kisiye-ozel-kamp-atesi-diorama-figuru":
-        "Diorama tek figür değil bir sahne: zemin, figürler ve sahne parçaları "
-        "birlikte kurgulanıyor.",
-    "kisiye-ozel-uluyan-kurt-figuru":
-        "Üzerine isim harfi işleniyor; hangi harf ya da isim geleceğini sipariş "
-        "sırasında netleştiriyoruz.",
-    "kisiye-ozel-araba-standi":
-        "Masaüstü bir stand ve üzerine isim yazılıyor. Belirli bir araca "
-        "oturması gerekiyorsa ölçüyü baştan alıyoruz.",
-    "terzi-temali-pasta-susu-seti":
-        "Dikiş makinesi ve makas figürlerinden oluşan temalı bir set; pastanın "
-        "üstünde durmak üzere, süs amaçlı üretiliyor.",
-    "mini-anahtarlik-figur":
-        "Katalogdaki iki anahtarlık boyundan küçük olanı. Daha büyük ve daha "
-        'detaylı boyalı olanı <a href="/urun/detayli-anahtarlik-figur/">detaylı '
-        "anahtarlık figür</a> sayfasında.",
-    "detayli-anahtarlik-figur":
-        "Katalogdaki iki anahtarlık boyundan büyük olanı; boyaması da daha "
-        'detaylı. Küçük boy <a href="/urun/mini-anahtarlik-figur/">mini '
-        "anahtarlık figür</a> sayfasında.",
-}
 
 # Tür başına: (giriş tamamlaması, malzeme paragrafı, model paragrafı).
 # Malzeme ifadelerinin tamamı /ankara-3d-baski/ sayfasındaki tablodan geliyor;
@@ -191,6 +95,13 @@ TUR_METNI = {
         '<a href="/ankara-3d-baski/">Malzeme tablosu</a> o sayfada.',
         "Temayı ve setin içindeki parçaları baştan konuşuyoruz; farklı bir tema "
         "isterseniz onu da üretebiliyoruz."),
+    "boyama": (
+        "kendiniz boyamanız için hazırlanan kutulu setlerden biri",
+        "Boyanacak figürlerde genellikle <strong>PLA</strong> kullanıyoruz; yüzeyi boyayı "
+        'iyi tutuyor. <a href="/ankara-3d-baski/">Malzeme tablosu</a> o sayfada.',
+        "Figür boyasız gönderiliyor; boyalar minik tüplerde, fırçasıyla birlikte kutunun "
+        'içinde. Aynı deneyimi grupça yaşamak için <a href="/dogum-gunu-boyama-atolyesi/">'
+        "boyama atölyemiz</a> var."),
     "anahtarlik": (
         "anahtarlık boyunda küçük figürlerden biri",
         "Küçük parçalarda detayın kaybolmaması için genellikle "
@@ -217,9 +128,18 @@ SSS_FIYAT = (
     "netleştiriyoruz.")
 SSS_SURE = (
     "Ne kadar sürede hazır olur?",
-    "Ürünün karmaşıklığına göre değişmekle birlikte siparişler genellikle 3-7 iş "
-    "günü içinde kargoya teslim ediliyor. Boyama ve elle rötuş gerektiren "
-    "figürlerde bu süre üst sınıra yaklaşıyor.")
+    "Genellikle 3-7 gün içinde hazırlanıp kargoya veriliyor. Elle boyanan "
+    "işlerde süre üst sınıra yaklaşıyor; yoğun dönemlerde 10-14 güne çıkabiliyor. "
+    "Kargo 2-3 gün sürüyor.")
+SSS_ODEME = (
+    "Ödeme nasıl yapılıyor?",
+    "Modelleme bitince videosunu gönderiyoruz; onaylarsanız kapora alıp baskıya "
+    "geçiyoruz. Ürün bitince yine video atıyoruz, kalan tutarı aldıktan sonra "
+    "gönderiyoruz. Taksit imkânımız yok.")
+SSS_BOYASIZ = (
+    "Kutunun içinde neler var?",
+    "Boyanmamış figür, minik tüplerde boyalar ve fırça. Boyasız figür ve boyalar "
+    "kutuda birlikte geliyor; isterseniz figürü boyalı da gönderiyoruz.")
 SSS_ELDEN = (
     "Ankara'da elden teslim alabilir miyim?",
     "Evet. Ankara içindeyseniz ürünü elden teslim edebiliyoruz, ayrıntıyı "
@@ -231,31 +151,31 @@ SSS_MODEL = (
 
 TUR_SSS = {
     "karakter": [SSS_BOYA, SSS_FIYAT, SSS_SURE],
-    "maket": [SSS_MODEL, SSS_FIYAT, SSS_SURE],
+    "maket": [SSS_MODEL, SSS_ODEME, SSS_SURE],
     "dekor": [SSS_MODEL, SSS_ELDEN, SSS_SURE],
-    "evcil": [SSS_FOTOGRAF, SSS_BOYA, SSS_SURE],
-    "aile": [SSS_FOTOGRAF, SSS_FIYAT, SSS_SURE],
+    "evcil": [SSS_FOTOGRAF, SSS_ODEME, SSS_SURE],
+    "aile": [SSS_FOTOGRAF, SSS_ODEME, SSS_SURE],
     "set": [SSS_FOTOGRAF, SSS_FIYAT, SSS_SURE],
     "isimli": [SSS_FOTOGRAF, SSS_ELDEN, SSS_SURE],
     "pasta": [SSS_MODEL, SSS_ELDEN, SSS_SURE],
     "anahtarlik": [SSS_FIYAT, SSS_ELDEN, SSS_SURE],
+    "boyama": [SSS_BOYASIZ, SSS_ELDEN, SSS_SURE],
 }
 
 
 def urun_icerik(u: dict) -> str:
     """Ürüne özgü üretim anlatımı + SSS bölümlerinin HTML'i.
 
-    Tanınmayan slug derlemeyi DURDURUR: yeni bir ürün eklenirse sessizce
+    Türü ya da ayırt edici cümlesi olmayan ürün derlemeyi DURDURUR: sessizce
     diğerleriyle aynı metni taşımasın, çünkü düzeltilen arıza tam buydu.
     """
-    tur = URUN_TURU.get(u["slug"])
-    if tur is None:
+    if u.get("tur") not in TUR_METNI or not u.get("ayirt"):
         raise SystemExit(
-            f"Yeni ürün '{u['slug']}': scripts/urun_icerik.py içindeki URUN_TURU "
-            "ve URUN_AYIRT'a eklenmeli. Eklenmezse sayfa diğer ürünlerle aynı "
-            "metni taşır ve dizine girmez.")
+            f"Ürün '{u['slug']}': content/urunler.json'da geçerli 'tur' ve dolu "
+            "'ayirt' olmalı. Yoksa sayfa diğer ürünlerle aynı metni taşır ve dizine girmez.")
+    tur = u["tur"]
     giris, malzeme, model = TUR_METNI[tur]
-    ayirt = URUN_AYIRT.get(u["slug"], "")
+    ayirt = u["ayirt"]
     sss = "\n".join(
         f'        <details class="faq-item"><summary>{q}</summary><p>{c}</p></details>'
         for q, c in TUR_SSS[tur])
@@ -267,10 +187,9 @@ def urun_icerik(u: dict) -> str:
         <p>{u["ad"]}, atölyede {giris}. {ayirt}</p>
         <p><strong>Malzeme.</strong> {malzeme}</p>
         <p><strong>Model.</strong> {model}</p>
-        <p><strong>Fiyat.</strong> Katalogdaki {u["fiyat_kucuk"]} fiyat bu çalışmanın kendi
-           ölçüsü ve detayı için. Boy, detay yoğunluğu ve boya işçiliği değiştiğinde
-           fiyat da değişiyor; farklı bir ölçü isterseniz WhatsApp'tan birlikte
-           netleştiriyoruz.</p>
+        <p><strong>Fiyat.</strong> Bu çalışma için fiyat {u["fiyat_kucuk"]} arasında.
+           Boy, detay yoğunluğu ve boya işçiliği aralığın neresinde olacağını
+           belirliyor; görseli WhatsApp'tan gönderdiğinizde kesin tutarı netleştiriyoruz.</p>
       </div>
     </div>
   </section>

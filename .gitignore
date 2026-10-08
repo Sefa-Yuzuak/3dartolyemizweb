@@ -7,3 +7,6 @@ node_modules/
 
 # Ham Instagram medyaları (WebP'e cevrildikten sonra repoya girmez)
 assets/img/_raw/
+
+# Python onbellegi
+__pycache__/

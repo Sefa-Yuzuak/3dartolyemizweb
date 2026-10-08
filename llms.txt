@@ -1,6 +1,6 @@
 # 3dartolyemiz — Ankara'da 3D baskı atölyesi (artolyemiz.com)
 
-Ankara Yenimahalle'de kendi atölyesinde 3D baskı yapan küçük işletme: fotoğraftan kişiye özel figür, araba ve motosiklet maketi, diorama, hediyelik ve ev dekoru, 3D modelleme ve çocuklar için doğum günü boyama atölyesi. Ürünler siparişe göre üretilir; Ankara içi elden teslim, Türkiye geneli kargo, genellikle 3-7 iş günü.
+Ankara Yenimahalle'de kendi atölyesinde 3D baskı yapan küçük işletme: fotoğraftan kişiye özel figür, araba ve motosiklet maketi, evcil hayvan figürü, anahtarlık ve toplu anahtarlık, pasta süsü, kendin boya setleri, ev dekoru, 3D modelleme, STL dosyasından baskı, 3D yazıcı eğitimi, Ankara içi 3D yazıcı tamiri ve çocuklar için boyama atölyesi. Ürünler siparişe göre üretilir; Ankara içi elden teslim, Türkiye geneli kargo. Genellikle 3-7 gün içinde hazırlanıp kargoya veriliyor. Elle boyanan işlerde süre üst sınıra yaklaşıyor; yoğun dönemlerde 10-14 güne çıkabiliyor. Kargo 2-3 gün sürüyor.
 
 ## İletişim ve konum
 - Adres: Mehmet Akif Ersoy Mahallesi 266. Cad No:4, Yenimahalle, Ankara
@@ -9,53 +9,144 @@ Ankara Yenimahalle'de kendi atölyesinde 3D baskı yapan küçük işletme: foto
 
 ## Hizmetler
 - [Ankara'da 3D baskı hizmeti](https://artolyemiz.com/ankara-3d-baski/): Ankara'da 3D baskı hizmeti. SLA reçine, PLA, PETG ve TPU baskı, 3D modelleme. Ankara içi elden teslim, Türkiye geneli kargo.
-- [Kişiye özel 3D figür yaptırma](https://artolyemiz.com/kisiye-ozel-3d-figur/): Fotoğraftan kişiye özel 3D figür yaptırma: kişi, aile, evcil hayvan, anime ve oyun karakteri. Elle boyama, yaklaşık 750 – 2.750 TL. Ankara'da üretim, Türkiye geneli kargo.
-- [3D baskı maket: araba, motosiklet ve diorama](https://artolyemiz.com/3d-baski-maket/): Fotoğraftan araba ve motosiklet maketi, diorama ve isimli araç standı. 3D baskı ve elle boyama, yaklaşık 2.500 TL'den. Ankara'da üretim, Türkiye geneli kargo.
+- [Kişiye özel 3D figür yaptırma](https://artolyemiz.com/kisiye-ozel-3d-figur/): Fotoğraftan kişiye özel 3D figür yaptırma: kişi, aile, evcil hayvan, anime ve oyun karakteri. Elle boyama, yaklaşık 550 – 4.750 TL. Ankara'da üretim, Türkiye geneli kargo.
+- [3D baskı maket: araba, motosiklet ve diorama](https://artolyemiz.com/3d-baski-maket/): Fotoğraftan araba ve motosiklet maketi, plakası ve platformuyla; diorama ve isimli araç standı. Elle boyama, yaklaşık 750 – 7.500 TL. Ankara'da üretim, Türkiye geneli kargo.
 - [3D modelleme hizmeti](https://artolyemiz.com/3d-modelleme/): Elinizde model yoksa sıfırdan tasarlıyoruz. Fikir, fotoğraf ya da ölçüden baskıya hazır 3D model. Ankara'da 3D modelleme hizmeti.
 - [Doğum günü boyama atölyesi](https://artolyemiz.com/dogum-gunu-boyama-atolyesi/): Çocuk doğum günlerine gelen 3D figür boyama atölyesi. Tüm boya ve figürler dahil, 8-10 kişilik gruplara uygun, ortalama 45 dakika. Ankara.
+- [STL dosyası bastırma](https://artolyemiz.com/stl-dosyasi-bastirma/): Elinizdeki STL, 3MF ya da OBJ dosyasını Ankara'da basıyoruz; dosyanız yoksa modeli biz çıkarıyoruz. Fiyat ağırlığa göre, boyama ayrıca. Türkiye geneli kargo.
+- [3D yazıcı eğitimi](https://artolyemiz.com/3d-yazici-egitimi/): 3D yazıcı kullanımı, baskı ayarları, boyama teknikleri ve 3D baskıyla iş kurma eğitimi. Online ya da Ankara'da yüz yüze; saatlik yaklaşık 1.250 – 3.000 TL.
+- [Ankara'da 3D yazıcı tamiri](https://artolyemiz.com/3d-yazici-tamiri-ankara/): Ankara içinde 3D yazıcı tamiri ve bakımı. Yazıcınızın modelini ve sorunu WhatsApp'tan yazın, ne yapılabileceğini ve ücretini konuşalım.
 
 ## Yaklaşık fiyatlar
 Sitedeki tüm fiyatlar yaklaşıktır; ölçü, detay ve boyaya göre değişir. Kesin fiyat WhatsApp'tan görsel gönderilerek netleşir.
-- Kişiye özel 3D figür: yaklaşık 1.750 TL'den başlayan fiyatlarla
-- Araba ve motosiklet maketi: yaklaşık 2.500 TL'den başlayan fiyatlarla
-- Anahtarlık: adet başına yaklaşık 150 – 350 TL
+- Kişiye özel figür: yaklaşık 550 – 4.750 TL — https://artolyemiz.com/etiket/kisiye-ozel-figur/
+- Araba maketi: yaklaşık 750 – 7.500 TL — https://artolyemiz.com/etiket/araba-maketi/
+- Motosiklet maketi: yaklaşık 3.000 – 6.500 TL — https://artolyemiz.com/etiket/motosiklet-maketi/
+- Anahtarlık: yaklaşık 50 – 2.750 TL (adet başına) — https://artolyemiz.com/etiket/anahtarlik/
+- Toplu ve kurumsal sipariş: yaklaşık 15 – 400 TL — https://artolyemiz.com/etiket/toplu-siparis/
+- Evcil hayvan figürü: yaklaşık 750 – 4.750 TL — https://artolyemiz.com/etiket/evcil-hayvan-figuru/
+- Kendin boya seti: yaklaşık 150 – 2.500 TL — https://artolyemiz.com/etiket/kendin-boya-seti/
+- Pasta süsü: yaklaşık 150 – 3.000 TL — https://artolyemiz.com/etiket/pasta-susu/
+- Karakter figürü: yaklaşık 250 – 6.000 TL — https://artolyemiz.com/etiket/karakter-figuru/
+- Oyuncu hediyesi: yaklaşık 300 – 6.500 TL — https://artolyemiz.com/etiket/oyuncu-hediyesi/
+- Ev ve masa ürünleri: yaklaşık 150 – 3.500 TL — https://artolyemiz.com/etiket/ev-dekor/
+- Hediyelik: yaklaşık 75 – 7.500 TL — https://artolyemiz.com/etiket/hediye/
+- STL dosyasından baskı: gram başına yaklaşık 2,5 – 5 TL, boyama ayrıca
+- 3D yazıcı eğitimi: saatlik yaklaşık 1.250 – 3.000 TL
 
-## Ürün kataloğu (21 çalışma)
+## Sipariş süreci
+- WhatsApp'tan yazın: ne istediğinizi, fotoğrafı ya da elinizdeki 3D dosyayı gönderin.
+- Elinizde model yoksa biz modelliyoruz ve modelin videosunu size gönderiyoruz.
+- Beğenirseniz kapora alıp baskıya geçiyoruz; değişiklik isterseniz bu aşamada yapıyoruz.
+- Baskı ve elle boyama bitince ürünün videosunu tekrar atıyoruz; kalan tutar ödenince Ankara içinde elden teslim ediyor ya da kargoya veriyoruz.
+- Taksit yok; ödeme kapora ve kalan tutar olarak iki parça.
+
+## Ürün kataloğu (86 çalışma)
 - Liste: https://artolyemiz.com/urun/
-- [Samuray Büstü Figürü](https://artolyemiz.com/urun/samuray-bustu-figuru/): Altın detaylı, elle boyanmış koleksiyon büstü. Yaklaşık 1.950 TL.
-- [Mirabel Figürü (Encanto)](https://artolyemiz.com/urun/mirabel-figuru-encanto/): Elle boyanmış, canlı renkli karakter figürü. Yaklaşık 1.750 TL.
-- [Sprinku Figürü](https://artolyemiz.com/urun/sprinku-figuru/): Renkli detaylarla üretilmiş koleksiyon figürü. Yaklaşık 1.750 TL.
-- [Maşa ile Koca Ayı Figürü](https://artolyemiz.com/urun/masa-ile-koca-ayi-figuru/): İki karakterli, elle boyanmış çizgi film figürü. Yaklaşık 2.400 TL.
-- [Kratos Chibi Figürü](https://artolyemiz.com/urun/kratos-chibi-figuru/): God of War temalı, chibi tarzı koleksiyon figürü. Yaklaşık 1.750 TL.
-- [Kişiye Özel Anime Karakter Figürü](https://artolyemiz.com/urun/kisiye-ozel-anime-karakter-figuru/): İsim plaketli, kişiye özel anime tarzı figür. Yaklaşık 1.950 TL.
-- [Minecraft Warden Figürü](https://artolyemiz.com/urun/minecraft-warden-figuru/): Eklemli, hareketli parçalı özel baskı figür. Yaklaşık 2.750 TL.
-- [Detaylı Motosiklet Maketi](https://artolyemiz.com/urun/detayli-motosiklet-maketi/): El boyaması, gerçekçi detaylı motosiklet maketi. Yaklaşık 2.500 TL.
-- [Honda Civic Araba Maketi](https://artolyemiz.com/urun/honda-civic-araba-maketi/): Gri renkli, detaylı boyanmış araba maketi. Yaklaşık 2.700 TL.
-- [Galatasaray Hagi Forma Çerçevesi](https://artolyemiz.com/urun/galatasaray-hagi-forma-cercevesi/): Forma temalı, duvara asılabilir 3D baskı çerçeve. Yaklaşık 850 TL.
-- [Ağaç Dallı Ayna Çerçevesi](https://artolyemiz.com/urun/agac-dalli-ayna-cercevesi/): Ağaç dalı motifli, ev dekoruna uygun ayna çerçevesi. Yaklaşık 950 TL.
-- [Kişiye Özel Uluyan Kurt Figürü](https://artolyemiz.com/urun/kisiye-ozel-uluyan-kurt-figuru/): İsim harfli, babalar günü ve doğum günü hediyesi. Yaklaşık 750 TL.
-- [Kişiye Özel Chihuahua Figürü](https://artolyemiz.com/urun/kisiye-ozel-chihuahua-figuru/): Gerçekçi boyanmış, kişiye özel evcil hayvan figürü. Yaklaşık 950 TL.
-- [Kişiye Özel Fransız Bulldog Figürü](https://artolyemiz.com/urun/kisiye-ozel-fransiz-bulldog-figuru/): Gerçekçi boyanmış, kişiye özel evcil hayvan figürü. Yaklaşık 950 TL.
-- [Kişiye Özel Mini Figür Seti](https://artolyemiz.com/urun/kisiye-ozel-mini-figur-seti/): Şövalye temalı, çok parçalı özel figür seti. Yaklaşık 1.400 TL.
-- [Kişiye Özel ARTOPOP Aile Figürü](https://artolyemiz.com/urun/kisiye-ozel-artopop-aile-figuru/): Aile fotoğrafından üretilen, çok kişili Pop tarzı set. Yaklaşık 1.900 TL.
-- [Kişiye Özel Kamp Ateşi Diorama Figürü](https://artolyemiz.com/urun/kisiye-ozel-kamp-atesi-diorama-figuru/): Sahne kurgulu, çok parçalı fantastik diorama. Yaklaşık 1.500 TL.
-- [Kişiye Özel Araba Standı](https://artolyemiz.com/urun/kisiye-ozel-araba-standi/): İsim yazılı, masaüstü araba figürü standı. Yaklaşık 850 TL.
-- [Terzi Temalı Pasta Süsü Seti](https://artolyemiz.com/urun/terzi-temali-pasta-susu-seti/): Dikiş makinesi ve makas figürlü özel pasta süsü. Yaklaşık 700 TL.
-- [Mini Anahtarlık Figür](https://artolyemiz.com/urun/mini-anahtarlik-figur/): Küçük boy, tekli kişiye özel anahtarlık figürü. Yaklaşık 150 TL.
-- [Detaylı Anahtarlık Figür](https://artolyemiz.com/urun/detayli-anahtarlik-figur/): Daha büyük boy, detaylı boyalı anahtarlık figürü. Yaklaşık 350 TL.
+- [Kişiye Özel ARTOPOP Aile Figürü](https://artolyemiz.com/urun/kisiye-ozel-artopop-aile-figuru/): Aile fotoğrafından üretilen, çok kişili Pop tarzı set. Yaklaşık 1.250 – 4.500 TL.
+- [Pop Tarzı Futbolcu Figürü](https://artolyemiz.com/urun/pop-tarzi-futbolcu-figuru/): Büyük başlı pop tarzında, forması ve kramponuyla elle boyanmış futbolcu figürü. Yaklaşık 1.250 – 3.500 TL.
+- [Kişiye Özel Köpek Figürü](https://artolyemiz.com/urun/kisiye-ozel-kopek-figuru/): Köpeğinizin fotoğrafından modellenen, tüy rengine kadar elle boyanmış figür. Yaklaşık 1.750 – 4.750 TL.
+- [Kişiye Özel Anime Karakter Figürü](https://artolyemiz.com/urun/kisiye-ozel-anime-karakter-figuru/): İsim plaketli, kişiye özel anime tarzı figür. Yaklaşık 2.000 – 4.750 TL.
+- [Cub Tipi Motosiklet Maketi (Plakalı)](https://artolyemiz.com/urun/cub-motosiklet-maketi/): Kırmızı-beyaz Cub tipi motosikletin plakalı, elle boyanmış maketi. Yaklaşık 3.000 – 6.500 TL.
+- [Renault Megane Araba Maketi](https://artolyemiz.com/urun/renault-megane-araba-maketi/): Beyaz Renault Megane sedanın plakalı, elle boyanmış maketi. Yaklaşık 3.000 – 6.500 TL.
+- [Araba Logolu İsimli Anahtarlık](https://artolyemiz.com/urun/araba-logolu-isimli-anahtarlik/): Araba markasının logosu ve isminizle kişiye özel anahtarlık: Ford, BMW, Mercedes, VW… Yaklaşık 100 – 350 TL / adet.
+- [F1 Pilot İsimli Anahtarlık](https://artolyemiz.com/urun/f1-pilot-isimli-anahtarlik/): Formula 1 pilotlarının kısaltma ve numaralı anahtarlıkları: LEC, VER, SAI, ALO, HAM… Yaklaşık 100 – 350 TL / adet.
+- [F1 Lastik Detaylı Anahtarlık Askısı](https://artolyemiz.com/urun/f1-lastik-detayli-anahtarlik-askisi/): Formula 1 logolu, dört lastik detaylı duvar tipi anahtarlık askısı. Yaklaşık 400 – 1.200 TL.
+- [Toplu Anahtarlık Siparişi](https://artolyemiz.com/urun/toplu-anahtarlik-siparisi/): Firma, okul, etkinlik ve satış için toplu anahtarlık üretimi; logolu ya da karakterli. Yaklaşık 15 – 150 TL / adet.
+- [Charizard Pasta Figürü](https://artolyemiz.com/urun/charizard-pasta-figuru/): Doğum günü pastasının üstüne kanatlarını açmış, elle boyanmış Charizard figürü. Yaklaşık 750 – 3.000 TL.
+- [ArtoPop Kendin Boya Kutusu](https://artolyemiz.com/urun/artopop-kendin-boya-kutusu/): Fotoğrafınızdan ArtoPop figürü, boyalar ve fırçayla birlikte kutuda: kendiniz boyuyorsunuz. Yaklaşık 550 – 2.500 TL.
+- [Samuray Büstü Figürü](https://artolyemiz.com/urun/samuray-bustu-figuru/): Altın detaylı, elle boyanmış koleksiyon büstü. Yaklaşık 1.500 – 4.000 TL.
+- [Mirabel Figürü (Encanto)](https://artolyemiz.com/urun/mirabel-figuru-encanto/): Elle boyanmış, canlı renkli karakter figürü. Yaklaşık 1.250 – 3.500 TL.
+- [Sprinku Figürü](https://artolyemiz.com/urun/sprinku-figuru/): Renkli detaylarla üretilmiş koleksiyon figürü. Yaklaşık 1.250 – 3.500 TL.
+- [Maşa ile Koca Ayı Figürü](https://artolyemiz.com/urun/masa-ile-koca-ayi-figuru/): İki karakterli, elle boyanmış çizgi film figürü. Yaklaşık 1.750 – 4.500 TL.
+- [Kratos Chibi Figürü](https://artolyemiz.com/urun/kratos-chibi-figuru/): God of War temalı, chibi tarzı koleksiyon figürü. Yaklaşık 1.250 – 3.500 TL.
+- [Minecraft Warden Figürü](https://artolyemiz.com/urun/minecraft-warden-figuru/): Eklemli, hareketli parçalı özel baskı figür. Yaklaşık 2.000 – 5.000 TL.
+- [Detaylı Motosiklet Maketi](https://artolyemiz.com/urun/detayli-motosiklet-maketi/): El boyaması, gerçekçi detaylı motosiklet maketi. Yaklaşık 3.000 – 6.500 TL.
+- [Honda Civic Araba Maketi](https://artolyemiz.com/urun/honda-civic-araba-maketi/): Gri renkli, detaylı boyanmış araba maketi. Yaklaşık 3.000 – 6.500 TL.
+- [Galatasaray Hagi Forma Çerçevesi](https://artolyemiz.com/urun/galatasaray-hagi-forma-cercevesi/): Forma temalı, duvara asılabilir 3D baskı çerçeve. Yaklaşık 600 – 1.500 TL.
+- [Ağaç Dallı Ayna Çerçevesi](https://artolyemiz.com/urun/agac-dalli-ayna-cercevesi/): Ağaç dalı motifli, ev dekoruna uygun ayna çerçevesi. Yaklaşık 700 – 1.750 TL.
+- [Kişiye Özel Uluyan Kurt Figürü](https://artolyemiz.com/urun/kisiye-ozel-uluyan-kurt-figuru/): İsim harfli, babalar günü ve doğum günü hediyesi. Yaklaşık 600 – 1.750 TL.
+- [Kişiye Özel Chihuahua Figürü](https://artolyemiz.com/urun/kisiye-ozel-chihuahua-figuru/): Gerçekçi boyanmış, kişiye özel evcil hayvan figürü. Yaklaşık 1.000 – 4.750 TL.
+- [Kişiye Özel Fransız Bulldog Figürü](https://artolyemiz.com/urun/kisiye-ozel-fransiz-bulldog-figuru/): Gerçekçi boyanmış, kişiye özel evcil hayvan figürü. Yaklaşık 1.000 – 4.750 TL.
+- [Kişiye Özel Mini Figür Seti](https://artolyemiz.com/urun/kisiye-ozel-mini-figur-seti/): Şövalye temalı, çok parçalı özel figür seti. Yaklaşık 1.000 – 3.000 TL.
+- [Kişiye Özel Kamp Ateşi Diorama Figürü](https://artolyemiz.com/urun/kisiye-ozel-kamp-atesi-diorama-figuru/): Sahne kurgulu, çok parçalı fantastik diorama. Yaklaşık 1.250 – 3.500 TL.
+- [Kişiye Özel Araba Standı](https://artolyemiz.com/urun/kisiye-ozel-araba-standi/): İsim yazılı, masaüstü araba figürü standı. Yaklaşık 750 – 2.000 TL.
+- [Terzi Temalı Pasta Süsü Seti](https://artolyemiz.com/urun/terzi-temali-pasta-susu-seti/): Dikiş makinesi ve makas figürlü özel pasta süsü. Yaklaşık 400 – 1.500 TL.
+- [Mini Anahtarlık Figür](https://artolyemiz.com/urun/mini-anahtarlik-figur/): Küçük boy, tekli kişiye özel anahtarlık figürü. Yaklaşık 50 – 250 TL / adet.
+- [Detaylı Anahtarlık Figür](https://artolyemiz.com/urun/detayli-anahtarlik-figur/): Daha büyük boy, detaylı boyalı anahtarlık figürü. Yaklaşık 150 – 750 TL / adet.
+- [Ters Yüz Karakter Figürleri](https://artolyemiz.com/urun/ters-yuz-karakter-figurleri/): Ters Yüz filminin duygu karakterleri: Öfke, Korku, Üzüntü, Utanç ve diğerleri, elle boyanmış. Yaklaşık 750 – 2.500 TL.
+- [Hei Hei Tavuk Figürü (Moana)](https://artolyemiz.com/urun/hei-hei-tavuk-figuru/): Moana filminin şaşkın horozu Hei Hei, renkli tüyleriyle elle boyanmış figür. Yaklaşık 750 – 2.250 TL.
+- [Fred Çakmaktaş Figürü](https://artolyemiz.com/urun/fred-cakmaktas-figuru/): Taş Devri'nin Fred Çakmaktaş'ı, turuncu kıyafeti ve mavi kravatıyla elle boyanmış. Yaklaşık 1.000 – 3.000 TL.
+- [Jetgiller Figürleri](https://artolyemiz.com/urun/jetgiller-figurleri/): Jetgiller ailesi: George, Jane, Judy, Elroy, robot Rosie ve köpek Astro, ayrı ayrı figür. Yaklaşık 1.000 – 3.000 TL.
+- [Asterix ve Oburix Figürü](https://artolyemiz.com/urun/asterix-oburix-figuru/): Galyalı kahramanlar Asterix ve Oburix, elle boyanmış ayrı figürler. Yaklaşık 1.000 – 3.000 TL.
+- [Garfield Figürü](https://artolyemiz.com/urun/garfield-figuru/): Tembel kedi Garfield, çizgili turuncu tüyleriyle elle boyanmış figür. Yaklaşık 750 – 2.250 TL.
+- [Pokémon Turtok Figürü](https://artolyemiz.com/urun/pokemon-turtok-figuru/): Pokémon Turtok (Blastoise), sırtındaki toplarıyla elle boyanmış figür. Yaklaşık 750 – 2.500 TL.
+- [Minecraft Figürleri](https://artolyemiz.com/urun/minecraft-figurleri/): Minecraft karakterleri: tavuk, Steve, kurbağa, aksolotl; köşeli piksel tarzında. Yaklaşık 400 – 1.500 TL.
+- [One Piece Zoro Figürü](https://artolyemiz.com/urun/one-piece-zoro-figuru/): One Piece'in kılıç ustası Zoro, kılıçları ve yara izleriyle elle boyanmış koleksiyon figürü. Yaklaşık 1.500 – 4.500 TL.
+- [Breaking Bad Üçlü Figür](https://artolyemiz.com/urun/breaking-bad-3lu-figur/): Breaking Bad'in üç karakteri sarı tulumlarıyla, elle boyanmış üçlü figür seti. Yaklaşık 2.000 – 5.000 TL.
+- [Squid Game Figürü](https://artolyemiz.com/urun/squid-game-figuru/): Squid Game'in maskeli kırmızı tulumlu muhafızı, eklemli figür. Yaklaşık 750 – 2.000 TL.
+- [Venom Büst Figürü](https://artolyemiz.com/urun/venom-bust-figuru/): Venom'un dili dışarıda büstü; baş ve omuz kısmı, kaidesiyle. Yaklaşık 1.250 – 3.500 TL.
+- [Düşünen Uzaylı Figürü](https://artolyemiz.com/urun/dusunen-uzayli-figuru/): Avuç içine sığan, oturup düşünen pembe uzaylı figürü. Yaklaşık 250 – 750 TL.
+- [Eklemli Kertenkele Figürü](https://artolyemiz.com/urun/eklemli-kertenkele-figuru/): Pul pul dokulu, eklemli gövdesi kıvrılan kertenkele figürü. Yaklaşık 250 – 900 TL.
+- [Eklemli Aksolotl Figürü](https://artolyemiz.com/urun/eklemli-aksolotl-figuru/): Esnek, eklemli gövdeli sevimli aksolotl figürleri; farklı renklerde. Yaklaşık 250 – 900 TL.
+- [Kişiye Özel Kedi Figürü](https://artolyemiz.com/urun/kisiye-ozel-kedi-figuru/): Kedinizin fotoğrafından, tüy desenine göre elle boyanmış oturan kedi figürü. Yaklaşık 1.750 – 4.750 TL.
+- [Naked Motosiklet Maketi](https://artolyemiz.com/urun/naked-motosiklet-maketi/): Yeşil jantlı siyah naked motosiklet maketi, plakası ve standıyla. Yaklaşık 3.000 – 6.500 TL.
+- [Chopper Motosiklet Maketi](https://artolyemiz.com/urun/chopper-motosiklet-maketi/): Yan çantalı, siyah chopper motosiklet maketi; plakası ve standıyla. Yaklaşık 3.000 – 6.500 TL.
+- [Volkswagen Polo Araba Maketi](https://artolyemiz.com/urun/volkswagen-polo-araba-maketi/): Beyaz Volkswagen Polo'nun far ve ızgara detaylı, plakalı maketi. Yaklaşık 3.000 – 6.500 TL.
+- [Off-Road Arazi Aracı Maketi](https://artolyemiz.com/urun/off-road-arazi-araci-maketi/): Beyaz 4x4 arazi aracının çıkartmalı, detaylı maketi. Yaklaşık 3.000 – 6.500 TL.
+- [Cupra Araba Maketi (Dioramalı)](https://artolyemiz.com/urun/cupra-araba-maketi-dioramali/): Cupra'nın sahneli diorama üzerinde duran, boyalı araba maketi. Yaklaşık 3.500 – 7.500 TL.
+- [Nostaljik Klasik Araba Maketi](https://artolyemiz.com/urun/nostaljik-klasik-araba-maketi/): 1950'ler tarzı klasik otomobilin maketi; boyasız ya da boyalı. Yaklaşık 2.500 – 6.000 TL.
+- [Doc Hudson Araba Maketi (Arabalar)](https://artolyemiz.com/urun/doc-hudson-araba-maketi/): Arabalar filminin Doc Hudson'ı, gözleri ve krom detaylarıyla boyanmış maket. Yaklaşık 2.500 – 6.000 TL.
+- [GTA Bullet Oyun Arabası Maketi](https://artolyemiz.com/urun/gta-bullet-oyun-arabasi-maketi/): GTA San Andreas'taki Bullet aracının siyah-sarı şeritli maketi. Yaklaşık 3.000 – 6.500 TL.
+- [Evcil Hayvan Anahtarlığı](https://artolyemiz.com/urun/evcil-hayvan-anahtarlik/): Evcil dostlarınızın fotoğrafından boyalı anahtarlık; iki hayvan bir arada da olur. Yaklaşık 750 – 2.750 TL.
+- [Harry Potter Anahtarlık](https://artolyemiz.com/urun/harry-potter-anahtarlik/): Gözlüklü, cübbeli sevimli Harry Potter anahtarlığı. Yaklaşık 100 – 350 TL / adet.
+- [Squid Game Klikli Anahtarlık](https://artolyemiz.com/urun/squid-game-klikli-anahtarlik/): Basınca tık sesi çıkaran, Squid Game sembollü klikli anahtarlık. Yaklaşık 100 – 300 TL / adet.
+- [Kurabiye Adam Anahtarlık](https://artolyemiz.com/urun/kurabiye-adam-anahtarlik/): Zencefilli kurabiye adam anahtarlığı; her biri ayrı yüz ifadesiyle. Yaklaşık 75 – 250 TL / adet.
+- [Eklemli Ahtapot Anahtarlık](https://artolyemiz.com/urun/eklemli-ahtapot-anahtarlik/): Kolları oynayan minik ahtapot anahtarlığı. Yaklaşık 75 – 250 TL / adet.
+- [At Figürlü Pasta Süsü](https://artolyemiz.com/urun/at-figurlu-pasta-susu/): Anne ve tay atlardan oluşan, elle boyanmış pasta süsü figürleri. Yaklaşık 750 – 2.500 TL.
+- [Kişiye Özel Pasta Üstü Yazı](https://artolyemiz.com/urun/kisiye-ozel-pasta-ustu-yazi/): İstediğiniz cümle, isim ve renkte pasta üstü yazı (cake topper). Yaklaşık 250 – 750 TL.
+- [Pasta Yaş Rakamları](https://artolyemiz.com/urun/pasta-yas-rakamlari/): Temalı doğum günü pastaları için yaş rakamları; farklı renk ve boyutlarda. Yaklaşık 150 – 500 TL.
+- [Diş Temalı Pasta Süsü](https://artolyemiz.com/urun/dis-temali-pasta-susu/): Gülümseyen diş figürü ve yıl yazısından oluşan meslek temalı pasta süsü. Yaklaşık 500 – 1.500 TL.
+- [Kendin Boya Unicorn Seti](https://artolyemiz.com/urun/kendin-boya-unicorn-seti/): Boyanmamış unicorn figürü, renkli mini boyalar ve fırçayla kutulu boyama seti. Yaklaşık 300 – 900 TL.
+- [Toplu Boyama Figürü (Atölye ve Etkinlik)](https://artolyemiz.com/urun/toplu-boyama-figuru/): Okul, kafe, kurum ve doğum günü etkinlikleri için boyanmamış figürler, toplu adetle. Yaklaşık 150 – 400 TL / adet.
+- [Lego Tuvalet Kâğıdı Tutucu](https://artolyemiz.com/urun/lego-tuvalet-kagidi-tutucu/): Lego adam tarzında, kollarıyla tuvalet kâğıdı tutan duvar tipi tutucu. Yaklaşık 600 – 1.750 TL.
+- [Muggle & Wizard Tuvalet Tabelası](https://artolyemiz.com/urun/harry-potter-tuvalet-tabelasi/): Harry Potter esprili “Muggle / Wizard” banyo kapısı tabelası. Yaklaşık 250 – 750 TL.
+- [Super Mario Peçetelik](https://artolyemiz.com/urun/super-mario-pecetelik/): Arkasında kâğıt peçetelik bulunan, Super Mario tarzı masa peçeteliği. Yaklaşık 300 – 900 TL.
+- [Kinder Yumurta Kutusu (Tavşanlı)](https://artolyemiz.com/urun/kinder-yumurta-kutusu/): Kinder sürpriz yumurtasını içine koyduğunuz, tavşan kulaklı ve sarkık bacaklı kutu. Yaklaşık 150 – 450 TL.
+- [Baykuş Gözlük Tutucu](https://artolyemiz.com/urun/baykus-gozluk-tutucu/): Gözlüğünüzü burnunun üstüne taktığınız baykuş biçimli gözlük tutucu. Yaklaşık 300 – 900 TL.
+- [Montessori Eğitici Oyuncak](https://artolyemiz.com/urun/montessori-egitici-oyuncak/): Renk ve şekil eşleştirmeli, tutamaklı Montessori yapboz oyuncağı. Yaklaşık 250 – 900 TL.
+- [Karakterli Joystick Standı](https://artolyemiz.com/urun/karakterli-joystick-standi/): Oyun kolunu elinde tutan karakter standı: Spider-Man, Psyduck, Groot, Mario ve dahası. Yaklaşık 600 – 1.750 TL.
+- [Karakterli Kulaklık Standı](https://artolyemiz.com/urun/karakterli-kulaklik-standi/): Kulaklığı başına takılan karakter kafası standı: Deadpool, Groot, Fortnite. Yaklaşık 600 – 1.750 TL.
+- [Squirtle Bardak Altlığı](https://artolyemiz.com/urun/squirtle-bardak-altligi/): Kabuğu bardak altlığı olan, Pokémon Squirtle biçimli altlık seti. Yaklaşık 300 – 900 TL.
+- [Kaktüslü Bardak Altlığı](https://artolyemiz.com/urun/kaktuslu-bardak-altligi/): Saksıda kaktüs gibi duran, yaprakları çıkarılıp bardak altlığı olan set. Yaklaşık 250 – 750 TL.
+- [Kahve Temalı Dekor Figürleri](https://artolyemiz.com/urun/kahve-temali-dekor-figurleri/): Kahve bardağı figürleri: kahve dükkânları ve kahve severler için dekor. Yaklaşık 300 – 1.000 TL.
+- [Mickey Mouse Saksı](https://artolyemiz.com/urun/mickey-mouse-saksi/): Mickey'nin elleriyle tuttuğu, kırmızı gövdeli saksı. Yaklaşık 400 – 1.250 TL.
+- [Super Mario Saksı Seti](https://artolyemiz.com/urun/super-mario-saksi-seti/): Mario'nun tuğlası, yeşil tüneli ve soru işaretli küpü: üçlü saksı seti. Yaklaşık 400 – 1.500 TL.
+- [Köpekbalığı Kalemlik](https://artolyemiz.com/urun/kopekbaligi-kalemlik/): Ağzı açık köpekbalığı biçimli kalemlik. Yaklaşık 300 – 1.000 TL.
+- [Sid Figürlü Kalemlik (Buz Devri)](https://artolyemiz.com/urun/sid-figurlu-kalemlik/): Buz Devri'nin Sid'i karlı ağaç kütüğünden kalemlikle, elle boyanmış. Yaklaşık 750 – 2.000 TL.
+- [Balonlu Ayıcık Biblo](https://artolyemiz.com/urun/balonlu-ayicik-biblo/): Üç balona tutunup uçan beyaz ayıcık biblo. Yaklaşık 400 – 1.250 TL.
+- [Ayaklı Yumurta Tutucu](https://artolyemiz.com/urun/yumurta-tutucu/): Kırık yumurta kabuğu biçimli, ördek ayaklı kahvaltı yumurtalığı. Yaklaşık 150 – 450 TL.
+- [Pokéball Örgü Kasesi](https://artolyemiz.com/urun/pokeball-orgu-kasesi/): Pokéball biçimli kase: tığ, şiş ve örgü malzemelerini düzenli tutuyor. Yaklaşık 400 – 1.000 TL.
+- [Ramazan Hilal Işıklı Dekor](https://artolyemiz.com/urun/ramazan-hilal-isikli-dekor/): Hilal ve hat yazılı, içi ışıklı Ramazan dekoru. Yaklaşık 750 – 2.000 TL.
+- [Sihirli Lamba Sahne Dekoru](https://artolyemiz.com/urun/sihirli-lamba-sahne-dekoru/): Alaaddin'in sihirli lambası: tiyatro oyununda kullanılmak üzere ürettiğimiz sahne aksesuarı. Yaklaşık 1.000 – 3.500 TL.
 
 ## Sık sorulanlar
 - Ankara'da elden teslim alabilir miyim? Evet. Ankara içindeyseniz ürünü elden teslim edebiliyoruz, ayrıntıyı WhatsApp'tan konuşuyoruz.
-- Teslimat ne kadar sürer? Ürünün karmaşıklığına göre değişmekle birlikte siparişler genellikle 3-7 iş günü içinde kargoya teslim edilir.
+- Teslimat ne kadar sürer? Genellikle 3-7 gün içinde hazırlanıp kargoya veriliyor. Elle boyanan işlerde süre üst sınıra yaklaşıyor; yoğun dönemlerde 10-14 güne çıkabiliyor. Kargo 2-3 gün sürüyor.
 - Şehir dışına gönderim yapıyor musunuz? Evet, Türkiye'nin her yerine güvenli kargo ile gönderim yapıyoruz.
-- Elimde 3D model yok, yine de bastırabilir miyim? Bastırabilirsiniz. Fikri, fotoğrafı ya da ölçüyü alıp baskıya hazır modeli biz tasarlıyoruz.
+- Elimde 3D model yok, yine de bastırabilir miyim? Bastırabilirsiniz. Kendi STL dosyanızı getirirseniz doğrudan basıyoruz; getirmezseniz fikri, fotoğrafı ya da ölçüyü alıp modeli biz çıkarıyoruz.
+- Ödeme nasıl yapılıyor, taksit var mı? Modelin videosunu onayladığınızda kapora alıp baskıya geçiyoruz; kalan tutarı ürün bitince, videosunu gördükten sonra ödüyorsunuz. Taksit imkânımız yok.
 - Fotoğraftan figür yapmak için nasıl bir fotoğraf gerekiyor? Yüzün ya da vücudun net göründüğü bir fotoğraf yeterli. Birden fazla açı varsa benzerlik daha yüksek çıkıyor.
 - Figürler boyalı mı geliyor? Evet, figürleri elle boyayıp gönderiyoruz. Kendiniz boyamak isterseniz boyanmamış hâliyle de hazırlayabiliyoruz.
-- Figür yaptırmak ne kadar tutar? Katalogdaki figürler yaklaşık 750 TL ile 2.750 TL arasında; kişiye özel figür yaklaşık 1.750 TL'den başlıyor. Fiyat boyuta, detay yoğunluğuna ve boya işçiliğine göre değişiyor; kesin tutarı görseli gönderdiğinizde netleştiriyoruz.
+- Figür yaptırmak ne kadar tutar? Kişiye özel figürler yaklaşık 550 – 4.750 TL arasında. En çok istenen 20 cm elle boyalı kişi figürü bu aralığın ortasında kalıyor; boyasız gönderip boyaları kutuya eklediğimiz seçenek daha uygun. Fiyat boyuta, detaya ve boya işçiliğine göre değişiyor; kesin tutarı görseli gönderdiğinizde netleştiriyoruz.
+- Figürler kaç santim oluyor? Kişi figürlerini genelde 15-20 cm yapıyoruz; anahtarlık boyu 5-7 cm. 3 cm gibi çok küçük ve detaylı işler reçineyle basılıyor, o da maliyeti artırıyor.
+- Ödeme nasıl yapılıyor, taksit var mı? Modelin videosunu onayladığınızda kapora alıp baskıya geçiyoruz; kalan tutarı ürün bitince, videosunu gördükten sonra ödüyorsunuz. Taksit imkânımız yok.
 - Anime ya da oyun karakteri figürü yapıyor musunuz? Evet. Katalogda anime tarzı, chibi tarzı ve oyun karakteri figürleri var. İnce detay gerektiği için bu figürleri genelde reçineyle basıyoruz.
 - Kendi arabamın maketini yaptırabilir miyim? Evet. Aracınızın fotoğrafından modeli hazırlıyor, basıyor ve detaylı boyuyoruz. Önizlemeyi onayladıktan sonra üretime geçiyoruz.
-- Araba maketi ne kadar? Araba ve motosiklet maketi yaklaşık 2.500 TL'den başlıyor; katalogdaki maketlerin yaklaşık fiyatları bu sayfadaki tabloda. Fiyat model karmaşıklığına göre değişiyor.
-- Maket ne kadar sürede hazır olur? Siparişler genellikle 3-7 iş günü içinde hazır olur; elle boyanan işlerde süre üst sınıra yaklaşır.
+- Araba maketi ne kadar? 20 cm araba ve motosiklet maketi, plaka ve platform dahil, yaklaşık 750 – 7.500 TL arasında; katalogdaki maketlerin yaklaşık fiyatları bu sayfadaki tabloda. Fiyat aracın detayına göre değişiyor.
+- Mimari ya da ölçekli maket yapıyor musunuz? Hayır. Mimari proje maketi yapmıyoruz, ölçekli (1/24, 1/50 gibi) de çalışmıyoruz. Araba ve motosiklet maketlerini toplam boyu genelde 20 cm olacak şekilde üretiyoruz.
+- Maket ne kadar sürede hazır olur? Genellikle 3-7 gün içinde hazırlanıp kargoya veriliyor. Elle boyanan işlerde süre üst sınıra yaklaşıyor; yoğun dönemlerde 10-14 güne çıkabiliyor. Kargo 2-3 gün sürüyor.
+- Ödeme nasıl yapılıyor, taksit var mı? Modelin videosunu onayladığınızda kapora alıp baskıya geçiyoruz; kalan tutarı ürün bitince, videosunu gördükten sonra ödüyorsunuz. Taksit imkânımız yok.
 - Elimde 3D model var, sadece baskı yaptırabilir miyim? Evet. Hazır modeliniz varsa doğrudan basıyoruz; yoksa modeli biz tasarlıyoruz.
 - Sadece modelleme yaptırıp baskıyı başka yerde aldırabilir miyim? Bunu WhatsApp'tan konuşalım, işin kapsamına göre değerlendiriyoruz.
 - Modelleme fiyatı nasıl belirleniyor? İşin karmaşıklığına göre değişiyor. Fikri anlattığınızda net bir teklif veriyoruz.
@@ -63,7 +154,17 @@ Sitedeki tüm fiyatlar yaklaşıktır; ölçü, detay ve boyaya göre değişir.
 - Etkinlik ne kadar sürüyor? Ortalama 45 dakika sürüyor. Grup kalabalıksa biraz uzayabiliyor.
 - Boya ve figürleri biz mi temin ediyoruz? Hayır, tüm boya ve figürler bize ait. Siz sadece yeri ayarlıyorsunuz.
 - Etkinlik için nasıl yer ayırtabilirim? WhatsApp üzerinden tarih ve kişi sayısını yazmanız yeterli, uygunluğu birlikte netleştiriyoruz.
+- Hangi dosya biçimlerini basıyorsunuz? STL, 3MF ve OBJ. Dosyanızı gönderdiğinizde baskıya uygun mu diye kontrol ediyoruz.
+- STL baskı fiyatı nasıl hesaplanıyor? Baskının ağırlığına göre, gram başına yaklaşık 2,5 – 5 TL. Boyama ve reçine baskı ayrıca fiyatlanıyor; kesin tutarı dosyayı gördüğümüzde söylüyoruz.
+- Dosyam yok, ne yapmalıyım? Fotoğrafı ya da fikri gönderin, modeli biz çıkaralım. Modelin videosunu onayınıza sunuyoruz.
+- Teslimat ne kadar sürer? Genellikle 3-7 gün içinde hazırlanıp kargoya veriliyor. Elle boyanan işlerde süre üst sınıra yaklaşıyor; yoğun dönemlerde 10-14 güne çıkabiliyor. Kargo 2-3 gün sürüyor.
+- Eğitim kaç saat sürüyor? Hobi amaçlı kullanım için genelde 1 saat, ticari kullanım için 2 saat yetiyor.
+- Online eğitim nasıl oluyor? Görüntülü görüşmeyle; gerekirse bilgisayarınıza bağlanıp ayarları sizin ekranınızda birlikte yapıyoruz.
+- YouTube'dan izleyerek öğrenemez miyim? Temel kullanımı öğrenebilirsiniz; ama ayar, boyama ve satış tarafı uygulamayla oturuyor. Eğitimde kendi atölyemizde kullandığımız yöntemleri anlatıyoruz.
+- Ankara dışına tamir hizmeti veriyor musunuz? Tamir hizmetimiz Ankara içinde. Kullanım ve ayar sorunları için online eğitim verebiliyoruz.
+- Tamir ne kadar tutar? Arızaya ve parça gerekip gerekmediğine göre değişiyor. Sorunu yazdığınızda yaklaşık tutarı söylüyoruz.
 
 ## Notlar
 - Malzeme işin gereğine göre seçilir: ince detayda SLA reçine, dekor/hediyelik/maketin çoğunda PLA, dayanımda PETG, esnek parçada TPU.
+- Mimari proje maketi yapılmaz, ölçekli çalışılmaz; araç maketleri genelde 20 cm.
 - Puan, yorum sayısı ve teslim edilen iş sayısı gibi doğrulanamayan veriler sitede yayımlanmaz.

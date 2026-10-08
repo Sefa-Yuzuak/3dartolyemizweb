@@ -391,6 +391,13 @@ h2{font-size:clamp(1.6rem,4vw,2.5rem);}
 .urun-bilgi > * { margin-bottom: .9rem; }
 .urun-bilgi p { max-width: 60ch; }
 
+/* etiket dugmeleri: en cok sorulan urun turleri (content/etiketler.json) */
+.etiketler { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 1.75rem; padding: 0; list-style: none; }
+.etiketler a { display: inline-block; font-size: .85rem; font-weight: 600; padding: .45em 1em; border-radius: var(--radius-pill); border: 1px solid var(--line); background: var(--surface); color: var(--ink); text-decoration: none; }
+.etiketler a:hover, .etiketler a[aria-current="page"] { border-color: var(--brand); color: var(--brand-dk); }
+.etiketler small { opacity: .6; font-weight: 500; margin-left: .3em; }
+.katalog-tumu { text-align: center; margin-top: 2rem; }
+
 /* ---------- TikTok tikla-yukle karti ---------- */
 /* Gomu sayfayla birlikte yuklenince ana sayfa 207 istek / 28 MB oluyordu (PSI 13.09.2026).
    Kart yalnizca yerel kapak; iframe ve embed.js dugmeye basilinca gelir (main.js). */
