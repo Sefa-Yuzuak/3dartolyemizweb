@@ -46,3 +46,23 @@ jobs:
             401) echo "::error::401 — token geçersiz/revoke. Coolify → Keys & Tokens'tan yenile."; exit 1 ;;
             *)  echo "::error::Beklenmeyen yanıt (HTTP $code)"; exit 1 ;;
           esac
+      # IndexNow: yayinlanan degisiklikleri Bing'e bildir. Coolify deploy'u
+      # arka planda surer; canli sitemap depodakiyle ayni olana kadar beklenir,
+      # yoksa Bing henuz eski sayfayi tarar. Bildirim hatasi deploy'u dusurmez.
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: IndexNow ile Bing'e bildir
+        continue-on-error: true
+        env:
+          ONCE: ${{ github.event.before }}
+        run: |
+          for i in $(seq 1 36); do
+            if curl -fsS -m 20 https://artolyemiz.com/sitemap.xml | cmp -s - sitemap.xml; then break; fi
+            sleep 10
+          done
+          if [ -n "$ONCE" ] && git cat-file -e "$ONCE" 2>/dev/null; then
+            python scripts/indexnow.py $(git diff --name-only "$ONCE" HEAD)
+          else
+            python scripts/indexnow.py
+          fi
