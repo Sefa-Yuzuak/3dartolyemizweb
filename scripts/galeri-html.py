@@ -40,7 +40,7 @@ for i, k in enumerate(kayitlar):
 p = KOK / "index.html"
 s = p.read_text("utf-8")
 yeni = ('<div class="gallery-grid" id="gallery-grid">\n'
-        '        <!-- 41 kart HTML\'e basılı: JS çalışmadan da okunur. Kaynak veri\n'
+        '        <!-- Kartlar HTML\'e basılı: JS çalışmadan da okunur. Kaynak veri\n'
         '             assets/js/gallery.js; bu blok scripts/galeri-html.py ile üretilir. -->\n'
         + "\n".join(parcalar) + '\n      </div>')
 s = re.sub(r'<div class="gallery-grid" id="gallery-grid">.*?</div>\n      </div>',
