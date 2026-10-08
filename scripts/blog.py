@@ -17,6 +17,7 @@ Tanimsiz belirtec ya da olmayan dosya derlemeyi durdurur.
 """
 from __future__ import annotations
 
+import hashlib
 import io
 import json
 import re
@@ -73,13 +74,16 @@ def video_html(dosya: str) -> str:
     v = VIDEO[dosya]
     poster = f"/assets/img/atolye/klip-{dosya}.webp"
     w, h = boyut(poster)
-    if not (KOK / "assets" / "video" / f"{dosya}.mp4").exists():
+    mp4 = KOK / "assets" / "video" / f"{dosya}.mp4"
+    if not mp4.exists():
         raise SystemExit(f"Video yok: {dosya}.mp4")
+    # nginx mp4'u 30 gun onbellekte tutar: icerik degisince adres de degissin
+    surum = hashlib.sha256(mp4.read_bytes()).hexdigest()[:8]
     # Sessiz, dongulu; main.js gorunur oldugunda oynatir. preload=none: sayfa
     # acilirken video indirilmez.
     return (f'<figure class="yazi-video"><video class="klip" width="{w}" height="{h}" poster="{poster}" '
             f'muted loop playsinline preload="none" aria-label="{v["ad"]}">'
-            f'<source src="/assets/video/{dosya}.mp4" type="video/mp4"></video>'
+            f'<source src="/assets/video/{dosya}.mp4?v={surum}" type="video/mp4"></video>'
             f'<figcaption>{v["aciklama"]}</figcaption></figure>')
 
 
