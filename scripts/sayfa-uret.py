@@ -1222,6 +1222,21 @@ io.open(KOK / "atolyemiz" / "index.html", "w", encoding="utf-8").write(blog.atol
 ana = io.open(KOK / "index.html", encoding="utf-8").read()
 ana = isaret_doldur(ana, "BLOG", '      <div class="blog-grid">\n'
                     + "\n".join(blog.yazi_karti(y) for y in blog.YAZILAR[:3]) + "\n      </div>")
+
+
+def vitrin_seridi(us: list, ters: bool) -> str:
+    """Kayan serit: urunler iki kez yazilir (sonsuz dongu); ikinci kopya ekran okuyucudan gizli."""
+    def kart(u, kopya):
+        ek = ' class="kopya" aria-hidden="true" tabindex="-1"' if kopya else ""
+        return (f'<a href="/urun/{u["slug"]}/"{ek}><img src="{u["kart_gorsel"]}" alt="{"" if kopya else u["alt"]}" '
+                f'width="450" height="600" loading="lazy" decoding="async"><span>{u["ad"]}</span></a>')
+    return (f'    <div class="vitrin-serit{" vitrin-serit--ters" if ters else ""}">'
+            + "".join(kart(u, False) for u in us) + "".join(kart(u, True) for u in us) + "</div>")
+
+
+# en yeni 32 urun (urunler.json'a sona eklenir) iki serit hâlinde
+yeniler = URUNLER[-32:][::-1]
+ana = isaret_doldur(ana, "VITRIN", vitrin_seridi(yeniler[:16], False) + "\n" + vitrin_seridi(yeniler[16:], True))
 io.open(KOK / "index.html", "w", encoding="utf-8").write(ana)
 print(f"  {len(blog.YAZILAR)} blog yazisi + /blog/ + /atolyemiz/ uretildi")
 
@@ -1299,8 +1314,9 @@ def llms_uret() -> str:
               "- Malzeme işin gereğine göre seçilir: ince detayda SLA reçine, dekor/hediyelik/maketin "
               "çoğunda PLA, dayanımda PETG, esnek parçada TPU.",
               "- Mimari proje maketi yapılmaz, ölçekli çalışılmaz; araç maketleri genelde 20 cm.",
-              "- Puan, yorum sayısı ve teslim edilen iş sayısı gibi doğrulanamayan veriler sitede "
-              "yayımlanmaz.", ""]
+              "- Ana sayfadaki sayılar (3.800+ basılan parça, 270+ müşteri, 190+ modelleme, 140+ figür) "
+              "yaklaşıktır: Instagram mesajlarından ölçülen siparişlerin, telefonla alınan işler için "
+              "işletme sahibinin beyanıyla iki katı. Puan ve yorum sayısı yayımlanmaz.", ""]
     return "\n".join(satir)
 
 

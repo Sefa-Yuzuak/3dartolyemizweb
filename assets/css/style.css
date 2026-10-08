@@ -459,3 +459,30 @@ h2{font-size:clamp(1.6rem,4vw,2.5rem);}
 .katalog-grup h2{margin-bottom:.2em;}
 .katalog-grup p{margin:0;color:var(--ink-soft);font-size:.95rem;}
 .katalog-tumu .btn{white-space:normal;max-width:100%;text-align:center;}
+
+/* KPI bandi + kayan vitrin (08.10.2026) */
+.stats--vitrin{position:relative;overflow:hidden;padding-block:clamp(3rem,6vw,4.5rem);
+  background:linear-gradient(135deg,rgba(35,37,43,.95),rgba(35,37,43,.86)),url("/assets/img/atolye/toplu-civciv-baskisi.webp") center/cover;}
+.stats-ust{text-align:center;margin-bottom:2rem;}
+.stats-ust h2{color:#fff;}
+.stats-grid--4{grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;}
+@media (min-width:860px){.stats-grid--4{grid-template-columns:repeat(4,minmax(0,1fr));}}
+.stats--vitrin .stat-item{align-items:center;padding:1.5rem 1rem;border-radius:var(--radius-card);
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(6px);}
+.stat-ikon{width:44px;height:44px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+  background:rgba(255,107,74,.18);color:var(--brand);margin-bottom:.4rem;}
+.stat-ikon svg{width:24px;height:24px;}
+.stats--vitrin .stat-num{font-size:clamp(2.2rem,6vw,3.4rem);}
+.stats-not{text-align:center;color:rgba(255,255,255,.6);font-size:.8rem;margin:1.25rem 0 0;}
+.vitrin{padding-block:clamp(2.5rem,5vw,3.5rem);overflow:hidden;}
+.vitrin-serit{display:flex;gap:1rem;width:max-content;animation:vitrin-kay 70s linear infinite;margin-top:1rem;}
+.vitrin-serit--ters{animation-direction:reverse;animation-duration:85s;}
+.vitrin:hover .vitrin-serit{animation-play-state:paused;}
+.vitrin-serit a{flex:0 0 auto;width:170px;border-radius:16px;overflow:hidden;background:var(--surface);
+  border:1px solid var(--line);box-shadow:var(--shadow-soft);text-decoration:none;color:var(--ink);transition:transform .2s ease;}
+.vitrin-serit a:hover{transform:translateY(-4px) rotate(-1deg);}
+.vitrin-serit img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;}
+.vitrin-serit span{display:block;padding:.55rem .7rem;font-size:.8rem;font-weight:600;line-height:1.25;}
+@keyframes vitrin-kay{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.vitrin-serit{animation:none;flex-wrap:wrap;width:auto;}}
+@media (prefers-reduced-motion:reduce){.vitrin-serit .kopya{display:none;}}
