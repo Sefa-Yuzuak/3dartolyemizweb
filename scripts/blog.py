@@ -90,7 +90,7 @@ def video_html(dosya: str) -> str:
 def video_sema(dosya: str, alan: str) -> dict:
     v = VIDEO[dosya]
     return {"@context": "https://schema.org", "@type": "VideoObject", "name": v["ad"],
-            "description": v["aciklama"], "uploadDate": v["tarih"],
+            "description": v["aciklama"], "uploadDate": f"{v['tarih']}T12:00:00+03:00",  # Google saat dilimli tarih istiyor
             "thumbnailUrl": f"{alan}/assets/img/atolye/klip-{dosya}.webp",
             "contentUrl": f"{alan}/assets/video/{dosya}.mp4",
             "duration": f"PT{video_sure(dosya)}S"}
