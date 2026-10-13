@@ -37,3 +37,21 @@ Doğrulama: yayın öncesi kapsam listeleri birebir eşleşti (195 izlenen, 10 y
 185 sayfa, 1114 WhatsApp, 543 Instagram ve 149 ürün denetiminde sıfır hata;
 JavaScript sözdizimi kontrolü başarılı. Uzak master başlangıç commit'iyle aynı.
 Sonraki adım: commit/push, dağıtım takibi ve canlı dosya/bağlantı doğrulaması.
+
+### Yayın sonucu
+
+Yayın commit'i: `c442513adb63c80bfd646cd377499f332be79c7b`.
+GitHub Actions: https://github.com/Sefa-Yuzuak/3dartolyemizweb/actions/runs/38393143822
+İş akışı başarılı. İlk kontrol eski sürümü gösterdiği için iş akışı sonucu tek
+başına yayın kanıtı sayılmadı; Coolify'ın dağıtımı tamamlaması beklendi.
+Ardından sorgu eki olmadan canlı 185 sayfa ile CSS, JS, üç yeni WebP,
+sitemap.xml, robots.txt ve llms.txt (toplam 193 URL) HTTP 200 verdi ve yerel
+dosyalarla birebir eşleşti (metin dosyalarında yalnız CRLF/LF normalize edildi).
+Böylece yerel denetimden geçen WhatsApp alıcı/sayfa bağlamı ve Instagram profil
+hedeflerinin canlı HTML'ye ulaştığı doğrulandı. Dış uygulama açılışı test edilmedi.
+docs/PHASE_LOG.md, content/urunler.json, scripts/iletisim.py, .local-research/
+ve requirements-build.txt canlıda 404; araştırma/geliştirme dosyaları sunulmuyor.
+Tarayıcı bağlı olmadığından mobil/masaüstü görsel kontrol sınırı devam ediyor.
+Kesin geri dönüş: `git revert c442513adb63c80bfd646cd377499f332be79c7b` ardından
+`git push origin master`; dağıtımdan sonra önceki dosyaların canlı eşleşmesini kontrol et.
+Durum: onaylanan yayın aşaması tamamlandı. Yeni bir geliştirme fazı başlatılmadı.
