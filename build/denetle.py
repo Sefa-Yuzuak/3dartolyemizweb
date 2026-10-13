@@ -67,7 +67,7 @@ def main() -> int:
 
     # Bu sitede çıktı ayrı bir dist/ klasöründe değil, depo kökünde. Kaynak ve
     # yardımcı klasörler denetim dışı.
-    disari = {"build", "content", ".git", ".github", "node_modules", "assets"}
+    disari = {"build", "content", ".git", ".github", "node_modules", "assets", ".venv", ".local-research"}
     sayfalar = sorted(p for p in DIST.rglob("*.html")
                       if not (set(p.relative_to(DIST).parts) & disari))
     basliklar: Counter = Counter()

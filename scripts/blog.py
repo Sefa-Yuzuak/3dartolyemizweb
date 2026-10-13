@@ -24,6 +24,7 @@ import re
 from pathlib import Path
 
 from PIL import Image
+from iletisim import instagram_dugmesi
 
 KOK = Path(__file__).resolve().parent.parent
 YAZILAR = json.load(io.open(KOK / "content" / "blog.json", encoding="utf-8"))
@@ -46,6 +47,31 @@ def boyut(yol: str) -> tuple[int, int]:
 def tarih_metni(iso: str) -> str:
     y, a, g = map(int, iso.split("-"))
     return f"{g} {AYLAR[a - 1]} {y}"
+
+
+def hikayeler_html(secili=None) -> str:
+    """Kendi hesabımızın görsel olarak incelenmiş, tarihli story örnekleri."""
+    kartlar = []
+    for h in ATOLYE.get("hikayeler", []):
+        if secili is not None and h["dosya"] not in secili:
+            continue
+        yol = f'/assets/img/atolye/{h["dosya"]}.webp'
+        w, boy = boyut(yol)
+        kartlar.append(
+            f'<figure class="arsiv-karti"><img src="{yol}" alt="{h["alt"]}" '
+            f'width="{w}" height="{boy}" loading="lazy" decoding="async">'
+            f'<figcaption><time datetime="{h["tarih"]}">{tarih_metni(h["tarih"])}</time>'
+            f'<h3>{h["baslik"]}</h3><p>{h["aciklama"]}</p>'
+            f'<a href="{h["hizmet"]}">{h["hizmet_adi"]}</a></figcaption></figure>')
+    if not kartlar:
+        return ""
+    return ('<div class="arsiv-bolumu"><div class="section-head">'
+            '<span class="eyebrow">Atölyeden paylaştıklarımız</span>'
+            '<h2>Hikâyelerimizden üretim örnekleri</h2></div>'
+            '<p class="sayfa-metin">Instagram hikâyelerimizde paylaştığımız gerçek üretim kareleri. '
+            'Günlük işlerimizi profilimizden takip edebilirsiniz.</p>'
+            '<div class="arsiv-grid">' + "".join(kartlar) + '</div>'
+            + instagram_dugmesi() + '</div>')
 
 
 def video_sure(dosya: str) -> int:
@@ -288,7 +314,7 @@ def atolye_sayfasi(k: dict) -> str:
     bloklar = [
         kirinti_sema(alan, ("Atölyemiz", "/atolyemiz/")),
         {"@context": "https://schema.org", "@type": "AboutPage", "name": "3dartolyemiz atölyesi",
-         "url": url, "about": {"@type": "LocalBusiness", "name": "3dartolyemiz", "url": alan + "/"},
+         "url": url, "about": {"@type": "LocalBusiness", "@id": alan + "/#isletme", "name": "3dartolyemiz", "url": alan + "/"},
          "primaryImageOfPage": alan + "/assets/img/atolye/bambu-lab-yazici-ams.webp"},
     ] + [video_sema(v, alan) for v in vs]
     h = k["head_yap"]("Atölyemiz: 3D Yazıcılarımız ve Üretimden Videolar | 3dartolyemiz",
@@ -304,10 +330,10 @@ def atolye_sayfasi(k: dict) -> str:
     <div class="container">
       {kirinti(("Atölyemiz", ""))}
       <h1>Atölyemiz: yazıcılarımız ve üretimden kareler</h1>
-      <p class="lead">Sitede gördüğünüz her ürün Ankara Yenimahalle'deki atölyemizde modelleniyor,
-        basılıyor ve elle boyanıyor. Bu sayfada o üretimin kendisini gösteriyoruz: makinelerimizi,
+      <p class="lead">Ankara Yenimahalle'deki atölyemizde hazır dosyadan baskı ve kişiye özel modelleme
+        yapıyor, siparişe göre boyalı ya da boyasız üretiyoruz. Bu sayfada o üretimin kendisini gösteriyoruz: makinelerimizi,
         baskı tablalarını ve Instagram'da paylaştığımız videolardan kısa kesitleri.</p>
-      <div class="hero-ctas"><a class="btn btn-primary" href="{k["TEL"]}" target="_blank" rel="noopener">WhatsApp'tan yaz</a></div>
+      <div class="hero-ctas"><a class="btn btn-primary" href="{k["TEL"]}" target="_blank" rel="noopener">WhatsApp'tan yaz</a>{instagram_dugmesi()}</div>
     </div>
   </section>
 
@@ -326,6 +352,7 @@ def atolye_sayfasi(k: dict) -> str:
       <div class="atolye-grid">
 {fotolar}
       </div>
+      {hikayeler_html()}
     </div>
   </section>
 

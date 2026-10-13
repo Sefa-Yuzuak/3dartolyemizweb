@@ -1,0 +1,10 @@
+assets/img/atolye/story-nfc.webp
+assets/img/atolye/story-recine.webp
+assets/img/atolye/story-sla.webp
+build/iletisim-denetle.py
+docs/PHASE_LOG.md
+docs/SEO_GEO_2026-10-13.md
+docs/SEO_GEO_CHANGED_FILES.txt
+docs/SEO_GEO_NEW_FILES.txt
+requirements-build.txt
+scripts/iletisim.py

@@ -345,16 +345,29 @@ h2{font-size:clamp(1.6rem,4vw,2.5rem);}
 .footer-social svg{width:18px;height:18px;color:#fff;}
 .footer-bottom{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;font-size:.85rem;}
 
-/* ===== FAB ===== */
-.fab{
-  position:fixed;right:1.25rem;bottom:1.25rem;z-index:150;
-  width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;
-  display:flex;align-items:center;justify-content:center;box-shadow:0 12px 28px -10px rgba(37,211,102,.6);
-  opacity:0;transform:translateY(16px) scale(.9);transition:opacity .5s ease,transform .5s ease;
+/* İki iletişim kanalı ilk çizimde görünür; JS ve zamanlayıcı gerektirmez. */
+.contact-dock{position:fixed;right:1.25rem;bottom:max(1rem,env(safe-area-inset-bottom));z-index:150;display:flex;gap:.6rem;padding:.55rem;background:var(--surface);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow-soft);}
+.contact-dock a{display:flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.65rem 1rem;border-radius:13px;font-weight:800;font-size:.9rem;text-decoration:none;}
+.contact-dock svg{width:23px;height:23px;flex-shrink:0;}
+.contact-dock .contact-wa{background:#137c40;color:#fff;}
+.contact-dock .contact-ig{background:#92366b;color:#fff;}
+.contact-dock a:hover{filter:brightness(1.1);}
+.contact-dock a:focus-visible{outline:3px solid var(--ink);outline-offset:3px;}
+.site-footer{padding-bottom:7rem;}
+.arsiv-bolumu{margin:2.5rem 0;}
+.arsiv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:1.5rem;margin:1.5rem 0;max-width:960px;}
+.arsiv-karti{margin:0;max-width:360px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--surface);}
+.arsiv-karti img{display:block;width:100%;height:auto;}
+.arsiv-karti figcaption{padding:1.1rem;}
+.arsiv-karti time,.uretim-kaynak{font-size:.85rem;color:var(--ink-soft);}
+.arsiv-karti h3{margin:.4rem 0;}
+.arsiv-karti p{margin-bottom:.75rem;}
+@media(max-width:600px){
+  .contact-dock{left:0;right:0;bottom:0;border-radius:16px 16px 0 0;padding:.55rem .75rem calc(.55rem + env(safe-area-inset-bottom));}
+  .contact-dock a{flex:1;min-width:0;padding:.65rem .4rem;}
+  .site-footer{padding-bottom:calc(7rem + env(safe-area-inset-bottom));}
+  html{scroll-padding-bottom:100px;}
 }
-.fab.is-visible{opacity:1;transform:translateY(0) scale(1);}
-.fab svg{width:30px;height:30px;}
-.fab:hover{transform:scale(1.08);}
 
 /* ===== Reveal animation ===== */
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .5s ease-out,transform .5s ease-out;}
@@ -364,7 +377,6 @@ h2{font-size:clamp(1.6rem,4vw,2.5rem);}
   html{scroll-behavior:auto;}
   *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important;}
   .reveal{opacity:1;transform:none;}
-  .fab{opacity:1;transform:none;}
 }
 
 /* ===== 404 ===== */

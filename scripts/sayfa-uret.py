@@ -27,6 +27,7 @@ from urllib.parse import quote
 
 import blog
 from urun_icerik import urun_icerik
+from iletisim import wa_link, instagram_dugmesi, baglantilari_hazirla
 
 KOK = Path(__file__).resolve().parent.parent
 ALAN = "https://artolyemiz.com"
@@ -53,9 +54,9 @@ def urunleri_oku() -> list:
         u["fiyat_metni"] = f"Yaklaşık {aralik_}" + (" / adet" if u["adet"] else "")
         u["fiyat_kucuk"] = ("adet başına " if u["adet"] else "") + f"yaklaşık {aralik_}"
         u["kart_gorsel"] = u["gorsel"].replace(".webp", "-sm.webp")
-        u["not"] = "Kesin fiyat ölçü ve detaya göre netleşir · görsel temsilidir"
-        u["wa"] = ("https://wa.me/905441885744?text="
-                   + quote(f"Merhaba, {u['ad']} için fiyat almak istiyorum."))
+        u["not"] = ("Kesin fiyat ölçü ve detaya göre netleşir · fotoğraf kendi üretimimizden bir örnektir"
+                    if u.get("uretim_notu") else "Kesin fiyat ölçü ve detaya göre netleşir · görsel temsilidir")
+        u["wa"] = wa_link(u["ad"], f"{ALAN}/urun/{u['slug']}/")
         for yol in (u["gorsel"], u["kart_gorsel"]):
             if not (KOK / yol.lstrip("/")).exists():
                 raise SystemExit(f"{u['slug']}: gorsel yok {yol}")
@@ -604,6 +605,8 @@ def head_yap(baslik: str, aciklama: str, url: str, bloklar=(),
     if og_gorsel:
         h = re.sub(r'(<meta property="og:image" content=")[^"]*(")',
                    lambda m: m.group(1) + ALAN + og_gorsel + m.group(2), h, count=1)
+        h = re.sub(r'(<meta name="twitter:image" content=")[^"]*(")',
+                   lambda m: m.group(1) + ALAN + og_gorsel + m.group(2), h, count=1)
     h = h.replace('href="assets/', 'href="/assets/').replace('src="assets/', 'src="/assets/')
     # ana sayfanin semalari alt sayfaya tasinmasin
     h = re.sub(r'\s*<script type="application/ld\+json">.*?</script>', "", h, flags=re.S)
@@ -628,7 +631,7 @@ def sema_bloklari(s: dict) -> list:
         "name": s["sema_ad"], "description": s["desc"], "url": url,
         "serviceType": s["sema_ad"],
         "areaServed": [{"@type": "City", "name": "Ankara"}, {"@type": "Country", "name": "Türkiye"}],
-        "provider": {"@type": "LocalBusiness", "name": "3dartolyemiz", "url": ALAN + "/",
+        "provider": {"@type": "LocalBusiness", "@id": ALAN + "/#isletme", "name": "3dartolyemiz", "url": ALAN + "/",
                      "telephone": "+905441885744",
                      "address": {"@type": "PostalAddress",
                                  "streetAddress": "Mehmet Akif Ersoy Mahallesi 266.Cad No:4",
@@ -687,13 +690,18 @@ def govde_uret(s: dict) -> str:
       <nav class="kirinti" aria-label="Konum"><a href="/">Ana sayfa</a> <span>/</span> <span>{s["h1"]}</span></nav>
       <h1>{s["h1"]}</h1>
       <p class="lead">{s["lead"]}</p>
-      <div class="hero-ctas"><a class="btn btn-primary" href="{TEL}" target="_blank" rel="noopener">WhatsApp'tan yaz</a></div>
+      <div class="hero-ctas"><a class="btn btn-primary" href="{TEL}" target="_blank" rel="noopener">WhatsApp'tan yaz</a>{instagram_dugmesi()}</div>
     </div>
   </section>
 
   <section>
     <div class="container">''']
     parcalar += [bolum_uret(b) for b in s["bolumler"]]
+    hikayeler = {"ankara-3d-baski": ["story-recine", "story-sla"],
+                 "kisiye-ozel-3d-figur": ["story-sla"],
+                 "stl-dosyasi-bastirma": ["story-recine"]}.get(s["slug"])
+    if hikayeler:
+        parcalar.append(blog.hikayeler_html(hikayeler))
     parcalar.append("    </div>\n  </section>")
 
     if s.get("sss"):
@@ -746,20 +754,10 @@ def urun_sayfasi(u: dict) -> str:
          # 04.09 bildirimi "genel tanimlayici verilmemis" diyordu; marka vardi,
          # eksik olan urun tanimlayicisiydi. Slug urunun kendi kimligi.
          "sku": u["slug"],
-         # Fiyat aralik oldugu icin Offer degil AggregateOffer (low/highPrice).
-         "offers": {"@type": "AggregateOffer", "lowPrice": u["fiyat"][0],
-                    "highPrice": u["fiyat"][1], "priceCurrency": "TRY", "offerCount": 1,
-                    # 21.09.2026: Search Console iki raporda birden
-                    # "availability alaninda gecersiz enum degeri" bildirdi.
-                    # Onceki deger schema.org/MadeToOrder idi: schema.org'da
-                    # gecerli ama Google'in DESTEKLEDIGI listede yok
-                    # (InStock, BackOrder, PreOrder, OutOfStock, SoldOut...).
-                    # InStock secildi: urun siparis edilebilir ve sayfa
-                    # "3-7 is gunu icinde kargoya veriliyor" diyor. BackOrder
-                    # ("stok bitti") durumu oldugundan kotu gosterirdi.
-                    # Siparise gore uretim bilgisi sayfada GORUNUR kaliyor.
-                    "availability": "https://schema.org/InStock",
-                    "seller": {"@type": "Organization", "name": "3dartolyemiz"}}},
+         "@id": url + "#urun", "mainEntityOfPage": url},
+        # Yaklaşık özel üretim bütçesi bir satış teklifi değildir. Gerçek fiyatlı
+        # teklif/varyant yokken AggregateOffer, stok veya müşteri puanı üretmeyiz.
+        # Product açıklayıcı kalır; Google ürün zengin sonucu uygunluğu beklenmez.
     ]
     fk = u["fiyat_metni"].replace("Yaklaşık ", "")
     baslik = ilk_sigan([f"{u['ad']} | Yaklaşık {fk} | 3dartolyemiz", f"{u['ad']} | Yaklaşık {fk}",
@@ -781,7 +779,9 @@ def urun_sayfasi(u: dict) -> str:
         '    </div>\n  </section>\n\n'
         '  <section>\n    <div class="container">\n      <div class="urun-detay">\n'
         '        <img class="urun-gorsel" src="' + u["gorsel"] + '" alt="' + u["alt"] + '" '
-        'width="900" height="1200" loading="eager" decoding="async">\n'
+        'srcset="' + u["kart_gorsel"] + ' 450w, ' + u["gorsel"] + ' 900w" '
+        'sizes="(min-width:760px) 420px, calc(100vw - 40px)" '
+        'width="900" height="1200" loading="eager" fetchpriority="high" decoding="async">\n'
         '        <div class="urun-bilgi">\n'
         '          <span class="tag">' + u["kategori"] + '</span>\n'
         '          <div class="price-badge">' + u["fiyat_metni"] + '</div>\n'
@@ -790,8 +790,8 @@ def urun_sayfasi(u: dict) -> str:
         'kargo. Genellikle 3-7 gün içinde hazırlanıyor.</p>\n'
         '          <p>Aynı ürünü farklı ölçü, renk ya da kişiye özel detayla da yapabiliyoruz. '
         'Ne istediğinizi yazın, birlikte netleştirelim.</p>\n'
-        '          <a class="btn btn-primary" href="' + u["wa"] + '" target="_blank" rel="noopener">'
-        'WhatsApp\'tan sipariş ver</a>\n'
+        '          <div class="hero-ctas"><a class="btn btn-primary" href="' + u["wa"] + '" target="_blank" rel="noopener">'
+        'WhatsApp\'tan fiyat al</a>' + instagram_dugmesi() + '</div>\n'
         '          <ul class="etiketler" aria-label="Etiketler">'
         + "".join(f'<li><a href="/etiket/{e}/">{ETIKET[e]["ad"]}</a></li>' for e in u["etiketler"])
         + '</ul>\n'
@@ -799,7 +799,7 @@ def urun_sayfasi(u: dict) -> str:
         # 21.09.2026: urun sayfalarinin ~230 kelimesi 21 urunde AYNIYDI
         # ve Google hicbirini dizine almadi. Ture ozgu uretim anlatimi +
         # SSS burada eklenir; olgular sitenin kendi sayfalarindan gelir.
-        + urun_icerik(u) +
+        + urun_icerik(u) + uretim_notu_html(u) +
         '\n  <section class="section--alt">\n    <div class="container">\n'
         '      <div class="section-head reveal"><h2>Devamı</h2></div>\n'
         '      <ul class="sayfa-liste reveal">\n'
@@ -810,6 +810,18 @@ def urun_sayfasi(u: dict) -> str:
         '        <li><a href="/urun/">Tüm ürün kataloğu ve yaklaşık fiyatlar</a></li>\n'
         '      </ul>\n    </div>\n  </section>\n')
     return h + bas + govde + son
+
+
+def uretim_notu_html(u: dict) -> str:
+    not_ = u.get("uretim_notu")
+    if not not_:
+        return ""
+    return (f'<section class="section--alt"><div class="container">'
+            f'<div class="section-head"><h2>Bu çalışmanın atölye notu</h2></div>'
+            f'<p class="sayfa-metin">{not_["metin"]}</p>'
+            f'<p class="uretim-kaynak"><time datetime="{not_["tarih"]}">{blog.tarih_metni(not_["tarih"])}</time>'
+            ' tarihli Instagram paylaşımımızdan.</p>'
+            f'{instagram_dugmesi()}</div></section>')
 
 
 def urun_karti(u: dict) -> str:
@@ -1052,6 +1064,7 @@ def anasayfa_guncelle() -> None:
             veri["mainEntity"] = [{"@type": "Question", "name": q,
                                    "acceptedAnswer": {"@type": "Answer", "text": c}} for q, c in ANASAYFA_SSS]
         elif tur == "LocalBusiness":
+            veri["@id"] = ALAN + "/#isletme"
             veri["priceRange"] = (f"Yaklaşık {tl(min(f[0] for f in fiyatlar))} – "
                                   f"{tl(max(f[1] for f in fiyatlar))} TL")
             hizmet = {
@@ -1326,3 +1339,13 @@ def llms_uret() -> str:
 io.open(KOK / "llms.txt", "w", encoding="utf-8").write(llms_uret())
 print("  llms.txt yazildi")
 print(f"{len(uretilen)} hizmet sayfasi + {len(URUNLER)} urun sayfasi uretildi.")
+
+# Bağlam her sayfanın statik HTML'ine yazılır; mobil, masaüstü ve JS kapalıyken aynı hedef.
+for sayfa in [KOK / "index.html"] + [KOK / sl / "index.html" for sl in uretilen] + list((KOK / "urun").rglob("index.html")) + list((KOK / "etiket").rglob("index.html")) + list((KOK / "blog").rglob("index.html")) + [KOK / "atolyemiz/index.html", KOK / "gizlilik/index.html"]:
+    metin = sayfa.read_text(encoding="utf-8")
+    url = re.search(r'<link rel="canonical" href="([^"]+)"', metin).group(1)
+    konu = re.sub(r'<[^>]+>', '', re.search(r'<h1[^>]*>(.*?)</h1>', metin, re.S).group(1)).strip()
+    if sayfa == KOK / "index.html":
+        konu = "3D baskı siparişi"
+    sayfa.write_text(baglantilari_hazirla(metin, url, konu), encoding="utf-8")
+print("  WhatsApp bağlantıları: sayfa konusu + kalıcı sayfa adresi")

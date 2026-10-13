@@ -10,3 +10,5 @@ assets/img/_raw/
 
 # Python onbellegi
 __pycache__/
+.venv/
+.local-research/

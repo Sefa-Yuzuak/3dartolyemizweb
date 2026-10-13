@@ -44,7 +44,11 @@
    "/magaza/figur/funko-pop/ronaldo-funko-pop/",
    "/magaza/figur/funko-pop/messi-funko-pop/",
    "/magaza/figur/funko-pop/elsa-funko-pop/"
-  ]
+  ],
+  "uretim_notu": {
+   "tarih": "2025-07-28",
+   "metin": "Messi figürünü kendin boya seti olarak paylaştık. Bu örnekte figür, boyalar ve fırça birlikte hazırlanıyor; renkleri kendiniz uyguluyorsunuz."
+  }
  },
  {
   "slug": "kisiye-ozel-kopek-figuru",
@@ -66,7 +70,11 @@
   "gorsel": "/assets/img/urun/kisiye-ozel-kopek-figuru.webp",
   "alt": "Kişiye özel boyanmış köpek figürü, arkada gerçek köpek",
   "one_cikan": true,
-  "eski": []
+  "eski": [],
+  "uretim_notu": {
+   "tarih": "2026-09-02",
+   "metin": "Evcil hayvan biblosu olarak paylaştığımız köpek çalışmamız. Bu örnek, fotoğraftan hayvan figürü siparişinde duruş ve tüy desenini konuşmak için bir başlangıç olabilir."
+  }
  },
  {
   "slug": "kisiye-ozel-anime-karakter-figuru",
@@ -110,7 +118,11 @@
   "gorsel": "/assets/img/urun/cub-motosiklet-maketi.webp",
   "alt": "Kırmızı Cub tipi motosiklet maketi",
   "one_cikan": true,
-  "eski": []
+  "eski": [],
+  "uretim_notu": {
+   "tarih": "2026-10-03",
+   "metin": "Tamamladığımız motosiklet maketinin müşterimize teslim edildiğini paylaştık. Görsel, atölyemizde üretilmiş bir sipariş örneğidir; kendi motorunuzun renk ve detaylarını ayrıca konuşuyoruz."
+  }
  },
  {
   "slug": "renault-megane-araba-maketi",
@@ -131,7 +143,11 @@
   "gorsel": "/assets/img/urun/renault-megane-araba-maketi.webp",
   "alt": "Beyaz Renault Megane araba maketi",
   "one_cikan": true,
-  "eski": []
+  "eski": [],
+  "uretim_notu": {
+   "tarih": "2026-09-09",
+   "metin": "Yeni sahibine hazırladığımız araç maketini bu tarihte paylaştık. Sayfadaki fotoğraf bu tamamlanan çalışmaya aittir; yeni siparişte araç modeli ve kişiselleştirme detayları birlikte belirlenir."
+  }
  },
  {
   "slug": "araba-logolu-isimli-anahtarlik",
@@ -229,7 +245,11 @@
   "eski": [
    "/magaza/oyun-oyuncu/anahtarlik/dog-mom-anahtarlik/",
    "/magaza/oyun-oyuncu/anahtarlik/pokemon-pikachu-ve-charmander-anahtarlik/"
-  ]
+  ],
+  "uretim_notu": {
+   "tarih": "2025-07-01",
+   "metin": "Bu siparişte 8 farklı çeşitte toplam 139 anahtarlık ürettik. Tamamlanan çalışmayı, işletmesinde anahtarlık satmak isteyenler için bir toplu üretim örneği olarak paylaştık. Bu adet bir minimum sipariş şartı değildir."
+  }
  },
  {
   "slug": "charizard-pasta-figuru",
@@ -272,7 +292,11 @@
   "gorsel": "/assets/img/urun/artopop-kendin-boya-kutusu.webp",
   "alt": "ArtoPop kutusu: boyasız figürler, boyalar ve fırça",
   "one_cikan": true,
-  "eski": []
+  "eski": [],
+  "uretim_notu": {
+   "tarih": "2025-09-14",
+   "metin": "ArtoPop paylaşımımızda fotoğraftan kişiye özel, Pop tarzı figür tasarımını anlattık. Hazır bir karakter seçmenin yanında kendi fotoğrafınızla da başlayabilirsiniz."
+  }
  },
  {
   "slug": "samuray-bustu-figuru",
@@ -1047,7 +1071,11 @@
   "one_cikan": false,
   "eski": [
    "/magaza/figur/siyah-kedi-figuru/"
-  ]
+  ],
+  "uretim_notu": {
+   "tarih": "2026-07-30",
+   "metin": "Tamamlanan kedi figürümüzü bu tarihte paylaştık. Kendi kediniz için çalışırken fotoğraftaki duruşu ve tüy desenlerini birlikte değerlendiriyoruz."
+  }
  },
  {
   "slug": "naked-motosiklet-maketi",

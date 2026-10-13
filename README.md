@@ -1,6 +1,37 @@
 # 3D Atölyemiz — artolyemiz.com
 
-Statik tanıtım/portfolyo sitesi. Vanilla HTML/CSS/JS — framework, build step veya npm yok.
+Statik tanıtım/portfolyo sitesi. Vanilla HTML/CSS/JS; sayfalar geliştirme sırasında
+Python ile üretilir, sunucuda framework veya npm gerektirmez.
+
+## Güncel sayfa üretimi ve kontrol (13 Ekim 2026)
+
+Sunucuda HTML/CSS/JS sunulur; Node veya Python çalışmaz. Ürün, hizmet, blog ve
+kategori sayfalarını **geliştirme sırasında** yeniden üretmek için:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-build.txt
+.\.venv\Scripts\python.exe -X utf8 scripts/sayfa-uret.py
+.\.venv\Scripts\python.exe -X utf8 build/denetle.py
+.\.venv\Scripts\python.exe -X utf8 build/iletisim-denetle.py
+node --check assets/js/main.js
+```
+
+Üretilen alt sayfaları elle düzenlemeyin. Ortak kabuk `index.html`, içerik
+`content/`, üreticiler `scripts/` altındadır. WhatsApp mesajları `scripts/iletisim.py`
+ile statik HTML'de ilgili sayfa adı ve adresini taşır. Instagram hedefi aynı modülde
+tanımlıdır; ortak iletişim alanı `index.html` içindedir.
+
+Tarihli üretim notları `content/urunler.json` içindeki `uretim_notu`, incelenmiş
+story örnekleri `content/atolye.json` içindeki `hikayeler` alanındadır. Ham Instagram
+arşivi ve müşteri mesajları bu depoya veya yayın paketine eklenmez. `.venv/` ve
+`.local-research/` hem Git hem Docker kapsamı dışındadır.
+
+Bu turun bulguları, doğrulama sınırları ve yayın öncesi kontrolleri:
+[SEO/GEO çalışma notu](docs/SEO_GEO_2026-10-13.md).
+
+**Aşağıdaki ilk kurulum notları tarihsel kayıttır:** güncel sayfa sayısı, istatistikler
+ve medya kapsamı için kaynak JSON dosyaları ve site haritası esas alınmalıdır.
 
 ## Kurulum (lokal önizleme)
 

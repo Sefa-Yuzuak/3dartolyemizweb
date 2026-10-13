@@ -1,0 +1,2 @@
+# scripts/blog.py reads image dimensions while generating static pages.
+Pillow==12.3.0

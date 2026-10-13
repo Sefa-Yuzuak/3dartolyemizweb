@@ -122,11 +122,6 @@
     }
   }
 
-  /* FAB soft entrance */
-  var fab = document.querySelector(".fab");
-  if(fab){
-    setTimeout(function(){ fab.classList.add("is-visible"); }, 3000);
-  }
 })();
 
 /* TikTok gomusu yalnizca istekle. Olculdu (PSI 13.09.2026): otomatik gomu ana sayfayi

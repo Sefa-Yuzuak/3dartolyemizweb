@@ -6,3 +6,10 @@ README.md
 scripts/
 content/
 assets/img/_raw/
+.venv/
+.local-research/
+docs/
+build/
+AGENTS.md
+CLAUDE.md
+requirements-build.txt

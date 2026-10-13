@@ -1,5 +1,34 @@
 {
   "_kaynak": "Kareler ve klipler @3dartolyemiz'in kendi Instagram reels videolarindan (08.10.2026 disa aktarimi). Kliplerde ses yok (muzikler telifli). Tarih = reels'in yayin tarihi. 'sayfada': false olan fotograf atolye sayfasinda gosterilmez (ayni sahnenin videosu var); blogda kullanilabilir.",
+  "hikayeler": [
+    {
+      "dosya": "story-recine",
+      "tarih": "2026-04-26",
+      "baslik": "Destekleri üzerindeyken reçine baskı",
+      "alt": "Atölye masasında destek yapıları henüz çıkarılmamış, desenli gri reçine baskı parçaları",
+      "aciklama": "Reçine baskı hizmetimizi paylaştığımız bu karede, desenli parçalar destekleriyle birlikte görülüyor. Destekleri ayırma ve yüzey hazırlığı baskıdan sonraki işin bir parçası.",
+      "hizmet": "/ankara-3d-baski/",
+      "hizmet_adi": "Reçine ve filament baskı hizmetimiz"
+    },
+    {
+      "dosya": "story-sla",
+      "tarih": "2026-02-24",
+      "baslik": "Boyamadan önce çift figürü",
+      "alt": "SLA baskı paylaşımımızdaki boyanmamış, yan yana oturan iki kişilik gri figür",
+      "aciklama": "SLA baskı paylaşımımızdan, henüz boyanmamış iki kişilik figür. Saç, gözlük ve kıyafet detayları boyama öncesinde de görülebiliyor.",
+      "hizmet": "/kisiye-ozel-3d-figur/",
+      "hizmet_adi": "Kişiye özel figür süreci"
+    },
+    {
+      "dosya": "story-nfc",
+      "tarih": "2026-03-14",
+      "baslik": "NFC anahtarlık çalışmamız",
+      "alt": "NFC anahtarlık üretimi paylaşımımızdaki siyah gövdeli, kırmızı kalp ve müzik simgeli anahtarlık",
+      "aciklama": "NFC anahtarlık üretiminden paylaştığımız bir örnek: siyah gövde üzerinde kırmızı kalp ve müzik simgesi. İstediğiniz tasarımı ve kullanımını siparişten önce birlikte netleştiriyoruz.",
+      "hizmet": "/etiket/anahtarlik/",
+      "hizmet_adi": "Anahtarlık çalışmalarımız"
+    }
+  ],
   "fotograflar": [
     {
       "dosya": "bambu-lab-yazici-ams",
