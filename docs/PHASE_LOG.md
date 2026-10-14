@@ -102,3 +102,12 @@ Site tarafındaki önizleme değişikliği tamamlandı; uygulama içi önbellek 
 - WhatsApp User-Agent ile 16 sayfa, 34 yeni WebP, CSS, galeri JS ve logo PNG: toplam 53/53 HTTP 200 ve yerel sürümle içerik eşleşmesi. HTML satır sonları karşılaştırma öncesi normalize edildi; görseller birebir byte/SHA eşleşti.
 - Genel WhatsApp kartında `artolyemiz-paylasim-logo-v1.png` korunuyor. WhatsApp uygulamasının eski mesaj önbelleği ayrıca doğrulanmadı.
 - İş tamamlandı. Tam görsel değişikliğini geri almak gerekirse önce `60ceef2`, sonra `e73163b` revert edilir ve sonuç master'a gönderilir. Kaynak fotoğraflara dokunulmadı.
+
+## 2026-10-14 — Ana sayfa doğum günü bölümünün görsel düzeltmesi
+
+- Kullanıcı bulanık ve kırpılmış figür fotoğrafının kötü göründüğünü bildirdi. Ana sayfadaki görsel, kendi Instagram arşivindeki gerçek figür boyama etkinliğiyle değiştirildi.
+- Kaynak: `media/posts/202505/18085007572725146.jpg`, SHA256 `fa656bb6ff481ccbabaf788a65a258d236a1f7fcf04c9ff93a3fa5ec6ec75e97`. Paylaşım açıklaması 10 Mayıs 2025 Asil Cafe etkinliğini doğruluyor. Fotoğraf belirli bir doğum günü etkinliği olarak etiketlenmedi.
+- 1080 ve 540 piksel WebP, responsive srcset, etkinlik odaklı kadraj, beyaz çerçeve ve açıklama eklendi. Detay bağlantısının rengi düzeltildi.
+- Etki: ana sayfanın etkinlik bölümü ve yalnız bu bölüme ait CSS. Risk: mobil kadraj/hizalama. Eski görsel korundu.
+- Doğrulama: Chromium 390/1440 piksel ekranlarda yatay taşma, bozuk görsel ve JavaScript hatası yok. İki görünüm görsel olarak incelendi; WhatsApp paylaşım logosu korundu. `git diff --check` temiz.
+- Yayın: mevcut kullanıcı yayın yetkisiyle master/Coolify akışı. Geri dönüş: bu değişikliğin commit'ini `git revert` ile geri alıp master'a push et; ana sayfa ve CSS içerik eşleşmesini doğrula.
