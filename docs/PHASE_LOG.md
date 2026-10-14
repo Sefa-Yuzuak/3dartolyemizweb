@@ -93,3 +93,12 @@ Site tarafındaki önizleme değişikliği tamamlandı; uygulama içi önbellek 
 - Geri dönüş: bu yayın commit'ini `git revert <commit>` ile geri al ve master'a gönder. Önceki HEAD c6ed4ad.
 - Doğrulama: üretim başarılı; 186 HTML yüksek/orta 0, önceki düşük 80. 1.114 WhatsApp ve 543 Instagram bağlantısı, hata 0. Chromium 390/1440 genişliklerinde 16 rota × 2 = 32 kontrol; taşma, bozuk resim, JS hatası 0. Ana galeri lightbox iki boyutta açıldı ve görsel olarak incelendi.
 - Sonraki adım: yayın iş akışı ve canlı HTML/medya eşleşmesini doğrula.
+
+### Canlı sonuç
+
+- Görsel yayın: `e73163b1453015d315fd2496d5f3251a4fc7e58b`.
+- Son başlık düzeltmesi: `60ceef2e8265d5970906a02d2fc3935733947d41`; farklı köpek siparişleri aynı tek çalışma gibi sunulmuyor, ArtoPop fotoğrafı kutu içeriğinden örnek olarak adlandırılıyor.
+- GitHub yayın iş akışları 38543932763 ve 38544143409 başarılı.
+- WhatsApp User-Agent ile 16 sayfa, 34 yeni WebP, CSS, galeri JS ve logo PNG: toplam 53/53 HTTP 200 ve yerel sürümle içerik eşleşmesi. HTML satır sonları karşılaştırma öncesi normalize edildi; görseller birebir byte/SHA eşleşti.
+- Genel WhatsApp kartında `artolyemiz-paylasim-logo-v1.png` korunuyor. WhatsApp uygulamasının eski mesaj önbelleği ayrıca doğrulanmadı.
+- İş tamamlandı. Tam görsel değişikliğini geri almak gerekirse önce `60ceef2`, sonra `e73163b` revert edilir ve sonuç master'a gönderilir. Kaynak fotoğraflara dokunulmadı.
