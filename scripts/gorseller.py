@@ -30,5 +30,8 @@ def hizmet(slug):
     return serit(DATA['hizmetler'].get(slug), 'Atölyemizden kareler')
 
 def urun(slug):
-    content = serit(DATA['urunler'].get(slug), 'Bu çalışmaya yakından bakın')
+    title = ('Farklı köpek figürü çalışmalarımız' if slug == 'kisiye-ozel-kopek-figuru'
+             else 'Kutu içeriğinden bir örnek' if slug == 'artopop-kendin-boya-kutusu'
+             else 'Bu çalışmaya yakından bakın')
+    content = serit(DATA['urunler'].get(slug), title)
     return '<section><div class="container">'+content+'</div></section>' if content else ''
