@@ -55,3 +55,22 @@ Tarayıcı bağlı olmadığından mobil/masaüstü görsel kontrol sınırı de
 Kesin geri dönüş: `git revert c442513adb63c80bfd646cd377499f332be79c7b` ardından
 `git push origin master`; dağıtımdan sonra önceki dosyaların canlı eşleşmesini kontrol et.
 Durum: onaylanan yayın aşaması tamamlandı. Yeni bir geliştirme fazı başlatılmadı.
+
+## 14 Ekim 2026 — WhatsApp bağlantı önizlemesinde yazılı logo
+
+Yetki: kullanıcı maket bağlantısının WhatsApp önizlemesindeki atölye fotoğrafını
+Artölyemiz yazılı logosuyla değiştirmeyi istedi. Mevcut logo.jpg işareti korunarak
+1200×630 PNG paylaşım kartına 3D ARTÖLYEMİZ yazısı eklendi. Yeni dosya adı
+artolyemiz-paylasim-logo-v1.png; eski görsel URL'si yeniden kullanılmadı.
+Genel resmi kullanan 12 sayfanın OG/Twitter etiketleri ortak şablondan üretildi.
+Ürüne özel görsel kullanan sayfalar genel logo boyut/açıklamasını devralmıyor.
+
+Etki: 12 HTML, şablon üreticisi ve yeni marka kartı/üretim betiği. Risk: WhatsApp
+önbelleği eski önizlemeyi tutabilir; dağıtımda geçici erişim kesintisi olabilir.
+Geri dönüş: bu değişikliği taşıyan yayın commit'ini git revert ile geri alıp
+git push origin master; yayın öncesi HEAD 01b85ab864b0cba2dd829967fd29ef5b4ebbbfd6.
+Doğrulama: görsel 1200×630, 86.062 bayt; yazı ve logo görsel olarak incelendi.
+186 sayfa denetiminde yüksek/orta hata yok, önceki 80 düşük uyarı değişmedi.
+185 sayfa/1114 WhatsApp/543 Instagram/149 ürün iletişim denetiminde sıfır hata.
+Sonraki adım: mevcut GitHub/Coolify akışıyla yayın ve canlı içerik eşleşmesi.
+WhatsApp uygulamasındaki önbelleğin yenilendiği ayrıca doğrulanmış değildir.

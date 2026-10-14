@@ -603,6 +603,8 @@ def head_yap(baslik: str, aciklama: str, url: str, bloklar=(),
     h = re.sub(r'(<meta property="og:url" content=")[^"]*(")', lambda m: m.group(1) + url + m.group(2), h, count=1)
     h = re.sub(r'(<meta property="og:type" content=")[^"]*(")', lambda m: m.group(1) + og_tur + m.group(2), h, count=1)
     if og_gorsel:
+        # Ürüne ait görsel, genel logo kartının boyut/açıklamasını devralmasın.
+        h = re.sub(r'<meta (?:property="og:image:(?:type|width|height|alt)"|name="twitter:image:alt") content="[^"]*">\n?', '', h)
         h = re.sub(r'(<meta property="og:image" content=")[^"]*(")',
                    lambda m: m.group(1) + ALAN + og_gorsel + m.group(2), h, count=1)
         h = re.sub(r'(<meta name="twitter:image" content=")[^"]*(")',
