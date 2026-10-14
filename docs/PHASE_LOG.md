@@ -82,3 +82,14 @@ içerikle birebir eşleşme (HTML'de CRLF/LF normalize edilerek). PNG image/png
 olarak sunuluyor. Kesin geri dönüş: git revert 480b4f0 ve git push origin master.
 Site tarafındaki önizleme değişikliği tamamlandı; uygulama içi önbellek veya
 önceden gönderilmiş mesajın kartının yenilendiği iddia edilmiyor.
+
+
+## 2026-10-14 — Fotoğraf arşivi seçimi ve tam kadraj yerleşimi
+
+- Yetki: sahibi tüm site görsellerinin incelenmesini ve uygun fotoğrafların kullanılmasını istedi; önceki yayın yetkisi sürüyor.
+- Etki: ana açılış, 8 hizmet sayfası, 6 ürünün ek fotoğrafları, Garfield ana fotoğrafı, ürün/galeri CSS. 17 seçilen fotoğraf, 34 WebP dosyası, toplam 2.131.518 bayt.
+- Gerekçe ve kaynaklar: `docs/GORSEL_INCELEME_2026-10-14.md`, `content/gorsel-secimleri.json`. Tüm 1.980 farklı arşiv fotoğrafı önizlemeyle tarandı; seçilen adaylar büyük boyutta kontrol edildi.
+- Risk: ek görsel yükü ve tam kadrajda kenar boşlukları. Küçük WebP/srcset/lazy loading kullanıldı; kaynak fotoğraflar ve eski varlıklar korundu.
+- Geri dönüş: bu yayın commit'ini `git revert <commit>` ile geri al ve master'a gönder. Önceki HEAD c6ed4ad.
+- Doğrulama: üretim başarılı; 186 HTML yüksek/orta 0, önceki düşük 80. 1.114 WhatsApp ve 543 Instagram bağlantısı, hata 0. Chromium 390/1440 genişliklerinde 16 rota × 2 = 32 kontrol; taşma, bozuk resim, JS hatası 0. Ana galeri lightbox iki boyutta açıldı ve görsel olarak incelendi.
+- Sonraki adım: yayın iş akışı ve canlı HTML/medya eşleşmesini doğrula.

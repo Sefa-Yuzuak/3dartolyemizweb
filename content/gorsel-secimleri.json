@@ -1,0 +1,242 @@
+{
+  "fotograflar": {
+    "yazicida-altin-ejderha": {
+      "src": "/assets/img/secimler/yazicida-altin-ejderha.webp",
+      "alt": "Yazıcı tablasında yeni basılmış altın renkli eklemli ejderha",
+      "width": 675,
+      "height": 1200,
+      "source": "media/stories/202512/18104906902665697.jpg",
+      "source_sha256": "1b77bd7394f29cb20385454a1ab26d20c60c9c61558cae9e8a00ab6ba7d4352f"
+    },
+    "maket-boyama-oncesi": {
+      "src": "/assets/img/secimler/maket-boyama-oncesi.webp",
+      "alt": "Boyama ve montaj öncesinde beyaz araba gövdesi ve ayrı basılmış tekerlekler",
+      "width": 675,
+      "height": 1200,
+      "source": "media/stories/202604/17987768750971366.jpg",
+      "source_sha256": "2e098812a4e8bff14aab95d5e7364ba769eec0b65376ff7aa9d02df98ad852b9"
+    },
+    "baski-parcalari": {
+      "src": "/assets/img/secimler/baski-parcalari.webp",
+      "alt": "Baskı tablasında halka biçimli parçalar ve destekleri üzerindeki gövdeler",
+      "width": 675,
+      "height": 1200,
+      "source": "media/stories/202607/18203560987318655.jpg",
+      "source_sha256": "7747936651b12fdef30ccd940298d78fa61ffbada961b87a4127492192224c5d"
+    },
+    "civciv-seri-baski": {
+      "src": "/assets/img/secimler/civciv-seri-baski.webp",
+      "alt": "Yazıcı tablasında sıra sıra basılmış sarı civciv figürleri",
+      "width": 675,
+      "height": 1200,
+      "source": "media/stories/202604/18091859957179868.jpg",
+      "source_sha256": "46510aca89dde85e713c65babdc6b3430e318947344d063df605a7e19b4b380c"
+    },
+    "figur-montaj-masasi": {
+      "src": "/assets/img/secimler/figur-montaj-masasi.webp",
+      "alt": "Atölye masasında montajdan önce ayrı duran renkli figür parçaları",
+      "width": 675,
+      "height": 1200,
+      "source": "media/stories/202508/17905639689089573.jpg",
+      "source_sha256": "0cc1b96195ad8fa3ac7128c47f14d022d15bd2d7617d72242afab896f1afed01"
+    },
+    "boyama-atolyesi-hazirlik": {
+      "src": "/assets/img/secimler/boyama-atolyesi-hazirlik.webp",
+      "alt": "Boyama etkinliği için hazırlanmış boyasız karakter figürleri",
+      "width": 675,
+      "height": 1200,
+      "source": "media/stories/202508/17842576101562291.jpg",
+      "source_sha256": "4e75d6b29924730a6925fda7f4be5f1bf7e8d08b14e84a3ddfd4b7b966175f3c"
+    },
+    "kalpli-cift-figuru": {
+      "src": "/assets/img/secimler/kalpli-cift-figuru.webp",
+      "alt": "Kırmızı kalp tutan, elle boyanmış kişiye özel çift figürü",
+      "width": 675,
+      "height": 1200,
+      "source": "media/stories/202603/17992916531937107.jpg",
+      "source_sha256": "0ea59204280c413b6e289ff388e854704823747c315fbf47a894a867b024ba82"
+    },
+    "garfield-on": {
+      "src": "/assets/img/secimler/garfield-on.webp",
+      "alt": "Turuncu Garfield figürünün önden görünümü",
+      "width": 900,
+      "height": 1200,
+      "source": "media/posts/202505/18056317775236689.jpg",
+      "source_sha256": "51b383bba1459d2abf25c6543e2d4113efc94481c107417d6da244d78dc29d4b"
+    },
+    "garfield-yan": {
+      "src": "/assets/img/secimler/garfield-yan.webp",
+      "alt": "Garfield figürünün yandan görünümü ve sırt çizgileri",
+      "width": 900,
+      "height": 1125,
+      "source": "media/posts/202505/18045771227161155.jpg",
+      "source_sha256": "2f791b6dbc1ed0ab308ea1364a91411c916d5ecab335397ba027f5147e024724"
+    },
+    "kedi-figur-yan": {
+      "src": "/assets/img/secimler/kedi-figur-yan.webp",
+      "alt": "Elle boyanmış kedi figürünün yandan görünümü ve tüy detayları",
+      "width": 900,
+      "height": 1174,
+      "source": "media/posts/18092002073322541.jpg",
+      "source_sha256": "f7d701236feb6775146e0afe2bce872f4e94c096d13815624504a1d9756ee398"
+    },
+    "kopek-figur-cift": {
+      "src": "/assets/img/secimler/kopek-figur-cift.webp",
+      "alt": "Yan yana duran iki kişiye özel köpek figürü",
+      "width": 900,
+      "height": 1200,
+      "source": "media/posts/18389029156153178.jpg",
+      "source_sha256": "21f156ed4ac98e555fe978ecf455cd697fc5a2df9d1115cdacc744d4c16e240e"
+    },
+    "kopek-figur-detay": {
+      "src": "/assets/img/secimler/kopek-figur-detay.webp",
+      "alt": "Kişiye özel köpek figürünün yüz ve boyama detayları",
+      "width": 900,
+      "height": 1200,
+      "source": "media/posts/18402042451176933.jpg",
+      "source_sha256": "dcd66ce5ff8e28fe7acb4f62cfae78297fee4371f78e5c2b3eef87c9787717fc"
+    },
+    "fred-figur-sol": {
+      "src": "/assets/img/secimler/fred-figur-sol.webp",
+      "alt": "Fred Çakmaktaş figürünün sol yandan görünümü",
+      "width": 900,
+      "height": 1125,
+      "source": "media/posts/202504/17893482084212217.jpg",
+      "source_sha256": "1356489d7c98a3c09acf459f9986acc13c87bba64c3b9f076863aec90c663fe8"
+    },
+    "fred-figur-sag": {
+      "src": "/assets/img/secimler/fred-figur-sag.webp",
+      "alt": "Fred Çakmaktaş figürünün sağ yandan görünümü",
+      "width": 900,
+      "height": 1125,
+      "source": "media/posts/202504/18060064853134090.jpg",
+      "source_sha256": "13848a89a66ffa7226bf00a448b41c28a9dd46570dbdaa536971fe5dc63f5d80"
+    },
+    "balonlu-ev-on": {
+      "src": "/assets/img/secimler/balonlu-ev-on.webp",
+      "alt": "Renkli balonlarıyla Yukarı Bak ev maketinin önden görünümü",
+      "width": 900,
+      "height": 1125,
+      "source": "media/posts/202505/18045580205175489.jpg",
+      "source_sha256": "8906a3a9f5108b28d5e836cb512b2a10a5b6c2ae5df628051a14d086ef2e8046"
+    },
+    "balonlu-ev-yan": {
+      "src": "/assets/img/secimler/balonlu-ev-yan.webp",
+      "alt": "Yukarı Bak ev maketinin yandan görünümü",
+      "width": 900,
+      "height": 1125,
+      "source": "media/posts/202505/18271927690277365.jpg",
+      "source_sha256": "ee127fb376e034a27840c3b309646db5cec8c68f3f4691bde4f464b3c7aed401"
+    },
+    "artopop-kutu-icerigi": {
+      "src": "/assets/img/secimler/artopop-kutu-icerigi.webp",
+      "alt": "ArtoPop kutusundaki boyasız figürler, boya kapları, palet ve fırça",
+      "width": 900,
+      "height": 1125,
+      "source": "media/posts/202509/18041778566383453.jpg",
+      "source_sha256": "28bfe118c37d4beb43f7a0fce9523953f1de2c6586affdab116e9f39eaa7a913"
+    },
+    "modelleme": {
+      "src": "/assets/img/atolye/3d-modelleme-egitimi.webp",
+      "alt": "Ekranda 3D modelleme çalışması",
+      "width": 900,
+      "height": 1200
+    },
+    "dilimleme": {
+      "src": "/assets/img/atolye/dilimleme-programi.webp",
+      "alt": "Baskı öncesinde dilimleme programında hazırlanan model",
+      "width": 900,
+      "height": 1200
+    },
+    "yazici": {
+      "src": "/assets/img/atolye/bambu-lab-yazici-ams.webp",
+      "alt": "Atölyemizdeki Bambu Lab yazıcı ve AMS ünitesi",
+      "width": 900,
+      "height": 1200
+    },
+    "filament": {
+      "src": "/assets/img/atolye/filament-makaralari.webp",
+      "alt": "Atölyede kullandığımız farklı renklerde filament makaraları",
+      "width": 900,
+      "height": 1200
+    },
+    "motor": {
+      "src": "/assets/img/urun/cub-motosiklet-maketi.webp",
+      "alt": "Tamamlanmış kırmızı Cub motosiklet maketi",
+      "width": 900,
+      "height": 1200
+    },
+    "araba": {
+      "src": "/assets/img/urun/renault-megane-araba-maketi.webp",
+      "alt": "Boyanmış beyaz Renault Megane araba maketi",
+      "width": 900,
+      "height": 1200
+    }
+  },
+  "hizmetler": {
+    "ankara-3d-baski": [
+      "yazicida-altin-ejderha",
+      "civciv-seri-baski",
+      "baski-parcalari"
+    ],
+    "kisiye-ozel-3d-figur": [
+      "kalpli-cift-figuru",
+      "kopek-figur-cift",
+      "figur-montaj-masasi"
+    ],
+    "3d-baski-maket": [
+      "motor",
+      "araba",
+      "maket-boyama-oncesi"
+    ],
+    "3d-modelleme": [
+      "modelleme",
+      "kalpli-cift-figuru",
+      "maket-boyama-oncesi"
+    ],
+    "dogum-gunu-boyama-atolyesi": [
+      "boyama-atolyesi-hazirlik",
+      "artopop-kutu-icerigi",
+      "figur-montaj-masasi"
+    ],
+    "stl-dosyasi-bastirma": [
+      "baski-parcalari",
+      "dilimleme",
+      "yazicida-altin-ejderha"
+    ],
+    "3d-yazici-egitimi": [
+      "dilimleme",
+      "yazici",
+      "filament"
+    ],
+    "3d-yazici-tamiri-ankara": [
+      "yazici",
+      "yazicida-altin-ejderha",
+      "filament"
+    ]
+  },
+  "urunler": {
+    "garfield-figuru": [
+      "garfield-on",
+      "garfield-yan"
+    ],
+    "kisiye-ozel-kedi-figuru": [
+      "kedi-figur-yan"
+    ],
+    "kisiye-ozel-kopek-figuru": [
+      "kopek-figur-cift",
+      "kopek-figur-detay"
+    ],
+    "fred-cakmaktas-figuru": [
+      "fred-figur-sol",
+      "fred-figur-sag"
+    ],
+    "yukari-bak-evi-maketi": [
+      "balonlu-ev-on",
+      "balonlu-ev-yan"
+    ],
+    "artopop-kendin-boya-kutusu": [
+      "artopop-kutu-icerigi"
+    ]
+  }
+}

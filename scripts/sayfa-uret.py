@@ -26,6 +26,7 @@ from pathlib import Path
 from urllib.parse import quote
 
 import blog
+import gorseller
 from urun_icerik import urun_icerik
 from iletisim import wa_link, instagram_dugmesi, baglantilari_hazirla
 
@@ -698,6 +699,7 @@ def govde_uret(s: dict) -> str:
 
   <section>
     <div class="container">''']
+    parcalar.append(gorseller.hizmet(s["slug"]))
     parcalar += [bolum_uret(b) for b in s["bolumler"]]
     hikayeler = {"ankara-3d-baski": ["story-recine", "story-sla"],
                  "kisiye-ozel-3d-figur": ["story-sla"],
@@ -801,7 +803,7 @@ def urun_sayfasi(u: dict) -> str:
         # 21.09.2026: urun sayfalarinin ~230 kelimesi 21 urunde AYNIYDI
         # ve Google hicbirini dizine almadi. Ture ozgu uretim anlatimi +
         # SSS burada eklenir; olgular sitenin kendi sayfalarindan gelir.
-        + urun_icerik(u) + uretim_notu_html(u) +
+        + gorseller.urun(u['slug']) + urun_icerik(u) + uretim_notu_html(u) +
         '\n  <section class="section--alt">\n    <div class="container">\n'
         '      <div class="section-head reveal"><h2>Devamı</h2></div>\n'
         '      <ul class="sayfa-liste reveal">\n'

@@ -2,6 +2,12 @@
   "use strict";
 
   const GALLERY = [
+    { src:'assets/img/secimler/yazicida-altin-ejderha.webp', w:675, h:1200, title:'Yazıcı tablasında yeni basılmış altın renkli eklemli ejderha', alt:'Yazıcı tablasında yeni basılmış altın renkli eklemli ejderha', tag:'Atölye' },
+    { src:'assets/img/secimler/maket-boyama-oncesi.webp', w:675, h:1200, title:'Boyama ve montaj öncesinde beyaz araba gövdesi ve ayrı basılmış tekerlekler', alt:'Boyama ve montaj öncesinde beyaz araba gövdesi ve ayrı basılmış tekerlekler', tag:'Atölye' },
+    { src:'assets/img/secimler/kalpli-cift-figuru.webp', w:675, h:1200, title:'Kırmızı kalp tutan, elle boyanmış kişiye özel çift figürü', alt:'Kırmızı kalp tutan, elle boyanmış kişiye özel çift figürü', tag:'Atölye' },
+    { src:'assets/img/secimler/civciv-seri-baski.webp', w:675, h:1200, title:'Yazıcı tablasında sıra sıra basılmış sarı civciv figürleri', alt:'Yazıcı tablasında sıra sıra basılmış sarı civciv figürleri', tag:'Atölye' },
+    { src:'assets/img/secimler/figur-montaj-masasi.webp', w:675, h:1200, title:'Atölye masasında montajdan önce ayrı duran renkli figür parçaları', alt:'Atölye masasında montajdan önce ayrı duran renkli figür parçaları', tag:'Atölye' },
+    { src:'assets/img/secimler/boyama-atolyesi-hazirlik.webp', w:675, h:1200, title:'Boyama etkinliği için hazırlanmış boyasız karakter figürleri', alt:'Boyama etkinliği için hazırlanmış boyasız karakter figürleri', tag:'Atölye' },
     { src:'assets/img/atolye/bambu-lab-yazici-ams.webp', w:900, h:1200, title:'Çok renkli baskı ünitesi (AMS) takılı yazıcı', alt:'Atölyedeki Bambu Lab 3D yazıcı ve üstündeki çok renkli filament ünitesi - 3dartolyemiz', tag:'Atölye' },
     { src:'assets/img/urun/renault-megane-araba-maketi.webp', w:900, h:1200, title:'Renault Megane Araba Maketi', alt:'Beyaz Renault Megane araba maketi', tag:'Maket' },
     { src:'assets/img/urun/porsche-911-maketi.webp', w:900, h:1200, title:'Porsche 911 Maketi', alt:'Porsche 911 Maketi — 3dartolyemiz atölyesinde 3D baskı', tag:'Maket' },

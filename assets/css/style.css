@@ -190,8 +190,8 @@ h2{font-size:clamp(1.6rem,4vw,2.5rem);}
   transition:transform .2s ease,box-shadow .2s ease;
 }
 .product-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-brand);}
-.product-media{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--bg);}
-.product-media img{width:100%;height:100%;object-fit:cover;}
+.product-media{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--bg);}
+.product-media img{width:100%;height:100%;object-fit:contain;}
 .product-media .tag{
   position:absolute;left:.6rem;bottom:.6rem;background:rgba(35,37,43,.65);color:#fff;
   font-size:.7rem;font-weight:600;padding:.3em .8em;border-radius:var(--radius-pill);backdrop-filter:blur(4px);
@@ -214,10 +214,10 @@ h2{font-size:clamp(1.6rem,4vw,2.5rem);}
   border-radius:16px;overflow:hidden;
   background:var(--surface);border:1px solid var(--line);
 }
-.gallery-item .thumb{position:relative;aspect-ratio:1/1;overflow:hidden;}
-.gallery-item .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease;}
+.gallery-item .thumb{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--bg);}
+.gallery-item .thumb img{width:100%;height:100%;object-fit:contain;}
 .gallery-item .thumb button{position:absolute;inset:0;width:100%;height:100%;}
-.gallery-item:hover img{transform:scale(1.06);}
+.gallery-item:hover img{filter:brightness(1.03);}
 .gallery-item .tag{
   position:absolute;left:.6rem;bottom:.6rem;background:rgba(35,37,43,.65);color:#fff;
   font-size:.7rem;font-weight:600;padding:.3em .8em;border-radius:var(--radius-pill);
@@ -508,3 +508,23 @@ h2{font-size:clamp(1.6rem,4vw,2.5rem);}
 .siparis-video .yazi-video{margin:0;}
 .siparis-video video{width:100%;height:auto;border-radius:var(--radius-card);box-shadow:var(--shadow-soft);display:block;}
 .siparis-video figcaption{font-size:.85rem;color:var(--ink-soft);text-align:center;margin-top:.6rem;}
+
+/* 14.10.2026 — full-frame archive selections, responsive service/product strips. */
+.hero-collage .collage-item {aspect-ratio:3/4;}
+.hero-collage .collage-item img {object-fit:contain;}
+.hero-collage .c1 {aspect-ratio:9/16;align-self:center;}
+.hero-collage .c3 {aspect-ratio:3/4;max-height:260px;}
+.foto-secimi {margin:0 0 3rem;}
+.foto-secimi h2 {margin-bottom:1.2rem;}
+.foto-serit {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;}
+.foto-serit figure {margin:0;min-width:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--surface);}
+.foto-serit a {display:block;background:var(--bg);}
+.foto-serit img {display:block;width:100%;height:380px;object-fit:contain;}
+.foto-serit figcaption {padding:1rem;font-size:.9rem;line-height:1.5;}
+.foto-serit a:focus-visible {outline:3px solid var(--accent);outline-offset:-3px;}
+@media(max-width:759px){
+ .foto-serit {display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.7rem;gap:1rem;}
+ .foto-serit figure {flex:0 0 82%;scroll-snap-align:start;}
+ .foto-serit img {height:340px;}
+ .hero-collage .c3 {max-height:210px;}
+}
