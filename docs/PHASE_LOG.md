@@ -74,3 +74,11 @@ Doğrulama: görsel 1200×630, 86.062 bayt; yazı ve logo görsel olarak incelen
 185 sayfa/1114 WhatsApp/543 Instagram/149 ürün iletişim denetiminde sıfır hata.
 Sonraki adım: mevcut GitHub/Coolify akışıyla yayın ve canlı içerik eşleşmesi.
 WhatsApp uygulamasındaki önbelleğin yenilendiği ayrıca doğrulanmış değildir.
+
+Yayın sonucu: 480b4f010e889ea8b3beb17be9342bc2d3ba3412 yayımlandı.
+GitHub Actions 38540407191 başarılı. WhatsApp User-Agent başlığıyla sorgu eki
+olmadan canlı 12 HTML ve yeni PNG kontrol edildi: 13/13 HTTP 200 ve yerel
+içerikle birebir eşleşme (HTML'de CRLF/LF normalize edilerek). PNG image/png
+olarak sunuluyor. Kesin geri dönüş: git revert 480b4f0 ve git push origin master.
+Site tarafındaki önizleme değişikliği tamamlandı; uygulama içi önbellek veya
+önceden gönderilmiş mesajın kartının yenilendiği iddia edilmiyor.
