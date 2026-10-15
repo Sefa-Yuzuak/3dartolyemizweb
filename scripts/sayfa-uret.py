@@ -80,6 +80,15 @@ def etiket_urunleri(slug: str) -> list:
 
 def aralik(etiket: str) -> str:
     """Etiketteki urunlerin fiyat araligi: '1.000 – 4.750 TL'. Elle yazilmaz."""
+    # Ana hizmet kartlarinda sahibin guncelledigi baslangic araliklari.
+    # Hediyelik/dekor ve toplu sipariste tek bir rakam anlami olmadigi icin
+    # degisken fiyat olarak gosterilir; kesin teklif WhatsApp'tan verilir.
+    if etiket == "kisiye-ozel-figur":
+        return "1.500 – 6.500 TL"
+    if etiket in ("araba-maketi", "motosiklet-maketi"):
+        return "2.500 – 8.500 TL"
+    if etiket in ("anahtarlik", "toplu-siparis", "ev-dekor"):
+        return "Değişken fiyat"
     us = etiket_urunleri(etiket)
     return f"{tl(min(u['fiyat'][0] for u in us))} – {tl(max(u['fiyat'][1] for u in us))} TL"
 
@@ -1050,9 +1059,12 @@ def anasayfa_guncelle() -> None:
                        f'          <p>{c}</p>\n        </details>' for q, c in ANASAYFA_SSS)
            + '\n      </div>')
     metin = isaret_doldur(metin, "SSS", sss)
-    metin = re.sub(r'(<div class="price-badge" data-etiket="([\w-]+)">)[^<]*(</div>)',
-                   lambda m: m.group(1) + "Yaklaşık " + aralik(m.group(2))
-                   + (" / adet" if m.group(2) == "anahtarlik" else "") + m.group(3), metin)
+    def etiket_fiyat(m):
+        value = aralik(m.group(2))
+        if value == "Değişken fiyat":
+            return m.group(1) + value + m.group(3)
+        return m.group(1) + "Yaklaşık " + value + (" / adet" if m.group(2) == "anahtarlik" else "") + m.group(3)
+    metin = re.sub(r'(<div class="price-badge" data-etiket="([\w-]+)">)[^<]*(</div>)', etiket_fiyat, metin)
 
     fiyatlar = [u["fiyat"] for u in URUNLER if not u["adet"]]
     for b in reversed(list(re.finditer(r'(<script[^>]+ld\+json[^>]*>)(.*?)(</script>)', metin, re.S))):

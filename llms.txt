@@ -9,8 +9,8 @@ Ankara Yenimahalle'de kendi atölyesinde 3D baskı yapan küçük işletme: foto
 
 ## Hizmetler
 - [Ankara'da 3D baskı hizmeti](https://artolyemiz.com/ankara-3d-baski/): Ankara'da 3D baskı hizmeti. SLA reçine, PLA, PETG ve TPU baskı, 3D modelleme. Ankara içi elden teslim, Türkiye geneli kargo.
-- [Kişiye özel 3D figür yaptırma](https://artolyemiz.com/kisiye-ozel-3d-figur/): Fotoğraftan kişiye özel 3D figür: kişi, aile, evcil hayvan ve karakter. Elle boyama, yaklaşık 550 – 4.750 TL. Ankara'da üretim, Türkiye geneli kargo.
-- [3D baskı maket: araba, motosiklet ve diorama](https://artolyemiz.com/3d-baski-maket/): Fotoğraftan araba ve motosiklet maketi, plakası ve platformuyla; diorama ve araç standı. Elle boyama, yaklaşık 750 – 7.500 TL. Türkiye geneli kargo.
+- [Kişiye özel 3D figür yaptırma](https://artolyemiz.com/kisiye-ozel-3d-figur/): Fotoğraftan kişiye özel 3D figür: kişi, aile, evcil hayvan ve karakter. Elle boyama, yaklaşık 1.500 – 6.500 TL. Ankara'da üretim, Türkiye geneli kargo.
+- [3D baskı maket: araba, motosiklet ve diorama](https://artolyemiz.com/3d-baski-maket/): Fotoğraftan araba ve motosiklet maketi, plakası ve platformuyla; diorama ve araç standı. Elle boyama, yaklaşık 2.500 – 8.500 TL. Türkiye geneli kargo.
 - [3D modelleme hizmeti](https://artolyemiz.com/3d-modelleme/): Elinizde model yoksa sıfırdan tasarlıyoruz. Fikir, fotoğraf ya da ölçüden baskıya hazır 3D model. Ankara'da 3D modelleme hizmeti.
 - [Doğum günü boyama atölyesi](https://artolyemiz.com/dogum-gunu-boyama-atolyesi/): Çocuk doğum günlerine gelen 3D figür boyama atölyesi. Tüm boya ve figürler dahil, 8-10 kişilik gruplara uygun, ortalama 45 dakika. Ankara.
 - [STL dosyası bastırma](https://artolyemiz.com/stl-dosyasi-bastirma/): Elinizdeki STL, 3MF ya da OBJ dosyasını Ankara'da basıyoruz; dosyanız yoksa modeli biz çıkarıyoruz. Fiyat ağırlığa göre, boyama ayrıca. Türkiye geneli kargo.
@@ -19,17 +19,17 @@ Ankara Yenimahalle'de kendi atölyesinde 3D baskı yapan küçük işletme: foto
 
 ## Yaklaşık fiyatlar
 Sitedeki tüm fiyatlar yaklaşıktır; ölçü, detay ve boyaya göre değişir. Kesin fiyat WhatsApp'tan görsel gönderilerek netleşir.
-- Kişiye özel figür: yaklaşık 550 – 4.750 TL — https://artolyemiz.com/etiket/kisiye-ozel-figur/
-- Araba maketi: yaklaşık 750 – 7.500 TL — https://artolyemiz.com/etiket/araba-maketi/
-- Motosiklet maketi: yaklaşık 3.000 – 6.500 TL — https://artolyemiz.com/etiket/motosiklet-maketi/
-- Anahtarlık: yaklaşık 50 – 2.750 TL (adet başına) — https://artolyemiz.com/etiket/anahtarlik/
-- Toplu ve kurumsal sipariş: yaklaşık 15 – 1.250 TL — https://artolyemiz.com/etiket/toplu-siparis/
+- Kişiye özel figür: yaklaşık 1.500 – 6.500 TL — https://artolyemiz.com/etiket/kisiye-ozel-figur/
+- Araba maketi: yaklaşık 2.500 – 8.500 TL — https://artolyemiz.com/etiket/araba-maketi/
+- Motosiklet maketi: yaklaşık 2.500 – 8.500 TL — https://artolyemiz.com/etiket/motosiklet-maketi/
+- Anahtarlık: yaklaşık Değişken fiyat (adet başına) — https://artolyemiz.com/etiket/anahtarlik/
+- Toplu ve kurumsal sipariş: yaklaşık Değişken fiyat — https://artolyemiz.com/etiket/toplu-siparis/
 - Evcil hayvan figürü: yaklaşık 750 – 4.750 TL — https://artolyemiz.com/etiket/evcil-hayvan-figuru/
 - Kendin boya seti: yaklaşık 150 – 2.500 TL — https://artolyemiz.com/etiket/kendin-boya-seti/
 - Pasta süsü: yaklaşık 100 – 3.000 TL — https://artolyemiz.com/etiket/pasta-susu/
 - Karakter figürü: yaklaşık 250 – 6.000 TL — https://artolyemiz.com/etiket/karakter-figuru/
 - Oyuncu hediyesi: yaklaşık 75 – 6.500 TL — https://artolyemiz.com/etiket/oyuncu-hediyesi/
-- Ev ve masa ürünleri: yaklaşık 75 – 3.500 TL — https://artolyemiz.com/etiket/ev-dekor/
+- Ev ve masa ürünleri: yaklaşık Değişken fiyat — https://artolyemiz.com/etiket/ev-dekor/
 - Hediyelik: yaklaşık 75 – 7.500 TL — https://artolyemiz.com/etiket/hediye/
 - STL dosyasından baskı: gram başına yaklaşık 2,5 – 5 TL, boyama ayrıca
 - 3D yazıcı eğitimi: saatlik yaklaşık 1.250 – 3.000 TL
@@ -216,12 +216,12 @@ Sitedeki tüm fiyatlar yaklaşıktır; ölçü, detay ve boyaya göre değişir.
 - Ödeme nasıl yapılıyor, taksit var mı? Modelin videosunu onayladığınızda kapora alıp baskıya geçiyoruz; kalan tutarı ürün bitince, videosunu gördükten sonra ödüyorsunuz. Taksit imkânımız yok.
 - Fotoğraftan figür yapmak için nasıl bir fotoğraf gerekiyor? Yüzün ya da vücudun net göründüğü bir fotoğraf yeterli. Birden fazla açı varsa benzerlik daha yüksek çıkıyor.
 - Figürler boyalı mı geliyor? Evet, figürleri elle boyayıp gönderiyoruz. Kendiniz boyamak isterseniz boyanmamış hâliyle de hazırlayabiliyoruz.
-- Figür yaptırmak ne kadar tutar? Kişiye özel figürler yaklaşık 550 – 4.750 TL arasında. En çok istenen 20 cm elle boyalı kişi figürü bu aralığın ortasında kalıyor; boyasız gönderip boyaları kutuya eklediğimiz seçenek daha uygun. Fiyat boyuta, detaya ve boya işçiliğine göre değişiyor; kesin tutarı görseli gönderdiğinizde netleştiriyoruz.
+- Figür yaptırmak ne kadar tutar? Kişiye özel figürler yaklaşık 1.500 – 6.500 TL arasında. En çok istenen 20 cm elle boyalı kişi figürü bu aralığın ortasında kalıyor; boyasız gönderip boyaları kutuya eklediğimiz seçenek daha uygun. Fiyat boyuta, detaya ve boya işçiliğine göre değişiyor; kesin tutarı görseli gönderdiğinizde netleştiriyoruz.
 - Figürler kaç santim oluyor? Kişi figürlerini genelde 15-20 cm yapıyoruz; anahtarlık boyu 5-7 cm. 3 cm gibi çok küçük ve detaylı işler reçineyle basılıyor, o da maliyeti artırıyor.
 - Ödeme nasıl yapılıyor, taksit var mı? Modelin videosunu onayladığınızda kapora alıp baskıya geçiyoruz; kalan tutarı ürün bitince, videosunu gördükten sonra ödüyorsunuz. Taksit imkânımız yok.
 - Anime ya da oyun karakteri figürü yapıyor musunuz? Evet. Katalogda anime tarzı, chibi tarzı ve oyun karakteri figürleri var. İnce detay gerektiği için bu figürleri genelde reçineyle basıyoruz.
 - Kendi arabamın maketini yaptırabilir miyim? Evet. Aracınızın fotoğrafından modeli hazırlıyor, basıyor ve detaylı boyuyoruz. Önizlemeyi onayladıktan sonra üretime geçiyoruz.
-- Araba maketi ne kadar? 20 cm araba ve motosiklet maketi, plaka ve platform dahil, yaklaşık 750 – 7.500 TL arasında; katalogdaki maketlerin yaklaşık fiyatları bu sayfadaki tabloda. Fiyat aracın detayına göre değişiyor.
+- Araba maketi ne kadar? 20 cm araba ve motosiklet maketi, plaka ve platform dahil, yaklaşık 2.500 – 8.500 TL arasında; katalogdaki maketlerin yaklaşık fiyatları bu sayfadaki tabloda. Fiyat aracın detayına göre değişiyor.
 - Mimari ya da ölçekli maket yapıyor musunuz? Hayır. Mimari proje maketi yapmıyoruz, ölçekli (1/24, 1/50 gibi) de çalışmıyoruz. Araba ve motosiklet maketlerini toplam boyu genelde 20 cm olacak şekilde üretiyoruz.
 - Maket ne kadar sürede hazır olur? Genellikle 3-7 gün içinde hazırlanıp kargoya veriliyor. Elle boyanan işlerde süre üst sınıra yaklaşıyor; yoğun dönemlerde 10-14 güne çıkabiliyor. Kargo 2-3 gün sürüyor.
 - Ödeme nasıl yapılıyor, taksit var mı? Modelin videosunu onayladığınızda kapora alıp baskıya geçiyoruz; kalan tutarı ürün bitince, videosunu gördükten sonra ödüyorsunuz. Taksit imkânımız yok.
